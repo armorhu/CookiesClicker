@@ -1,0 +1,122 @@
+!SESSION 2014-03-31 17:01:57.602 -----------------------------------------------
+eclipse.buildId=I20100608-0911
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=zh_CN
+Framework arguments:  -keyring /Users/hufan/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -data /Users/hufan/Documents/workspace/armorhu_git/CookiesClicker/projs -keyring /Users/hufan/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-03-31 17:02:00.768
+!MESSAGE System property http.nonProxyHosts has been set to local„ÄÅ169.254/16|*.local„ÄÅ169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY com.adobe.flexbuilder.ui 4 1 2014-03-31 17:02:02.917
+!MESSAGE Product = null version = 460 edition = stnd
+
+!ENTRY org.eclipse.jface 2 0 2014-03-31 17:02:03.700
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-03-31 17:02:03.700
+!MESSAGE A conflict occurred for COMMAND+SHIFT+F12:
+Binding(COMMAND+SHIFT+F12,
+	ParameterizedCommand(Command(org.eclipse.mylyn.tasks.ui.command.searchForTask,Search Repository for Task,
+		,
+		Category(org.eclipse.ui.category.navigate,浏览,null,true),
+		org.eclipse.mylyn.internal.tasks.ui.search.SearchTaskHandler,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+F12,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.flashbridge.export.publish.movie,发布影片,
+		在 Flash Professional 中发布,
+		Category(com.adobe.flexbuilder.flashbridge.flashProCommands,Flash Professional,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+
+!ENTRY com.adobe.flexbuilder.blueprint 1 0 2014-03-31 17:02:05.124
+!MESSAGE no GUID generated yet, creating one
+
+!ENTRY com.adobe.flexbuilder.blueprint 1 0 2014-03-31 17:02:05.124
+!MESSAGE guid: 6397660375970685186
+
+!ENTRY org.eclipse.jface 2 0 2014-03-31 17:03:02.803
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-03-31 17:03:02.803
+!MESSAGE A conflict occurred for CTRL+SHIFT+F:
+Binding(CTRL+SHIFT+F,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.organize.autoformat,应用格式化,
+		,
+		Category(com.adobe.flexbuilder.as.editor.source.editing.category,ActionScript 源代码编辑,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+SHIFT+F,
+	ParameterizedCommand(Command(FlexPrettyPrintFormat.commands.addons.flexbuilder,Format MXML/ActionScript,
+		Format Adobe MXML or ActionScript code.  Format the selected lines or the entire document if there is no selection.,
+		Category(FlexPrettyPrintCommand.commands.category,Flex,null,true),
+		flexprettyprint.handlers.FlexPrettyFormatHandler@116894d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+
+!ENTRY com.adobe.flexbuilder.blueprint 4 0 2014-03-31 17:03:21.378
+!MESSAGE java.net.ConnectException: Operation timed out
+
+!ENTRY com.adobe.flexbuilder.blueprint 1 0 2014-03-31 17:03:21.380
+!MESSAGE Blueprint: Got malformed response when checking current version: 
+
+!ENTRY org.eclipse.jface 2 0 2014-03-31 17:04:01.846
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-03-31 17:04:01.846
+!MESSAGE A conflict occurred for COMMAND+G:
+Binding(COMMAND+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,在工作空间中查找所有声明,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@83edb3)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(COMMAND+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,在工作空间中查找所有声明,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@83edb3)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+Binding(COMMAND+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.declarations.in.workspace,工作空间中的声明,
+		在工作空间中搜索对所选元素的声明,
+		Category(org.eclipse.search.ui.category.search,搜索,搜索命令类别,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-03-31 17:04:01.846
+!MESSAGE A conflict occurred for COMMAND+SHIFT+G:
+Binding(COMMAND+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,在工作空间中查找所有引用,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@16abd81)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(COMMAND+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,在工作空间中查找所有引用,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@16abd81)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+Binding(COMMAND+SHIFT+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.references.in.workspace,工作空间中的引用,
+		在工作空间中搜索对所选元素的引用,
+		Category(org.eclipse.search.ui.category.search,搜索,搜索命令类别,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)

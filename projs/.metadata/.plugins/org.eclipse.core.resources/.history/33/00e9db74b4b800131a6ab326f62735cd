@@ -1,0 +1,17 @@
+package
+{
+	import flash.display.Sprite;
+	import flash.filesystem.File;
+
+	/**
+	 * 抓取cookies clicker的专用项目 
+	 * @author hufan
+	 */	
+	public class cchacker extends Sprite
+	{
+		public function cchacker()
+		{
+		}
+		
+	}
+}
