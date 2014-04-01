@@ -1,0 +1,133 @@
+ID,Name,Desc,IconX,IconY,Hide,Order,Category
+int,String,int,int,String,int,int,String
+1,Wake and bake,"Bake <b>1</b> cookie.",0,5,2,100,none
+2,Making some dough,"Bake <b>100</b> cookies.",1,5,2,100,none
+3,So baked right now,"Bake <b>1,000</b> cookies.",2,5,2,100,none
+4,Fledgling bakery,"Bake <b>10,000</b> cookies.",3,5,2,100,none
+5,Affluent bakery,"Bake <b>100,000</b> cookies.",4,5,2,100,none
+6,World-famous bakery,"Bake <b>1,000,000</b> cookies.",5,5,2,100,none
+7,Cosmic bakery,"Bake <b>10,000,000</b> cookies.",6,5,2,100,none
+8,Galactic bakery,"Bake <b>100,000,000</b> cookies.",7,5,2,100,none
+9,Universal bakery,"Bake <b>1,000,000,000</b> cookies.",8,5,2,100,none
+10,Timeless bakery,"Bake <b>10,000,000,000</b> cookies.",9,5,2,100,none
+11,Infinite bakery,"Bake <b>100,000,000,000</b> cookies.",10,5,2,100,none
+12,Immortal bakery,"Bake <b>1,000,000,000,000</b> cookies.",10,5,2,100,none
+13,You can stop now,"Bake <b>10,000,000,000,000</b> cookies.",10,5,2,100,none
+14,Cookies all the way down,"Bake <b>100,000,000,000,000</b> cookies.",10,5,2,100,none
+15,Overdose,"Bake <b>1,000,000,000,000,000</b> cookies.",10,5,2,100,none
+16,How?,"Bake <b>10,000,000,000,000,000</b> cookies.",11,5,2,100,none
+17,Casual baking,"Bake <b>1</b> cookie per second.",0,5,2,200,none
+18,Hardcore baking,"Bake <b>10</b> cookies per second.",1,5,2,200,none
+19,Steady tasty stream,"Bake <b>100</b> cookies per second.",2,5,2,200,none
+20,Cookie monster,"Bake <b>1,000</b> cookies per second.",3,5,2,200,none
+21,Mass producer,"Bake <b>10,000</b> cookies per second.",4,5,2,200,none
+22,Cookie vortex,"Bake <b>1,000,000</b> cookies per second.",5,5,2,200,none
+23,Cookie pulsar,"Bake <b>10,000,000</b> cookies per second.",6,5,2,200,none
+24,Cookie quasar,"Bake <b>100,000,000</b> cookies per second.",7,5,2,200,none
+25,A world filled with cookies,"Bake <b>10,000,000,000</b> cookies per second.",8,5,2,200,none
+26,Let's never bake again,"Bake <b>1,000,000,000,000</b> cookies per second.",9,5,2,200,none
+27,Sacrifice,"Reset your game with <b>1 million</b> cookies baked.<q>Easy come, easy go.</q>",11,6,2,30000,none
+28,Oblivion,"Reset your game with <b>1 billion</b> cookies baked.<q>Back to square one.</q>",11,6,2,30000,none
+29,From scratch,"Reset your game with <b>1 trillion</b> cookies baked.<q>It's been fun.</q>",11,6,2,30000,none
+30,Neverclick,"Make <b>1 million</b> cookies by only having clicked <b>15 times</b>.",12,0,2,31000,none
+31,Clicktastic,"Make <b>1,000</b> cookies from clicking.",11,0,0,1000,none
+32,Clickathlon,"Make <b>100,000</b> cookies from clicking.",11,1,0,1000,none
+33,Clickolympics,"Make <b>10,000,000</b> cookies from clicking.",11,1,0,1000,none
+34,Clickorama,"Make <b>1,000,000,000</b> cookies from clicking.",11,2,0,1000,none
+35,Click,"Have <b>1</b> cursor.",0,0,0,1050,none
+36,Double-click,"Have <b>2</b> cursors.",0,6,0,1050,none
+37,Mouse wheel,"Have <b>50</b> cursors.",1,6,0,1050,none
+38,Of Mice and Men,"Have <b>100</b> cursors.",2,6,0,1050,none
+39,The Digital,"Have <b>200</b> cursors.",3,6,0,1050,none
+40,Just wrong,"Sell a grandma.<q>I thought you loved me.</q>",10,9,2,1100,none
+41,Grandma's cookies,"Have <b>1</b> grandma.",1,0,0,1100,none
+42,Sloppy kisses,"Have <b>50</b> grandmas.",1,1,0,1100,none
+43,Retirement home,"Have <b>100</b> grandmas.",1,2,0,1100,none
+44,My first farm,"Have <b>1</b> farm.",2,0,0,1200,none
+45,Reap what you sow,"Have <b>50</b> farms.",2,1,0,1200,none
+46,Farm ill,"Have <b>100</b> farms.",2,2,0,1200,none
+47,Production chain,"Have <b>1</b> factory.",4,0,0,1300,none
+48,Industrial revolution,"Have <b>50</b> factories.",4,1,0,1300,none
+49,Global warming,"Have <b>100</b> factories.",4,2,0,1300,none
+50,You know the drill,"Have <b>1</b> mine.",3,0,0,1400,none
+51,Excavation site,"Have <b>50</b> mines.",3,1,0,1400,none
+52,Hollow the planet,"Have <b>100</b> mines.",3,2,0,1400,none
+53,Expedition,"Have <b>1</b> shipment.",5,0,0,1500,none
+54,Galactic highway,"Have <b>50</b> shipments.",5,1,0,1500,none
+55,Far far away,"Have <b>100</b> shipments.",5,2,0,1500,none
+56,Transmutation,"Have <b>1</b> alchemy lab.",6,0,0,1600,none
+57,Transmogrification,"Have <b>50</b> alchemy labs.",6,1,0,1600,none
+58,Gold member,"Have <b>100</b> alchemy labs.",6,2,0,1600,none
+59,A whole world,"Have <b>1</b> portal.",7,0,0,1700,none
+60,Now you're thinking,"Have <b>50</b> portals.",7,1,0,1700,none
+61,Dimensional shift,"Have <b>100</b> portals.",7,2,0,1700,none
+62,Time warp,"Have <b>1</b> time machine.",8,0,0,1800,none
+63,Alternate timeline,"Have <b>50</b> time machines.",8,1,0,1800,none
+64,Rewriting history,"Have <b>100</b> time machines.",8,2,0,1800,none
+65,One with everything,"Have <b>at least 1</b> of every building.",4,6,2,7000,none
+66,Mathematician,"Have at least <b>1 of the most expensive object, 2 of the second-most expensive, 4 of the next</b> and so on (capped at 128).",7,6,2,7000,none
+67,Base 10,"Have at least <b>10 of the most expensive object, 20 of the second-most expensive, 30 of the next</b> and so on.",8,6,2,7000,none
+68,Golden cookie,"Click a <b>golden cookie</b>.",10,1,1,10000,none
+69,Lucky cookie,"Click <b>7 golden cookies</b>.",10,1,1,10000,none
+70,A stroke of luck,"Click <b>27 golden cookies</b>.",10,1,1,10000,none
+71,Cheated cookies taste awful,"Hack in some cookies.",10,6,3,30200,none
+72,Uncanny clicker,"Click really, really fast.<q>Well I'll be!</q>",12,0,2,30001,none
+73,Builder,"Own <b>100</b> buildings.",4,6,1,5000,none
+74,Architect,"Own <b>400</b> buildings.",5,6,1,5000,none
+75,Enhancer,"Purchase <b>20</b> upgrades.",9,0,1,6000,none
+76,Augmenter,"Purchase <b>50</b> upgrades.",9,1,1,6000,none
+77,Cookie-dunker,"Dunk the cookie.<q>You did it!</q>",4,7,2,11000,none
+78,Fortune,"Click <b>77 golden cookies</b>.<q>You should really go to bed.</q>",10,1,1,10000,none
+79,True Neverclick,"Make <b>1 million</b> cookies with <b>no</b> cookie clicks.<q>This kinda defeats the whole purpose, doesn't it?</q>",12,0,3,31000,none
+80,Elder nap,"Appease the grandmatriarchs at least <b>once</b>.<q>we<br>are<br>eternal</q>",8,9,2,20000,none
+81,Elder slumber,"Appease the grandmatriarchs at least <b>5 times</b>.<q>our mind<br>outlives<br>the universe</q>",8,9,2,20000,none
+82,Elder,"Own at least <b>7</b> grandma types.",10,9,2,1150,none
+83,Elder calm,"Declare a covenant with the grandmatriarchs.<q>we<br>have<br>fed</q>",8,9,2,20000,none
+84,Engineer,"Own <b>800</b> buildings.",6,6,1,5000,none
+85,Leprechaun,"Click <b>777 golden cookies</b>.",10,1,1,10000,none
+86,Black cat's paw,"Click <b>7777 golden cookies</b>.",10,1,3,10000,none
+87,Nihilism,"Reset your game with <b>1 quadrillion</b> cookies baked.<q>There are many things<br>that need to be erased</q>",11,6,2,30000,none
+88,Antibatter,"Have <b>1</b> antimatter condenser.",13,0,0,1900,none
+89,Quirky quarks,"Have <b>50</b> antimatter condensers.",13,1,0,1900,none
+90,It does matter!,"Have <b>100</b> antimatter condensers.",13,2,0,1900,none
+91,Upgrader,"Purchase <b>100</b> upgrades.",9,2,1,6000,none
+92,Centennial,"Have at least <b>100 of everything</b>.",9,6,2,7000,none
+93,Hardcore,"Get to <b>1 billion</b> cookies baked with <b>no upgrades purchased</b>.",12,6,3,30500,none
+94,Speed baking I,"Get to <b>1 million</b> cookies baked in <b>35 minutes</b> (with no heavenly upgrades).",12,5,3,30600,none
+95,Speed baking II,"Get to <b>1 million</b> cookies baked in <b>25 minutes</b> (with no heavenly upgrades).",13,5,3,30600,none
+96,Speed baking III,"Get to <b>1 million</b> cookies baked in <b>15 minutes</b> (with no heavenly upgrades).",14,5,3,30600,none
+97,Getting even with the oven,"Defeat the <b>Sentient Furnace</b> in the factory dungeons.",12,7,3,61000,none
+98,Now this is pod-smashing,"Defeat the <b>Ascended Baking Pod</b> in the factory dungeons.",12,7,3,61000,none
+99,Chirped out,"Find and defeat <b>Chirpy</b>, the dysfunctionning alarm bot.",13,7,3,61000,none
+100,Follow the white rabbit,"Find and defeat the elusive <b>sugar bunny</b>.",14,7,3,61000,none
+101,Clickasmic,"Make <b>100,000,000,000</b> cookies from clicking.",11,13,0,1000,none
+102,Friend of the ancients,"Have <b>150</b> grandmas.",1,13,0,1100,none
+103,Ruler of the ancients,"Have <b>200</b> grandmas.",1,13,0,1100,none
+104,Wholesome,"Unlock <b>100%</b> of your heavenly chips power.",15,7,2,32000,none
+105,Just plain lucky,"You have <b>1 chance in 500,000</b> every second of earning this achievement.",15,6,3,33000,none
+106,Itchscratcher,"Burst <b>1 wrinkler</b>.",19,8,2,21000,none
+107,Wrinklesquisher,"Burst <b>50 wrinklers</b>.",19,8,2,21000,none
+108,Moistburster,"Burst <b>200 wrinklers</b>.",19,8,2,21000,none
+109,Spooky cookies,"Unlock <b>every Halloween-themed cookie</b>.<br>Owning this achievement makes Halloween-themed cookies drop more frequently in future playthroughs.",12,8,2,22000,none
+110,Coming to town,"Reach <b>Santa's 7th form</b>.",18,9,2,22100,none
+111,All hail Santa,"Reach <b>Santa's final form</b>.",19,10,2,22100,none
+112,Let it snow,"Unlock <b>every Christmas-themed cookie</b>.",19,9,2,22100,none
+113,Oh deer,"Pop <b>1 reindeer</b>.",12,9,2,22100,none
+114,Sleigh of hand,"Pop <b>50 reindeer</b>.",12,9,2,22100,none
+115,Reindeer sleigher,"Pop <b>200 reindeer</b>.",12,9,2,22100,none
+116,Perfected agriculture,"Have <b>150</b> farms.",2,13,0,1200,none
+117,Ultimate automation,"Have <b>150</b> factories.",4,13,0,1300,none
+118,Can you dig it,"Have <b>150</b> mines.",3,13,0,1400,none
+119,Type II civilization,"Have <b>150</b> shipments.",5,13,0,1500,none
+120,Gild wars,"Have <b>150</b> alchemy labs.",6,13,0,1600,none
+121,Brain-split,"Have <b>150</b> portals.",7,13,0,1700,none
+122,Time duke,"Have <b>150</b> time machines.",8,13,0,1800,none
+123,Molecular maestro,"Have <b>150</b> antimatter condensers.",13,13,0,1900,none
+124,Lone photon,"Have <b>1</b> prism.",14,0,0,2000,none
+125,Dazzling glimmer,"Have <b>50</b> prisms.",14,1,0,2000,none
+126,Blinding flash,"Have <b>100</b> prisms.",14,2,0,2000,none
+127,Unending glow,"Have <b>150</b> prisms.",14,13,0,2000,none
+128,Lord of Constructs,"Own <b>1500</b> buildings.<q>He saw the vast plains stretching ahead of him, and he said : let there be civilization.</q>",6,6,2,5000,none
+129,Lord of Progress,"Purchase <b>150</b> upgrades.<q>One can always do better. But should you?</q>",9,2,2,6000,none
+130,Bicentennial,"Have at least <b>200 of everything</b>.<q>You crazy person.</q>",9,6,2,7000,none
+131,Lovely cookies,"Unlock <b>every Valentine-themed cookie</b>.",20,3,2,22300,none

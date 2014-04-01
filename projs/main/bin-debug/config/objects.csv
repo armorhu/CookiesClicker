@@ -1,0 +1,13 @@
+ID,Name,DisplayName,Single,Plural,ActionName,Desc,Price,Pic,Icon,Background
+int,String,String,String,String,String,String,int,String,String,String
+1,Cursor,Cursor,cursor,cursors,clicked,"Autoclicks once every 10 seconds.",15,cursor,cursoricon,
+2,Grandma,Grandma,grandma,grandmas,baked,"A nice grandma to bake more cookies.",100,grandma,grandmaIcon,grandmaBackground
+3,Farm,Farm,farm,farms,harvested,"Grows cookie plants from cookie seeds.",500,farm,farmIcon,farmBackground
+4,Factory,Factory,factory,factories,mass-produced,"Produces large quantities of cookies.",3000,factory,factoryIcon,factoryBackground
+5,Mine,Mine,mine,mines,mined,"Mines out cookie dough and chocolate chips.",10000,mine,mineIcon,mineBackground
+6,Shipment,Shipment,shipment,shipments,shipped,"Brings in fresh cookies from the cookie planet.",40000,shipment,shipmentIcon,shipmentBackground
+7,Alchemy lab,Alchemy lab,alchemy lab,alchemy labs,transmuted,"Turns gold into cookies!",200000,alchemylab,alchemylabIcon,alchemylabBackground
+8,Portal,Portal,portal,portals,retrieved,"Opens a door to the Cookieverse.",1666666,portal,portalIcon,portalBackground
+9,Time machine,Time machine,time machine,time machines,recovered,"Brings cookies from the past, before they were even eaten.",123456789,timemachine,timemachineIcon,timemachineBackground
+10,Antimatter condenser,Antimatter condenser,antimatter condenser,antimatter condensers,condensed,"Condenses the antimatter in the universe into cookies.",3999999999,antimattercondenser,antimattercondenserIcon,antimattercondenserBackground
+11,Prism,Prism,prism,prisms,converted,"Converts light itself into cookies.",50000000000,prism,prismIcon,prismBackground
