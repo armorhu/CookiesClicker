@@ -1,25 +1,23 @@
 package agame.endless.work.init
 {
-	import com.agame.framework.module.Module;
-
 	import flash.geom.Rectangle;
-
+	
 	import agame.endless.EndlessApplication;
 	import agame.endless.appStage;
 	import agame.endless.enm.EnmModuleName;
 	import agame.endless.modules.main.ModuleMain;
 	import agame.endless.work.EndlessWork;
-
+	
 	import starling.core.Starling;
 	import starling.display.Sprite;
 	import starling.events.Event;
 
-	public class StartupStarlingWorker extends EndlessWork
+	public class StartupStarlingWork extends EndlessWork
 	{
 		protected var m_starling:Starling;
 		protected var viewPort:Rectangle;
 
-		public function StartupStarlingWorker(app:EndlessApplication)
+		public function StartupStarlingWork(app:EndlessApplication)
 		{
 			super(app);
 		}
@@ -54,7 +52,7 @@ package agame.endless.work.init
 		{
 			var layer:Sprite=new Sprite;
 			Starling.current.stage.addChild(layer);
-			app.moduleManager.registeModule(EnmModuleName.Main, ModuleMain, layer);
+			app.registerModule(EnmModuleName.Main, ModuleMain, layer);
 		}
 	}
 }

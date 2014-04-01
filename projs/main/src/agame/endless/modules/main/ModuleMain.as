@@ -6,12 +6,12 @@ package agame.endless.modules.main
 	{
 		protected var _controller:MainController;
 
-		public function ModuleMain()
+		public function ModuleMain(name:String)
 		{
-			super();
+			super(name);
 		}
 
-		override protected function initliaze():void
+		override protected function initController():void
 		{
 			_controller=new MainController(this);
 		}

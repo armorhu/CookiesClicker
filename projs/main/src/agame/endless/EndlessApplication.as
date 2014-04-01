@@ -2,6 +2,8 @@ package agame.endless
 {
 	import com.agame.framework.Application;
 
+	import agame.endless.configs.AppConfig;
+	import agame.endless.configs.AppConfigModel;
 	import agame.endless.work.StartupGameWork;
 
 	public class EndlessApplication extends Application
@@ -13,14 +15,16 @@ package agame.endless
 			super();
 		}
 
-		override protected function initliaze():void
+		private function initliaze():void
 		{
+			appStage=stage;
+			AppConfig=new AppConfigModel(this);
 		}
 
 		override public function startup():void
 		{
 			super.startup();
-
+			initliaze();
 			_startupGameWork=new StartupGameWork(this);
 			_startupGameWork.start();
 		}
