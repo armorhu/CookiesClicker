@@ -1,13 +1,13 @@
 package agame.endless.work.init
 {
 	import flash.geom.Rectangle;
-	
+
 	import agame.endless.EndlessApplication;
 	import agame.endless.appStage;
 	import agame.endless.enm.EnmModuleName;
 	import agame.endless.modules.main.ModuleMain;
 	import agame.endless.work.EndlessWork;
-	
+
 	import starling.core.Starling;
 	import starling.display.Sprite;
 	import starling.events.Event;
@@ -33,6 +33,7 @@ package agame.endless.work.init
 			m_starling.addEventListener(Event.ROOT_CREATED, onCreateContext3d);
 			m_starling.simulateMultitouch=false;
 			m_starling.enableErrorChecking=false;
+			m_starling.showStats=true;
 		}
 
 
@@ -44,6 +45,8 @@ package agame.endless.work.init
 		{
 			e.target.removeEventListener(Event.ROOT_CREATED, onCreateContext3d);
 
+			registeStarlingModule();
+			
 			Starling.current.start();
 			workComplete();
 		}

@@ -4,6 +4,8 @@ package agame.endless
 
 	import agame.endless.configs.AppConfig;
 	import agame.endless.configs.AppConfigModel;
+	import agame.endless.model.AppdataModel;
+	import agame.endless.services.assets.Assets;
 	import agame.endless.work.StartupGameWork;
 
 	public class EndlessApplication extends Application
@@ -18,7 +20,9 @@ package agame.endless
 		private function initliaze():void
 		{
 			appStage=stage;
+			Game=new AppdataModel;
 			AppConfig=new AppConfigModel(this);
+			new Assets(this);
 		}
 
 		override public function startup():void

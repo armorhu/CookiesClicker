@@ -1,3 +1,3 @@
-objects.csv,false
-upgrades.csv,false
-achievements.csv,false
+objects.csv,false,Name
+upgrades.csv,false,Name
+achievements.csv,false,Name

@@ -21,7 +21,8 @@ package agame.endless.configs.upgrades
 
 		public function importClass():void
 		{
-			//导入定义类。
+			var upgradesnamedefs:UpgradesNameDefs;
+//导入定义类。
 			
 		}
 	}

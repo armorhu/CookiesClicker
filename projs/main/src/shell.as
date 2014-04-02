@@ -9,6 +9,7 @@ package
 		public function shell()
 		{
 			super();
+			stage.frameRate = 60;
 			var app:EndlessApplication=new EndlessApplication;
 			addChild(app)
 			app.startup();

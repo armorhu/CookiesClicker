@@ -17,7 +17,8 @@ package agame.endless.configs.achievements
 
 		public function importClass():void
 		{
-			//导入定义类。
+			var achievementsnamedefs:AchievementsNameDefs;
+//导入定义类。
 			
 		}
 	}

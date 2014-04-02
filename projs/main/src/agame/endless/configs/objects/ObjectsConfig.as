@@ -20,7 +20,8 @@ package agame.endless.configs.objects
 
 		public function importClass():void
 		{
-			//导入定义类。
+			var objectsnamedefs:ObjectsNameDefs;
+//导入定义类。
 			
 		}
 	}

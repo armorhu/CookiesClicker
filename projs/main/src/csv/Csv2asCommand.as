@@ -1,7 +1,7 @@
 package csv
 {
 	import com.agame.services.csv.CSVFile;
-	
+
 	import flash.filesystem.File;
 	import flash.filesystem.FileMode;
 	import flash.filesystem.FileStream;
@@ -117,7 +117,7 @@ package csv
 						var namesValue:String=csvFile.valueTables[j][nameIndex];
 						if (namesValue == '' || namesValue == null)
 							continue;
-						namesValue = namesValue.replace(/ /g,'_');
+						namesValue=formatPropertyName(namesValue);
 						var defsValue:String=csvFile.getValue(j, defsIndex, j);
 						if (defsType == 'String')
 							defsValue='"' + defsValue + '"';
@@ -168,6 +168,26 @@ package csv
 				'			bindle("' + csvPath + configName + '",' + propertyName + 'ConfigModel' + ');\n';
 		}
 
+		private function formatPropertyName(namesValue:String):String
+		{
+			// TODO Auto Generated method stub
+			var arr:String='abcdefghigklmnopqrstuvwxyz';
+			arr=arr.toUpperCase() + arr;
+			arr=arr + '_';
+
+			var len:int=namesValue.length;
+			for (var i:int=0; i < len; i++)
+				if (arr.indexOf(namesValue.charAt(i)) == -1)
+					namesValue=namesValue.substr(0, i) + '_' + namesValue.substr(i + 1);
+
+			while (namesValue.charAt(0) == '_')
+				namesValue=namesValue.substr(1);
+			while (namesValue.charAt(namesValue.length - 1) == '_')
+				namesValue=namesValue.substr(0, namesValue.length - 1);
+			
+			return namesValue;
+		}
+
 		public function propertyString(propertyName:String, propertyClass:String):String
 		{
 			return '		public var ' + propertyName + ':' + propertyClass + ';';
@@ -177,7 +197,7 @@ package csv
 		{
 			fs=new FileStream();
 			var csv2asConfigContent:String=readFile(File.applicationDirectory.resolvePath(csvPath + 'csv2as.txt').nativePath);
-			if(csv2asConfigContent == '')
+			if (csv2asConfigContent == '')
 				return;
 			while (csv2asConfigContent.indexOf("\r") != -1)
 				csv2asConfigContent=csv2asConfigContent.replace("\r", "");
