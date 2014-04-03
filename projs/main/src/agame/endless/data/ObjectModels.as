@@ -10,7 +10,7 @@ package agame.endless.data
 		public function setup():void
 		{
 			var id=1;
-			var keys:Array=['ID', 'Name', 'DisplayName', 'Single', 'Plural', 'ActionName', 'Desc', 'Price', 'Pic', 'Icon', 'Background'];
+			var keys:Array=['ID', 'name', 'DisplayName', 'Single', 'Plural', 'ActionName', 'Desc', 'Price', 'Pic', 'Icon', 'Background'];
 			var types:Array=['int', 'String', 'String', 'String', 'String', 'String', 'String', 'int', 'String', 'String', 'String'];
 			trace(keys.join(','));
 			trace(types.join(','));

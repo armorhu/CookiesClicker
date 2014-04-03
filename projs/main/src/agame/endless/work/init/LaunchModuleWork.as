@@ -1,7 +1,9 @@
 package agame.endless.work.init
 {
 	import agame.endless.EndlessApplication;
+	import agame.endless.Game;
 	import agame.endless.enm.EnmModuleName;
+	import agame.endless.model.AppdataModel;
 	import agame.endless.work.EndlessWork;
 
 	/**
@@ -18,6 +20,8 @@ package agame.endless.work.init
 		override public function start():void
 		{
 			//启动主模块
+			Game=new AppdataModel;
+			Game.initliaze();
 			app.loadModule(EnmModuleName.Main);
 			workComplete();
 		}

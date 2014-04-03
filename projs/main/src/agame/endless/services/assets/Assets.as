@@ -2,13 +2,16 @@ package agame.endless.services.assets
 {
 	import agame.endless.EndlessApplication;
 	import agame.endless.work.EndlessWork;
-	
+
 	import starling.events.Event;
 	import starling.extension.starlingide.display.loader.StarlingLoader;
+	import starling.text.BitmapFont;
 
 	public class Assets extends EndlessWork
 	{
 		private static var _assets:Assets;
+		
+		public static const FontName:String=BitmapFont.MINI;
 
 		public static function get current():Assets
 		{

@@ -7,11 +7,13 @@ package agame.endless.modules.main
 	
 	import agame.endless.Game;
 	import agame.endless.appStage;
+	import agame.endless.services.frame.Enterframe;
+	import agame.endless.services.frame.IEnterframe;
 	
 	import starling.events.Event;
 	import starling.events.EventDispatcher;
 
-	public class MainController extends EventDispatcher
+	public class MainController extends EventDispatcher implements IEnterframe
 	{
 		protected var _module:Module;
 
@@ -30,14 +32,13 @@ package agame.endless.modules.main
 		{
 			initModel();
 			initView();
+			Enterframe.current.add(this);
 		}
 
 		protected function initView():void
 		{
 			_view=new MainView();
 			_module.container.addChild(_view);
-
-
 			_view.addEventListener(MainView.CLICK_COOKIE, viewEventHandler);
 		}
 
@@ -92,5 +93,12 @@ package agame.endless.modules.main
 			}
 			Game.lastClick=time;
 		}
+		
+		public function enterframe():void
+		{
+			// TODO Auto Generated method stub
+			_view.enterframe();
+		}
+		
 	}
 }

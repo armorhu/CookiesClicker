@@ -1,27 +1,41 @@
 package agame.endless.modules.main.particle
 {
-	import flash.net.drm.AddToDeviceGroupSetting;
-
 	import agame.endless.Game;
+	import agame.endless.services.assets.Assets;
 	import agame.endless.services.frame.Enterframe;
 	import agame.endless.services.frame.IEnterframe;
 
+	import starling.display.DisplayObject;
+	import starling.display.Image;
+	import starling.display.QuadBatch;
 	import starling.display.Sprite;
 	import starling.extension.starlingide.display.movieclip.StarlingMovieClip;
 
 	public class CookieParticleSystem implements IEnterframe
 	{
 		public var particles:Vector.<AppParticle>; //粒子
-		public var leftBackgroundWidth:Number=0;
+		public var particleWidth:int=0;
+		public var particleStart:int=0;
 
-		private var _buttomParticle:Sprite; //底部的粒子容器
-		private var _upParticle:Sprite; //顶部的粒子容器
+		private var _buttomCanvas:QuadBatch;
+		private var _upCanvas:QuadBatch;
+		private var _textCanvas:Sprite;
+		private var _cookies:Image;
 
 		public function CookieParticleSystem(cookieCenter:StarlingMovieClip)
 		{
-			leftBackgroundWidth=cookieCenter.width;
-			_buttomParticle=cookieCenter.particleContainer;
-			_upParticle=cookieCenter.particleCotnainer2;
+			particleWidth=cookieCenter.cookiesLabel.width;
+			particleStart=cookieCenter.cookiesLabel.x;
+
+			_buttomCanvas=new QuadBatch();
+			_upCanvas=new QuadBatch();
+			_textCanvas=new Sprite();
+
+			cookieCenter.particleContainer.addChild(_buttomCanvas);
+			cookieCenter.particleCotnainer2.addChild(_upCanvas);
+			cookieCenter.particleCotnainer2.addChild(_textCanvas);
+			(cookieCenter.particleContainer as DisplayObject).touchable=false;
+			(cookieCenter.particleCotnainer2 as DisplayObject).touchable=false;
 			initliaze();
 		}
 
@@ -32,7 +46,8 @@ package agame.endless.modules.main.particle
 			particles.fixed=true;
 			for (var i:int=0; i < particles.length; i++)
 				particles[i]=new AppParticle;
-			Enterframe.current.add(this);
+			//饼干粒子
+			_cookies=Assets.current.main.getLinkageInstance('SmallCookie') as Image;
 		}
 
 		public function particlesUpdate():void
@@ -73,6 +88,7 @@ package agame.endless.modules.main.particle
 		{
 			//particleAdd(pos X,pos Y,speed X,speed Y,size (multiplier),duration (seconds),layer,picture,text);
 			//pick the first free (or the oldest) particle to replace it
+			trace('particleAdd', x, y, xd, yd, size, dur, z, pic, text);
 			if (1 || Game.prefs.particles)
 			{
 				var highest:int=0;
@@ -96,7 +112,7 @@ package agame.endless.modules.main.particle
 				i=highestI;
 				x=x || -64;
 				if (!auto)
-					x=Math.floor(Math.random() * leftBackgroundWidth);
+					x=Math.floor(Math.random() * particleWidth) + particleStart;
 				y=y || -64;
 				var me:AppParticle=particles[i];
 				me.life=0;
@@ -107,28 +123,34 @@ package agame.endless.modules.main.particle
 				me.size=size || 1;
 				me.z=z || 0;
 				me.dur=dur || 2;
-				me.r=Math.floor(Math.random() * 360);
-//				me.textureName='smallCookies.png' + int(Math.random() * 8);
-				me.text=text || '';
+				me.r=Math.random() * Math.PI * 2;
+				me.text=text || null;
 			}
 		}
 
 		public function particlesDraw():void
 		{
 			var len:int=particles.length;
-			_upParticle.removeChildren();
-			_buttomParticle.removeChildren();
+			_buttomCanvas.reset();
+			_upCanvas.reset();
 			for (var i:int=0; i < len; i++)
 			{
 				var me:AppParticle=particles[i];
 				if (me.life != -1)
 				{
 					var opacity:Number=1 - (me.life / (Game.fps * me.dur));
-					me.alpha=opacity;
-					if (me.z == 0)
-						_buttomParticle.addChild(me);
-					else
-						_upParticle.addChild(me);
+					if (me.text == null)
+					{
+						_cookies.alpha=opacity;
+						_cookies.x=me.x;
+						_cookies.y=me.y;
+						_cookies.rotation=me.r;
+						if (me.z == 0)
+							_buttomCanvas.addImage(_cookies);
+						else
+							_upCanvas.addImage(_cookies);
+					}
+
 				}
 			}
 		}

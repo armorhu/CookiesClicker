@@ -20,7 +20,6 @@ package agame.endless
 		private function initliaze():void
 		{
 			appStage=stage;
-			Game=new AppdataModel;
 			AppConfig=new AppConfigModel(this);
 			new Assets(this);
 		}
