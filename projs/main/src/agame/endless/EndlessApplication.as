@@ -4,7 +4,7 @@ package agame.endless
 
 	import agame.endless.configs.AppConfig;
 	import agame.endless.configs.AppConfigModel;
-	import agame.endless.model.AppdataModel;
+	import agame.endless.modules.main.model.MainModel;
 	import agame.endless.services.assets.Assets;
 	import agame.endless.work.StartupGameWork;
 

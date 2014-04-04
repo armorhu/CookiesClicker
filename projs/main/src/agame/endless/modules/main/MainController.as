@@ -2,14 +2,17 @@ package agame.endless.modules.main
 {
 	import com.agame.framework.module.Module;
 	import com.agame.utils.Beautify;
-	
+
 	import flash.utils.getTimer;
-	
-	import agame.endless.Game;
+
 	import agame.endless.appStage;
+	import agame.endless.modules.main.model.Game;
+	import agame.endless.modules.main.model.MainModel;
+	import agame.endless.modules.main.model.objects.ObjectData;
+	import agame.endless.modules.main.view.MainView;
 	import agame.endless.services.frame.Enterframe;
 	import agame.endless.services.frame.IEnterframe;
-	
+
 	import starling.events.Event;
 	import starling.events.EventDispatcher;
 
@@ -18,8 +21,6 @@ package agame.endless.modules.main
 		protected var _module:Module;
 
 		protected var _view:MainView;
-
-		protected var _model:MainModel;
 
 		public function MainController(module:Module)
 		{
@@ -48,6 +49,9 @@ package agame.endless.modules.main
 
 		protected function initModel():void
 		{
+			Game=new MainModel;
+			Game.initliaze();
+			Game.addEvents(modelEventHandler);
 		}
 
 		protected function disposeModel():void
@@ -93,12 +97,39 @@ package agame.endless.modules.main
 			}
 			Game.lastClick=time;
 		}
-		
+
+		private function modelEventHandler(evt:Event):void
+		{
+			if (evt.type == MainModel.NEWTICKER_CHANGED)
+				_view.content.newsTickerLabel.text=Game.Ticker;
+			else if (evt.type == MainModel.REBUILD_STORED)
+				rebuildStored();
+			else if (evt.type == MainModel.REBUILD_UPGRADES)
+				rebuildUpgrades();
+		}
+
+		private function rebuildStored():void
+		{
+			var objectData:ObjectData;
+			for (var i:int=1; i < ObjectData.ObjectDatasN; i++)
+			{
+				objectData=Game.ObjectsById[i] as ObjectData;
+				trace(objectData.id, objectData.name, objectData.displayName);
+			}
+		}
+
+		private function rebuildUpgrades():void
+		{
+		}
+
 		public function enterframe():void
 		{
 			// TODO Auto Generated method stub
+			Game.enterframe();
 			_view.enterframe();
+			_view.cookies.text=Beautify(Game.cookies) + ' ' + (Game.cookies <= 1 ? 'cookie' : 'cookies');
+			_view.cps.text='+' + Beautify(Game.cookiesPs) + '  per secend!';
 		}
-		
+
 	}
 }
