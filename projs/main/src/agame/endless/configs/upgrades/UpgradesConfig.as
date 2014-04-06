@@ -3,25 +3,25 @@ package agame.endless.configs.upgrades
 
 	public class UpgradesConfig
 	{
-		public var ID:int;
-		public var Name:String;
-		public var Desc:String;
-		public var Type:String;
-		public var Price:int;
+		public var id:int;
+		public var name:String;
+		public var desc:String;
+		public var type:String;
+		public var price:int;
 		public var tierObject:String;
-		public var Power:int;
-		public var Order:int;
-		public var Hide:int;
-		public var Season:String;
-		public var IconX:int;
-		public var IconY:int;
+		public var power:int;
+		public var order:int;
+		public var hide:int;
+		public var season:String;
+		public var iconX:int;
+		public var iconY:int;
 		public function UpgradesConfig()
 		{
 		}
 
 		public function importClass():void
 		{
-			var upgradesnamedefs:UpgradesNameDefs;
+			var upgradesnamedefs:UpgradesnameDefs;
 //导入定义类。
 			
 		}

@@ -294,4 +294,13 @@
 		]]></InfoAdditions>
         <requestedDisplayResolution>high</requestedDisplayResolution>
     </iPhone>
+
+
+	<extensions>
+    <extensionID>com.adobe.ane.TestFlightImpl</extensionID>
+        <extensionID>com.adobe.ane.gameCenter</extensionID>
+        <extensionID>com.adobe.ane.productStore</extensionID>
+        <extensionID>com.adobe.ane.social</extensionID>
+        <extensionID>com.adobe.ane.stageAd</extensionID>
+    </extensions>
 </application>

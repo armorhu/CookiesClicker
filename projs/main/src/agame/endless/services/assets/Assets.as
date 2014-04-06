@@ -1,17 +1,24 @@
 package agame.endless.services.assets
 {
-	import agame.endless.EndlessApplication;
-	import agame.endless.work.EndlessWork;
+	import flash.filesystem.File;
+	import flash.utils.ByteArray;
 
+	import agame.endless.EndlessApplication;
+
+	import starling.display.DisplayObject;
 	import starling.events.Event;
 	import starling.extension.starlingide.display.loader.StarlingLoader;
 	import starling.text.BitmapFont;
+	import starling.text.TextField;
+	import starling.textures.Texture;
+	import starling.utils.AssetManager;
 
-	public class Assets extends EndlessWork
+	public class Assets extends AssetManager
 	{
+
 		private static var _assets:Assets;
-		
-		public static const FontName:String=BitmapFont.MINI;
+
+		public static var FontName:String;
 
 		public static function get current():Assets
 		{
@@ -24,32 +31,52 @@ package agame.endless.services.assets
 			_assets=this;
 		}
 
-		public var main:StarlingLoader;
 		private var _loadingQueue:Vector.<StarlingLoader>;
+		private var main:StarlingLoader;
 
-		override public function start():void
+		public function start():void
 		{
-			_loadingQueue=new Vector.<StarlingLoader>;
+			enqueue('res/fonts_xml.xml');
+			enqueue('res/fonts_png.png');
+			enqueue('res/swf/iphone_temp/iphone_pack.swf');
+			enqueue(File.applicationDirectory.resolvePath('res/audio'));
+			loadQueue(loading);
+		}
 
+		private function loading(progress:Number):void
+		{
+			trace('loading....' + progress);
+			if (progress == 1)
+				progressAssets();
+		}
+
+		public function getLinkageInstance(name:String):DisplayObject
+		{
+			return main.getLinkageInstance(name);
+		}
+
+		public function getLinkageTexture(name:String):Texture
+		{
+			return main.getLinakgeTexture(name);
+		}
+
+		public function progressAssets():void
+		{
+			trace(getXml('fonts'), getTexture('fonts_png'));
+			var bitmapFont:BitmapFont=new BitmapFont(getTexture('fonts_png'), getXml('fonts_xml'));
+			FontName='fontsss';
+			TextField.registerBitmapFont(bitmapFont, FontName);
+
+			var ba:ByteArray=getByteArray('iphone_pack');
 			main=new StarlingLoader;
-			load(main, 'res/swf/iphone_temp/iphone_pack.swf');
+			main.loadBytes(ba);
+			main.addEventListener(Event.COMPLETE, loadComplete);
 		}
 
-		private function load(loader:StarlingLoader, url:String):void
+		public function loadComplete(evt:Event):void
 		{
-			loader.load(url);
-			loader.addEventListener(Event.COMPLETE, loadComplete);
-			_loadingQueue.push(loader);
+			dispatchEventWith(Event.COMPLETE);
 		}
 
-		private function loadComplete(evt:Event):void
-		{
-			var target:StarlingLoader=evt.target as StarlingLoader;
-			target.removeEventListener(Event.COMPLETE, loadComplete);
-			var index:int=_loadingQueue.indexOf(target);
-			_loadingQueue.splice(index, 1);
-			if (_loadingQueue.length == 0)
-				workComplete();
-		}
 	}
 }

@@ -1,16 +1,21 @@
 package agame.endless.work.init
 {
+	import flash.display.Bitmap;
 	import flash.geom.Rectangle;
-
+	
 	import agame.endless.EndlessApplication;
 	import agame.endless.appStage;
 	import agame.endless.enm.EnmModuleName;
 	import agame.endless.modules.main.ModuleMain;
+	import agame.endless.services.assets.Assets;
 	import agame.endless.work.EndlessWork;
-
+	
 	import starling.core.Starling;
 	import starling.display.Sprite;
 	import starling.events.Event;
+	import starling.extension.starlingide.display.textfield.StarlingTextField;
+	import starling.text.BitmapFont;
+	import starling.textures.Texture;
 
 	public class StartupStarlingWork extends EndlessWork
 	{
@@ -46,7 +51,7 @@ package agame.endless.work.init
 			e.target.removeEventListener(Event.ROOT_CREATED, onCreateContext3d);
 
 			registeStarlingModule();
-			
+
 			Starling.current.start();
 			workComplete();
 		}
@@ -56,6 +61,12 @@ package agame.endless.work.init
 			var layer:Sprite=new Sprite;
 			Starling.current.stage.addChild(layer);
 			app.registerModule(EnmModuleName.Main, ModuleMain, layer);
+
+			var bitmap:Bitmap=new EmbedFont.BitmapChars();
+			var xml:XML=XML(new EmbedFont.BritannicXML());
+			var bitmapFont:BitmapFont=new BitmapFont(Texture.fromBitmap(bitmap), xml);
+			Assets.FontName='fontsss';
+			StarlingTextField.registerBitmapFont(bitmapFont, Assets.FontName);
 		}
 	}
 }

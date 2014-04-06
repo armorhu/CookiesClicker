@@ -1,7 +1,9 @@
 package agame.endless.modules.main.model
 {
+	import com.agame.utils.Beautify;
+	
 	import flash.utils.getTimer;
-
+	
 	import agame.endless.modules.main.model.achievements.AchievementsDataModel;
 	import agame.endless.modules.main.model.newsticker.getNewTicker;
 	import agame.endless.modules.main.model.objects.ObjectData;
@@ -10,7 +12,7 @@ package agame.endless.modules.main.model
 	import agame.endless.modules.main.model.upgrade.UpgradeData;
 	import agame.endless.modules.main.model.upgrade.UpgradeDataModel;
 	import agame.endless.services.frame.IEnterframe;
-
+	
 	import starling.events.EventDispatcher;
 
 
@@ -21,8 +23,8 @@ package agame.endless.modules.main.model
 
 
 		//cookies 经济
-		public var cookiesEarned:Number=0; //all cookies earned during gameplay
-		public var cookies:Number=0; //cookies
+		public var cookiesEarned:Number=100000; //all cookies earned during gameplay
+		public var cookies:Number=100000; //cookies
 		public var cookiesd:Number=0; //cookies display
 		public var cookiesPs:Number=1; //cookies per second (to recalculate with every new purchase)
 		public var cookiesReset:Number=0; //cookies lost to resetting
@@ -55,14 +57,15 @@ package agame.endless.modules.main.model
 
 		//objects
 		public var Objects:Object={};
-		public var ObjectsById:Object={};
+		public var ObjectsById:Vector.<ObjectData>;
 		public var storeToRebuild:int;
 		public var BuildingsOwned:int;
+		public var CurrentBuildingIDs:Vector.<int>;
 
 
 		//upgrades
 		public var Upgrades:Object={};
-		public var UpgradesById:Object={};
+		public var UpgradesById:Vector.<UpgradeData>;
 		public var UpgradesOwned:int=0;
 		public var upgradesToRebuild:int;
 		public var UpgradesInStore:Vector.<UpgradeData>;
@@ -110,13 +113,21 @@ package agame.endless.modules.main.model
 			fps=60;
 			prefs=new AppPrefs;
 
+			ObjectsById=new Vector.<ObjectData>;
 			ObjectDataModel.setup();
+			CurrentBuildingIDs=new Vector.<int>;
+
+			UpgradesById=new Vector.<UpgradeData>;
+			UpgradesInStore=new Vector.<UpgradeData>;
 			UpgradeDataModel.setup();
+
 			AchievementsDataModel.setup();
+
+			UpgradesById.fixed=true;
+			ObjectsById.fixed=true;
 
 			santaLevels=['Festive test tube', 'Festive ornament', 'Festive wreath', 'Festive tree', 'Festive present', 'Festive elf fetus', 'Elf toddler', 'Elfling', 'Young elf', 'Bulky elf', 'Nick', 'Santa Claus', 'Elder Santa', 'True Santa', 'Final Claus'];
 			santaDrops=['Increased merriness', 'Improved jolliness', 'A lump of coal', 'An itchy sweater', 'Reindeer baking grounds', 'Weighted sleighs', 'Ho ho ho-flavored frosting', 'Season savings', 'Toy workshop', 'Naughty list', 'Santa\'s bottomless bag', 'Santa\'s helpers', 'Santa\'s legacy', 'Santa\'s milk and cookies'];
-
 
 			recalculateGains=1;
 			storeToRebuild=1;
@@ -131,7 +142,6 @@ package agame.endless.modules.main.model
 			return result;
 		}
 
-
 		public function Win(achivementName:String):void
 		{
 		}
@@ -145,26 +155,30 @@ package agame.endless.modules.main.model
 		{
 			cookies+=howmuch;
 			cookiesEarned+=howmuch;
+			RefreshBuildings();
 		}
 
 		public function Spend(howmuch:Number):void
 		{
 			cookies-=howmuch;
+			RefreshBuildings();
 		}
 
 		public function Dissolve(howmuch:Number):void
 		{
 			cookies-=howmuch;
 			cookiesEarned-=howmuch;
+			RefreshBuildings();
 		}
 
 		public function CalculateGains():void
 		{
 			cookiesPs=0;
 			var mult:Number=1;
-			for (var name:String in Upgrades)
+
+			for (var j:int=0; j < UpgradeData.UpgradesN; j++)
 			{
-				var me:UpgradeData=Upgrades[name];
+				var me:UpgradeData=UpgradesById[j];
 				if (me.bought > 0)
 				{
 					if (me.type == 'cookie' && Has(me.name))
@@ -207,9 +221,9 @@ package agame.endless.modules.main.model
 			mult+=parseFloat(prestige['Heavenly chips']) * 0.02 * heavenlyMult;
 
 			var storedCps:Number;
-			for (name in Objects)
+			for (var k:int=0; k < ObjectData.ObjectDatasN; k++)
 			{
-				var me2:ObjectData=Objects[name] as ObjectData;
+				var me2:ObjectData=ObjectsById[k] as ObjectData;
 				cookiesPs+=me2.amount
 				me2.storedCps=(me2.cps is Function ? me2.cps() : Number(me2.cps));
 				me2.storedTotalCps=me2.amount * me2.storedCps;
@@ -227,7 +241,8 @@ package agame.endless.modules.main.model
 				mult*=(1 + milkProgress * 0.2 * milkMult);
 
 			var rawCookiesPs:Number=cookiesPs * mult;
-			for (var i:int=0; i < cpsAchievs.length / 2; i++)
+			var len:int=cpsAchievs.length / 2
+			for (var i:int=0; i < len; i++)
 			{
 				if (rawCookiesPs >= cpsAchievs[i * 2 + 1])
 					Win(cpsAchievs[i * 2]);
@@ -251,7 +266,7 @@ package agame.endless.modules.main.model
 			cookiesPs*=globalCpsMult;
 
 			computedMouseCps=mouseCps();
-
+			computedMouseCpsText='+' + Beautify(computedMouseCps, 1);
 			recalculateGains=0;
 		}
 
@@ -272,13 +287,7 @@ package agame.endless.modules.main.model
 				add+=100;
 			if (Has('Sextillion fingers'))
 				add+=200;
-			var num:Number=0;
-			for (var i:String in Objects)
-			{
-				num+=Objects[i].amount;
-			}
-			num-=Objects['Cursor'].amount;
-			add=add * num;
+			add=add * (BuildingsOwned - Objects['Cursor'].amount);
 			if (Has('Plastic mouse'))
 				add+=cookiesPs * 0.01;
 			if (Has('Iron mouse'))
@@ -377,205 +386,72 @@ package agame.endless.modules.main.model
 		public function RebuildUpgrades():void //recalculate the upgrades you can buy
 		{
 			upgradesToRebuild=0;
-			UpgradesInStore=new Vector.<UpgradeData>;
-			for (var i:String in Upgrades)
+			UpgradesInStore.splice(0, UpgradesInStore.length);
+			var len:int=UpgradesById.length;
+			for (var i:int=0; i < len; i++)
 			{
-				var me:UpgradeData=Upgrades[i];
-				if (!me.bought)
-				{
-					if (me.unlocked)
-						UpgradesInStore.push(me);
-				}
+				if (!UpgradesById[i].bought && UpgradesById[i].unlocked)
+					UpgradesInStore.push(UpgradesById[i]);
 			}
-
 			UpgradesInStore.sort(function(a:UpgradeData, b:UpgradeData):Number
 			{
-				if (a.basePrice > b.basePrice)
-					return 1;
-				else if (a.basePrice < b.basePrice)
-					return -1;
-				else
-					return 0;
+				return a.basePrice - b.basePrice;
 			});
 			dispatchEventWith(REBUILD_UPGRADES);
 		}
 
 
-		public function NewDrawFunction(pic:Object, xVariance:Number, yVariance:Number, w:Number, shift:Number=0, heightOffset:Number=0):Function
+		public function NewDrawFunction(pic:Object, xVariance:Number, yVariance:Number, w:Number, shift:Number=0, heightOffset:Number=0):Object
 		{
-			//pic : either 0 (the default picture will be used), a filename (will be used as override), or a function to determine a filename
-			//xVariance : the pictures will have a random horizontal shift by this many pixels
-			//yVariance : the pictures will have a random vertical shift by this many pixels
-			//w : how many pixels between each picture (or row of pictures)
-			//shift : if >1, arrange the pictures in rows containing this many pictures
-			//heightOffset : the pictures will be displayed at this height, +32 pixels
-			return function():void
-			{
-				if (pic == 0 && typeof(pic) != 'function')
-					pic=this.pic;
-				shift=shift || 1;
-				heightOffset=heightOffset || 0;
-				var bgW:Number=0;
-				var str:String='';
-				var offX:Number=0;
-				var offY:Number=0;
-
-				if (this.drawSpecialButton && this.specialUnlocked)
-				{
-//					l('rowSpecialButton' + this.id).style.display='block';
-//					l('rowSpecialButton' + this.id).innerHTML=this.drawSpecialButton();
-//					str+='<div style="width:128px;height:128px;">' + this.drawSpecialButton() + '</div>';
-//					l('rowInfo' + this.id).style.paddingLeft=(8 + 128) + 'px';
-//					offX+=128;
-				}
-
-				for (var i:int=0; i < this.amount; i++)
-				{
-					if (shift != 1)
-					{
-						var x:Number=Math.floor(i / shift) * w + ((i % shift) / shift) * w + Math.floor((Math.random() - 0.5) * xVariance) + offX;
-						var y:Number=32 + heightOffset + Math.floor((Math.random() - 0.5) * yVariance) + ((-shift / 2) * 32 / 2 + (i % shift) * 32 / 2) + offY;
-					}
-					else
-					{
-						x=i * w + Math.floor((Math.random() - 0.5) * xVariance) + offX;
-						y=32 + heightOffset + Math.floor((Math.random() - 0.5) * yVariance) + offY;
-					}
-					var usedPic:String=(typeof(pic) == 'function' ? pic() : pic as String);
-					str+='<div class="object" style="background:url(img/' + usedPic + '.png);left:' + x + 'px;top:' + y + 'px;z-index:' + Math.floor(1000 + y) + ';"></div>';
-					bgW=Math.max(bgW, x + 64);
-				}
-				bgW+=offX;
-//				l('rowObjects' + this.id).innerHTML=str;
-//				l('rowBackground' + this.id).style.width=bgW + 'px';
-			}
+			return {pic: pic, xVariance: xVariance, yVariance: yVariance, w: w, shift: shift, heightOffset: heightOffset};
 		}
 
 		public function RefreshBuildings():void
 		{
-			for (var i:String in Objects)
-			{
-				var me:ObjectData=Objects[i] as ObjectData;
-				me.refresh();
-			}
 			storeToRebuild=1;
 		}
 
 		public function RebuildStore():void //redraw the store from scratch
 		{
-			var lastLocked:int=0;
 			RefreshBuildings();
 			var str:String='';
-			for (var i:String in Objects)
+			var lastLocked:int=0;
+			CurrentBuildingIDs.splice(0, CurrentBuildingIDs.length);
+			for (var i:int=0; i < ObjectData.ObjectDatasN; i++)
 			{
-				var me:ObjectData=Objects[i] as ObjectData;
-				var classes:String='product';
+				var me:ObjectData=ObjectsById[i];
+				if (i > 0 && me.amount > 0)
+					CurrentBuildingIDs.push(i);
 				var price:Number=me.price;
 				if (cookiesEarned >= price)
 				{
-					classes=' unlocked';
+					me.lock=false;
 					lastLocked=0;
 				}
 				else
 				{
-					classes=' locked';
+					me.lock=true;
 					lastLocked++;
 				}
-				if (cookies >= price)
-					classes=' enabled';
-				else
-					classes=' disabled';
-				if (lastLocked > 1)
-					classes=' toggledOff';
-				me.state=classes;
-//				str+='<div class="' + classes + '" ' + (lastLocked == 0 ? getTooltip('<div style="min-width:300px;"><div style="float:right;"><span class="price">' + Beautify(Math.round(me.price)) + '</span></div><div class="name">' + me.name + '</div>' + '<small>[owned : ' + me.amount + '</small>]<div class="description">' + me.desc + '</div></div>', 'left') : '') + ' id="product' + me.id + '"><div class="icon off" id="productIconOff' + me.id + '" style="background-image:url(img/' + me.icon + 'Off.png);"></div><div class="icon" id="productIcon' + me.id + '" style="background-image:url(img/' + me.icon + '.png);"></div><div class="content"><div class="title">' + me.displayName + '</div><span class="price">' + Beautify(Math.round(me.price)) + '</span>' + (me.amount > 0 ? ('<div class="title owned">' + me.amount + '</div>') : '') + '</div></div>';
-			}
-//			l('products').innerHTML=str;
-			for (i in Objects)
-			{
-				// onclick="ObjectDatasById['+me.id+'].buy();"
-				me=Objects[i] as ObjectData;
-//				AddEvent(l('product' + me.id), 'click', function(what)
-//				{
-//					return function()
-//					{
-//						ObjectDatasById[what].buy()
-//					};
-//				}(me.id));
+				me.disable=cookies < price;
+				me.toggledOff=lastLocked > 2;
 			}
 			storeToRebuild=0;
 			dispatchEventWith(REBUILD_STORED);
 		}
 
+		public var timePlayed:int;
 
 		public function enterframe():void
 		{
-			for (var i:String in Objects)
-			{
-				if (Objects[i].hasOwnProperty('EachFrame'))
-					Objects[i].EachFrame();
-			}
-//			if (Has('A festive hat')) UpdateSanta();
-//			UpdateGrandmapocalypse();
-
-			//handle milk and milk accessories
-//			milkProgress=AchievementsOwned/25;
-//			if (milkProgress>=0.5) Unlock('Kitten helpers');
-//			if (milkProgress>=1) Unlock('Kitten workers');
-//			if (milkProgress>=2) Unlock('Kitten engineers');
-//			if (milkProgress>=3) Unlock('Kitten overseers');
-//			milkH=Math.min(1,milkProgress)*0.35;
-//			milkHd+=(milkH-milkHd)*0.02;
-
 			if (autoclickerDetected > 0)
 				autoclickerDetected--;
-
-			//handle research
-//			if (researchT>0)
-//			{
-//				researchT--;
-//			}
-//			if (researchT==0 && nextResearch)
-//			{
-//				Unlock(UpgradesById[nextResearch].name);
-//				Popup('Researched : '+UpgradesById[nextResearch].name);
-//				nextResearch=0;
-//				researchT=-1;
-//			}
-			//handle seasons
-//			if (seasonT>0)
-//			{
-//				seasonT--;
-//			}
-//			if (seasonT==0 && season!='' && season!=baseSeason)
-//			{
-//				var seasons={'halloween':'Halloween is over!','christmas':'Christmas is over!','valentines':'Valentine\'s day is over!'};
-//				Popup(seasons[season]);
-//				season=baseSeason;
-//				seasonT=-1;
-//			}
 
 			//handle cookies
 			if (recalculateGains)
 				CalculateGains();
 			Earn(cookiesPs / fps); //add cookies per second
 
-			//wrinklers
-//			if (cpsSucked>0)
-//			{
-//				Dissolve((cookiesPs/fps)*cpsSucked);
-//				cookiesSucked+=((cookiesPs/fps)*cpsSucked);
-//			}
-
-			//var cps=cookiesPs+cookies*0.01;//exponential cookies
-			//Earn(cps/fps);//add cookies per second
-
-			for (i in Objects)
-			{
-				var me:ObjectData=Objects[i] as ObjectData;
-				me.totalCookies+=me.storedTotalCps / fps;
-			}
-//			if (cookies && T%Math.ceil(fps/Math.min(10,cookiesPs))==0 && prefs.particles) particleAdd();//cookie shower
 			if (frenzy > 0)
 			{
 				frenzy--;
@@ -590,19 +466,16 @@ package agame.endless.modules.main.model
 			}
 			if (T % (fps) == 0 && Math.random() < 1 / 500000)
 				Win('Just plain lucky'); //1 chance in 500,000 every second achievement
+
 			if (T % (fps * 5) == 0) //check some achievements and upgrades
 			{
-				//if (Objects['Factory'].amount>=50 && Objects['Factory'].specialUnlocked==0) {Objects['Factory'].unlockSpecial();Popup('You have unlocked the factory dungeons!');}
-
 				if (isNaN(cookies))
 				{
 					cookies=0;
 					cookiesEarned=0;
 					recalculateGains=1;
 				}
-
-				var timePlayed:int=getTimer() - startTime;
-
+				timePlayed=getTimer() - startTime;
 				if (cookiesEarned >= 1000000 && !Has('Heavenly chip secret'))
 				{
 					if (timePlayed <= 1000 * 60 * 35)
@@ -703,43 +576,45 @@ package agame.endless.modules.main.model
 						Win('Wholesome');
 				}
 
-				for (var index:int=0; index < moneyAchievs.length / 2; index++)
+				var len:int=moneyAchievs.length / 2;
+				for (var index:int=0; index < len; index++)
 				{
 					if (cookiesEarned >= moneyAchievs[index * 2 + 1])
 						Win(moneyAchievs[index * 2]);
 				}
-				var buildingsOwned:int=0;
 				var oneOfEach:int=1;
 				var mathematician:int=1;
 				var base10:int=1;
 				var centennial:int=1;
 				var bicentennial:int=1;
-				for (i in Objects)
+				for (var i:int=0; i < ObjectData.ObjectDatasN; i++)
 				{
-					buildingsOwned+=Objects[i].amount;
+					if (ObjectsById[i].hasOwnProperty('EachFrame'))
+						ObjectsById[i].EachFrame();
+					ObjectsById[i].totalCookies+=ObjectsById[i].storedTotalCps / fps;
 					if (!HasAchiev('One with everything'))
 					{
-						if (Objects[i].amount == 0)
+						if (ObjectsById[i].amount == 0)
 							oneOfEach=0;
 					}
 					if (!HasAchiev('Mathematician'))
 					{
-						if (Objects[i].amount < Math.min(128, Math.pow(2, (ObjectsById.length - Objects[i].id) - 1)))
+						if (ObjectsById[i].amount < Math.min(128, Math.pow(2, (ObjectsById.length - ObjectsById[i].id) - 1)))
 							mathematician=0;
 					}
 					if (!HasAchiev('Base 10'))
 					{
-						if (Objects[i].amount < (ObjectsById.length - Objects[i].id) * 10)
+						if (ObjectsById[i].amount < (ObjectsById.length - ObjectsById[i].id) * 10)
 							base10=0;
 					}
 					if (!HasAchiev('Centennial'))
 					{
-						if (Objects[i].amount < 100)
+						if (ObjectsById[i].amount < 100)
 							centennial=0;
 					}
 					if (!HasAchiev('Bicentennial'))
 					{
-						if (Objects[i].amount < 200)
+						if (ObjectsById[i].amount < 200)
 							bicentennial=0;
 					}
 				}
@@ -806,13 +681,13 @@ package agame.endless.modules.main.model
 				if (reindeerClicked >= 200)
 					Win('Reindeer sleigher');
 
-				if (buildingsOwned >= 100)
+				if (BuildingsOwned >= 100)
 					Win('Builder');
-				if (buildingsOwned >= 400)
+				if (BuildingsOwned >= 400)
 					Win('Architect');
-				if (buildingsOwned >= 800)
+				if (BuildingsOwned >= 800)
 					Win('Engineer');
-				if (buildingsOwned >= 1500)
+				if (BuildingsOwned >= 1500)
 					Win('Lord of Constructs');
 				if (UpgradesOwned >= 20)
 					Win('Enhancer');
@@ -858,11 +733,8 @@ package agame.endless.modules.main.model
 					Win('Elder slumber');
 				if (pledges >= 10)
 					Unlock('Sacrificial rolling pins');
-
-//				if (!HasAchiev('Cookie-dunker') && LeftBackground && milkProgress > 0.1 && (LeftBackground.canvas.height * 0.4 + 256 / 2 - 16) > ((1 - milkHd) * LeftBackground.canvas.height))
-//					Win('Cookie-dunker');
-					//&& l('bigCookie').getBoundingClientRect().bottom>l('milk').getBoundingClientRect().top+16 && milkProgress>0.1) Win('Cookie-dunker');
 			}
+
 
 			cookiesd+=(cookies - cookiesd) * 0.3;
 
@@ -874,17 +746,6 @@ package agame.endless.modules.main.model
 			TickerAge--;
 			if (TickerAge <= 0 || Ticker == '')
 				getNewTicker();
-
-//			goldenCookie.update();
-//			seasonPopup.update();
-
-//			Click=0;
-
-//			if (T % (fps * 60) == 0 && T > fps * 10 && prefs.autosave)
-//				WriteSave();
-//			if (T % (fps * 60 * 30) == 0 && T > fps * 10 && prefs.autoupdate)
-//				CheckUpdates();
-
 			T++;
 		}
 
@@ -892,8 +753,10 @@ package agame.endless.modules.main.model
 		public static const REBUILD_STORED:String='Rebuild_Stored';
 		public static const REBUILD_UPGRADES:String='Rebuild_Upgrades';
 		public static const POP_UP:String='pop_up';
+		public static const DRAW_OBJECT:String='draw_object';
 
-		private static const Events:Array=[NEWTICKER_CHANGED, REBUILD_STORED, REBUILD_UPGRADES];
+		private static const Events:Array=[NEWTICKER_CHANGED, REBUILD_STORED, REBUILD_UPGRADES, DRAW_OBJECT];
+		public var computedMouseCpsText:String;
 
 		public function addEvents(handler:Function):void
 		{

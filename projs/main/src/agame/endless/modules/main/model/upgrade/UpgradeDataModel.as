@@ -521,6 +521,7 @@ package agame.endless.modules.main.model.upgrade
 				result.power=power;
 
 			Game.Upgrades[result.name]=result;
+			Game.UpgradesById.length=result.id + 1;
 			Game.UpgradesById[result.id]=result;
 			UpgradeData.UpgradesN++;
 		}

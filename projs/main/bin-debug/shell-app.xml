@@ -15,7 +15,7 @@
 
 	<!-- A universally unique application identifier. Must be unique across all AIR applications.
 	Using a reverse DNS-style name as the id is recommended. (Eg. com.example.ExampleApplication.) Required. -->
-	<id>com.tencent.qqfarmios.debug</id>
+	<id>com.tencent.qqfarmios</id>
 
 	<!-- Used as the filename for the application. Required. -->
 	<filename>粽子王</filename>
@@ -294,4 +294,8 @@
 		]]></InfoAdditions>
         <requestedDisplayResolution>high</requestedDisplayResolution>
     </iPhone>
+
+
+	<extensions>
+    </extensions>
 </application>

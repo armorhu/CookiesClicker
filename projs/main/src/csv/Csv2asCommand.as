@@ -79,7 +79,15 @@ package csv
 			var csvFile:CSVFile=new CSVFile();
 			csvFile.read(data).parse();
 
-			if (model2 && (csvFile.keys.indexOf('ID') == -1 || csvFile.keys.indexOf('Name') == -1))
+			var nameIndex:int=csvFile.keys.indexOf('Name');
+			if (nameIndex == -1)
+				nameIndex=csvFile.keys.indexOf('name');
+
+			var idIndex:int=csvFile.keys.indexOf('ID');
+			if (nameIndex == -1)
+				idIndex=csvFile.keys.indexOf('id');
+
+			if (model2 && (idIndex == -1 || nameIndex == -1))
 			{
 				trace('csv2as', configName, model2, 'failed!!!!!');
 				return;
@@ -96,7 +104,6 @@ package csv
 			if (defs.length > 0)
 			{
 				var defsArr:Array=defs.split('|');
-				var nameIndex:int=csvFile.keys.indexOf('Name');
 				len=defsArr.length;
 				var rows:int=csvFile.valueTables.length;
 				for (i=0; i < len; i++)
@@ -184,7 +191,7 @@ package csv
 				namesValue=namesValue.substr(1);
 			while (namesValue.charAt(namesValue.length - 1) == '_')
 				namesValue=namesValue.substr(0, namesValue.length - 1);
-			
+
 			return namesValue;
 		}
 

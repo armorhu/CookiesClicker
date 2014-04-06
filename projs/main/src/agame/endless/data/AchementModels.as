@@ -8,14 +8,17 @@ package agame.endless.data
 		{
 		}
 
-		public function setup():void
+		private var csvContext:String;
+
+		public function setup():String
 		{
+			csvContext='';
 			var id=1;
-			var keys:Array=['id', 'name', 'desc', 'iconX', 'IconY', 'Hide', 'Order', 'Category'];
+			var keys:Array=['id', 'name', 'desc', 'iconX', 'iconY', 'hide', 'order', 'category'];
 			var types:Array=['int', 'String', 'int', 'int', 'String', 'int', 'int', 'String'];
-			trace(keys.join(','));
-			trace(types.join(','));
-			function Achievement(name, desc, icon, hide=0)
+			csvContext=csvContext + keys.join(',') + '\n';
+			csvContext=csvContext + types.join(',') + '\n';
+			function Achievement(name, desc, icon, hide=0, category='none')
 			{
 				var obj:*={};
 				obj.id=id++;
@@ -26,7 +29,7 @@ package agame.endless.data
 				obj.disabled=0;
 				obj.hide=hide || 0; //hide levels : 0=show, 1=hide description, 2=hide, 3=secret (doesn't count toward achievement total)
 				obj.order=order;
-				obj.category='none';
+				obj.category=category;
 				var temp:Array=[];
 				temp.push(obj.id);
 				temp.push(obj.name);
@@ -36,7 +39,7 @@ package agame.endless.data
 				temp.push(obj.hide);
 				temp.push(obj.order);
 				temp.push(obj.category);
-				trace(temp.join(','));
+				csvContext=csvContext + temp.join(',') + '\n';
 				return obj;
 			}
 
@@ -52,7 +55,7 @@ package agame.endless.data
 				var pic=[Math.min(10, i), 5];
 				if (i == 15)
 					pic=[11, 5];
-				Achievement(moneyAchievs[i * 2], 'Bake <b>' + Beautify(moneyAchievs[i * 2 + 1]) + '</b> cookie' + (moneyAchievs[i * 2 + 1] == 1 ? '' : 's') + '.', pic, 2);
+				Achievement(moneyAchievs[i * 2], 'Bake <b>' + Beautify(moneyAchievs[i * 2 + 1]) + '</b> cookie' + (moneyAchievs[i * 2 + 1] == 1 ? '' : 's') + '.', pic, 2, 'money');
 			}
 
 			order=200;
@@ -60,7 +63,7 @@ package agame.endless.data
 			for (var i=0; i < cpsAchievs.length / 2; i++)
 			{
 				var pic=[i, 5];
-				Achievement(cpsAchievs[i * 2], 'Bake <b>' + Beautify(cpsAchievs[i * 2 + 1]) + '</b> cookie' + (cpsAchievs[i * 2 + 1] == 1 ? '' : 's') + ' per second.', pic, 2);
+				Achievement(cpsAchievs[i * 2], 'Bake <b>' + Beautify(cpsAchievs[i * 2 + 1]) + '</b> cookie' + (cpsAchievs[i * 2 + 1] == 1 ? '' : 's') + ' per second.', pic, 2, 'cps');
 			}
 
 			order=30000;
@@ -197,14 +200,14 @@ package agame.endless.data
 
 
 			order=61000;
-			var achiev=Achievement('Getting even with the oven', 'Defeat the <b>Sentient Furnace</b> in the factory dungeons.', [12, 7], 3);
-			achiev.category='dungeon'; //make this 2 when dungeons are released
-			var achiev=Achievement('Now this is pod-smashing', 'Defeat the <b>Ascended Baking Pod</b> in the factory dungeons.', [12, 7], 3);
-			achiev.category='dungeon'; //make this 2 when dungeons are released
-			var achiev=Achievement('Chirped out', 'Find and defeat <b>Chirpy</b>, the dysfunctionning alarm bot.', [13, 7], 3);
-			achiev.category='dungeon';
-			var achiev=Achievement('Follow the white rabbit', 'Find and defeat the elusive <b>sugar bunny</b>.', [14, 7], 3);
-			achiev.category='dungeon';
+//			var achiev=Achievement('Getting even with the oven', 'Defeat the <b>Sentient Furnace</b> in the factory dungeons.', [12, 7], 3);
+//			achiev.category='dungeon'; //make this 2 when dungeons are released
+//			var achiev=Achievement('Now this is pod-smashing', 'Defeat the <b>Ascended Baking Pod</b> in the factory dungeons.', [12, 7], 3);
+//			achiev.category='dungeon'; //make this 2 when dungeons are released
+//			var achiev=Achievement('Chirped out', 'Find and defeat <b>Chirpy</b>, the dysfunctionning alarm bot.', [13, 7], 3);
+//			achiev.category='dungeon';
+//			var achiev=Achievement('Follow the white rabbit', 'Find and defeat the elusive <b>sugar bunny</b>.', [14, 7], 3);
+//			achiev.category='dungeon';
 
 			order=1000;
 			Achievement('Clickasmic', 'Make <b>100,000,000,000</b> cookies from clicking.', [11, 13]);
@@ -268,6 +271,8 @@ package agame.endless.data
 			order=22300;
 			Achievement('Lovely cookies', 'Unlock <b>every Valentine-themed cookie</b>.', [20, 3], 2);
 
+
+			return csvContext;
 		}
 	}
 }

@@ -1,6 +1,6 @@
 package agame.endless.configs.achievements
 {
-	public class AchievementsNameDefs
+	public class AchievementsnameDefs
 	{
 		public static const Wake_and_bake:String = "Wake and bake";
 		public static const Making_some_dough:String = "Making some dough";
@@ -98,10 +98,6 @@ package agame.endless.configs.achievements
 		public static const Speed_baking_I:String = "Speed baking I";
 		public static const Speed_baking_II:String = "Speed baking II";
 		public static const Speed_baking_III:String = "Speed baking III";
-		public static const Getting_even_with_the_oven:String = "Getting even with the oven";
-		public static const Now_this_is_pod_smashing:String = "Now this is pod-smashing";
-		public static const Chirped_out:String = "Chirped out";
-		public static const Follow_the_white_rabbit:String = "Follow the white rabbit";
 		public static const Clickasmic:String = "Clickasmic";
 		public static const Friend_of_the_ancients:String = "Friend of the ancients";
 		public static const Ruler_of_the_ancients:String = "Ruler of the ancients";
@@ -133,7 +129,7 @@ package agame.endless.configs.achievements
 		public static const Lord_of_Progress:String = "Lord of Progress";
 		public static const Bicentennial:String = "Bicentennial";
 		public static const Lovely_cookies:String = "Lovely cookies";
-		public function AchievementsNameDefs()
+		public function AchievementsnameDefs()
 		{
 		}
 	}

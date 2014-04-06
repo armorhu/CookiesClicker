@@ -1,29 +1,22 @@
 package agame.endless.modules.main.model.upgrade
 {
+	import agame.endless.configs.upgrades.UpgradesConfig;
 	import agame.endless.modules.main.model.Game;
 
 
-	public class UpgradeData
+	public class UpgradeData extends UpgradesConfig
 	{
-		public var id:int;
-		public var name:String;
-		public var desc:String;
 		public var icon:Array;
 		public var buyFunction:Function;
-		public var hide:int;
-		public var order:int;
-
 
 		public var bought:int;
 		public var unlocked:int;
 		public var basePrice:Number;
-		public var type:String;
-		public var power:int;
 
 		public var clickFunction:Function;
 		public var debug:int;
 
-		public static var UpgradesN:int=1;
+		public static var UpgradesN:int=0;
 
 		public function UpgradeData()
 		{

@@ -1,27 +1,18 @@
 package agame.endless.modules.main.model.objects
 {
+	import agame.endless.configs.objects.ObjectsConfig;
 	import agame.endless.modules.main.model.Game;
+	import agame.endless.modules.main.model.MainModel;
 
-	public class ObjectData
+	public class ObjectData extends ObjectsConfig
 	{
-		public var id:int;
-		public var name:String;
-		public var displayName:String;
-		public var single:String;
-		public var plural:String;
-		public var actionName:String;
-		public var desc:String;
 		public var basePrice:Number;
-		public var price:Number;
 		public var cps:Object=0;
 		public var totalCookies:Number=0;
 		public var storedCps:Number=0;
 		public var storedTotalCps:Number=0;
-		public var pic:String=pic;
-		public var icon:String;
-		public var background:String;
 		public var buyFunction:Function;
-		public var drawFunction:Function;
+		public var drawSetting:Object;
 		public var sellFunction:Function;
 
 		public var special:String=null; //special is a function that should be triggered when the object's special is unlocked, or on load (if it's already unlocked). For example, creating a new dungeon.
@@ -33,22 +24,14 @@ package agame.endless.modules.main.model.objects
 		public var amount:int=0;
 		public var bought:int=0;
 
-		public var state:String='';
+		public var lock:Boolean;
+		public var disable:Boolean;
+		public var toggledOff:Boolean;
 
-		public static const STATE_product:String='product';
-		public static const STATE_unlocked:String='unlocked';
-		public static const STATE_locked:String='locked';
-		public static const STATE_enabled:String='enabled';
-		public static const STATE_disabled:String='disabled';
-		public static const STATE_toggledOff:String='toggledOff';
+		public static var ObjectDatasN:int=0;
 
-
-
-		public static var ObjectDatasN:int=1;
-
-		public function ObjectData(name:String, commonName:String, desc:String, pic:String, icon:String, background:String, price:Number, cps:Function, drawFunction:Function, buyFunction:Function)
+		public function ObjectData(name:String, commonName:String, desc:String, pic:String, icon:String, background:String, price:Number, cps:Function, drawSetting:Object, buyFunction:Function)
 		{
-
 			this.id=ObjectDatasN;
 			this.name=name;
 			this.displayName=this.name;
@@ -67,7 +50,7 @@ package agame.endless.modules.main.model.objects
 			this.icon=icon;
 			this.background=background;
 			this.buyFunction=buyFunction;
-			this.drawFunction=drawFunction;
+			this.drawSetting=drawSetting;
 
 			this.special=null; //special is a function that should be triggered when the object's special is unlocked, or on load (if it's already unlocked). For example, creating a new dungeon.
 			this.onSpecial=0; //are we on this object's special screen (dungeons etc)?
@@ -86,6 +69,7 @@ package agame.endless.modules.main.model.objects
 //			}
 
 			Game.Objects[this.name]=this;
+			Game.ObjectsById.length=this.id + 1;
 			Game.ObjectsById[this.id]=this;
 			ObjectDatasN++;
 		}
@@ -116,10 +100,14 @@ package agame.endless.modules.main.model.objects
 					this.drawFunction();
 				Game.storeToRebuild=1;
 				Game.recalculateGains=1;
-//				if (this.amount == 1 && this.id != 0)
-//					l('row' + this.id).className='row enabled';
 				Game.BuildingsOwned++;
 			}
+		}
+
+		private function drawFunction():void
+		{
+			// TODO Auto Generated method stub
+			Game.dispatchEventWith(MainModel.DRAW_OBJECT, false, id);
 		}
 
 		public function sell():void
@@ -174,20 +162,7 @@ package agame.endless.modules.main.model.objects
 				this.setSpecial(0);
 				if (this.special)
 					this.special();
-				this.refresh();
 			}
-		}
-
-		public function refresh():void
-		{
-//			this.price=this.getPrice();
-//			if (this.amount == 0 && this.id != 0)
-//				l('row' + this.id).className='row';
-//			else if (this.amount > 0 && this.id != 0)
-//				l('row' + this.id).className='row enabled';
-//			if (this.drawFunction && !this.onSpecial)
-//				this.drawFunction();
-			//else if (this.specialDrawFunction && this.onSpecial) this.specialDrawFunction();
 		}
 	}
 }

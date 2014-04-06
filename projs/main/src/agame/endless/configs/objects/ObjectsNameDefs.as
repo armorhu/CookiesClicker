@@ -1,6 +1,6 @@
 package agame.endless.configs.objects
 {
-	public class ObjectsNameDefs
+	public class ObjectsnameDefs
 	{
 		public static const Cursor:String = "Cursor";
 		public static const Grandma:String = "Grandma";
@@ -13,7 +13,7 @@ package agame.endless.configs.objects
 		public static const Time_machine:String = "Time machine";
 		public static const Antimatter_condenser:String = "Antimatter condenser";
 		public static const Prism:String = "Prism";
-		public function ObjectsNameDefs()
+		public function ObjectsnameDefs()
 		{
 		}
 	}

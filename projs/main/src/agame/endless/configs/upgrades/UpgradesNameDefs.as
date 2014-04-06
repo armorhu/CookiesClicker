@@ -1,6 +1,6 @@
 package agame.endless.configs.upgrades
 {
-	public class UpgradesNameDefs
+	public class UpgradesnameDefs
 	{
 		public static const Reinforced_index_finger:String = "Reinforced index finger";
 		public static const Carpal_tunnel_prevention_cream:String = "Carpal tunnel prevention cream";
@@ -187,7 +187,7 @@ package agame.endless.configs.upgrades
 		public static const Festive_biscuit:String = "Festive biscuit";
 		public static const Ghostly_biscuit:String = "Ghostly biscuit";
 		public static const Lovesick_biscuit:String = "Lovesick biscuit";
-		public function UpgradesNameDefs()
+		public function UpgradesnameDefs()
 		{
 		}
 	}

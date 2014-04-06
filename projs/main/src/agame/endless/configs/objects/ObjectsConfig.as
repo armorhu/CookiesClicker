@@ -3,24 +3,24 @@ package agame.endless.configs.objects
 
 	public class ObjectsConfig
 	{
-		public var ID:int;
-		public var Name:String;
-		public var DisplayName:String;
-		public var Single:String;
-		public var Plural:String;
-		public var ActionName:String;
-		public var Desc:String;
-		public var Price:int;
-		public var Pic:String;
-		public var Icon:String;
-		public var Background:String;
+		public var id:int;
+		public var name:String;
+		public var displayName:String;
+		public var single:String;
+		public var plural:String;
+		public var actionName:String;
+		public var desc:String;
+		public var price:int;
+		public var pic:String;
+		public var icon:String;
+		public var background:String;
 		public function ObjectsConfig()
 		{
 		}
 
 		public function importClass():void
 		{
-			var objectsnamedefs:ObjectsNameDefs;
+			var objectsnamedefs:ObjectsnameDefs;
 //导入定义类。
 			
 		}

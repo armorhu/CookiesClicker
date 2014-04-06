@@ -1,4 +1,4 @@
-ID,Name,DisplayName,Single,Plural,ActionName,Desc,Price,Pic,Icon,Background
+id,name,displayName,single,plural,actionName,desc,price,pic,icon,background
 int,String,String,String,String,String,String,int,String,String,String
 1,Cursor,Cursor,cursor,cursors,clicked,"Autoclicks once every 10 seconds.",15,cursor,cursoricon,
 2,Grandma,Grandma,grandma,grandmas,baked,"A nice grandma to bake more cookies.",100,grandma,grandmaIcon,grandmaBackground

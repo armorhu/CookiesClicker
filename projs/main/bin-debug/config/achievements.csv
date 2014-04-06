@@ -1,31 +1,31 @@
-ID,Name,Desc,IconX,IconY,Hide,Order,Category
+id,name,desc,iconX,iconY,hide,order,category
 int,String,int,int,String,int,int,String
-1,Wake and bake,"Bake <b>1</b> cookie.",0,5,2,100,none
-2,Making some dough,"Bake <b>100</b> cookies.",1,5,2,100,none
-3,So baked right now,"Bake <b>1,000</b> cookies.",2,5,2,100,none
-4,Fledgling bakery,"Bake <b>10,000</b> cookies.",3,5,2,100,none
-5,Affluent bakery,"Bake <b>100,000</b> cookies.",4,5,2,100,none
-6,World-famous bakery,"Bake <b>1,000,000</b> cookies.",5,5,2,100,none
-7,Cosmic bakery,"Bake <b>10,000,000</b> cookies.",6,5,2,100,none
-8,Galactic bakery,"Bake <b>100,000,000</b> cookies.",7,5,2,100,none
-9,Universal bakery,"Bake <b>1,000,000,000</b> cookies.",8,5,2,100,none
-10,Timeless bakery,"Bake <b>10,000,000,000</b> cookies.",9,5,2,100,none
-11,Infinite bakery,"Bake <b>100,000,000,000</b> cookies.",10,5,2,100,none
-12,Immortal bakery,"Bake <b>1,000,000,000,000</b> cookies.",10,5,2,100,none
-13,You can stop now,"Bake <b>10,000,000,000,000</b> cookies.",10,5,2,100,none
-14,Cookies all the way down,"Bake <b>100,000,000,000,000</b> cookies.",10,5,2,100,none
-15,Overdose,"Bake <b>1,000,000,000,000,000</b> cookies.",10,5,2,100,none
-16,How?,"Bake <b>10,000,000,000,000,000</b> cookies.",11,5,2,100,none
-17,Casual baking,"Bake <b>1</b> cookie per second.",0,5,2,200,none
-18,Hardcore baking,"Bake <b>10</b> cookies per second.",1,5,2,200,none
-19,Steady tasty stream,"Bake <b>100</b> cookies per second.",2,5,2,200,none
-20,Cookie monster,"Bake <b>1,000</b> cookies per second.",3,5,2,200,none
-21,Mass producer,"Bake <b>10,000</b> cookies per second.",4,5,2,200,none
-22,Cookie vortex,"Bake <b>1,000,000</b> cookies per second.",5,5,2,200,none
-23,Cookie pulsar,"Bake <b>10,000,000</b> cookies per second.",6,5,2,200,none
-24,Cookie quasar,"Bake <b>100,000,000</b> cookies per second.",7,5,2,200,none
-25,A world filled with cookies,"Bake <b>10,000,000,000</b> cookies per second.",8,5,2,200,none
-26,Let's never bake again,"Bake <b>1,000,000,000,000</b> cookies per second.",9,5,2,200,none
+1,Wake and bake,"Bake <b>1</b> cookie.",0,5,2,100,money
+2,Making some dough,"Bake <b>100</b> cookies.",1,5,2,100,money
+3,So baked right now,"Bake <b>1,000</b> cookies.",2,5,2,100,money
+4,Fledgling bakery,"Bake <b>10,000</b> cookies.",3,5,2,100,money
+5,Affluent bakery,"Bake <b>100,000</b> cookies.",4,5,2,100,money
+6,World-famous bakery,"Bake <b>1,000,000</b> cookies.",5,5,2,100,money
+7,Cosmic bakery,"Bake <b>10,000,000</b> cookies.",6,5,2,100,money
+8,Galactic bakery,"Bake <b>100,000,000</b> cookies.",7,5,2,100,money
+9,Universal bakery,"Bake <b>1,000,000,000</b> cookies.",8,5,2,100,money
+10,Timeless bakery,"Bake <b>10,000,000,000</b> cookies.",9,5,2,100,money
+11,Infinite bakery,"Bake <b>100,000,000,000</b> cookies.",10,5,2,100,money
+12,Immortal bakery,"Bake <b>1,000,000,000,000</b> cookies.",10,5,2,100,money
+13,You can stop now,"Bake <b>10,000,000,000,000</b> cookies.",10,5,2,100,money
+14,Cookies all the way down,"Bake <b>100,000,000,000,000</b> cookies.",10,5,2,100,money
+15,Overdose,"Bake <b>1,000,000,000,000,000</b> cookies.",10,5,2,100,money
+16,How?,"Bake <b>10,000,000,000,000,000</b> cookies.",11,5,2,100,money
+17,Casual baking,"Bake <b>1</b> cookie per second.",0,5,2,200,cps
+18,Hardcore baking,"Bake <b>10</b> cookies per second.",1,5,2,200,cps
+19,Steady tasty stream,"Bake <b>100</b> cookies per second.",2,5,2,200,cps
+20,Cookie monster,"Bake <b>1,000</b> cookies per second.",3,5,2,200,cps
+21,Mass producer,"Bake <b>10,000</b> cookies per second.",4,5,2,200,cps
+22,Cookie vortex,"Bake <b>1,000,000</b> cookies per second.",5,5,2,200,cps
+23,Cookie pulsar,"Bake <b>10,000,000</b> cookies per second.",6,5,2,200,cps
+24,Cookie quasar,"Bake <b>100,000,000</b> cookies per second.",7,5,2,200,cps
+25,A world filled with cookies,"Bake <b>10,000,000,000</b> cookies per second.",8,5,2,200,cps
+26,Let's never bake again,"Bake <b>1,000,000,000,000</b> cookies per second.",9,5,2,200,cps
 27,Sacrifice,"Reset your game with <b>1 million</b> cookies baked.<q>Easy come, easy go.</q>",11,6,2,30000,none
 28,Oblivion,"Reset your game with <b>1 billion</b> cookies baked.<q>Back to square one.</q>",11,6,2,30000,none
 29,From scratch,"Reset your game with <b>1 trillion</b> cookies baked.<q>It's been fun.</q>",11,6,2,30000,none
@@ -96,38 +96,34 @@ int,String,int,int,String,int,int,String
 94,Speed baking I,"Get to <b>1 million</b> cookies baked in <b>35 minutes</b> (with no heavenly upgrades).",12,5,3,30600,none
 95,Speed baking II,"Get to <b>1 million</b> cookies baked in <b>25 minutes</b> (with no heavenly upgrades).",13,5,3,30600,none
 96,Speed baking III,"Get to <b>1 million</b> cookies baked in <b>15 minutes</b> (with no heavenly upgrades).",14,5,3,30600,none
-97,Getting even with the oven,"Defeat the <b>Sentient Furnace</b> in the factory dungeons.",12,7,3,61000,none
-98,Now this is pod-smashing,"Defeat the <b>Ascended Baking Pod</b> in the factory dungeons.",12,7,3,61000,none
-99,Chirped out,"Find and defeat <b>Chirpy</b>, the dysfunctionning alarm bot.",13,7,3,61000,none
-100,Follow the white rabbit,"Find and defeat the elusive <b>sugar bunny</b>.",14,7,3,61000,none
-101,Clickasmic,"Make <b>100,000,000,000</b> cookies from clicking.",11,13,0,1000,none
-102,Friend of the ancients,"Have <b>150</b> grandmas.",1,13,0,1100,none
-103,Ruler of the ancients,"Have <b>200</b> grandmas.",1,13,0,1100,none
-104,Wholesome,"Unlock <b>100%</b> of your heavenly chips power.",15,7,2,32000,none
-105,Just plain lucky,"You have <b>1 chance in 500,000</b> every second of earning this achievement.",15,6,3,33000,none
-106,Itchscratcher,"Burst <b>1 wrinkler</b>.",19,8,2,21000,none
-107,Wrinklesquisher,"Burst <b>50 wrinklers</b>.",19,8,2,21000,none
-108,Moistburster,"Burst <b>200 wrinklers</b>.",19,8,2,21000,none
-109,Spooky cookies,"Unlock <b>every Halloween-themed cookie</b>.<br>Owning this achievement makes Halloween-themed cookies drop more frequently in future playthroughs.",12,8,2,22000,none
-110,Coming to town,"Reach <b>Santa's 7th form</b>.",18,9,2,22100,none
-111,All hail Santa,"Reach <b>Santa's final form</b>.",19,10,2,22100,none
-112,Let it snow,"Unlock <b>every Christmas-themed cookie</b>.",19,9,2,22100,none
-113,Oh deer,"Pop <b>1 reindeer</b>.",12,9,2,22100,none
-114,Sleigh of hand,"Pop <b>50 reindeer</b>.",12,9,2,22100,none
-115,Reindeer sleigher,"Pop <b>200 reindeer</b>.",12,9,2,22100,none
-116,Perfected agriculture,"Have <b>150</b> farms.",2,13,0,1200,none
-117,Ultimate automation,"Have <b>150</b> factories.",4,13,0,1300,none
-118,Can you dig it,"Have <b>150</b> mines.",3,13,0,1400,none
-119,Type II civilization,"Have <b>150</b> shipments.",5,13,0,1500,none
-120,Gild wars,"Have <b>150</b> alchemy labs.",6,13,0,1600,none
-121,Brain-split,"Have <b>150</b> portals.",7,13,0,1700,none
-122,Time duke,"Have <b>150</b> time machines.",8,13,0,1800,none
-123,Molecular maestro,"Have <b>150</b> antimatter condensers.",13,13,0,1900,none
-124,Lone photon,"Have <b>1</b> prism.",14,0,0,2000,none
-125,Dazzling glimmer,"Have <b>50</b> prisms.",14,1,0,2000,none
-126,Blinding flash,"Have <b>100</b> prisms.",14,2,0,2000,none
-127,Unending glow,"Have <b>150</b> prisms.",14,13,0,2000,none
-128,Lord of Constructs,"Own <b>1500</b> buildings.<q>He saw the vast plains stretching ahead of him, and he said : let there be civilization.</q>",6,6,2,5000,none
-129,Lord of Progress,"Purchase <b>150</b> upgrades.<q>One can always do better. But should you?</q>",9,2,2,6000,none
-130,Bicentennial,"Have at least <b>200 of everything</b>.<q>You crazy person.</q>",9,6,2,7000,none
-131,Lovely cookies,"Unlock <b>every Valentine-themed cookie</b>.",20,3,2,22300,none
+97,Clickasmic,"Make <b>100,000,000,000</b> cookies from clicking.",11,13,0,1000,none
+98,Friend of the ancients,"Have <b>150</b> grandmas.",1,13,0,1100,none
+99,Ruler of the ancients,"Have <b>200</b> grandmas.",1,13,0,1100,none
+100,Wholesome,"Unlock <b>100%</b> of your heavenly chips power.",15,7,2,32000,none
+101,Just plain lucky,"You have <b>1 chance in 500,000</b> every second of earning this achievement.",15,6,3,33000,none
+102,Itchscratcher,"Burst <b>1 wrinkler</b>.",19,8,2,21000,none
+103,Wrinklesquisher,"Burst <b>50 wrinklers</b>.",19,8,2,21000,none
+104,Moistburster,"Burst <b>200 wrinklers</b>.",19,8,2,21000,none
+105,Spooky cookies,"Unlock <b>every Halloween-themed cookie</b>.<br>Owning this achievement makes Halloween-themed cookies drop more frequently in future playthroughs.",12,8,2,22000,none
+106,Coming to town,"Reach <b>Santa's 7th form</b>.",18,9,2,22100,none
+107,All hail Santa,"Reach <b>Santa's final form</b>.",19,10,2,22100,none
+108,Let it snow,"Unlock <b>every Christmas-themed cookie</b>.",19,9,2,22100,none
+109,Oh deer,"Pop <b>1 reindeer</b>.",12,9,2,22100,none
+110,Sleigh of hand,"Pop <b>50 reindeer</b>.",12,9,2,22100,none
+111,Reindeer sleigher,"Pop <b>200 reindeer</b>.",12,9,2,22100,none
+112,Perfected agriculture,"Have <b>150</b> farms.",2,13,0,1200,none
+113,Ultimate automation,"Have <b>150</b> factories.",4,13,0,1300,none
+114,Can you dig it,"Have <b>150</b> mines.",3,13,0,1400,none
+115,Type II civilization,"Have <b>150</b> shipments.",5,13,0,1500,none
+116,Gild wars,"Have <b>150</b> alchemy labs.",6,13,0,1600,none
+117,Brain-split,"Have <b>150</b> portals.",7,13,0,1700,none
+118,Time duke,"Have <b>150</b> time machines.",8,13,0,1800,none
+119,Molecular maestro,"Have <b>150</b> antimatter condensers.",13,13,0,1900,none
+120,Lone photon,"Have <b>1</b> prism.",14,0,0,2000,none
+121,Dazzling glimmer,"Have <b>50</b> prisms.",14,1,0,2000,none
+122,Blinding flash,"Have <b>100</b> prisms.",14,2,0,2000,none
+123,Unending glow,"Have <b>150</b> prisms.",14,13,0,2000,none
+124,Lord of Constructs,"Own <b>1500</b> buildings.<q>He saw the vast plains stretching ahead of him, and he said : let there be civilization.</q>",6,6,2,5000,none
+125,Lord of Progress,"Purchase <b>150</b> upgrades.<q>One can always do better. But should you?</q>",9,2,2,6000,none
+126,Bicentennial,"Have at least <b>200 of everything</b>.<q>You crazy person.</q>",9,6,2,7000,none
+127,Lovely cookies,"Unlock <b>every Valentine-themed cookie</b>.",20,3,2,22300,none

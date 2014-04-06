@@ -12,7 +12,7 @@ package agame.endless.modules.main.view.particle
 		public var size:int=1;
 		public var dur:Number=2;
 		public var r:Number;
-		public var text:String;
+		public var text:Boolean;
 		public var life:Number=-1;
 	}
 }

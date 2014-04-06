@@ -1,13 +1,41 @@
 package csv
 {
+	import com.amgame.utils.FileUtil;
+
 	import flash.display.Sprite;
 	import flash.filesystem.File;
+	import flash.filesystem.FileMode;
+	import flash.filesystem.FileStream;
+
+	import agame.endless.data.AchementModels;
+	import agame.endless.data.ObjectModels;
+	import agame.endless.data.UpgradeModels;
 
 	public class csv2as_shell extends Sprite
 	{
 		public function csv2as_shell()
 		{
+
+			var o:ObjectModels=new ObjectModels;
+			writeAsFile('config/objects.csv', o.setup());
+
+			var u:UpgradeModels=new UpgradeModels;
+			writeAsFile('config/upgrades.csv', u.setup());
+
+			var a:AchementModels=new AchementModels;
+			writeAsFile('config/achievements.csv', a.setup());
+
 			start();
+		}
+
+		public function writeAsFile(resolvePath:String, data:String):void
+		{
+			trace('writeFile:', resolvePath);
+			var file:File=new File(File.applicationDirectory.resolvePath(resolvePath).nativePath);
+			var fs:FileStream=new FileStream;
+			fs.open(file, FileMode.WRITE);
+			fs.writeUTFBytes(data);
+			fs.close();
 		}
 
 		public function start():void

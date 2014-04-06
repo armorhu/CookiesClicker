@@ -13,7 +13,9 @@ package agame.endless.data
 		{
 		}
 
-		public function setup():void
+		private var csvContext:String='';
+
+		public function setup():String
 		{
 			var result:Array=[];
 			var lastObjectName='';
@@ -554,10 +556,10 @@ package agame.endless.data
 
 
 			var len:int=result.length;
-			var kes:Array=['ID', 'Name', 'Desc', 'Type', 'Price', 'tierObject', 'Power', 'Order', 'Hide', 'Season', 'IconX', 'IconY'];
+			var kes:Array=['id', 'name', 'desc', 'type', 'price', 'tierObject', 'power', 'order', 'hide', 'season', 'iconX', 'iconY'];
 			var types:Array=['int', 'String', 'String', 'String', 'int', 'String', 'int', 'int', 'int', 'String', 'int', 'int'];
-			trace(kes.join(','));
-			trace(types.join(','));
+			csvContext=csvContext + kes.join(',') + '\n';
+			csvContext=csvContext + types.join(',') + '\n';
 			for (var i:int=0; i < len; i++)
 			{
 				var obj:Object=result[i];
@@ -574,7 +576,7 @@ package agame.endless.data
 				temp.push(obj.season);
 				temp.push(obj.icon[0]);
 				temp.push(obj.icon[1]);
-				trace(temp.join(','));
+				csvContext=csvContext + temp.join(',') + '\n';
 			}
 			function Objects(name):Object
 			{
@@ -582,6 +584,9 @@ package agame.endless.data
 				lastObjectName=name;
 				return {basePrice: 1};
 			}
+
+
+			return csvContext;
 		}
 	}
 }

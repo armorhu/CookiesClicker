@@ -1,4 +1,4 @@
-ID,Name,Desc,Type,Price,tierObject,Power,Order,Hide,Season,IconX,IconY
+id,name,desc,type,price,tierObject,power,order,hide,season,iconX,iconY
 int,String,String,String,int,String,int,int,int,String,int,int
 1,Reinforced index finger,"The mouse gains <b>+1</b> cookie per click.<br>Cursors gain <b>+0.1</b> base CpS.<q>prod prod</q>",,100,,0,100,0,,0,0
 2,Carpal tunnel prevention cream,"The mouse and cursors are <b>twice</b> as efficient.<q>it... it hurts to click...</q>",,400,,0,100,0,,0,0

@@ -38,26 +38,7 @@ package agame.endless.modules.main.model.objects
 				}
 				add=add * num;
 				return Game.ComputeCps(0.1, Game.Has('Reinforced index finger') * 0.1, Game.Has('Carpal tunnel prevention cream') + Game.Has('Ambidextrous'), add);
-			}, function():void
-			{ //draw function for cursors
-			/*
-			var str='';
-			for (var i=0;i<this.amount;i++)
-			{
-			//layered
-			var n=Math.floor(i/50);
-			var a=((i+0.5*n)%50)/50;
-			var x=Math.floor(Math.sin(a*Math.PI*2)*(140+n*16))-16;
-			var y=Math.floor(Math.cos(a*Math.PI*2)*(140+n*16))-16;
-			var r=Math.floor(-(a)*360);
-			str+='<div class="cursor" id="cursor'+i+'" style="left:'+x+'px;top:'+y+'px;transform:rotate('+r+'deg);-moz-transform:rotate('+r+'deg);-webkit-transform:rotate('+r+'deg);-ms-transform:rotate('+r+'deg);-o-transform:rotate('+r+'deg);"></div>';
-
-			}
-			l('cookieCursors').innerHTML=str;
-			*/
-//				if (!l('rowInfo' + this.id))
-//					l('sectionLeftInfo').innerHTML='<div class="info" id="rowInfo' + this.id + '"><div class="infoContent" id="rowInfoContent' + this.id + '"></div><div><a onclick="ObjectDatasById[' + this.id + '].sell();">Sell 1</a></div></div>';
-			}, function():void
+			}, {}, function():void
 			{
 				if (this.amount >= 1)
 					Game.Unlock(['Reinforced index finger', 'Carpal tunnel prevention cream']);
@@ -404,8 +385,6 @@ package agame.endless.modules.main.model.objects
 				list.push('antiGrandma');
 			if (Game.Has('Rainbow grandmas'))
 				list.push('rainbowGrandma');
-			//				if (Game.season == 'christmas')
-			//					list.push('elfGrandma');
 			return choose(list);
 		}
 	}

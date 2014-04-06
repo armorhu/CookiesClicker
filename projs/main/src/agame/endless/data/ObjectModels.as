@@ -7,13 +7,16 @@ package agame.endless.data
 		{
 		}
 
-		public function setup():void
+
+		private var csvContext:String='';
+
+		public function setup():String
 		{
 			var id=1;
-			var keys:Array=['ID', 'name', 'DisplayName', 'Single', 'Plural', 'ActionName', 'Desc', 'Price', 'Pic', 'Icon', 'Background'];
+			var keys:Array=['id', 'name', 'displayName', 'single', 'plural', 'actionName', 'desc', 'price', 'pic', 'icon', 'background'];
 			var types:Array=['int', 'String', 'String', 'String', 'String', 'String', 'String', 'int', 'String', 'String', 'String'];
-			trace(keys.join(','));
-			trace(types.join(','));
+			csvContext=csvContext + keys.join(',') + '\n';
+			csvContext=csvContext + types.join(',') + '\n';
 			function Object(name, commonName, desc, pic, icon, background, price) //, cps=null, drawFunction=null, buyFunction=null)
 			{
 				var obj:*={};
@@ -42,7 +45,7 @@ package agame.endless.data
 				temp.push(obj.pic);
 				temp.push(obj.icon);
 				temp.push(obj.background);
-				trace(temp.join(','));
+				csvContext=csvContext + temp.join(',') + '\n';
 			}
 
 			Object('Cursor', 'cursor|cursors|clicked', 'Autoclicks once every 10 seconds.', 'cursor', 'cursoricon', '', 15);
@@ -56,6 +59,8 @@ package agame.endless.data
 			Object('Time machine', 'time machine|time machines|recovered', 'Brings cookies from the past, before they were even eaten.', 'timemachine', 'timemachineIcon', 'timemachineBackground', 123456789);
 			Object('Antimatter condenser', 'antimatter condenser|antimatter condensers|condensed', 'Condenses the antimatter in the universe into cookies.', 'antimattercondenser', 'antimattercondenserIcon', 'antimattercondenserBackground', 3999999999);
 			Object('Prism', 'prism|prisms|converted', 'Converts light itself into cookies.', 'prism', 'prismIcon', 'prismBackground', 50000000000);
+
+			return csvContext;
 		}
 	}
 }
