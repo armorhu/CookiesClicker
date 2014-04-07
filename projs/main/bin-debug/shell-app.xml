@@ -296,6 +296,8 @@
     </iPhone>
 
 
-	<extensions>
+	
+<extensions>
+        <extensionID>com.adobe.ane.TestFlightImpl</extensionID>
     </extensions>
 </application>
