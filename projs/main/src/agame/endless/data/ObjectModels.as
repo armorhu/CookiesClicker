@@ -13,8 +13,8 @@ package agame.endless.data
 		public function setup():String
 		{
 			var id=1;
-			var keys:Array=['id', 'name', 'displayName', 'single', 'plural', 'actionName', 'desc', 'price', 'pic', 'icon', 'background'];
-			var types:Array=['int', 'String', 'String', 'String', 'String', 'String', 'String', 'int', 'String', 'String', 'String'];
+			var keys:Array=['id', 'name', 'displayName', 'single', 'plural', 'actionName', 'desc', 'basePrice', 'pic', 'icon', 'background'];
+			var types:Array=['int', 'String', 'String', 'String', 'String', 'String', 'String', 'Number', 'String', 'String', 'String'];
 			csvContext=csvContext + keys.join(',') + '\n';
 			csvContext=csvContext + types.join(',') + '\n';
 			function Object(name, commonName, desc, pic, icon, background, price) //, cps=null, drawFunction=null, buyFunction=null)
@@ -22,12 +22,12 @@ package agame.endless.data
 				var obj:*={};
 				obj.id=id++;
 				obj.name=name;
-				obj.displayName=obj.name;
+				obj.displayName=TextData.formatAndPush(name + '_DisplayName', obj.name);
 				commonName=commonName.split('|');
 				obj.single=commonName[0];
 				obj.plural=commonName[1];
 				obj.actionName=commonName[2];
-				obj.desc=desc;
+				obj.desc=TextData.formatAndPush(name + '_Desc', desc);
 				obj.basePrice=price;
 				obj.price=obj.basePrice;
 				obj.pic=pic;

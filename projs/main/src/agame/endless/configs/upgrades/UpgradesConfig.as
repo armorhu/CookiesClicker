@@ -5,6 +5,7 @@ package agame.endless.configs.upgrades
 	{
 		public var id:int;
 		public var name:String;
+		public var displayName:String;
 		public var desc:String;
 		public var type:String;
 		public var price:int;

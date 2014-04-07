@@ -2,8 +2,9 @@ package agame.endless.work
 {
 	import com.agame.services.work.WorkFlowEvent;
 	import com.agame.services.work.Workflow;
-	
+
 	import agame.endless.EndlessApplication;
+	import agame.endless.configs.AppConfig;
 	import agame.endless.work.init.LaunchModuleWork;
 	import agame.endless.work.init.StartupStarlingWork;
 	import agame.endless.work.init.WorkInitAssets;
@@ -25,6 +26,7 @@ package agame.endless.work
 		{
 			_flow=new Workflow();
 			_flow.registeWork(new StartupStarlingWork(app), false, '启动Starling');
+//			_flow.registeWork(AppConfig, false, '初始化配置');
 			_flow.registeWork(new WorkInitAssets(app), false, '初始化资源');
 			_flow.registeWork(new LaunchModuleWork(app), false, '启动模块');
 			_flow.addEventListeners(startupWorkflowEvent);

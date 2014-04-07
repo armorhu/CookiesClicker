@@ -10,7 +10,7 @@ package agame.endless.configs.objects
 		public var plural:String;
 		public var actionName:String;
 		public var desc:String;
-		public var price:int;
+		public var basePrice:Number;
 		public var pic:String;
 		public var icon:String;
 		public var background:String;

@@ -539,7 +539,8 @@ package agame.endless.data
 				var obj:Object={};
 				obj.id=(id++);
 				obj.name=name;
-				obj.desc=desc;
+				obj.displayName=TextData.formatAndPush('Upgrade_displayName_' + obj.name, name);
+				obj.desc=TextData.formatAndPush('Upgrade_Desc_' + obj.name, desc);
 				obj.price=price;
 				obj.order=order; //+ obj.id * 0.001;
 				obj.type=type;
@@ -556,8 +557,8 @@ package agame.endless.data
 
 
 			var len:int=result.length;
-			var kes:Array=['id', 'name', 'desc', 'type', 'price', 'tierObject', 'power', 'order', 'hide', 'season', 'iconX', 'iconY'];
-			var types:Array=['int', 'String', 'String', 'String', 'int', 'String', 'int', 'int', 'int', 'String', 'int', 'int'];
+			var kes:Array=['id', 'name', 'displayName', 'desc', 'type', 'price', 'tierObject', 'power', 'order', 'hide', 'season', 'iconX', 'iconY'];
+			var types:Array=['int', 'String', 'String', 'String', 'String', 'int', 'String', 'int', 'int', 'int', 'String', 'int', 'int'];
 			csvContext=csvContext + kes.join(',') + '\n';
 			csvContext=csvContext + types.join(',') + '\n';
 			for (var i:int=0; i < len; i++)
@@ -566,6 +567,7 @@ package agame.endless.data
 				var temp:Array=[];
 				temp.push(obj.id);
 				temp.push(obj.name);
+				temp.push('"' + obj.displayName + '"');
 				temp.push('"' + obj.desc + '"');
 				temp.push(obj.type);
 				temp.push(obj.price);

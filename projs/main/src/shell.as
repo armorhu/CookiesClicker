@@ -13,10 +13,8 @@ package
 		public function shell()
 		{
 			super();
-			stage.frameRate=60;
+			stage.frameRate=30;
 			stage.quality=StageQuality.LOW;
-//			NativeApplication.nativeApplication.addEventListener(Event.ACTIVATE, activeHandler);
-			
 			
 			try
 			{

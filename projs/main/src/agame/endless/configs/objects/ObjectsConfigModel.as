@@ -49,7 +49,7 @@ package agame.endless.configs.objects
 
 			for (var i:int=0; i < len; i++)
 			{
-				if (objects[i].ID == id)
+				if (objects[i].id == id)
 					return objects[i];
 			}
 			return null;
@@ -68,7 +68,7 @@ package agame.endless.configs.objects
 			
 			for (var i:int=0; i < len; i++)
 			{
-				if (objects[i].Name == name)
+				if (objects[i].name == name)
 					return objects[i];
 			}
 			return null;

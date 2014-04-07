@@ -49,7 +49,7 @@ package agame.endless.configs.template
 
 			for (var i:int=0; i < len; i++)
 			{
-				if (template[i].ID == id)
+				if (template[i].id == id)
 					return template[i];
 			}
 			return null;
@@ -68,7 +68,7 @@ package agame.endless.configs.template
 			
 			for (var i:int=0; i < len; i++)
 			{
-				if (template[i].Name == name)
+				if (template[i].name == name)
 					return template[i];
 			}
 			return null;

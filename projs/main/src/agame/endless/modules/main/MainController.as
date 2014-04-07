@@ -3,11 +3,13 @@ package agame.endless.modules.main
 	import com.agame.framework.module.Module;
 	import com.agame.utils.Beautify;
 
-	import flash.geom.Transform;
 	import flash.media.SoundTransform;
 	import flash.utils.getTimer;
 
 	import agame.endless.appStage;
+	import agame.endless.configs.lang.Lang;
+	import agame.endless.configs.lang.LangPattern;
+	import agame.endless.configs.texts.TextsTIDDefs;
 	import agame.endless.modules.main.model.Game;
 	import agame.endless.modules.main.model.MainModel;
 	import agame.endless.modules.main.model.buildings.BuildingData;
@@ -19,8 +21,6 @@ package agame.endless.modules.main
 
 	import starling.events.Event;
 	import starling.events.EventDispatcher;
-
-	import testflight.TestFlighter;
 
 	public class MainController extends EventDispatcher implements IEnterframe
 	{
@@ -112,9 +112,7 @@ package agame.endless.modules.main
 		private function modelEventHandler(evt:Event):void
 		{
 			if (evt.type == MainModel.NEWTICKER_CHANGED)
-			{
-//				_view.content.newsTickerLabel.text=Game.Ticker;
-			}
+				_view.content.newsTickerLabel.text=Game.Ticker;
 			else if (evt.type == MainModel.REBUILD_STORED)
 				rebuildStored();
 			else if (evt.type == MainModel.REBUILD_UPGRADES)
@@ -152,10 +150,8 @@ package agame.endless.modules.main
 			if (Game.T % 10 == 0)
 			{
 				drawDirtyObjects();
-				_view.cookies.text=Beautify(Game.cookies) + ' ' + (Game.cookies <= 1 ? 'cookie' : 'cookies');
-				_view.cps.text='+' + Beautify(Game.cookiesPs) + '  per secend!';
-				if (TestFlighter.isTestFlightSupport())
-					_view.cookies.color=0xff0000;
+				_view.cookies.text=Lang(TextsTIDDefs.TID_COOKIES).replace(LangPattern.Number, Beautify(Game.cookies));
+				_view.cps.text=Lang(TextsTIDDefs.TID_CPS).replace(LangPattern.Number, Beautify(Game.cookiesPs));
 			}
 		}
 

@@ -49,7 +49,7 @@ package agame.endless.configs.upgrades
 
 			for (var i:int=0; i < len; i++)
 			{
-				if (upgrades[i].ID == id)
+				if (upgrades[i].id == id)
 					return upgrades[i];
 			}
 			return null;
@@ -68,7 +68,7 @@ package agame.endless.configs.upgrades
 			
 			for (var i:int=0; i < len; i++)
 			{
-				if (upgrades[i].Name == name)
+				if (upgrades[i].name == name)
 					return upgrades[i];
 			}
 			return null;

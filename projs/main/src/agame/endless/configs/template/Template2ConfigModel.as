@@ -32,7 +32,7 @@ package agame.endless.configs.template
 			if(startLine < 0) return false;
 			
 			var line:int = startLine;
-			var configNameIndex:int = _file.keys.indexOf('Name');
+			var configNameIndex:int = _file.keys.indexOf('name');
 			var configName:String = _file.valueTables[line][configNameIndex];
 			const keyLen:int = _file.keys.length;
 			const lineNum:int = _file.valueTables.length;
@@ -129,7 +129,7 @@ package agame.endless.configs.template
 
 			for (var i:int = 0 ; i < len ; i++)
 			{
-				if (template[i].length > 0 && template[i][0].Name == name)
+				if (template[i].length > 0 && template[i][0].name == name)
 					return template[i];
 			}
 			return null;
@@ -152,7 +152,7 @@ package agame.endless.configs.template
 
 			for (var i:int = 0 ; i < len ; i++)
 			{
-				if (template[i].length > 0 && template[i][0].Name == name)
+				if (template[i].length > 0 && template[i][0].name == name)
 					return template[i].length;
 			}
 			return 0;

@@ -1,8 +1,12 @@
 package agame.endless.modules.main.model.objects
 {
+	import com.agame.services.csv.CSVFile;
 	import com.agame.utils.choose;
 
+	import flash.utils.ByteArray;
+
 	import agame.endless.modules.main.model.Game;
+	import agame.endless.services.assets.Assets;
 
 	public class ObjectDataModel
 	{
@@ -12,8 +16,12 @@ package agame.endless.modules.main.model.objects
 
 		public static function setup():void
 		{
+			ObjectData.csvFile=new CSVFile;
+			var ba:ByteArray=Assets.current.getByteArray('objects');
+			ObjectData.csvFile.read(ba.readUTFBytes(ba.bytesAvailable)).parse();
+			
 			//define objects
-			new ObjectData('Cursor', 'cursor|cursors|clicked', 'Autoclicks once every 10 seconds.', 'cursor', 'cursoricon', '', 15, function():Number
+			new ObjectData(function():Number
 			{
 				var add:Number=0;
 				if (Game.Has('Thousand fingers'))
@@ -72,7 +80,7 @@ package agame.endless.modules.main.model.objects
 			});
 
 			Game.SpecialGrandmaUnlock=15;
-			new ObjectData('Grandma', 'grandma|grandmas|baked', 'A nice grandma to bake more cookies.', 'grandma', 'grandmaIcon', 'grandmaBackground', 100, function():Number
+			new ObjectData(function():Number
 			{
 				var mult:Number=0;
 				if (Game.Has('Farmer grandmas'))
@@ -140,7 +148,7 @@ package agame.endless.modules.main.model.objects
 				}
 			};
 
-			new ObjectData('Farm', 'farm|farms|harvested', 'Grows cookie plants from cookie seeds.', 'farm', 'farmIcon', 'farmBackground', 500, function():Number
+			new ObjectData(function():Number
 			{
 				return Game.ComputeCps(4, Game.Has('Cheap hoes') * 1, Game.Has('Fertilizer') + Game.Has('Cookie trees') + Game.Has('Genetically-modified cookies') + Game.Has('Gingerbread scarecrows'));
 			}, Game.NewDrawFunction('', 16, 16, 64, 2, 32), function():void
@@ -165,7 +173,7 @@ package agame.endless.modules.main.model.objects
 					Game.Win('Perfected agriculture');
 			});
 
-			new ObjectData('Factory', 'factory|factories|mass-produced', 'Produces large quantities of cookies.', 'factory', 'factoryIcon', 'factoryBackground', 3000, function():Number
+			new ObjectData(function():Number
 			{
 				return Game.ComputeCps(10, Game.Has('Sturdier conveyor belts') * 4, Game.Has('Child labor') + Game.Has('Sweatshop') + Game.Has('Radium reactors') + Game.Has('Recombobulators'));
 			}, Game.NewDrawFunction('', 32, 2, 64, 1, -22), function():void
@@ -190,7 +198,7 @@ package agame.endless.modules.main.model.objects
 					Game.Win('Ultimate automation');
 			});
 
-			new ObjectData('Mine', 'mine|mines|mined', 'Mines out cookie dough and chocolate chips.', 'mine', 'mineIcon', 'mineBackground', 10000, function():Number
+			new ObjectData(function():Number
 			{
 				return Game.ComputeCps(40, Game.Has('Sugar gas') * 10, Game.Has('Megadrill') + Game.Has('Ultradrill') + Game.Has('Ultimadrill') + Game.Has('H-bomb mining'));
 			}, Game.NewDrawFunction('', 16, 16, 64, 2, 24), function():void
@@ -215,7 +223,7 @@ package agame.endless.modules.main.model.objects
 					Game.Win('Can you dig it');
 			});
 
-			new ObjectData('Shipment', 'shipment|shipments|shipped', 'Brings in fresh cookies from the cookie planet.', 'shipment', 'shipmentIcon', 'shipmentBackground', 40000, function():Number
+			new ObjectData(function():Number
 			{
 				return Game.ComputeCps(100, Game.Has('Vanilla nebulae') * 30, Game.Has('Wormholes') + Game.Has('Frequent flyer') + Game.Has('Warp drive') + Game.Has('Chocolate monoliths'));
 			}, Game.NewDrawFunction('', 16, 16, 64), function():void
@@ -240,7 +248,7 @@ package agame.endless.modules.main.model.objects
 					Game.Win('Type II civilization');
 			});
 
-			new ObjectData('Alchemy lab', 'alchemy lab|alchemy labs|transmuted', 'Turns gold into cookies!', 'alchemylab', 'alchemylabIcon', 'alchemylabBackground', 200000, function():Number
+			new ObjectData(function():Number
 			{
 				return Game.ComputeCps(400, Game.Has('Antimony') * 100, Game.Has('Essence of dough') + Game.Has('True chocolate') + Game.Has('Ambrosia') + Game.Has('Aqua crustulae'));
 			}, Game.NewDrawFunction(0, 16, 16, 64, 2, 16), function():void
@@ -265,7 +273,7 @@ package agame.endless.modules.main.model.objects
 					Game.Win('Gild wars');
 			});
 
-			new ObjectData('Portal', 'portal|portals|retrieved', 'Opens a door to the Cookieverse.', 'portal', 'portalIcon', 'portalBackground', 1666666, function():Number
+			new ObjectData(function():Number
 			{
 				return Game.ComputeCps(6666, Game.Has('Ancient tablet') * 1666, Game.Has('Insane oatling workers') + Game.Has('Soul bond') + Game.Has('Sanity dance') + Game.Has('Brane transplant'));
 			}, Game.NewDrawFunction(0, 32, 32, 64, 2), function():void
@@ -289,7 +297,7 @@ package agame.endless.modules.main.model.objects
 				if (this.amount >= 150)
 					Game.Win('Brain-split');
 			});
-			new ObjectData('Time machine', 'time machine|time machines|recovered', 'Brings cookies from the past, before they were even eaten.', 'timemachine', 'timemachineIcon', 'timemachineBackground', 123456789, function():Number
+			new ObjectData(function():Number
 			{
 				return Game.ComputeCps(98765, Game.Has('Flux capacitors') * 9876, Game.Has('Time paradox resolver') + Game.Has('Quantum conundrum') + Game.Has('Causality enforcer') + Game.Has('Yestermorrow comparators'));
 			}, Game.NewDrawFunction(0, 32, 32, 64, 1), function():void
@@ -313,7 +321,7 @@ package agame.endless.modules.main.model.objects
 				if (this.amount >= 150)
 					Game.Win('Time duke');
 			});
-			new ObjectData('Antimatter condenser', 'antimatter condenser|antimatter condensers|condensed', 'Condenses the antimatter in the universe into cookies.', 'antimattercondenser', 'antimattercondenserIcon', 'antimattercondenserBackground', 3999999999, function():Number
+			new ObjectData(function():Number
 			{
 				return Game.ComputeCps(999999, Game.Has('Sugar bosons') * 99999, Game.Has('String theory') + Game.Has('Large macaron collider') + Game.Has('Big bang bake') + Game.Has('Reverse cyclotrons'));
 			}, Game.NewDrawFunction(0, 0, 64, 64, 1), function():void
@@ -337,8 +345,7 @@ package agame.endless.modules.main.model.objects
 				if (this.amount >= 150)
 					Game.Win('Molecular maestro');
 			});
-			Game.Objects['Antimatter condenser'].displayName='<span style="font-size:65%;">Antimatter condenser</span>'; //shrink the name since it's so large
-			new ObjectData('Prism', 'prism|prisms|converted', 'Converts light itself into cookies.', 'prism', 'prismIcon', 'prismBackground', 50000000000, function():Number
+			new ObjectData(function():Number
 			{
 				return Game.ComputeCps(10000000, Game.Has('Gem polish') * 1000000, Game.Has('9th color') + Game.Has('Chocolate light') + Game.Has('Grainbow') + Game.Has('Pure cosmic light'));
 			}, Game.NewDrawFunction(0, 16, 4, 64, 1, 20), function():void

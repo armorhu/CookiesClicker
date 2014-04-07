@@ -1,3 +1,5 @@
 objects.csv,false,name
 upgrades.csv,false,name
 achievements.csv,false,name
+news.csv,true
+texts.csv,false,TID

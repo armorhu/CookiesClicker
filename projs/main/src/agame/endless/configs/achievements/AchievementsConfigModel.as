@@ -49,7 +49,7 @@ package agame.endless.configs.achievements
 
 			for (var i:int=0; i < len; i++)
 			{
-				if (achievements[i].ID == id)
+				if (achievements[i].id == id)
 					return achievements[i];
 			}
 			return null;
@@ -68,7 +68,7 @@ package agame.endless.configs.achievements
 			
 			for (var i:int=0; i < len; i++)
 			{
-				if (achievements[i].Name == name)
+				if (achievements[i].name == name)
 					return achievements[i];
 			}
 			return null;

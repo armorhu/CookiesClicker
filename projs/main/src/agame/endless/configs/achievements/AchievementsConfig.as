@@ -5,6 +5,7 @@ package agame.endless.configs.achievements
 	{
 		public var id:int;
 		public var name:String;
+		public var displayName:String;
 		public var desc:int;
 		public var iconX:int;
 		public var iconY:String;

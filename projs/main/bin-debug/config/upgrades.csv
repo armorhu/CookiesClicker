@@ -1,187 +1,187 @@
-id,name,desc,type,price,tierObject,power,order,hide,season,iconX,iconY
-int,String,String,String,int,String,int,int,int,String,int,int
-1,Reinforced index finger,"The mouse gains <b>+1</b> cookie per click.<br>Cursors gain <b>+0.1</b> base CpS.<q>prod prod</q>",,100,,0,100,0,,0,0
-2,Carpal tunnel prevention cream,"The mouse and cursors are <b>twice</b> as efficient.<q>it... it hurts to click...</q>",,400,,0,100,0,,0,0
-3,Ambidextrous,"The mouse and cursors are <b>twice</b> as efficient.<q>Look ma, both hands!</q>",,10000,,0,100,0,,0,6
-4,Thousand fingers,"The mouse and cursors gain <b>+0.1</b> cookies for each non-cursor object owned.<q>clickity</q>",,500000,,0,100,0,,0,6
-5,Million fingers,"The mouse and cursors gain <b>+0.5</b> cookies for each non-cursor object owned.<q>clickityclickity</q>",,50000000,,0,100,0,,1,6
-6,Billion fingers,"The mouse and cursors gain <b>+2</b> cookies for each non-cursor object owned.<q>clickityclickityclickity</q>",,500000000,,0,100,0,,2,6
-7,Trillion fingers,"The mouse and cursors gain <b>+10</b> cookies for each non-cursor object owned.<q>clickityclickityclickityclickity</q>",,5000000000,,0,100,0,,3,6
-8,Forwards from grandma,"Grandmas gain <b>+0.3</b> base CpS.<q>RE:RE:thought you'd get a kick out of this ;))</q>",,10,Grandma,0,200,0,,1,0
-9,Steel-plated rolling pins,"Grandmas are <b>twice</b> as efficient.<q>Just what you kneaded.</q>",,100,Grandma,0,200,0,,1,0
-10,Lubricated dentures,"Grandmas are <b>twice</b> as efficient.<q>squish</q>",,1000,Grandma,0,200,0,,1,1
-11,Cheap hoes,"Farms gain <b>+1</b> base CpS.<q>Rake in the dough!</q>",,10,Farm,0,300,0,,2,0
-12,Fertilizer,"Farms are <b>twice</b> as efficient.<q>It's chocolate, I swear.</q>",,100,Farm,0,300,0,,2,0
-13,Cookie trees,"Farms are <b>twice</b> as efficient.<q>A relative of the breadfruit.</q>",,1000,Farm,0,300,0,,2,1
-14,Sturdier conveyor belts,"Factories gain <b>+4</b> base CpS.<q>You're going places.</q>",,10,Factory,0,400,0,,4,0
-15,Child labor,"Factories are <b>twice</b> as efficient.<q>Cheaper, healthier workforce.</q>",,100,Factory,0,400,0,,4,0
-16,Sweatshop,"Factories are <b>twice</b> as efficient.<q>Slackers will be terminated.</q>",,1000,Factory,0,400,0,,4,1
-17,Sugar gas,"Mines gain <b>+10</b> base CpS.<q>A pink, volatile gas, found in the depths of some chocolate caves.</q>",,10,Mine,0,500,0,,3,0
-18,Megadrill,"Mines are <b>twice</b> as efficient.<q>You're in deep.</q>",,100,Mine,0,500,0,,3,0
-19,Ultradrill,"Mines are <b>twice</b> as efficient.<q>Finally caved in?</q>",,1000,Mine,0,500,0,,3,1
-20,Vanilla nebulae,"Shipments gain <b>+30</b> base CpS.<q>If you removed your space helmet, you could probably smell it!<br>(Note : don't do that.)</q>",,10,Shipment,0,600,0,,5,0
-21,Wormholes,"Shipments are <b>twice</b> as efficient.<q>By using these as shortcuts, your ships can travel much faster.</q>",,100,Shipment,0,600,0,,5,0
-22,Frequent flyer,"Shipments are <b>twice</b> as efficient.<q>Come back soon!</q>",,1000,Shipment,0,600,0,,5,1
-23,Antimony,"Alchemy labs gain <b>+100</b> base CpS.<q>Actually worth a lot of mony.</q>",,10,Alchemy lab,0,700,0,,6,0
-24,Essence of dough,"Alchemy labs are <b>twice</b> as efficient.<q>Extracted through the 5 ancient steps of alchemical baking.</q>",,100,Alchemy lab,0,700,0,,6,0
-25,True chocolate,"Alchemy labs are <b>twice</b> as efficient.<q>The purest form of cacao.</q>",,1000,Alchemy lab,0,700,0,,6,1
-26,Ancient tablet,"Portals gain <b>+1,666</b> base CpS.<q>A strange slab of peanut brittle, holding an ancient cookie recipe. Neat!</q>",,10,Portal,0,800,0,,7,0
-27,Insane oatling workers,"Portals are <b>twice</b> as efficient.<q>ARISE, MY MINIONS!</q>",,100,Portal,0,800,0,,7,0
-28,Soul bond,"Portals are <b>twice</b> as efficient.<q>So I just sign up and get more cookies? Sure, whatever!</q>",,1000,Portal,0,800,0,,7,1
-29,Flux capacitors,"Time machines gain <b>+9,876</b> base CpS.<q>Bake to the future.</q>",,1234567890,,0,900,0,,8,0
-30,Time paradox resolver,"Time machines are <b>twice</b> as efficient.<q>No more fooling around with your own grandmother!</q>",,9876543210,,0,900,0,,8,0
-31,Quantum conundrum,"Time machines are <b>twice</b> as efficient.<q>There is only one constant, and that is universal uncertainty.<br>Or is it?</q>",,98765456789,,0,900,0,,8,1
-32,Kitten helpers,"You gain <b>more CpS</b> the more milk you have.<q>meow may I help you</q>",,9000000,,0,20000,0,,1,7
-33,Kitten workers,"You gain <b>more CpS</b> the more milk you have.<q>meow meow meow meow</q>",,9000000000,,0,20000,0,,2,7
-34,Oatmeal raisin cookies,"Cookie production multiplier <b>+5%</b>.<q>No raisin to hate these.</q>",,99999999,,5,10000,0,,0,3
-35,Peanut butter cookies,"Cookie production multiplier <b>+5%</b>.<q>Get yourself some jam cookies!</q>",,99999999,,5,10000,0,,1,3
-36,Plain cookies,"Cookie production multiplier <b>+5%</b>.<q>Meh.</q>",,99999999,,5,10000,0,,2,3
-37,Coconut cookies,"Cookie production multiplier <b>+5%</b>.<q>These are *way* flaky.</q>",,999999999,,5,10000,0,,3,3
-38,White chocolate cookies,"Cookie production multiplier <b>+5%</b>.<q>I know what you'll say. It's just cocoa butter! It's not real chocolate!<br>Oh please.</q>",,999999999,,5,10000,0,,4,3
-39,Macadamia nut cookies,"Cookie production multiplier <b>+5%</b>.<q>They're macadamn delicious!</q>",,999999999,,5,10000,0,,5,3
-40,Double-chip cookies,"Cookie production multiplier <b>+10%</b>.<q>DOUBLE THE CHIPS<br>DOUBLE THE TASTY<br>(double the calories)</q>",,99999999999,,10,10000,0,,6,3
-41,Sugar cookies,"Cookie production multiplier <b>+5%</b>.<q>Tasty, if a little unimaginative.</q>",,99999999,,5,10000,0,,7,3
-42,White chocolate macadamia nut cookies,"Cookie production multiplier <b>+10%</b>.<q>Orteil's favorite.</q>",,99999999999,,10,10000,0,,8,3
-43,All-chocolate cookies,"Cookie production multiplier <b>+10%</b>.<q>CHOCOVERDOSE.</q>",,99999999999,,10,10000,0,,9,3
-44,Quadrillion fingers,"The mouse and cursors gain <b>+20</b> cookies for each non-cursor object owned.<q>clickityclickityclickityclickityclick</q>",,50000000000,,0,100,0,,3,6
-45,Prune juice,"Grandmas are <b>twice</b> as efficient.<q>Gets me going.</q>",,50000,Grandma,0,200,0,,1,2
-46,Genetically-modified cookies,"Farms are <b>twice</b> as efficient.<q>All-natural mutations.</q>",,50000,Farm,0,300,0,,2,2
-47,Radium reactors,"Factories are <b>twice</b> as efficient.<q>Gives your cookies a healthy glow.</q>",,50000,Factory,0,400,0,,4,2
-48,Ultimadrill,"Mines are <b>twice</b> as efficient.<q>Pierce the heavens, etc.</q>",,50000,Mine,0,500,0,,3,2
-49,Warp drive,"Shipments are <b>twice</b> as efficient.<q>To boldly bake.</q>",,50000,Shipment,0,600,0,,5,2
-50,Ambrosia,"Alchemy labs are <b>twice</b> as efficient.<q>Adding this to the cookie mix is sure to make them even more addictive!<br>Perhaps dangerously so.<br>Let's hope you can keep selling these legally.</q>",,50000,Alchemy lab,0,700,0,,6,2
-51,Sanity dance,"Portals are <b>twice</b> as efficient.<q>We can change if we want to.<br>We can leave our brains behind.</q>",,50000,Portal,0,800,0,,7,2
-52,Causality enforcer,"Time machines are <b>twice</b> as efficient.<q>What happened, happened.</q>",,1234567890000,,0,900,0,,8,2
-53,Lucky day,"Golden cookies appear <b>twice as often</b> and stay <b>twice as long</b>.<q>Oh hey, a four-leaf penny!</q>",,777777777,,0,5000,0,,10,1
-54,Serendipity,"Golden cookies appear <b>twice as often</b> and stay <b>twice as long</b>.<q>What joy! Seven horseshoes!</q>",,77777777777,,0,5000,0,,10,1
-55,Kitten engineers,"You gain <b>more CpS</b> the more milk you have.<q>meow meow meow meow, sir</q>",,9000000000000,,0,20000,0,,3,7
-56,Dark chocolate-coated cookies,"Cookie production multiplier <b>+15%</b>.<q>These absorb light so well you almost need to squint to see them.</q>",,999999999999,,15,10000,0,,10,3
-57,White chocolate-coated cookies,"Cookie production multiplier <b>+15%</b>.<q>These dazzling cookies absolutely glisten with flavor.</q>",,999999999999,,15,10000,0,,11,3
-58,Farmer grandmas,"Grandmas are <b>twice</b> as efficient.<q>A nice farmer to grow more cookies.</q>",,100,Farm,0,250,0,,10,9
-59,Worker grandmas,"Grandmas are <b>twice</b> as efficient.<q>A nice worker to manufacture more cookies.</q>",,100,Factory,0,250,0,,10,9
-60,Miner grandmas,"Grandmas are <b>twice</b> as efficient.<q>A nice miner to dig more cookies.</q>",,100,Mine,0,250,0,,10,9
-61,Cosmic grandmas,"Grandmas are <b>twice</b> as efficient.<q>A nice thing to... uh... cookies.</q>",,100,Shipment,0,250,0,,10,9
-62,Transmuted grandmas,"Grandmas are <b>twice</b> as efficient.<q>A nice golden grandma to convert into more cookies.</q>",,100,Alchemy lab,0,250,0,,10,9
-63,Altered grandmas,"Grandmas are <b>twice</b> as efficient.<q>a NiCe GrAnDmA tO bA##########</q>",,100,Portal,0,250,0,,10,9
-64,Grandmas' grandmas,"Grandmas are <b>twice</b> as efficient.<q>A nice grandma's nice grandma to bake double the cookies.</q>",,100,Time machine,0,250,0,,10,9
-65,Bingo center/Research facility,"Grandma-operated science lab and leisure club.<br>Grandmas are <b>4 times</b> as efficient.<br><b>Regularly unlocks new upgrades</b>.<q>What could possibly keep those grandmothers in check?...<br>Bingo.</q>",,100000000000,,0,14000,0,,11,9
-66,Specialized chocolate chips,"[Research]<br>Cookie production multiplier <b>+1%</b>.<q>Computer-designed chocolate chips. Computer chips, if you will.</q>",,10000000000,,0,15000,0,,0,9
-67,Designer cocoa beans,"[Research]<br>Cookie production multiplier <b>+2%</b>.<q>Now more aerodynamic than ever!</q>",,20000000000,,0,15000,0,,1,9
-68,Ritual rolling pins,"[Research]<br>Grandmas are <b>twice</b> as efficient.<q>The result of years of scientific research!</q>",,40000000000,,0,15000,0,,2,9
-69,Underworld ovens,"[Research]<br>Cookie production multiplier <b>+3%</b>.<q>Powered by science, of course!</q>",,80000000000,,0,15000,0,,3,9
-70,One mind,"[Research]<br>Each grandma gains <b>+1 base CpS for every 50 grandmas</b>.<div class="warning">Note : the grandmothers are growing restless. Do not encourage them.</div><q>We are one. We are many.</q>",,160000000000,,0,15000,0,,4,9
-71,Exotic nuts,"[Research]<br>Cookie production multiplier <b>+4%</b>.<q>You'll go crazy over these!</q>",,320000000000,,0,15000,0,,5,9
-72,Communal brainsweep,"[Research]<br>Each grandma gains another <b>+1 base CpS for every 50 grandmas</b>.<div class="warning">Note : proceeding any further in scientific research may have unexpected results. You have been warned.</div><q>We fuse. We merge. We grow.</q>",,640000000000,,0,15000,0,,6,9
-73,Arcane sugar,"[Research]<br>Cookie production multiplier <b>+5%</b>.<q>Tastes like insects, ligaments, and molasses.</q>",,1280000000000,,0,15000,0,,7,9
-74,Elder Pact,"[Research]<br>Each grandma gains <b>+1 base CpS for every 20 portals</b>.<div class="warning">Note : this is a bad idea.</div><q>squirm crawl slither writhe<br>today we rise</q>",,2560000000000,,0,15000,0,,8,9
-75,Elder Pledge,"[Repeatable]<br>Contains the wrath of the elders, at least for a while.<q>This is a simple ritual involving anti-aging cream, cookie batter mixed in the moonlight, and a live chicken.</q>",,1,,0,15000,3,,9,9
-76,Plastic mouse,"Clicking gains <b>+1% of your CpS</b>.<q>Slightly squeaky.</q>",,50000,,0,150,0,,11,0
-77,Iron mouse,"Clicking gains <b>+1% of your CpS</b>.<q>Click like it's 1349!</q>",,5000000,,0,150,0,,11,0
-78,Titanium mouse,"Clicking gains <b>+1% of your CpS</b>.<q>Heavy, but powerful.</q>",,500000000,,0,150,0,,11,1
-79,Adamantium mouse,"Clicking gains <b>+1% of your CpS</b>.<q>You could cut diamond with these.</q>",,50000000000,,0,150,0,,11,2
-80,Ultrascience,"Research takes only <b>5 seconds</b>.<q>YEAH, SCIENCE!</q>",,7,,0,40000,3,,9,2
-81,Eclipse cookies,"Cookie production multiplier <b>+15%</b>.<q>Look to the cookie.</q>",,9999999999999,,15,10000,0,,0,4
-82,Zebra cookies,"Cookie production multiplier <b>+15%</b>.<q>...</q>",,9999999999999,,15,10000,0,,1,4
-83,Quintillion fingers,"The mouse and cursors gain <b>+100</b> cookies for each non-cursor object owned.<q>man, just go click click click click click, it's real easy, man.</q>",,50000000000000,,0,100,0,,3,6
-84,Gold hoard,"Golden cookies appear <b>really often</b>.<q>That's entirely too many.</q>",,7,,0,40000,3,,10,1
-85,Elder Covenant,"[Switch]<br>Puts a permanent end to the elders' wrath, at the price of 5% of your CpS.<q>This is a complicated ritual involving silly, inconsequential trivialities such as cursed laxatives, century-old cacao, and an infant.<br>Don't question it.</q>",,66666666666666,,0,15000,3,,8,9
-86,Revoke Elder Covenant,"[Switch]<br>You will get 5% of your CpS back, but the grandmatriarchs will return.<q>we<br>rise<br>again</q>",,6666666666,,0,15000,3,,8,9
-87,Get lucky,"Golden cookie effects last <b>twice as long</b>.<q>You've been up all night, haven't you?</q>",,77777777777777,,0,5000,0,,10,1
-88,Sacrificial rolling pins,"Elder pledge last <b>twice</b> as long.<q>These are mostly for spreading the anti-aging cream.<br>(and accessorily, shortening the chicken's suffering.)</q>",,2888888888888,,0,15000,0,,2,9
-89,Snickerdoodles,"Cookie production multiplier <b>+15%</b>.<q>True to their name.</q>",,99999999999999,,15,10000,0,,2,4
-90,Stroopwafels,"Cookie production multiplier <b>+15%</b>.<q>If it ain't dutch, it ain't much.</q>",,99999999999999,,15,10000,0,,3,4
-91,Macaroons,"Cookie production multiplier <b>+15%</b>.<q>Not to be confused with macarons.<br>These have coconut, okay?</q>",,99999999999999,,15,10000,0,,4,4
-92,Neuromancy,"Can toggle upgrades on and off at will in the stats menu.<q>Can also come in handy to unsee things that can't be unseen.</q>",,7,,0,40000,3,,4,9
-93,Empire biscuits,"Cookie production multiplier <b>+15%</b>.<q>For your growing cookie empire, of course!</q>",,99999999999999,,15,10000,0,,5,4
-94,British tea biscuits,"Cookie production multiplier <b>+15%</b>.<q>Quite.</q>",,99999999999999,,15,10000,0,,6,4
-95,Chocolate british tea biscuits,"Cookie production multiplier <b>+15%</b>.<q>Yes, quite.</q>",,99999999999999,,15,10000,0,,7,4
-96,Round british tea biscuits,"Cookie production multiplier <b>+15%</b>.<q>Yes, quite riveting.</q>",,99999999999999,,15,10000,0,,8,4
-97,Round chocolate british tea biscuits,"Cookie production multiplier <b>+15%</b>.<q>Yes, quite riveting indeed.</q>",,99999999999999,,15,10000,0,,9,4
-98,Round british tea biscuits with heart motif,"Cookie production multiplier <b>+15%</b>.<q>Yes, quite riveting indeed, old chap.</q>",,99999999999999,,15,10000,0,,10,4
-99,Round chocolate british tea biscuits with heart motif,"Cookie production multiplier <b>+15%</b>.<q>I like cookies.</q>",,99999999999999,,15,10000,0,,11,4
-100,Sugar bosons,"Antimatter condensers gain <b>+99,999</b> base CpS.<q>Sweet firm bosons.</q>",,10,Antimatter condenser,0,1000,0,,13,0
-101,String theory,"Antimatter condensers are <b>twice</b> as efficient.<q>Reveals new insight about the true meaning of baking cookies (and, as a bonus, the structure of the universe).</q>",,100,Antimatter condenser,0,1000,0,,13,0
-102,Large macaron collider,"Antimatter condensers are <b>twice</b> as efficient.<q>How singular!</q>",,1000,Antimatter condenser,0,1000,0,,13,1
-103,Big bang bake,"Antimatter condensers are <b>twice</b> as efficient.<q>And that's how it all began.</q>",,50000,Antimatter condenser,0,1000,0,,13,2
-104,Antigrandmas,"Grandmas are <b>twice</b> as efficient.<q>A mean antigrandma to vomit more cookies.<br>(Do not put in contact with normal grandmas; loss of matter may occur.)</q>",,100,Antimatter condenser,0,250,0,,10,9
-105,Madeleines,"Cookie production multiplier <b>+20%</b>.<q>Unforgettable!</q>",,199999999999999,,20,10000,0,,12,3
-106,Palmiers,"Cookie production multiplier <b>+20%</b>.<q>Palmier than you!<br>Yes, I just said that.</q>",,199999999999999,,20,10000,0,,13,3
-107,Palets,"Cookie production multiplier <b>+20%</b>.<q>You could probably play hockey with these.<br>I mean, you're welcome to try.</q>",,199999999999999,,20,10000,0,,12,4
-108,Sabl&eacute;s,"Cookie production multiplier <b>+20%</b>.<q>The name implies they're made of sand. But you know better, don't you?</q>",,199999999999999,,20,10000,0,,13,4
-109,Kitten overseers,"You gain <b>more CpS</b> the more milk you have.<q>my purrpose is to serve you, sir</q>",,900000000000000,,0,20000,0,,8,7
-110,Sextillion fingers,"The mouse and cursors gain <b>+200</b> cookies for each non-cursor object owned.<q>sometimes<br>things just<br>click</q>",,500000000000000,,0,100,0,,12,13
-111,Double-thick glasses,"Grandmas are <b>twice</b> as efficient.<q>Oh... so THAT's what I've been baking.</q>",,1000000,Grandma,0,200,0,,1,13
-112,Gingerbread scarecrows,"Farms are <b>twice</b> as efficient.<q>Staring at your crops with mischievous glee.</q>",,1000000,Farm,0,300,0,,2,13
-113,Recombobulators,"Factories are <b>twice</b> as efficient.<q>A major part of cookie recombobulation.</q>",,1000000,Factory,0,400,0,,4,13
-114,H-bomb mining,"Mines are <b>twice</b> as efficient.<q>Questionable efficiency, but spectacular nonetheless.</q>",,1000000,Mine,0,500,0,,3,13
-115,Chocolate monoliths,"Shipments are <b>twice</b> as efficient.<q>My god. It's full of chocolate bars.</q>",,1000000,Shipment,0,600,0,,5,13
-116,Aqua crustulae,"Alchemy labs are <b>twice</b> as efficient.<q>Careful with the dosing - one drop too much and you get muffins.<br>And nobody likes muffins.</q>",,1000000,Alchemy lab,0,700,0,,6,13
-117,Brane transplant,"Portals are <b>twice</b> as efficient.<q>This refers to the practice of merging higher dimensional universes, or "branes", with our own, in order to facilitate transit (and harvesting of precious cookie dough).</q>",,1000000,Portal,0,800,0,,7,13
-118,Yestermorrow comparators,"Time machines are <b>twice</b> as efficient.<q>Fortnights into milleniums.</q>",,1000000,Time machine,0,900,0,,8,13
-119,Reverse cyclotrons,"Antimatter condensers are <b>twice</b> as efficient.<q>These can uncollision particles and unspin atoms. For... uh... better flavor, and stuff.</q>",,1000000,Antimatter condenser,0,1000,0,,13,13
-120,Unobtainium mouse,"Clicking gains <b>+1% of your CpS</b>.<q>These nice mice should suffice.</q>",,5000000000000,,0,150,0,,11,13
-121,Caramoas,"Cookie production multiplier <b>+25%</b>.<q>Yeah. That's got a nice ring to it.</q>",,999999999999999,,25,10000,0,,14,4
-122,Sagalongs,"Cookie production multiplier <b>+25%</b>.<q>Grandma's favorite?</q>",,999999999999999,,25,10000,0,,15,3
-123,Shortfoils,"Cookie production multiplier <b>+25%</b>.<q>Foiled again!</q>",,999999999999999,,25,10000,0,,15,4
-124,Win mints,"Cookie production multiplier <b>+25%</b>.<q>They're the luckiest cookies you've ever tasted!</q>",,999999999999999,,25,10000,0,,14,3
-125,Perfect idling,"You keep producing cookies even while the game is closed.<q>It's the most beautiful thing I've ever seen.</q>",,7,,0,40000,3,,10,0
-126,Fig gluttons,"Cookie production multiplier <b>+25%</b>.<q>Got it all figured out.</q>",,999999999999999,,25,10000,0,,17,4
-127,Loreols,"Cookie production multiplier <b>+25%</b>.<q>Because, uh... they're worth it?</q>",,999999999999999,,25,10000,0,,16,3
-128,Jaffa cakes,"Cookie production multiplier <b>+25%</b>.<q>If you want to bake a cookie from scratch, you must first build a factory.</q>",,999999999999999,,25,10000,0,,17,3
-129,Grease's cups,"Cookie production multiplier <b>+25%</b>.<q>Extra-greasy peanut butter.</q>",,999999999999999,,25,10000,0,,16,4
-130,Heavenly chip secret,"Unlocks <b>5%</b> of the potential of your heavenly chips.<q>Grants the knowledge of heavenly chips, and how to use them to make baking more efficient.<br>It's a secret to everyone.</q>",,11,,0,30000,0,,19,7
-131,Heavenly cookie stand,"Unlocks <b>25%</b> of the potential of your heavenly chips.<q>Don't forget to visit the heavenly lemonade stand afterwards.</q>",,1111,,0,30000,0,,18,7
-132,Heavenly bakery,"Unlocks <b>50%</b> of the potential of your heavenly chips.<q>Also sells godly cakes and divine pastries.</q>",,111111,,0,30000,0,,17,7
-133,Heavenly confectionery,"Unlocks <b>75%</b> of the potential of your heavenly chips.<q>They say angel bakers work there. They take angel lunch breaks and sometimes go on angel strikes.</q>",,11111111,,0,30000,0,,16,7
-134,Heavenly key,"Unlocks <b>100%</b> of the potential of your heavenly chips.<q>This is the key to the pearly (and tasty) gates of pastry heaven, granting you access to your entire stockpile of heavenly chips.<br>May you use them wisely.</q>",,1111111111,,0,30000,0,,15,7
-135,Skull cookies,"Cookie production multiplier <b>+20%</b>.<q>Wanna know something spooky? You've got one of these inside your head RIGHT NOW.</q>",,444444444444,,20,10100,0,,12,8
-136,Ghost cookies,"Cookie production multiplier <b>+20%</b>.<q>They're something strange, but they look pretty good!</q>",,444444444444,,20,10100,0,,13,8
-137,Bat cookies,"Cookie production multiplier <b>+20%</b>.<q>The cookies this town deserves.</q>",,444444444444,,20,10100,0,,14,8
-138,Slime cookies,"Cookie production multiplier <b>+20%</b>.<q>The incredible melting cookies!</q>",,444444444444,,20,10100,0,,15,8
-139,Pumpkin cookies,"Cookie production multiplier <b>+20%</b>.<q>Not even pumpkin-flavored. Tastes like glazing. Yeugh.</q>",,444444444444,,20,10100,0,,16,8
-140,Eyeball cookies,"Cookie production multiplier <b>+20%</b>.<q>When you stare into the cookie, the cookie stares back at you.</q>",,444444444444,,20,10100,0,,17,8
-141,Spider cookies,"Cookie production multiplier <b>+20%</b>.<q>You found the recipe on the web. They do whatever a cookie can.</q>",,444444444444,,20,10100,0,,18,8
-142,Persistent memory,"Subsequent research will be <b>10 times</b> as fast.<q>It's all making sense!<br>Again!</q>",,100000000000,,0,14000,0,,9,2
-143,Wrinkler doormat,"Wrinklers spawn much more frequently.<q>You're such a pushover.</q>",,7,,0,40000,3,,19,8
-144,Christmas tree biscuits,"Cookie production multiplier <b>+20%</b>.<q>Whose pine is it anyway?</q>",,252525252525,,20,10200,0,,12,10
-145,Snowflake biscuits,"Cookie production multiplier <b>+20%</b>.<q>Mass-produced to be unique in every way.</q>",,252525252525,,20,10200,0,,13,10
-146,Snowman biscuits,"Cookie production multiplier <b>+20%</b>.<q>It's frosted. Doubly so.</q>",,252525252525,,20,10200,0,,14,10
-147,Holly biscuits,"Cookie production multiplier <b>+20%</b>.<q>You don't smooch under these ones. That would be the mistletoe (which, botanically, is a smellier variant of the mistlefinger).</q>",,252525252525,,20,10200,0,,15,10
-148,Candy cane biscuits,"Cookie production multiplier <b>+20%</b>.<q>It's two treats in one!<br>(Further inspection reveals the frosting does not actually taste like peppermint, but like mundane sugary frosting.)</q>",,252525252525,,20,10200,0,,16,10
-149,Bell biscuits,"Cookie production multiplier <b>+20%</b>.<q>What do these even have to do with christmas? Who cares, ring them in!</q>",,252525252525,,20,10200,0,,17,10
-150,Present biscuits,"Cookie production multiplier <b>+20%</b>.<q>The prequel to future biscuits. Watch out!</q>",,252525252525,,20,10200,0,,18,10
-151,Gingerbread men,"Cookie production multiplier <b>+25%</b>.<q>You like to bite the legs off first, right? How about tearing off the arms? You sick monster.</q>",,10000000000000000,,25,10000,0,,18,4
-152,Gingerbread trees,"Cookie production multiplier <b>+25%</b>.<q>Evergreens in pastry form. Yule be surprised what you can come up with.</q>",,10000000000000000,,25,10000,0,,18,3
-153,A festive hat,"<b>Unlocks... something.</b><q>Not a creature was stirring, not even a mouse.</q>",,25,,0,25000,0,,19,9
-154,Increased merriness,"Cookie production multiplier <b>+15%</b>.<q>It turns out that the key to increased merriness, strangely enough, happens to be a good campfire and some s'mores.<br>You know what they say, after all; the s'more, the merrier.</q>",,2525,,0,25000,0,,17,9
-155,Improved jolliness,"Cookie production multiplier <b>+15%</b>.<q>A nice wobbly belly goes a long way.<br>You jolly?</q>",,2525,,0,25000,0,,17,9
-156,A lump of coal,"Cookie production multiplier <b>+1%</b>.<q>Some of the world's worst stocking stuffing.<br>I guess you could try starting your own little industrial revolution, or something?...</q>",,2525,,0,25000,0,,13,9
-157,An itchy sweater,"Cookie production multiplier <b>+1%</b>.<q>You don't know what's worse : the embarrassingly quaint "elf on reindeer" motif, or the fact that wearing it makes you feel like you're wrapped in a dead sasquatch.</q>",,2525,,0,25000,0,,14,9
-158,Reindeer baking grounds,"Reindeer appear <b>twice as frequently</b>.<q>Male reindeer are from Mars; female reindeer are from venison.</q>",,2525,,0,25000,0,,12,9
-159,Weighted sleighs,"Reindeer are <b>twice as slow</b>.<q>Hope it was worth the weight.<br>(Something something forced into cervidude)</q>",,2525,,0,25000,0,,12,9
-160,Ho ho ho-flavored frosting,"Reindeer give <b>twice as much</b>.<q>It's time to up the antler.</q>",,2525,,0,25000,0,,12,9
-161,Season savings,"All buildings are <b>1% cheaper</b>.<q>By Santa's beard, what savings!<br>But who will save us?</q>",,2525,,0,25000,0,,16,9
-162,Toy workshop,"All upgrades are <b>5% cheaper</b>.<q>Watch yours-elf around elvesdroppers who might steal our production secrets.<br>Or elven worse!</q>",,2525,,0,25000,0,,16,9
-163,Naughty list,"Grandmas are <b>twice</b> as productive.<q>This list contains every unholy deed perpetuated by grandmakind.<br>He won't be checking this one twice.<br>Once. Once is enough.</q>",,2525,,0,25000,0,,15,9
-164,Santa's bottomless bag,"Random drops are <b>10% more common</b>.<q>This is one bottom you can't check out.</q>",,2525,,0,25000,0,,19,9
-165,Santa's helpers,"Clicking is <b>10% more powerful</b>.<q>Some choose to help hamburger; some choose to help you.<br>To each their own, I guess.</q>",,2525,,0,25000,0,,19,9
-166,Santa's legacy,"Cookie production multiplier <b>+10% per Santa's levels</b>.<q>In the north pole, you gotta get the elves first. Then when you get the elves, you start making the toys. Then when you get the toys... then you get the cookies.</q>",,2525,,0,25000,0,,19,9
-167,Santa's milk and cookies,"Milk is <b>5% more powerful</b>.<q>Part of Santa's dreadfully unbalanced diet.</q>",,2525,,0,25000,0,,19,9
-168,Reindeer season,"Reindeer spawn much more frequently.<q>Go, Cheater! Go, Hacker and Faker!</q>",,7,,0,40000,3,,12,9
-169,Santa's dominion,"Cookie production multiplier <b>+50%</b>.<br>All buildings are <b>1% cheaper</b>.<br>All upgrades are <b>2% cheaper</b>.<q>My name is Claus, king of kings;<br>Look on my toys, ye Mighty, and despair!</q>",,2525252525252525,,0,25000,0,,19,10
-170,Pure heart biscuits,"Cookie production multiplier <b>+25%</b>.<q>Melty white chocolate<br>that says "I *like* like you".</q>",,10000000000000000,,25,10300,0,,19,3
-171,Ardent heart biscuits,"Cookie production multiplier <b>+25%</b>.<q>A red hot cherry biscuit that will nudge the target of your affection in interesting directions.</q>",,10000000000000000,,25,10300,0,,20,3
-172,Sour heart biscuits,"Cookie production multiplier <b>+25%</b>.<q>A bitter lime biscuit for the lonely and the heart-broken.</q>",,10000000000000000,,25,10300,0,,20,4
-173,Weeping heart biscuits,"Cookie production multiplier <b>+25%</b>.<q>An ice-cold blueberry biscuit, symbol of a mending heart.</q>",,10000000000000000,,25,10300,0,,21,3
-174,Golden heart biscuits,"Cookie production multiplier <b>+25%</b>.<q>A beautiful biscuit to symbolize kindness, true love, and sincerity.</q>",,10000000000000000,,25,10300,0,,21,4
-175,Eternal heart biscuits,"Cookie production multiplier <b>+25%</b>.<q>Silver icing for a very special someone you've liked for a long, long time.</q>",,10000000000000000,,25,10300,0,,19,4
-176,Gem polish,"Prisms gain <b>+1,000,000</b> base CpS.<q>Get rid of the grime and let more light in.<br>Truly, truly outrageous.</q>",,10,Prism,0,1100,0,,14,0
-177,9th color,"Prisms are <b>twice</b> as efficient.<q>Delve into untouched optical depths where even the mantis shrimp hasn't set an eye!</q>",,100,Prism,0,1100,0,,14,0
-178,Chocolate light,"Prisms are <b>twice</b> as efficient.<q>Bask into its cocoalescence.<br>(Warning : may cause various interesting albeit deadly skin conditions.)</q>",,1000,Prism,0,1100,0,,14,1
-179,Grainbow,"Prisms are <b>twice</b> as efficient.<q>Remember the different grains using the handy Roy G. Biv mnemonic : R is for rice, O is for oats... uh, B for barley?...</q>",,50000,Prism,0,1100,0,,14,2
-180,Pure cosmic light,"Prisms are <b>twice</b> as efficient.<q>Your prisms now receive pristine, unadulterated photons from the other end of the universe.</q>",,1000000,Prism,0,1100,0,,14,13
-181,Rainbow grandmas,"Grandmas are <b>twice</b> as efficient.<q>A luminous grandma to sparkle into cookies.</q>",,100,Prism,0,250,0,,10,9
-182,Season switcher,"Allows you to <b>trigger seasonal events</b> at will, for a price.<q>There will always be time.</q>",,3333333333333,,0,24000,0,,16,6
-183,Festive biscuit,"Triggers <b>Christmas season</b> for the next 24 hours.<br>Triggering another season will cancel this one.<q>'Twas the night before Christmas- or was it?</q>",,33333333333,,0,24000,0,christmas,12,10
-184,Ghostly biscuit,"Triggers <b>Halloween season</b> for the next 24 hours.<br>Triggering another season will cancel this one.<q>spooky scary skeletons<br>will wake you with a boo</q>",,33333333333,,0,24000,0,halloween,13,8
-185,Lovesick biscuit,"Triggers <b>Valentine's Day season</b> for the next 24 hours.<br>Triggering another season will cancel this one.<q>Romance never goes out of fashion.</q>",,33333333333,,0,24000,0,valentines,20,3
+id,name,displayName,desc,type,price,tierObject,power,order,hide,season,iconX,iconY
+int,String,String,String,String,int,String,int,int,int,String,int,int
+1,Reinforced index finger,"TID_UPGRADE_DISPLAYNAME_REINFORCED_INDEX_FINGER","TID_UPGRADE_DESC_REINFORCED_INDEX_FINGER",,100,,0,100,0,,0,0
+2,Carpal tunnel prevention cream,"TID_UPGRADE_DISPLAYNAME_CARPAL_TUNNEL_PREVENTION_CREAM","TID_UPGRADE_DESC_CARPAL_TUNNEL_PREVENTION_CREAM",,400,,0,100,0,,0,0
+3,Ambidextrous,"TID_UPGRADE_DISPLAYNAME_AMBIDEXTROUS","TID_UPGRADE_DESC_AMBIDEXTROUS",,10000,,0,100,0,,0,6
+4,Thousand fingers,"TID_UPGRADE_DISPLAYNAME_THOUSAND_FINGERS","TID_UPGRADE_DESC_THOUSAND_FINGERS",,500000,,0,100,0,,0,6
+5,Million fingers,"TID_UPGRADE_DISPLAYNAME_MILLION_FINGERS","TID_UPGRADE_DESC_MILLION_FINGERS",,50000000,,0,100,0,,1,6
+6,Billion fingers,"TID_UPGRADE_DISPLAYNAME_BILLION_FINGERS","TID_UPGRADE_DESC_BILLION_FINGERS",,500000000,,0,100,0,,2,6
+7,Trillion fingers,"TID_UPGRADE_DISPLAYNAME_TRILLION_FINGERS","TID_UPGRADE_DESC_TRILLION_FINGERS",,5000000000,,0,100,0,,3,6
+8,Forwards from grandma,"TID_UPGRADE_DISPLAYNAME_FORWARDS_FROM_GRANDMA","TID_UPGRADE_DESC_FORWARDS_FROM_GRANDMA",,10,Grandma,0,200,0,,1,0
+9,Steel-plated rolling pins,"TID_UPGRADE_DISPLAYNAME_STEEL_PLATED_ROLLING_PINS","TID_UPGRADE_DESC_STEEL_PLATED_ROLLING_PINS",,100,Grandma,0,200,0,,1,0
+10,Lubricated dentures,"TID_UPGRADE_DISPLAYNAME_LUBRICATED_DENTURES","TID_UPGRADE_DESC_LUBRICATED_DENTURES",,1000,Grandma,0,200,0,,1,1
+11,Cheap hoes,"TID_UPGRADE_DISPLAYNAME_CHEAP_HOES","TID_UPGRADE_DESC_CHEAP_HOES",,10,Farm,0,300,0,,2,0
+12,Fertilizer,"TID_UPGRADE_DISPLAYNAME_FERTILIZER","TID_UPGRADE_DESC_FERTILIZER",,100,Farm,0,300,0,,2,0
+13,Cookie trees,"TID_UPGRADE_DISPLAYNAME_COOKIE_TREES","TID_UPGRADE_DESC_COOKIE_TREES",,1000,Farm,0,300,0,,2,1
+14,Sturdier conveyor belts,"TID_UPGRADE_DISPLAYNAME_STURDIER_CONVEYOR_BELTS","TID_UPGRADE_DESC_STURDIER_CONVEYOR_BELTS",,10,Factory,0,400,0,,4,0
+15,Child labor,"TID_UPGRADE_DISPLAYNAME_CHILD_LABOR","TID_UPGRADE_DESC_CHILD_LABOR",,100,Factory,0,400,0,,4,0
+16,Sweatshop,"TID_UPGRADE_DISPLAYNAME_SWEATSHOP","TID_UPGRADE_DESC_SWEATSHOP",,1000,Factory,0,400,0,,4,1
+17,Sugar gas,"TID_UPGRADE_DISPLAYNAME_SUGAR_GAS","TID_UPGRADE_DESC_SUGAR_GAS",,10,Mine,0,500,0,,3,0
+18,Megadrill,"TID_UPGRADE_DISPLAYNAME_MEGADRILL","TID_UPGRADE_DESC_MEGADRILL",,100,Mine,0,500,0,,3,0
+19,Ultradrill,"TID_UPGRADE_DISPLAYNAME_ULTRADRILL","TID_UPGRADE_DESC_ULTRADRILL",,1000,Mine,0,500,0,,3,1
+20,Vanilla nebulae,"TID_UPGRADE_DISPLAYNAME_VANILLA_NEBULAE","TID_UPGRADE_DESC_VANILLA_NEBULAE",,10,Shipment,0,600,0,,5,0
+21,Wormholes,"TID_UPGRADE_DISPLAYNAME_WORMHOLES","TID_UPGRADE_DESC_WORMHOLES",,100,Shipment,0,600,0,,5,0
+22,Frequent flyer,"TID_UPGRADE_DISPLAYNAME_FREQUENT_FLYER","TID_UPGRADE_DESC_FREQUENT_FLYER",,1000,Shipment,0,600,0,,5,1
+23,Antimony,"TID_UPGRADE_DISPLAYNAME_ANTIMONY","TID_UPGRADE_DESC_ANTIMONY",,10,Alchemy lab,0,700,0,,6,0
+24,Essence of dough,"TID_UPGRADE_DISPLAYNAME_ESSENCE_OF_DOUGH","TID_UPGRADE_DESC_ESSENCE_OF_DOUGH",,100,Alchemy lab,0,700,0,,6,0
+25,True chocolate,"TID_UPGRADE_DISPLAYNAME_TRUE_CHOCOLATE","TID_UPGRADE_DESC_TRUE_CHOCOLATE",,1000,Alchemy lab,0,700,0,,6,1
+26,Ancient tablet,"TID_UPGRADE_DISPLAYNAME_ANCIENT_TABLET","TID_UPGRADE_DESC_ANCIENT_TABLET",,10,Portal,0,800,0,,7,0
+27,Insane oatling workers,"TID_UPGRADE_DISPLAYNAME_INSANE_OATLING_WORKERS","TID_UPGRADE_DESC_INSANE_OATLING_WORKERS",,100,Portal,0,800,0,,7,0
+28,Soul bond,"TID_UPGRADE_DISPLAYNAME_SOUL_BOND","TID_UPGRADE_DESC_SOUL_BOND",,1000,Portal,0,800,0,,7,1
+29,Flux capacitors,"TID_UPGRADE_DISPLAYNAME_FLUX_CAPACITORS","TID_UPGRADE_DESC_FLUX_CAPACITORS",,1234567890,,0,900,0,,8,0
+30,Time paradox resolver,"TID_UPGRADE_DISPLAYNAME_TIME_PARADOX_RESOLVER","TID_UPGRADE_DESC_TIME_PARADOX_RESOLVER",,9876543210,,0,900,0,,8,0
+31,Quantum conundrum,"TID_UPGRADE_DISPLAYNAME_QUANTUM_CONUNDRUM","TID_UPGRADE_DESC_QUANTUM_CONUNDRUM",,98765456789,,0,900,0,,8,1
+32,Kitten helpers,"TID_UPGRADE_DISPLAYNAME_KITTEN_HELPERS","TID_UPGRADE_DESC_KITTEN_HELPERS",,9000000,,0,20000,0,,1,7
+33,Kitten workers,"TID_UPGRADE_DISPLAYNAME_KITTEN_WORKERS","TID_UPGRADE_DESC_KITTEN_WORKERS",,9000000000,,0,20000,0,,2,7
+34,Oatmeal raisin cookies,"TID_UPGRADE_DISPLAYNAME_OATMEAL_RAISIN_COOKIES","TID_UPGRADE_DESC_OATMEAL_RAISIN_COOKIES",,99999999,,5,10000,0,,0,3
+35,Peanut butter cookies,"TID_UPGRADE_DISPLAYNAME_PEANUT_BUTTER_COOKIES","TID_UPGRADE_DESC_PEANUT_BUTTER_COOKIES",,99999999,,5,10000,0,,1,3
+36,Plain cookies,"TID_UPGRADE_DISPLAYNAME_PLAIN_COOKIES","TID_UPGRADE_DESC_PLAIN_COOKIES",,99999999,,5,10000,0,,2,3
+37,Coconut cookies,"TID_UPGRADE_DISPLAYNAME_COCONUT_COOKIES","TID_UPGRADE_DESC_COCONUT_COOKIES",,999999999,,5,10000,0,,3,3
+38,White chocolate cookies,"TID_UPGRADE_DISPLAYNAME_WHITE_CHOCOLATE_COOKIES","TID_UPGRADE_DESC_WHITE_CHOCOLATE_COOKIES",,999999999,,5,10000,0,,4,3
+39,Macadamia nut cookies,"TID_UPGRADE_DISPLAYNAME_MACADAMIA_NUT_COOKIES","TID_UPGRADE_DESC_MACADAMIA_NUT_COOKIES",,999999999,,5,10000,0,,5,3
+40,Double-chip cookies,"TID_UPGRADE_DISPLAYNAME_DOUBLE_CHIP_COOKIES","TID_UPGRADE_DESC_DOUBLE_CHIP_COOKIES",,99999999999,,10,10000,0,,6,3
+41,Sugar cookies,"TID_UPGRADE_DISPLAYNAME_SUGAR_COOKIES","TID_UPGRADE_DESC_SUGAR_COOKIES",,99999999,,5,10000,0,,7,3
+42,White chocolate macadamia nut cookies,"TID_UPGRADE_DISPLAYNAME_WHITE_CHOCOLATE_MACADAMIA_NUT_COOKIES","TID_UPGRADE_DESC_WHITE_CHOCOLATE_MACADAMIA_NUT_COOKIES",,99999999999,,10,10000,0,,8,3
+43,All-chocolate cookies,"TID_UPGRADE_DISPLAYNAME_ALL_CHOCOLATE_COOKIES","TID_UPGRADE_DESC_ALL_CHOCOLATE_COOKIES",,99999999999,,10,10000,0,,9,3
+44,Quadrillion fingers,"TID_UPGRADE_DISPLAYNAME_QUADRILLION_FINGERS","TID_UPGRADE_DESC_QUADRILLION_FINGERS",,50000000000,,0,100,0,,3,6
+45,Prune juice,"TID_UPGRADE_DISPLAYNAME_PRUNE__UICE","TID_UPGRADE_DESC_PRUNE__UICE",,50000,Grandma,0,200,0,,1,2
+46,Genetically-modified cookies,"TID_UPGRADE_DISPLAYNAME_GENETICALLY_MODIFIED_COOKIES","TID_UPGRADE_DESC_GENETICALLY_MODIFIED_COOKIES",,50000,Farm,0,300,0,,2,2
+47,Radium reactors,"TID_UPGRADE_DISPLAYNAME_RADIUM_REACTORS","TID_UPGRADE_DESC_RADIUM_REACTORS",,50000,Factory,0,400,0,,4,2
+48,Ultimadrill,"TID_UPGRADE_DISPLAYNAME_ULTIMADRILL","TID_UPGRADE_DESC_ULTIMADRILL",,50000,Mine,0,500,0,,3,2
+49,Warp drive,"TID_UPGRADE_DISPLAYNAME_WARP_DRIVE","TID_UPGRADE_DESC_WARP_DRIVE",,50000,Shipment,0,600,0,,5,2
+50,Ambrosia,"TID_UPGRADE_DISPLAYNAME_AMBROSIA","TID_UPGRADE_DESC_AMBROSIA",,50000,Alchemy lab,0,700,0,,6,2
+51,Sanity dance,"TID_UPGRADE_DISPLAYNAME_SANITY_DANCE","TID_UPGRADE_DESC_SANITY_DANCE",,50000,Portal,0,800,0,,7,2
+52,Causality enforcer,"TID_UPGRADE_DISPLAYNAME_CAUSALITY_ENFORCER","TID_UPGRADE_DESC_CAUSALITY_ENFORCER",,1234567890000,,0,900,0,,8,2
+53,Lucky day,"TID_UPGRADE_DISPLAYNAME_LUCKY_DAY","TID_UPGRADE_DESC_LUCKY_DAY",,777777777,,0,5000,0,,10,1
+54,Serendipity,"TID_UPGRADE_DISPLAYNAME_SERENDIPITY","TID_UPGRADE_DESC_SERENDIPITY",,77777777777,,0,5000,0,,10,1
+55,Kitten engineers,"TID_UPGRADE_DISPLAYNAME_KITTEN_ENGINEERS","TID_UPGRADE_DESC_KITTEN_ENGINEERS",,9000000000000,,0,20000,0,,3,7
+56,Dark chocolate-coated cookies,"TID_UPGRADE_DISPLAYNAME_DARK_CHOCOLATE_COATED_COOKIES","TID_UPGRADE_DESC_DARK_CHOCOLATE_COATED_COOKIES",,999999999999,,15,10000,0,,10,3
+57,White chocolate-coated cookies,"TID_UPGRADE_DISPLAYNAME_WHITE_CHOCOLATE_COATED_COOKIES","TID_UPGRADE_DESC_WHITE_CHOCOLATE_COATED_COOKIES",,999999999999,,15,10000,0,,11,3
+58,Farmer grandmas,"TID_UPGRADE_DISPLAYNAME_FARMER_GRANDMAS","TID_UPGRADE_DESC_FARMER_GRANDMAS",,100,Farm,0,250,0,,10,9
+59,Worker grandmas,"TID_UPGRADE_DISPLAYNAME_WORKER_GRANDMAS","TID_UPGRADE_DESC_WORKER_GRANDMAS",,100,Factory,0,250,0,,10,9
+60,Miner grandmas,"TID_UPGRADE_DISPLAYNAME_MINER_GRANDMAS","TID_UPGRADE_DESC_MINER_GRANDMAS",,100,Mine,0,250,0,,10,9
+61,Cosmic grandmas,"TID_UPGRADE_DISPLAYNAME_COSMIC_GRANDMAS","TID_UPGRADE_DESC_COSMIC_GRANDMAS",,100,Shipment,0,250,0,,10,9
+62,Transmuted grandmas,"TID_UPGRADE_DISPLAYNAME_TRANSMUTED_GRANDMAS","TID_UPGRADE_DESC_TRANSMUTED_GRANDMAS",,100,Alchemy lab,0,250,0,,10,9
+63,Altered grandmas,"TID_UPGRADE_DISPLAYNAME_ALTERED_GRANDMAS","TID_UPGRADE_DESC_ALTERED_GRANDMAS",,100,Portal,0,250,0,,10,9
+64,Grandmas' grandmas,"TID_UPGRADE_DISPLAYNAME_GRANDMAS__GRANDMAS","TID_UPGRADE_DESC_GRANDMAS__GRANDMAS",,100,Time machine,0,250,0,,10,9
+65,Bingo center/Research facility,"TID_UPGRADE_DISPLAYNAME_BINGO_CENTER_RESEARCH_FACILITY","TID_UPGRADE_DESC_BINGO_CENTER_RESEARCH_FACILITY",,100000000000,,0,14000,0,,11,9
+66,Specialized chocolate chips,"TID_UPGRADE_DISPLAYNAME_SPECIALIZED_CHOCOLATE_CHIPS","TID_UPGRADE_DESC_SPECIALIZED_CHOCOLATE_CHIPS",,10000000000,,0,15000,0,,0,9
+67,Designer cocoa beans,"TID_UPGRADE_DISPLAYNAME_DESIGNER_COCOA_BEANS","TID_UPGRADE_DESC_DESIGNER_COCOA_BEANS",,20000000000,,0,15000,0,,1,9
+68,Ritual rolling pins,"TID_UPGRADE_DISPLAYNAME_RITUAL_ROLLING_PINS","TID_UPGRADE_DESC_RITUAL_ROLLING_PINS",,40000000000,,0,15000,0,,2,9
+69,Underworld ovens,"TID_UPGRADE_DISPLAYNAME_UNDERWORLD_OVENS","TID_UPGRADE_DESC_UNDERWORLD_OVENS",,80000000000,,0,15000,0,,3,9
+70,One mind,"TID_UPGRADE_DISPLAYNAME_ONE_MIND","TID_UPGRADE_DESC_ONE_MIND",,160000000000,,0,15000,0,,4,9
+71,Exotic nuts,"TID_UPGRADE_DISPLAYNAME_EXOTIC_NUTS","TID_UPGRADE_DESC_EXOTIC_NUTS",,320000000000,,0,15000,0,,5,9
+72,Communal brainsweep,"TID_UPGRADE_DISPLAYNAME_COMMUNAL_BRAINSWEEP","TID_UPGRADE_DESC_COMMUNAL_BRAINSWEEP",,640000000000,,0,15000,0,,6,9
+73,Arcane sugar,"TID_UPGRADE_DISPLAYNAME_ARCANE_SUGAR","TID_UPGRADE_DESC_ARCANE_SUGAR",,1280000000000,,0,15000,0,,7,9
+74,Elder Pact,"TID_UPGRADE_DISPLAYNAME_ELDER_PACT","TID_UPGRADE_DESC_ELDER_PACT",,2560000000000,,0,15000,0,,8,9
+75,Elder Pledge,"TID_UPGRADE_DISPLAYNAME_ELDER_PLEDGE","TID_UPGRADE_DESC_ELDER_PLEDGE",,1,,0,15000,3,,9,9
+76,Plastic mouse,"TID_UPGRADE_DISPLAYNAME_PLASTIC_MOUSE","TID_UPGRADE_DESC_PLASTIC_MOUSE",,50000,,0,150,0,,11,0
+77,Iron mouse,"TID_UPGRADE_DISPLAYNAME_IRON_MOUSE","TID_UPGRADE_DESC_IRON_MOUSE",,5000000,,0,150,0,,11,0
+78,Titanium mouse,"TID_UPGRADE_DISPLAYNAME_TITANIUM_MOUSE","TID_UPGRADE_DESC_TITANIUM_MOUSE",,500000000,,0,150,0,,11,1
+79,Adamantium mouse,"TID_UPGRADE_DISPLAYNAME_ADAMANTIUM_MOUSE","TID_UPGRADE_DESC_ADAMANTIUM_MOUSE",,50000000000,,0,150,0,,11,2
+80,Ultrascience,"TID_UPGRADE_DISPLAYNAME_ULTRASCIENCE","TID_UPGRADE_DESC_ULTRASCIENCE",,7,,0,40000,3,,9,2
+81,Eclipse cookies,"TID_UPGRADE_DISPLAYNAME_ECLIPSE_COOKIES","TID_UPGRADE_DESC_ECLIPSE_COOKIES",,9999999999999,,15,10000,0,,0,4
+82,Zebra cookies,"TID_UPGRADE_DISPLAYNAME_ZEBRA_COOKIES","TID_UPGRADE_DESC_ZEBRA_COOKIES",,9999999999999,,15,10000,0,,1,4
+83,Quintillion fingers,"TID_UPGRADE_DISPLAYNAME_QUINTILLION_FINGERS","TID_UPGRADE_DESC_QUINTILLION_FINGERS",,50000000000000,,0,100,0,,3,6
+84,Gold hoard,"TID_UPGRADE_DISPLAYNAME_GOLD_HOARD","TID_UPGRADE_DESC_GOLD_HOARD",,7,,0,40000,3,,10,1
+85,Elder Covenant,"TID_UPGRADE_DISPLAYNAME_ELDER_COVENANT","TID_UPGRADE_DESC_ELDER_COVENANT",,66666666666666,,0,15000,3,,8,9
+86,Revoke Elder Covenant,"TID_UPGRADE_DISPLAYNAME_REVOKE_ELDER_COVENANT","TID_UPGRADE_DESC_REVOKE_ELDER_COVENANT",,6666666666,,0,15000,3,,8,9
+87,Get lucky,"TID_UPGRADE_DISPLAYNAME_GET_LUCKY","TID_UPGRADE_DESC_GET_LUCKY",,77777777777777,,0,5000,0,,10,1
+88,Sacrificial rolling pins,"TID_UPGRADE_DISPLAYNAME_SACRIFICIAL_ROLLING_PINS","TID_UPGRADE_DESC_SACRIFICIAL_ROLLING_PINS",,2888888888888,,0,15000,0,,2,9
+89,Snickerdoodles,"TID_UPGRADE_DISPLAYNAME_SNICKERDOODLES","TID_UPGRADE_DESC_SNICKERDOODLES",,99999999999999,,15,10000,0,,2,4
+90,Stroopwafels,"TID_UPGRADE_DISPLAYNAME_STROOPWAFELS","TID_UPGRADE_DESC_STROOPWAFELS",,99999999999999,,15,10000,0,,3,4
+91,Macaroons,"TID_UPGRADE_DISPLAYNAME_MACAROONS","TID_UPGRADE_DESC_MACAROONS",,99999999999999,,15,10000,0,,4,4
+92,Neuromancy,"TID_UPGRADE_DISPLAYNAME_NEUROMANCY","TID_UPGRADE_DESC_NEUROMANCY",,7,,0,40000,3,,4,9
+93,Empire biscuits,"TID_UPGRADE_DISPLAYNAME_EMPIRE_BISCUITS","TID_UPGRADE_DESC_EMPIRE_BISCUITS",,99999999999999,,15,10000,0,,5,4
+94,British tea biscuits,"TID_UPGRADE_DISPLAYNAME_BRITISH_TEA_BISCUITS","TID_UPGRADE_DESC_BRITISH_TEA_BISCUITS",,99999999999999,,15,10000,0,,6,4
+95,Chocolate british tea biscuits,"TID_UPGRADE_DISPLAYNAME_CHOCOLATE_BRITISH_TEA_BISCUITS","TID_UPGRADE_DESC_CHOCOLATE_BRITISH_TEA_BISCUITS",,99999999999999,,15,10000,0,,7,4
+96,Round british tea biscuits,"TID_UPGRADE_DISPLAYNAME_ROUND_BRITISH_TEA_BISCUITS","TID_UPGRADE_DESC_ROUND_BRITISH_TEA_BISCUITS",,99999999999999,,15,10000,0,,8,4
+97,Round chocolate british tea biscuits,"TID_UPGRADE_DISPLAYNAME_ROUND_CHOCOLATE_BRITISH_TEA_BISCUITS","TID_UPGRADE_DESC_ROUND_CHOCOLATE_BRITISH_TEA_BISCUITS",,99999999999999,,15,10000,0,,9,4
+98,Round british tea biscuits with heart motif,"TID_UPGRADE_DISPLAYNAME_ROUND_BRITISH_TEA_BISCUITS_WITH_HEART_MOTIF","TID_UPGRADE_DESC_ROUND_BRITISH_TEA_BISCUITS_WITH_HEART_MOTIF",,99999999999999,,15,10000,0,,10,4
+99,Round chocolate british tea biscuits with heart motif,"TID_UPGRADE_DISPLAYNAME_ROUND_CHOCOLATE_BRITISH_TEA_BISCUITS_WITH_HEART_MOTIF","TID_UPGRADE_DESC_ROUND_CHOCOLATE_BRITISH_TEA_BISCUITS_WITH_HEART_MOTIF",,99999999999999,,15,10000,0,,11,4
+100,Sugar bosons,"TID_UPGRADE_DISPLAYNAME_SUGAR_BOSONS","TID_UPGRADE_DESC_SUGAR_BOSONS",,10,Antimatter condenser,0,1000,0,,13,0
+101,String theory,"TID_UPGRADE_DISPLAYNAME_STRING_THEORY","TID_UPGRADE_DESC_STRING_THEORY",,100,Antimatter condenser,0,1000,0,,13,0
+102,Large macaron collider,"TID_UPGRADE_DISPLAYNAME_LARGE_MACARON_COLLIDER","TID_UPGRADE_DESC_LARGE_MACARON_COLLIDER",,1000,Antimatter condenser,0,1000,0,,13,1
+103,Big bang bake,"TID_UPGRADE_DISPLAYNAME_BIG_BANG_BAKE","TID_UPGRADE_DESC_BIG_BANG_BAKE",,50000,Antimatter condenser,0,1000,0,,13,2
+104,Antigrandmas,"TID_UPGRADE_DISPLAYNAME_ANTIGRANDMAS","TID_UPGRADE_DESC_ANTIGRANDMAS",,100,Antimatter condenser,0,250,0,,10,9
+105,Madeleines,"TID_UPGRADE_DISPLAYNAME_MADELEINES","TID_UPGRADE_DESC_MADELEINES",,199999999999999,,20,10000,0,,12,3
+106,Palmiers,"TID_UPGRADE_DISPLAYNAME_PALMIERS","TID_UPGRADE_DESC_PALMIERS",,199999999999999,,20,10000,0,,13,3
+107,Palets,"TID_UPGRADE_DISPLAYNAME_PALETS","TID_UPGRADE_DESC_PALETS",,199999999999999,,20,10000,0,,12,4
+108,Sabl&eacute;s,"TID_UPGRADE_DISPLAYNAME_SABL_EACUTE_S","TID_UPGRADE_DESC_SABL_EACUTE_S",,199999999999999,,20,10000,0,,13,4
+109,Kitten overseers,"TID_UPGRADE_DISPLAYNAME_KITTEN_OVERSEERS","TID_UPGRADE_DESC_KITTEN_OVERSEERS",,900000000000000,,0,20000,0,,8,7
+110,Sextillion fingers,"TID_UPGRADE_DISPLAYNAME_SEXTILLION_FINGERS","TID_UPGRADE_DESC_SEXTILLION_FINGERS",,500000000000000,,0,100,0,,12,13
+111,Double-thick glasses,"TID_UPGRADE_DISPLAYNAME_DOUBLE_THICK_GLASSES","TID_UPGRADE_DESC_DOUBLE_THICK_GLASSES",,1000000,Grandma,0,200,0,,1,13
+112,Gingerbread scarecrows,"TID_UPGRADE_DISPLAYNAME_GINGERBREAD_SCARECROWS","TID_UPGRADE_DESC_GINGERBREAD_SCARECROWS",,1000000,Farm,0,300,0,,2,13
+113,Recombobulators,"TID_UPGRADE_DISPLAYNAME_RECOMBOBULATORS","TID_UPGRADE_DESC_RECOMBOBULATORS",,1000000,Factory,0,400,0,,4,13
+114,H-bomb mining,"TID_UPGRADE_DISPLAYNAME_H_BOMB_MINING","TID_UPGRADE_DESC_H_BOMB_MINING",,1000000,Mine,0,500,0,,3,13
+115,Chocolate monoliths,"TID_UPGRADE_DISPLAYNAME_CHOCOLATE_MONOLITHS","TID_UPGRADE_DESC_CHOCOLATE_MONOLITHS",,1000000,Shipment,0,600,0,,5,13
+116,Aqua crustulae,"TID_UPGRADE_DISPLAYNAME_AQUA_CRUSTULAE","TID_UPGRADE_DESC_AQUA_CRUSTULAE",,1000000,Alchemy lab,0,700,0,,6,13
+117,Brane transplant,"TID_UPGRADE_DISPLAYNAME_BRANE_TRANSPLANT","TID_UPGRADE_DESC_BRANE_TRANSPLANT",,1000000,Portal,0,800,0,,7,13
+118,Yestermorrow comparators,"TID_UPGRADE_DISPLAYNAME_YESTERMORROW_COMPARATORS","TID_UPGRADE_DESC_YESTERMORROW_COMPARATORS",,1000000,Time machine,0,900,0,,8,13
+119,Reverse cyclotrons,"TID_UPGRADE_DISPLAYNAME_REVERSE_CYCLOTRONS","TID_UPGRADE_DESC_REVERSE_CYCLOTRONS",,1000000,Antimatter condenser,0,1000,0,,13,13
+120,Unobtainium mouse,"TID_UPGRADE_DISPLAYNAME_UNOBTAINIUM_MOUSE","TID_UPGRADE_DESC_UNOBTAINIUM_MOUSE",,5000000000000,,0,150,0,,11,13
+121,Caramoas,"TID_UPGRADE_DISPLAYNAME_CARAMOAS","TID_UPGRADE_DESC_CARAMOAS",,999999999999999,,25,10000,0,,14,4
+122,Sagalongs,"TID_UPGRADE_DISPLAYNAME_SAGALONGS","TID_UPGRADE_DESC_SAGALONGS",,999999999999999,,25,10000,0,,15,3
+123,Shortfoils,"TID_UPGRADE_DISPLAYNAME_SHORTFOILS","TID_UPGRADE_DESC_SHORTFOILS",,999999999999999,,25,10000,0,,15,4
+124,Win mints,"TID_UPGRADE_DISPLAYNAME_WIN_MINTS","TID_UPGRADE_DESC_WIN_MINTS",,999999999999999,,25,10000,0,,14,3
+125,Perfect idling,"TID_UPGRADE_DISPLAYNAME_PERFECT_IDLING","TID_UPGRADE_DESC_PERFECT_IDLING",,7,,0,40000,3,,10,0
+126,Fig gluttons,"TID_UPGRADE_DISPLAYNAME_FIG_GLUTTONS","TID_UPGRADE_DESC_FIG_GLUTTONS",,999999999999999,,25,10000,0,,17,4
+127,Loreols,"TID_UPGRADE_DISPLAYNAME_LOREOLS","TID_UPGRADE_DESC_LOREOLS",,999999999999999,,25,10000,0,,16,3
+128,Jaffa cakes,"TID_UPGRADE_DISPLAYNAME__AFFA_CAKES","TID_UPGRADE_DESC__AFFA_CAKES",,999999999999999,,25,10000,0,,17,3
+129,Grease's cups,"TID_UPGRADE_DISPLAYNAME_GREASE_S_CUPS","TID_UPGRADE_DESC_GREASE_S_CUPS",,999999999999999,,25,10000,0,,16,4
+130,Heavenly chip secret,"TID_UPGRADE_DISPLAYNAME_HEAVENLY_CHIP_SECRET","TID_UPGRADE_DESC_HEAVENLY_CHIP_SECRET",,11,,0,30000,0,,19,7
+131,Heavenly cookie stand,"TID_UPGRADE_DISPLAYNAME_HEAVENLY_COOKIE_STAND","TID_UPGRADE_DESC_HEAVENLY_COOKIE_STAND",,1111,,0,30000,0,,18,7
+132,Heavenly bakery,"TID_UPGRADE_DISPLAYNAME_HEAVENLY_BAKERY","TID_UPGRADE_DESC_HEAVENLY_BAKERY",,111111,,0,30000,0,,17,7
+133,Heavenly confectionery,"TID_UPGRADE_DISPLAYNAME_HEAVENLY_CONFECTIONERY","TID_UPGRADE_DESC_HEAVENLY_CONFECTIONERY",,11111111,,0,30000,0,,16,7
+134,Heavenly key,"TID_UPGRADE_DISPLAYNAME_HEAVENLY_KEY","TID_UPGRADE_DESC_HEAVENLY_KEY",,1111111111,,0,30000,0,,15,7
+135,Skull cookies,"TID_UPGRADE_DISPLAYNAME_SKULL_COOKIES","TID_UPGRADE_DESC_SKULL_COOKIES",,444444444444,,20,10100,0,,12,8
+136,Ghost cookies,"TID_UPGRADE_DISPLAYNAME_GHOST_COOKIES","TID_UPGRADE_DESC_GHOST_COOKIES",,444444444444,,20,10100,0,,13,8
+137,Bat cookies,"TID_UPGRADE_DISPLAYNAME_BAT_COOKIES","TID_UPGRADE_DESC_BAT_COOKIES",,444444444444,,20,10100,0,,14,8
+138,Slime cookies,"TID_UPGRADE_DISPLAYNAME_SLIME_COOKIES","TID_UPGRADE_DESC_SLIME_COOKIES",,444444444444,,20,10100,0,,15,8
+139,Pumpkin cookies,"TID_UPGRADE_DISPLAYNAME_PUMPKIN_COOKIES","TID_UPGRADE_DESC_PUMPKIN_COOKIES",,444444444444,,20,10100,0,,16,8
+140,Eyeball cookies,"TID_UPGRADE_DISPLAYNAME_EYEBALL_COOKIES","TID_UPGRADE_DESC_EYEBALL_COOKIES",,444444444444,,20,10100,0,,17,8
+141,Spider cookies,"TID_UPGRADE_DISPLAYNAME_SPIDER_COOKIES","TID_UPGRADE_DESC_SPIDER_COOKIES",,444444444444,,20,10100,0,,18,8
+142,Persistent memory,"TID_UPGRADE_DISPLAYNAME_PERSISTENT_MEMORY","TID_UPGRADE_DESC_PERSISTENT_MEMORY",,100000000000,,0,14000,0,,9,2
+143,Wrinkler doormat,"TID_UPGRADE_DISPLAYNAME_WRINKLER_DOORMAT","TID_UPGRADE_DESC_WRINKLER_DOORMAT",,7,,0,40000,3,,19,8
+144,Christmas tree biscuits,"TID_UPGRADE_DISPLAYNAME_CHRISTMAS_TREE_BISCUITS","TID_UPGRADE_DESC_CHRISTMAS_TREE_BISCUITS",,252525252525,,20,10200,0,,12,10
+145,Snowflake biscuits,"TID_UPGRADE_DISPLAYNAME_SNOWFLAKE_BISCUITS","TID_UPGRADE_DESC_SNOWFLAKE_BISCUITS",,252525252525,,20,10200,0,,13,10
+146,Snowman biscuits,"TID_UPGRADE_DISPLAYNAME_SNOWMAN_BISCUITS","TID_UPGRADE_DESC_SNOWMAN_BISCUITS",,252525252525,,20,10200,0,,14,10
+147,Holly biscuits,"TID_UPGRADE_DISPLAYNAME_HOLLY_BISCUITS","TID_UPGRADE_DESC_HOLLY_BISCUITS",,252525252525,,20,10200,0,,15,10
+148,Candy cane biscuits,"TID_UPGRADE_DISPLAYNAME_CANDY_CANE_BISCUITS","TID_UPGRADE_DESC_CANDY_CANE_BISCUITS",,252525252525,,20,10200,0,,16,10
+149,Bell biscuits,"TID_UPGRADE_DISPLAYNAME_BELL_BISCUITS","TID_UPGRADE_DESC_BELL_BISCUITS",,252525252525,,20,10200,0,,17,10
+150,Present biscuits,"TID_UPGRADE_DISPLAYNAME_PRESENT_BISCUITS","TID_UPGRADE_DESC_PRESENT_BISCUITS",,252525252525,,20,10200,0,,18,10
+151,Gingerbread men,"TID_UPGRADE_DISPLAYNAME_GINGERBREAD_MEN","TID_UPGRADE_DESC_GINGERBREAD_MEN",,10000000000000000,,25,10000,0,,18,4
+152,Gingerbread trees,"TID_UPGRADE_DISPLAYNAME_GINGERBREAD_TREES","TID_UPGRADE_DESC_GINGERBREAD_TREES",,10000000000000000,,25,10000,0,,18,3
+153,A festive hat,"TID_UPGRADE_DISPLAYNAME_A_FESTIVE_HAT","TID_UPGRADE_DESC_A_FESTIVE_HAT",,25,,0,25000,0,,19,9
+154,Increased merriness,"TID_UPGRADE_DISPLAYNAME_INCREASED_MERRINESS","TID_UPGRADE_DESC_INCREASED_MERRINESS",,2525,,0,25000,0,,17,9
+155,Improved jolliness,"TID_UPGRADE_DISPLAYNAME_IMPROVED__OLLINESS","TID_UPGRADE_DESC_IMPROVED__OLLINESS",,2525,,0,25000,0,,17,9
+156,A lump of coal,"TID_UPGRADE_DISPLAYNAME_A_LUMP_OF_COAL","TID_UPGRADE_DESC_A_LUMP_OF_COAL",,2525,,0,25000,0,,13,9
+157,An itchy sweater,"TID_UPGRADE_DISPLAYNAME_AN_ITCHY_SWEATER","TID_UPGRADE_DESC_AN_ITCHY_SWEATER",,2525,,0,25000,0,,14,9
+158,Reindeer baking grounds,"TID_UPGRADE_DISPLAYNAME_REINDEER_BAKING_GROUNDS","TID_UPGRADE_DESC_REINDEER_BAKING_GROUNDS",,2525,,0,25000,0,,12,9
+159,Weighted sleighs,"TID_UPGRADE_DISPLAYNAME_WEIGHTED_SLEIGHS","TID_UPGRADE_DESC_WEIGHTED_SLEIGHS",,2525,,0,25000,0,,12,9
+160,Ho ho ho-flavored frosting,"TID_UPGRADE_DISPLAYNAME_HO_HO_HO_FLAVORED_FROSTING","TID_UPGRADE_DESC_HO_HO_HO_FLAVORED_FROSTING",,2525,,0,25000,0,,12,9
+161,Season savings,"TID_UPGRADE_DISPLAYNAME_SEASON_SAVINGS","TID_UPGRADE_DESC_SEASON_SAVINGS",,2525,,0,25000,0,,16,9
+162,Toy workshop,"TID_UPGRADE_DISPLAYNAME_TOY_WORKSHOP","TID_UPGRADE_DESC_TOY_WORKSHOP",,2525,,0,25000,0,,16,9
+163,Naughty list,"TID_UPGRADE_DISPLAYNAME_NAUGHTY_LIST","TID_UPGRADE_DESC_NAUGHTY_LIST",,2525,,0,25000,0,,15,9
+164,Santa's bottomless bag,"TID_UPGRADE_DISPLAYNAME_SANTA_S_BOTTOMLESS_BAG","TID_UPGRADE_DESC_SANTA_S_BOTTOMLESS_BAG",,2525,,0,25000,0,,19,9
+165,Santa's helpers,"TID_UPGRADE_DISPLAYNAME_SANTA_S_HELPERS","TID_UPGRADE_DESC_SANTA_S_HELPERS",,2525,,0,25000,0,,19,9
+166,Santa's legacy,"TID_UPGRADE_DISPLAYNAME_SANTA_S_LEGACY","TID_UPGRADE_DESC_SANTA_S_LEGACY",,2525,,0,25000,0,,19,9
+167,Santa's milk and cookies,"TID_UPGRADE_DISPLAYNAME_SANTA_S_MILK_AND_COOKIES","TID_UPGRADE_DESC_SANTA_S_MILK_AND_COOKIES",,2525,,0,25000,0,,19,9
+168,Reindeer season,"TID_UPGRADE_DISPLAYNAME_REINDEER_SEASON","TID_UPGRADE_DESC_REINDEER_SEASON",,7,,0,40000,3,,12,9
+169,Santa's dominion,"TID_UPGRADE_DISPLAYNAME_SANTA_S_DOMINION","TID_UPGRADE_DESC_SANTA_S_DOMINION",,2525252525252525,,0,25000,0,,19,10
+170,Pure heart biscuits,"TID_UPGRADE_DISPLAYNAME_PURE_HEART_BISCUITS","TID_UPGRADE_DESC_PURE_HEART_BISCUITS",,10000000000000000,,25,10300,0,,19,3
+171,Ardent heart biscuits,"TID_UPGRADE_DISPLAYNAME_ARDENT_HEART_BISCUITS","TID_UPGRADE_DESC_ARDENT_HEART_BISCUITS",,10000000000000000,,25,10300,0,,20,3
+172,Sour heart biscuits,"TID_UPGRADE_DISPLAYNAME_SOUR_HEART_BISCUITS","TID_UPGRADE_DESC_SOUR_HEART_BISCUITS",,10000000000000000,,25,10300,0,,20,4
+173,Weeping heart biscuits,"TID_UPGRADE_DISPLAYNAME_WEEPING_HEART_BISCUITS","TID_UPGRADE_DESC_WEEPING_HEART_BISCUITS",,10000000000000000,,25,10300,0,,21,3
+174,Golden heart biscuits,"TID_UPGRADE_DISPLAYNAME_GOLDEN_HEART_BISCUITS","TID_UPGRADE_DESC_GOLDEN_HEART_BISCUITS",,10000000000000000,,25,10300,0,,21,4
+175,Eternal heart biscuits,"TID_UPGRADE_DISPLAYNAME_ETERNAL_HEART_BISCUITS","TID_UPGRADE_DESC_ETERNAL_HEART_BISCUITS",,10000000000000000,,25,10300,0,,19,4
+176,Gem polish,"TID_UPGRADE_DISPLAYNAME_GEM_POLISH","TID_UPGRADE_DESC_GEM_POLISH",,10,Prism,0,1100,0,,14,0
+177,9th color,"TID_UPGRADE_DISPLAYNAME_9TH_COLOR","TID_UPGRADE_DESC_9TH_COLOR",,100,Prism,0,1100,0,,14,0
+178,Chocolate light,"TID_UPGRADE_DISPLAYNAME_CHOCOLATE_LIGHT","TID_UPGRADE_DESC_CHOCOLATE_LIGHT",,1000,Prism,0,1100,0,,14,1
+179,Grainbow,"TID_UPGRADE_DISPLAYNAME_GRAINBOW","TID_UPGRADE_DESC_GRAINBOW",,50000,Prism,0,1100,0,,14,2
+180,Pure cosmic light,"TID_UPGRADE_DISPLAYNAME_PURE_COSMIC_LIGHT","TID_UPGRADE_DESC_PURE_COSMIC_LIGHT",,1000000,Prism,0,1100,0,,14,13
+181,Rainbow grandmas,"TID_UPGRADE_DISPLAYNAME_RAINBOW_GRANDMAS","TID_UPGRADE_DESC_RAINBOW_GRANDMAS",,100,Prism,0,250,0,,10,9
+182,Season switcher,"TID_UPGRADE_DISPLAYNAME_SEASON_SWITCHER","TID_UPGRADE_DESC_SEASON_SWITCHER",,3333333333333,,0,24000,0,,16,6
+183,Festive biscuit,"TID_UPGRADE_DISPLAYNAME_FESTIVE_BISCUIT","TID_UPGRADE_DESC_FESTIVE_BISCUIT",,33333333333,,0,24000,0,christmas,12,10
+184,Ghostly biscuit,"TID_UPGRADE_DISPLAYNAME_GHOSTLY_BISCUIT","TID_UPGRADE_DESC_GHOSTLY_BISCUIT",,33333333333,,0,24000,0,halloween,13,8
+185,Lovesick biscuit,"TID_UPGRADE_DISPLAYNAME_LOVESICK_BISCUIT","TID_UPGRADE_DESC_LOVESICK_BISCUIT",,33333333333,,0,24000,0,valentines,20,3

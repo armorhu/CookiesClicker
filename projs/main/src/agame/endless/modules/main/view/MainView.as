@@ -1,5 +1,6 @@
 package agame.endless.modules.main.view
 {
+	import com.agame.utils.DisplayUtil;
 	import com.greensock.TimelineMax;
 	import com.greensock.TweenLite;
 
@@ -12,7 +13,6 @@ package agame.endless.modules.main.view
 	import agame.endless.services.frame.IEnterframe;
 
 	import feathers.controls.List;
-	import feathers.controls.Scroller;
 	import feathers.data.ListCollection;
 	import feathers.layout.TiledRowsLayout;
 
@@ -32,6 +32,8 @@ package agame.endless.modules.main.view
 		public var content:StarlingMovieClip;
 		public var cookies:StarlingTextField; //饼干数量
 		public var cps:StarlingTextField; //cps.
+
+		private var frame:StarlingMovieClip;
 
 		/**
 		 *粒子系统
@@ -63,6 +65,8 @@ package agame.endless.modules.main.view
 			addChild(content);
 			content.addEventListener(Event.TRIGGERED, triggeredMeHandler);
 
+			frame=content.frame;
+			frame.flatten();
 
 			_buttomCanvas=new QuadBatch(); //最下面的画布
 			_upCanvas=new QuadBatch(); //最上面的画布
@@ -95,19 +99,29 @@ package agame.endless.modules.main.view
 			(content.newsTickerLabel as StarlingTextField).fontName=Assets.FontName;
 			(content.newsTickerLabel as StarlingTextField).autoScale=true;
 
+			initMainStyle();
+
 			initStoreList();
 			initBuildingList();
 			initUpgradesStoreList();
 		}
 
-		private function alignWith(source:DisplayObject, target:DisplayObject):void
+		private function initMainStyle():void
 		{
-			source.x=target.x;
-			source.y=target.y;
-			var parentIndex:int=target.parent.getChildIndex(target);
-			target.parent.addChildAt(source, parentIndex);
-			target.parent.removeChild(target);
+			// TODO Auto Generated method stub
+			MainStyle.BUILDING_VIEW_WIDTH=frame.leftLines.x;
+			MainStyle.Upgrade_list_height=128 * 2;
+			MainStyle.Upgrade_List_Width=64 * 3;
 		}
+
+//		private function alignWith(source:DisplayObject, target:DisplayObject):void
+//		{
+//			source.x=target.x;
+//			source.y=target.y;
+//			var parentIndex:int=target.parent.getChildIndex(target);
+//			target.parent.addChildAt(source, parentIndex);
+//			target.parent.removeChild(target);
+//		}
 
 		private function triggeredMeHandler(evt:Event):void
 		{
@@ -152,7 +166,7 @@ package agame.endless.modules.main.view
 			_storeList.dataProvider=new ListCollection;
 			_storeList.height=Starling.current.stage.stageHeight;
 			_storeList.itemRendererType=ObjectItemRender;
-			alignWith(_storeList, content.storeList);
+			DisplayUtil.alignWith(_storeList, content.storeList);
 		}
 
 		public function setStoreItem(item:Object):void
@@ -174,11 +188,10 @@ package agame.endless.modules.main.view
 		private function initBuildingList():void
 		{
 			_buildingList=new List();
-			addChild(_buildingList);
-			_buildingList.height=Starling.current.stage.stageHeight;
-			BuildingItemRender.VIEW_WIDTH=content.leftLines.x;
 			_buildingList.dataProvider=new ListCollection;
 			_buildingList.itemRendererType=BuildingItemRender;
+			DisplayUtil.alignWith(_buildingList, content.buildingList);
+			_buildingList.height=Starling.current.stage.stageHeight - _buildingList.y * 2;
 		}
 
 		/**
@@ -212,17 +225,18 @@ package agame.endless.modules.main.view
 		{
 			_upgradeStoreList=new List();
 			_upgradeStoreList.dataProvider=new ListCollection();
-			alignWith(_upgradeStoreList, content.upgradeStoreList);
-			_upgradeStoreList.width=64 * 3;
-			_upgradeStoreList.height=128;
-			_upgradeStoreList.verticalScrollPolicy=Scroller.SCROLL_POLICY_OFF;
-			_upgradeStoreList.horizontalScrollPolicy=Scroller.SCROLL_POLICY_ON;
+			DisplayUtil.alignWith(_upgradeStoreList, content.upgradeStoreList);
+			_upgradeStoreList.width=MainStyle.Upgrade_List_Width;
+			_upgradeStoreList.height=MainStyle.Upgrade_list_height;
+//			_upgradeStoreList.verticalScrollPolicy=Scroller.SCROLL_POLICY_OFF;
+//			_upgradeStoreList.horizontalScrollPolicy=Scroller.SCROLL_POLICY_ON;
+//			const listLayout:TiledColumnsLayout=new TiledColumnsLayout;
+//			listLayout.useSquareTiles=false;
+//			listLayout.tileVerticalAlign=TiledColumnsLayout.TILE_VERTICAL_ALIGN_MIDDLE;
+//			listLayout.verticalAlign=TiledColumnsLayout.V;
+//			listLayout.manageVisibility=true;
 			const listLayout:TiledRowsLayout=new TiledRowsLayout;
-			listLayout.paging=TiledRowsLayout.PAGING_HORIZONTAL;
-			listLayout.useSquareTiles=false;
-			listLayout.tileHorizontalAlign=TiledRowsLayout.TILE_HORIZONTAL_ALIGN_CENTER;
-			listLayout.horizontalAlign=TiledRowsLayout.HORIZONTAL_ALIGN_CENTER;
-			listLayout.manageVisibility=true;
+			listLayout.paging=TiledRowsLayout.PAGING_VERTICAL;
 			listLayout.gap=4;
 			_upgradeStoreList.layout=listLayout;
 			_upgradeStoreList.itemRendererType=UpgradeItemRender;
@@ -235,14 +249,10 @@ package agame.endless.modules.main.view
 			var len:int=items.length;
 			for (var i:int=0; i < len; i++)
 				_upgradeStoreList.dataProvider.addItem(items[i]);
-			var offset:Number=0;
-			if (len == 0)
-				offset=0;
-			else if (len <= 3)
-				offset=64;
-			else
-				offset=64 * 2;
-
+			var offset:Number=int(len / 3) * 64;
+			if (offset > MainStyle.Upgrade_list_height)
+				offset=MainStyle.Upgrade_list_height;
+			offset+=_upgradeStoreList.y;
 			if (_storeList.y != offset)
 			{
 				TweenLite.killTweensOf(_storeList);

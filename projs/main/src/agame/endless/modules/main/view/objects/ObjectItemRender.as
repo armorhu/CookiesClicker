@@ -1,6 +1,7 @@
 package agame.endless.modules.main.view.objects
 {
 	import com.agame.utils.Beautify;
+	import com.agame.utils.DisplayUtil;
 
 	import flash.events.Event;
 	import flash.media.SoundChannel;
@@ -49,19 +50,20 @@ package agame.endless.modules.main.view.objects
 				if (_icon == null)
 				{
 					_icon=Assets.current.getLinkageInstance(data.icon) as Image;
-					view.addChildAt(_icon, 1);
+					DisplayUtil.alignWith(_icon, view.icon);
 				}
 
 				if (!data.lock || data.amount > 0)
-					view.objName.text=data.name;
+					view.objName.text=data.displayName;
 				else
 					view.objName.text='???';
-				view.price.text=Beautify(data.getPrice());
+				view.price.text=Beautify(data.price);
 				if (data.amount > 0)
 					view.num.text='' + data.amount;
 				else
 					view.num.text='';
 				disable=data.disable;
+				_icon.texture=Assets.current.getLinkageTexture(data.icon);
 				_icon.color=(data.amount == 0 && data.disable) ? 0x0 : 0xffffff;
 			}
 		}
@@ -74,9 +76,7 @@ package agame.endless.modules.main.view.objects
 		override protected function set touchPointID(value:int):void
 		{
 			super.touchPointID=value;
-//			this.unflatten()
 			view.touchMask.visible=value >= 0;
-//			this.flatten();
 		}
 
 		override protected function set disable(value:Boolean):void
@@ -104,7 +104,8 @@ package agame.endless.modules.main.view.objects
 				if (data.id == 1)
 				{
 					sc=Assets.current.playSound('Grandma');
-					sc.addEventListener(flash.events.Event.SOUND_COMPLETE, soundComplete);
+					if (sc)
+						sc.addEventListener(flash.events.Event.SOUND_COMPLETE, soundComplete);
 				}
 			}
 			Assets.current.playSound('select_item');

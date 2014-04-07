@@ -1,15 +1,18 @@
 package agame.endless.services.assets
 {
 	import flash.filesystem.File;
+	import flash.media.SoundChannel;
+	import flash.media.SoundTransform;
 	import flash.utils.ByteArray;
-
+	
 	import agame.endless.EndlessApplication;
-
+	import agame.endless.configs.AppConfig;
+	import agame.endless.configs.lang.LangConfigModel;
+	import agame.endless.configs.news.NewsConfigModel;
+	
 	import starling.display.DisplayObject;
 	import starling.events.Event;
 	import starling.extension.starlingide.display.loader.StarlingLoader;
-	import starling.text.BitmapFont;
-	import starling.text.TextField;
 	import starling.textures.Texture;
 	import starling.utils.AssetManager;
 
@@ -36,9 +39,8 @@ package agame.endless.services.assets
 
 		public function start():void
 		{
-			enqueue('res/fonts_xml.xml');
-			enqueue('res/fonts_png.png');
 			enqueue('res/swf/iphone_temp/iphone_pack.swf');
+			enqueue(File.applicationDirectory.resolvePath('config'));
 			enqueue(File.applicationDirectory.resolvePath('res/audio'));
 			loadQueue(loading);
 		}
@@ -62,12 +64,18 @@ package agame.endless.services.assets
 
 		public function progressAssets():void
 		{
-			trace(getXml('fonts'), getTexture('fonts_png'));
-			var bitmapFont:BitmapFont=new BitmapFont(getTexture('fonts_png'), getXml('fonts_xml'));
-			FontName='fontsss';
-			TextField.registerBitmapFont(bitmapFont, FontName);
+			var ba:ByteArray;
 
-			var ba:ByteArray=getByteArray('iphone_pack');
+			ba=getByteArray('texts');
+			LangConfigModel.init(ba.readUTFBytes(ba.bytesAvailable), 'EN');
+			removeByteArray('texts');
+
+			ba=getByteArray('news');
+			AppConfig.newsConfigModel=new NewsConfigModel();
+			AppConfig.newsConfigModel.init(ba.readUTFBytes(ba.bytesAvailable));
+			removeByteArray('news');
+
+			ba=getByteArray('iphone_pack');
 			main=new StarlingLoader;
 			main.loadBytes(ba);
 			main.addEventListener(Event.COMPLETE, loadComplete);
@@ -75,8 +83,15 @@ package agame.endless.services.assets
 
 		public function loadComplete(evt:Event):void
 		{
+			removeByteArray('iphone_pack');
 			dispatchEventWith(Event.COMPLETE);
 		}
 
+
+		override public function playSound(name:String, startTime:Number=0, loops:int=0, transform:SoundTransform=null):SoundChannel
+		{
+			return null;
+			return super.playSound(name, startTime, loops, transform);
+		}
 	}
 }

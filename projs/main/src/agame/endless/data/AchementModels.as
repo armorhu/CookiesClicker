@@ -14,8 +14,8 @@ package agame.endless.data
 		{
 			csvContext='';
 			var id=1;
-			var keys:Array=['id', 'name', 'desc', 'iconX', 'iconY', 'hide', 'order', 'category'];
-			var types:Array=['int', 'String', 'int', 'int', 'String', 'int', 'int', 'String'];
+			var keys:Array=['id', 'name', 'displayName', 'desc', 'iconX', 'iconY', 'hide', 'order', 'category'];
+			var types:Array=['int', 'String', 'String', 'int', 'int', 'String', 'int', 'int', 'String'];
 			csvContext=csvContext + keys.join(',') + '\n';
 			csvContext=csvContext + types.join(',') + '\n';
 			function Achievement(name, desc, icon, hide=0, category='none')
@@ -23,7 +23,8 @@ package agame.endless.data
 				var obj:*={};
 				obj.id=id++;
 				obj.name=name;
-				obj.desc=desc;
+				obj.displayName=TextData.formatAndPush('ACH_displayName_' + obj.name, name);
+				obj.desc=TextData.formatAndPush('ACH_Desc_' + obj.name, desc);
 				obj.icon=icon;
 				obj.won=0;
 				obj.disabled=0;
@@ -33,6 +34,7 @@ package agame.endless.data
 				var temp:Array=[];
 				temp.push(obj.id);
 				temp.push(obj.name);
+				temp.push(obj.displayName);
 				temp.push('"' + obj.desc + '"');
 				temp.push(obj.icon[0]);
 				temp.push(obj.icon[1]);

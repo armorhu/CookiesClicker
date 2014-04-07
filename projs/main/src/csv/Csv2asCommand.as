@@ -1,6 +1,7 @@
 package csv
 {
 	import com.agame.services.csv.CSVFile;
+	import com.agame.utils.formatTID;
 
 	import flash.filesystem.File;
 	import flash.filesystem.FileMode;
@@ -84,7 +85,7 @@ package csv
 				nameIndex=csvFile.keys.indexOf('name');
 
 			var idIndex:int=csvFile.keys.indexOf('ID');
-			if (nameIndex == -1)
+			if (idIndex == -1)
 				idIndex=csvFile.keys.indexOf('id');
 
 			if (model2 && (idIndex == -1 || nameIndex == -1))
@@ -121,11 +122,18 @@ package csv
 					var insertStr:String='';
 					for (var j:int=0; j < rows; j++)
 					{
-						var namesValue:String=csvFile.valueTables[j][nameIndex];
-						if (namesValue == '' || namesValue == null)
-							continue;
-						namesValue=formatPropertyName(namesValue);
 						var defsValue:String=csvFile.getValue(j, defsIndex, j);
+						if (nameIndex != -1)
+						{
+							var namesValue:String=csvFile.valueTables[j][nameIndex];
+							if (namesValue == '' || namesValue == null)
+								continue;
+							namesValue=formatTID(namesValue, false);
+						}
+						else
+						{
+							namesValue=defsValue;
+						}
 						if (defsType == 'String')
 							defsValue='"' + defsValue + '"';
 						insertStr=insertStr + '		public static const ' + namesValue + ':' + defsType + ' = ' + defsValue + ';\n';
@@ -173,26 +181,6 @@ package csv
 			appConfig_ModelLogicContent=appConfig_ModelLogicContent + //
 				'			' + propertyName + 'ConfigModel = new ' + className + 'ConfigModel;\n' + //
 				'			bindle("' + csvPath + configName + '",' + propertyName + 'ConfigModel' + ');\n';
-		}
-
-		private function formatPropertyName(namesValue:String):String
-		{
-			// TODO Auto Generated method stub
-			var arr:String='abcdefghigklmnopqrstuvwxyz';
-			arr=arr.toUpperCase() + arr;
-			arr=arr + '_';
-
-			var len:int=namesValue.length;
-			for (var i:int=0; i < len; i++)
-				if (arr.indexOf(namesValue.charAt(i)) == -1)
-					namesValue=namesValue.substr(0, i) + '_' + namesValue.substr(i + 1);
-
-			while (namesValue.charAt(0) == '_')
-				namesValue=namesValue.substr(1);
-			while (namesValue.charAt(namesValue.length - 1) == '_')
-				namesValue=namesValue.substr(0, namesValue.length - 1);
-
-			return namesValue;
 		}
 
 		public function propertyString(propertyName:String, propertyClass:String):String

@@ -1,20 +1,23 @@
 package csv
 {
-	import com.amgame.utils.FileUtil;
-
 	import flash.display.Sprite;
 	import flash.filesystem.File;
 	import flash.filesystem.FileMode;
 	import flash.filesystem.FileStream;
 
+	import agame.endless.configs.lang.LangPattern;
 	import agame.endless.data.AchementModels;
+	import agame.endless.data.NewTickerModel;
 	import agame.endless.data.ObjectModels;
+	import agame.endless.data.TextData;
 	import agame.endless.data.UpgradeModels;
 
 	public class csv2as_shell extends Sprite
 	{
 		public function csv2as_shell()
 		{
+
+			customText();
 
 			var o:ObjectModels=new ObjectModels;
 			writeAsFile('config/objects.csv', o.setup());
@@ -25,11 +28,36 @@ package csv
 			var a:AchementModels=new AchementModels;
 			writeAsFile('config/achievements.csv', a.setup());
 
+			var n:NewTickerModel=new NewTickerModel;
+			writeAsFile('config/news.csv', n.setup());
+//			writeAsFile('config/texts.csv', TextData.result_text);
+
+			writeAsFile('charset.txt', charSet, false);
 			start();
 		}
 
-		public function writeAsFile(resolvePath:String, data:String):void
+		private function customText():void
 		{
+			TextData.formatAndPush('Cookies', LangPattern.Number + ' Cookies');
+			TextData.formatAndPush('Cps', '+' + LangPattern.Number + ' Cookies per secend!');
+		}
+
+		private var charSet:String='';
+
+		public function writeAsFile(resolvePath:String, data:String, chaset:Boolean=true):void
+		{
+			if (chaset)
+			{
+				var len:int=data.length;
+				for (var i:int=0; i < len; i++)
+				{
+					if (data.charAt(i) == ' ' || data.charAt(i) == '\n')
+						continue;
+					if (charSet.indexOf(data.charAt(i)) == -1)
+						charSet=charSet + data.charAt(i);
+				}
+			}
+
 			trace('writeFile:', resolvePath);
 			var file:File=new File(File.applicationDirectory.resolvePath(resolvePath).nativePath);
 			var fs:FileStream=new FileStream;
