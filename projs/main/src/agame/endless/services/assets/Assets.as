@@ -67,7 +67,7 @@ package agame.endless.services.assets
 			var ba:ByteArray;
 
 			ba=getByteArray('texts');
-			LangConfigModel.init(ba.readUTFBytes(ba.bytesAvailable), 'EN');
+			LangConfigModel.init(ba.readUTFBytes(ba.bytesAvailable), 'ZH');
 			removeByteArray('texts');
 
 			ba=getByteArray('news');
@@ -90,7 +90,7 @@ package agame.endless.services.assets
 
 		override public function playSound(name:String, startTime:Number=0, loops:int=0, transform:SoundTransform=null):SoundChannel
 		{
-			return null;
+//			return null;
 			return super.playSound(name, startTime, loops, transform);
 		}
 	}

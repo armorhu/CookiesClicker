@@ -5,6 +5,7 @@ package agame.endless.configs.texts
 	{
 		public var TID:String;
 		public var EN:String;
+		public var ZH:String;
 		public function TextsConfig()
 		{
 		}

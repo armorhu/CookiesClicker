@@ -16,9 +16,14 @@ package csv
 	{
 		public function csv2as_shell()
 		{
+//			genCSV();
+			genCharset();
+//			genConfigModel();
+		}
 
+		private function genCSV():void
+		{
 			customText();
-
 			var o:ObjectModels=new ObjectModels;
 			writeAsFile('config/objects.csv', o.setup());
 
@@ -30,10 +35,23 @@ package csv
 
 			var n:NewTickerModel=new NewTickerModel;
 			writeAsFile('config/news.csv', n.setup());
-//			writeAsFile('config/texts.csv', TextData.result_text);
+			writeAsFile('config/texts_auto.csv', TextData.result_text);
+		}
 
+		private function genCharset():void
+		{
+			//从texts.csv里生产 charset.
+			var texts:String=readFile(File.applicationDirectory.resolvePath('config/texts.csv').nativePath);
+			var len:int=texts.length;
+			var charSet:String=''
+			for (var i:int=0; i < len; i++)
+			{
+				if (texts.charAt(i) == ' ' || texts.charAt(i) == '\n' || texts.charAt(i) == '\r')
+					continue;
+				if (charSet.indexOf(texts.charAt(i)) == -1)
+					charSet=charSet + texts.charAt(i);
+			}
 			writeAsFile('charset.txt', charSet, false);
-			start();
 		}
 
 		private function customText():void
@@ -42,22 +60,21 @@ package csv
 			TextData.formatAndPush('Cps', '+' + LangPattern.Number + ' Cookies per secend!');
 		}
 
-		private var charSet:String='';
+		public function readFile(path:String):String
+		{
+			trace('readFile:', path);
+			var file:File=new File(path);
+			if (file.exists == false || file.isDirectory == true)
+				return '';
+			var fs:FileStream=new FileStream;
+			fs.open(file, FileMode.READ);
+			var result:String=fs.readUTFBytes(fs.bytesAvailable);
+			fs.close();
+			return result;
+		}
 
 		public function writeAsFile(resolvePath:String, data:String, chaset:Boolean=true):void
 		{
-			if (chaset)
-			{
-				var len:int=data.length;
-				for (var i:int=0; i < len; i++)
-				{
-					if (data.charAt(i) == ' ' || data.charAt(i) == '\n')
-						continue;
-					if (charSet.indexOf(data.charAt(i)) == -1)
-						charSet=charSet + data.charAt(i);
-				}
-			}
-
 			trace('writeFile:', resolvePath);
 			var file:File=new File(File.applicationDirectory.resolvePath(resolvePath).nativePath);
 			var fs:FileStream=new FileStream;
@@ -66,7 +83,7 @@ package csv
 			fs.close();
 		}
 
-		public function start():void
+		public function genConfigModel():void
 		{
 			//主程序的csv
 			trace('===========主文件的csv=================')

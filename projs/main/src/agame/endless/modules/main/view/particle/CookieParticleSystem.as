@@ -132,7 +132,7 @@ package agame.endless.modules.main.view.particle
 				if (me.life != -1)
 				{
 					var opacity:Number=1 - (me.life / (Game.fps * me.dur));
-					if (me.text)
+					if (me.text && arrangedChars)
 					{
 						_particleFont.fillQuadBatch(me.x, me.y, opacity, 0, _textCanvas, //
 							0xffffff, //
