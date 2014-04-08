@@ -20,7 +20,7 @@ package agame.endless.services.feathers.itemRender
 		{
 			this.addEventListener(TouchEvent.TOUCH, touchHandler);
 			this.addEventListener(Event.REMOVED_FROM_STAGE, removedFromStageHandler);
-
+			this.addEventListener(Event.ADDED_TO_STAGE, addedToStageHandler);
 		}
 
 		protected var _index:int=-1;
@@ -141,6 +141,11 @@ package agame.endless.services.feathers.itemRender
 			this.touchPointID=-1;
 		}
 
+		protected function addedToStageHandler(event:Event):void
+		{
+
+		}
+
 		protected function touchHandler(event:TouchEvent):void
 		{
 			if (disable)
@@ -224,7 +229,14 @@ package agame.endless.services.feathers.itemRender
 
 		protected function itemClicked():void
 		{
+		}
 
+		override public function dispose():void
+		{
+			this.removeEventListener(TouchEvent.TOUCH, touchHandler);
+			this.removeEventListener(Event.REMOVED_FROM_STAGE, removedFromStageHandler);
+			this.removeEventListener(Event.ADDED_TO_STAGE, addedToStageHandler);
+			super.dispose();
 		}
 	}
 }

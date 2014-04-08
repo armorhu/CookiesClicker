@@ -1,7 +1,9 @@
 ﻿TID,EN,ZH
 String,String,String
 TID_COOKIES,#Number# Cookies,#Number# 饼干
-TID_CPS,+#Number# Cookies per secend!,+#Number# 饼干每秒
+TID_COOKIES_BAKED,#Number# Cookies Baked.,已生产#Number#个饼干
+TID_COOKIES_CLICKED,#Number# Cookies Clicked.,已点击#Number#个饼干
+TID_CPS,+#Number# Cookies per secend!,+ #Number# 饼干/秒
 TID_CURSOR_DISPLAYNAME,Cursor,鼠标
 TID_CURSOR_DESC,Autoclicks once every 10 seconds.,每10秒点一次
 TID_GRANDMA_DISPLAYNAME,Grandma,奶奶
@@ -746,3 +748,7 @@ TID_NEWS44_CONTEXT,"The universe has now turned into cookie dough, to the molecu
 TID_NEWS45_CONTEXT,Your cookies are rewriting the fundamental laws of the universe.,你的饼干重新制定了宇宙的基本规则.
 TID_NEWS46_CONTEXT,A local news station runs a 10-minute segment about your cookies. Success!(you win a cookie),&^*%&^%&*(&*^%^$%#%^&*.
 TID_NEWS47_CONTEXT,it's time to stop playing,妈蛋，求你别玩了...
+TID_BUTTON_LABEL_SELL,Sell,卖出
+TID_BUTTON_LABEL_MENU,Menu,设置
+TID_BUTTON_LABEL_STATS,Stats,统计
+

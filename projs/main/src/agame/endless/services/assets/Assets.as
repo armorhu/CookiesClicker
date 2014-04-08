@@ -76,7 +76,7 @@ package agame.endless.services.assets
 			removeByteArray('news');
 
 			ba=getByteArray('iphone_pack');
-			main=new StarlingLoader;
+			main=new StarlingLoader
 			main.loadBytes(ba);
 			main.addEventListener(Event.COMPLETE, loadComplete);
 		}
@@ -90,7 +90,7 @@ package agame.endless.services.assets
 
 		override public function playSound(name:String, startTime:Number=0, loops:int=0, transform:SoundTransform=null):SoundChannel
 		{
-//			return null;
+			return null;
 			return super.playSound(name, startTime, loops, transform);
 		}
 	}

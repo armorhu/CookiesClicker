@@ -3,6 +3,8 @@ package agame.endless.configs.texts
 	public class TextsTIDDefs
 	{
 		public static const TID_COOKIES:String = "TID_COOKIES";
+		public static const TID_COOKIES_BAKED:String = "TID_COOKIES_BAKED";
+		public static const TID_COOKIES_CLICKED:String = "TID_COOKIES_CLICKED";
 		public static const TID_CPS:String = "TID_CPS";
 		public static const TID_CURSOR_DISPLAYNAME:String = "TID_CURSOR_DISPLAYNAME";
 		public static const TID_CURSOR_DESC:String = "TID_CURSOR_DESC";
@@ -748,6 +750,9 @@ package agame.endless.configs.texts
 		public static const TID_NEWS45_CONTEXT:String = "TID_NEWS45_CONTEXT";
 		public static const TID_NEWS46_CONTEXT:String = "TID_NEWS46_CONTEXT";
 		public static const TID_NEWS47_CONTEXT:String = "TID_NEWS47_CONTEXT";
+		public static const TID_BUTTON_LABEL_SELL:String = "TID_BUTTON_LABEL_SELL";
+		public static const TID_BUTTON_LABEL_MENU:String = "TID_BUTTON_LABEL_MENU";
+		public static const TID_BUTTON_LABEL_STATS:String = "TID_BUTTON_LABEL_STATS";
 		public function TextsTIDDefs()
 		{
 		}

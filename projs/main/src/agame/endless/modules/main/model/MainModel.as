@@ -23,8 +23,8 @@ package agame.endless.modules.main.model
 
 
 		//cookies 经济
-		public var cookiesEarned:Number=0; //all cookies earned during gameplay
-		public var cookies:Number=0; //cookies
+		public var cookiesEarned:Number=100000; //all cookies earned during gameplay
+		public var cookies:Number=100000; //cookies
 		public var cookiesd:Number=0; //cookies display
 		public var cookiesPs:Number=1; //cookies per second (to recalculate with every new purchase)
 		public var cookiesReset:Number=0; //cookies lost to resetting

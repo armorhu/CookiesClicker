@@ -73,7 +73,7 @@ package agame.endless.modules.main.view.particle
 		private var mLineHeight:Number;
 		private var mBaseline:Number;
 		private var mHelperImage:Image;
-		private var mCharLocationPool:Vector.<CharLocation>;
+		private var mCharLocationPool:Vector.<ParticleCharLocation>;
 
 		/** Creates a bitmap font by parsing an XML file and uses the specified texture.
 		 *  If you don't pass any data, the "mini" font will be created. */
@@ -91,7 +91,7 @@ package agame.endless.modules.main.view.particle
 			mTexture=texture;
 			mChars=new Dictionary();
 			mHelperImage=new Image(texture);
-			mCharLocationPool=new <CharLocation>[];
+			mCharLocationPool=new <ParticleCharLocation>[];
 
 			if (fontXml)
 				parseFontXml(fontXml);
@@ -166,13 +166,13 @@ package agame.endless.modules.main.view.particle
 		/** Creates a sprite that contains a certain text, made up by one image per char. */
 		public function createSprite(width:Number, height:Number, text:String, fontSize:Number=-1, color:uint=0xffffff, hAlign:String="center", vAlign:String="center", autoScale:Boolean=true, kerning:Boolean=true):Sprite
 		{
-			var charLocations:Vector.<CharLocation>=arrangeChars(width, height, text, fontSize, hAlign, vAlign, autoScale, kerning);
+			var charLocations:Vector.<ParticleCharLocation>=arrangeChars(width, height, text, fontSize, hAlign, vAlign, autoScale, kerning);
 			var numChars:int=charLocations.length;
 			var sprite:Sprite=new Sprite();
 
 			for (var i:int=0; i < numChars; ++i)
 			{
-				var charLocation:CharLocation=charLocations[i];
+				var charLocation:ParticleCharLocation=charLocations[i];
 				var char:Image=charLocation.char.createImage();
 				char.x=charLocation.x;
 				char.y=charLocation.y;
@@ -187,14 +187,14 @@ package agame.endless.modules.main.view.particle
 		/** Draws text into a QuadBatch. */
 		public function fillQuadBatch(x:Number, y:Number, alpha:Number, r:Number, quadBatch:QuadBatch, color:uint, charLocations:Object):void
 		{
-//			var charLocations:Vector.<CharLocation>=arrangeChars(width, height, text, fontSize, hAlign, vAlign, autoScale, kerning);
+//			var charLocations:Vector.<ParticleCharLocation>=arrangeChars(width, height, text, fontSize, hAlign, vAlign, autoScale, kerning);
 			var numChars:int=charLocations.length;
 			mHelperImage.color=color;
 			if (numChars > 8192)
 				throw new ArgumentError("Bitmap Font text is limited to 8192 characters.");
 			for (var i:int=0; i < numChars; ++i)
 			{
-				var charLocation:CharLocation=charLocations[i];
+				var charLocation:ParticleCharLocation=charLocations[i];
 				mHelperImage.texture=charLocation.char.texture;
 				mHelperImage.readjustSize();
 				mHelperImage.x=charLocation.x + x;
@@ -208,16 +208,16 @@ package agame.endless.modules.main.view.particle
 
 		/** Arranges the characters of a text inside a rectangle, adhering to the given settings.
 		 *  Returns a Vector of CharLocations. */
-		public function arrangeChars(width:Number, height:Number, text:String, fontSize:Number=-1, hAlign:String="center", vAlign:String="center", autoScale:Boolean=true, kerning:Boolean=true):Vector.<CharLocation>
+		public function arrangeChars(width:Number, height:Number, text:String, fontSize:Number=-1, hAlign:String="center", vAlign:String="center", autoScale:Boolean=true, kerning:Boolean=true):Vector.<ParticleCharLocation>
 		{
 			if (text == null || text.length == 0)
-				return new <CharLocation>[];
+				return new <ParticleCharLocation>[];
 			if (fontSize < 0)
 				fontSize*=-mSize;
 
-			var lines:Vector.<Vector.<CharLocation>>;
+			var lines:Vector.<Vector.<ParticleCharLocation>>;
 			var finished:Boolean=false;
-			var charLocation:CharLocation;
+			var charLocation:ParticleCharLocation;
 			var numChars:int;
 			var containerWidth:Number;
 			var containerHeight:Number;
@@ -229,7 +229,7 @@ package agame.endless.modules.main.view.particle
 				containerWidth=width / scale;
 				containerHeight=height / scale;
 
-				lines=new Vector.<Vector.<CharLocation>>();
+				lines=new Vector.<Vector.<ParticleCharLocation>>();
 
 				if (mLineHeight <= containerHeight)
 				{
@@ -237,7 +237,7 @@ package agame.endless.modules.main.view.particle
 					var lastCharID:int=-1;
 					var currentX:Number=0;
 					var currentY:Number=0;
-					var currentLine:Vector.<CharLocation>=new <CharLocation>[];
+					var currentLine:Vector.<ParticleCharLocation>=new <ParticleCharLocation>[];
 
 					numChars=text.length;
 					for (var i:int=0; i < numChars; ++i)
@@ -262,7 +262,7 @@ package agame.endless.modules.main.view.particle
 							if (kerning)
 								currentX+=char.getKerning(lastCharID);
 
-							charLocation=mCharLocationPool.length ? mCharLocationPool.pop() : new CharLocation(char);
+							charLocation=mCharLocationPool.length ? mCharLocationPool.pop() : new ParticleCharLocation(char);
 
 							charLocation.char=char;
 							charLocation.x=currentX + char.xOffset;
@@ -302,7 +302,7 @@ package agame.endless.modules.main.view.particle
 
 							if (currentY + 2 * mLineHeight <= containerHeight)
 							{
-								currentLine=new <CharLocation>[];
+								currentLine=new <ParticleCharLocation>[];
 								currentX=0;
 								currentY+=mLineHeight;
 								lastWhiteSpace=-1;
@@ -327,7 +327,7 @@ package agame.endless.modules.main.view.particle
 				}
 			} // while (!finished)
 
-			var finalLocations:Vector.<CharLocation>=new <CharLocation>[];
+			var finalLocations:Vector.<ParticleCharLocation>=new <ParticleCharLocation>[];
 			var numLines:int=lines.length;
 			var bottom:Number=currentY + mLineHeight;
 			var yOffset:int=0;
@@ -339,14 +339,14 @@ package agame.endless.modules.main.view.particle
 
 			for (var lineID:int=0; lineID < numLines; ++lineID)
 			{
-				var line:Vector.<CharLocation>=lines[lineID];
+				var line:Vector.<ParticleCharLocation>=lines[lineID];
 				numChars=line.length;
 
 				if (numChars == 0)
 					continue;
 
 				var xOffset:int=0;
-				var lastLocation:CharLocation=line[line.length - 1];
+				var lastLocation:ParticleCharLocation=line[line.length - 1];
 				var right:Number=lastLocation.x - lastLocation.char.xOffset + lastLocation.char.xAdvance;
 
 				if (hAlign == HAlign.RIGHT)
@@ -416,14 +416,14 @@ package agame.endless.modules.main.view.particle
 
 import starling.text.BitmapChar;
 
-class CharLocation
+class ParticleCharLocation
 {
 	public var char:BitmapChar;
 	public var scale:Number;
 	public var x:Number;
 	public var y:Number;
 
-	public function CharLocation(char:BitmapChar)
+	public function ParticleCharLocation(char:BitmapChar)
 	{
 		this.char=char;
 	}

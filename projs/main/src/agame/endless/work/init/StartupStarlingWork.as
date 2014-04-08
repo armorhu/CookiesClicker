@@ -2,19 +2,20 @@ package agame.endless.work.init
 {
 	import flash.display.Bitmap;
 	import flash.geom.Rectangle;
-	
+
 	import agame.endless.EndlessApplication;
 	import agame.endless.appStage;
 	import agame.endless.enm.EnmModuleName;
 	import agame.endless.modules.main.ModuleMain;
 	import agame.endless.services.assets.Assets;
 	import agame.endless.work.EndlessWork;
-	
+
 	import starling.core.Starling;
 	import starling.display.Sprite;
 	import starling.events.Event;
 	import starling.extension.starlingide.display.textfield.StarlingTextField;
 	import starling.text.BitmapFont;
+	import starling.text.TextField;
 	import starling.textures.Texture;
 
 	public class StartupStarlingWork extends EndlessWork
@@ -52,21 +53,29 @@ package agame.endless.work.init
 
 			registeStarlingModule();
 
+			registeBitmapFont();
+
 			Starling.current.start();
 			workComplete();
 		}
 
-		protected function registeStarlingModule():void
+		private function registeBitmapFont():void
 		{
-			var layer:Sprite=new Sprite;
-			Starling.current.stage.addChild(layer);
-			app.registerModule(EnmModuleName.Main, ModuleMain, layer);
-
+			//注册位图字体
 			var bitmap:Bitmap=new EmbedFont.BitmapChars();
 			var xml:XML=XML(new EmbedFont.BritannicXML());
 			var bitmapFont:BitmapFont=new BitmapFont(Texture.fromBitmap(bitmap), xml);
 			Assets.FontName='fontsss';
 			StarlingTextField.registerBitmapFont(bitmapFont, Assets.FontName);
+			TextField.registerBitmapFont(bitmapFont, Assets.FontName);
+		}
+
+		protected function registeStarlingModule():void
+		{
+			//注册主场景模块
+			var layer:Sprite=new Sprite;
+			Starling.current.stage.addChild(layer);
+			app.registerModule(EnmModuleName.Main, ModuleMain, layer);
 		}
 	}
 }

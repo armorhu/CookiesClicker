@@ -38,7 +38,6 @@ package agame.endless.modules.main.view.objects
 				view.price.autoScale=true;
 				view.num.autoScale=true;
 				addChild(view);
-
 				setSize(view.width, view.height);
 			}
 		}
@@ -114,8 +113,9 @@ package agame.endless.modules.main.view.objects
 
 		private function soundComplete(evt:flash.events.Event):void
 		{
-			sc.removeEventListener(flash.events.Event.SOUND_COMPLETE, soundComplete);
+			evt.target.removeEventListener(flash.events.Event.SOUND_COMPLETE, soundComplete);
 			sc=null;
 		}
+
 	}
 }

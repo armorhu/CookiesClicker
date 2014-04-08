@@ -150,8 +150,13 @@ package agame.endless.modules.main
 			if (Game.T % 10 == 0)
 			{
 				drawDirtyObjects();
-				_view.cookies.text=Lang(TextsTIDDefs.TID_COOKIES).replace(LangPattern.Number, Beautify(Game.cookies));
-				_view.cps.text=Lang(TextsTIDDefs.TID_CPS).replace(LangPattern.Number, Beautify(Game.cookiesPs));
+
+//				var unit=(Math.round(Game.cookiesd)==1?' cookie':' cookies');
+//				if (Math.round(Game.cookiesd).toString().length>11 && !Game.mobile) unit='<br>cookies';
+//				var str=Beautify(Math.round(Game.cookiesd))+unit+'<div style="font-size:50%;"'+(Game.cpsSucked>0?' class="warning"':'')+'>per second : '+Beautify(Game.cookiesPs*(1-Game.cpsSucked),1)+'</div>';//display cookie amount
+
+				_view.cookies.text=Lang(TextsTIDDefs.TID_COOKIES).replace(LangPattern.Number, Beautify(Math.round(Game.cookiesd)));
+				_view.cps.text=Lang(TextsTIDDefs.TID_CPS).replace(LangPattern.Number, Beautify(Game.cookiesPs, 1));
 			}
 		}
 
