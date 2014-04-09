@@ -18,7 +18,7 @@ package agame.endless.services.feathers.itemRender
 
 		public function CustomItemRender()
 		{
-			this.addEventListener(TouchEvent.TOUCH, touchHandler);
+			this.addEventListener(TouchEvent.TOUCH, accessory_touchHandler);
 			this.addEventListener(Event.REMOVED_FROM_STAGE, removedFromStageHandler);
 			this.addEventListener(Event.ADDED_TO_STAGE, addedToStageHandler);
 		}
@@ -132,8 +132,8 @@ package agame.endless.services.feathers.itemRender
 
 		protected function layout():void
 		{
-			this.width=this.actualWidth;
-			this.height=this.actualHeight;
+//			this.width=this.actualWidth;
+//			this.height=this.actualHeight;
 		}
 
 		protected function removedFromStageHandler(event:Event):void
@@ -143,62 +143,40 @@ package agame.endless.services.feathers.itemRender
 
 		protected function addedToStageHandler(event:Event):void
 		{
-
 		}
 
-		protected function touchHandler(event:TouchEvent):void
+
+
+		/**
+		 * @private
+		 */
+		protected function accessory_touchHandler(event:TouchEvent):void
 		{
-			if (disable)
+			if (!this.isDisabled)
 				return;
-			const touches:Vector.<Touch>=event.getTouches(this);
-			if (touches.length == 0)
-			{
-				//hover has ended
-				return;
-			}
+
 			if (this.touchPointID >= 0)
 			{
-				var touch:Touch;
-				for each (var currentTouch:Touch in touches)
-				{
-					if (currentTouch.id == this.touchPointID)
-					{
-						touch=currentTouch;
-						break;
-					}
-				}
+				var touch:Touch=event.getTouch(this, TouchPhase.ENDED, this.touchPointID);
 				if (!touch)
 				{
 					return;
 				}
-				if (touch.phase == TouchPhase.ENDED)
-				{
-					this.touchPointID=-1;
-
-					touch.getLocation(this, HELPER_POINT);
-					//check if the touch is still over the target
-					//also, only change it if we're not selected. we're not a toggle.
-					if (this.hitTest(HELPER_POINT, true) != null)
-					{
-						itemClicked();
-						if (!this._isSelected)
-							this.isSelected=true;
-					}
-					return;
-				}
+				this.touchPointID=-1;
 			}
-			else
+			else //if we get here, we don't have a saved touch ID yet
 			{
-				for each (touch in touches)
+				touch=event.getTouch(this, TouchPhase.BEGAN);
+				if (touch)
 				{
-					if (touch.phase == TouchPhase.BEGAN)
-					{
-						this.touchPointID=touch.id;
-						return;
-					}
+					itemClicked();
+					if (!this._isSelected)
+						this.isSelected=true;
+					this.touchPointID=touch.id;
 				}
 			}
 		}
+
 
 		private var _touchPointID:int=-1;
 
@@ -212,31 +190,32 @@ package agame.endless.services.feathers.itemRender
 			_touchPointID=value;
 		}
 
-		private var _disable:Boolean;
-
-		protected function get disable():Boolean
-		{
-			return _disable;
-		}
-
-		protected function set disable(value:Boolean):void
-		{
-			_disable=value;
-			if (value)
-				touchable=-1;
-		}
-
-
 		protected function itemClicked():void
 		{
 		}
 
 		override public function dispose():void
 		{
-			this.removeEventListener(TouchEvent.TOUCH, touchHandler);
+			this.removeEventListener(TouchEvent.TOUCH, accessory_touchHandler);
 			this.removeEventListener(Event.REMOVED_FROM_STAGE, removedFromStageHandler);
 			this.removeEventListener(Event.ADDED_TO_STAGE, addedToStageHandler);
 			super.dispose();
 		}
+		private var _disabled:Boolean=false;
+
+		public function get isDisabled():Boolean
+		{
+			return _disabled;
+		}
+
+		public function set isDisabled(value:Boolean):void
+		{
+			if (_disabled != value)
+			{
+				_disabled=value;
+				touchPointID=-1;
+			}
+		}
+
 	}
 }

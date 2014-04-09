@@ -53,21 +53,8 @@ package agame.endless.work.init
 
 			registeStarlingModule();
 
-			registeBitmapFont();
-
 			Starling.current.start();
 			workComplete();
-		}
-
-		private function registeBitmapFont():void
-		{
-			//注册位图字体
-			var bitmap:Bitmap=new EmbedFont.BitmapChars();
-			var xml:XML=XML(new EmbedFont.BritannicXML());
-			var bitmapFont:BitmapFont=new BitmapFont(Texture.fromBitmap(bitmap), xml);
-			Assets.FontName='fontsss';
-			StarlingTextField.registerBitmapFont(bitmapFont, Assets.FontName);
-			TextField.registerBitmapFont(bitmapFont, Assets.FontName);
 		}
 
 		protected function registeStarlingModule():void

@@ -14,7 +14,6 @@ package agame.endless.modules.main.view.buildings
 	import agame.endless.services.frame.IEnterframe;
 
 	import feathers.controls.Button;
-	import feathers.controls.ScrollBar;
 	import feathers.controls.ScrollContainer;
 	import feathers.controls.Scroller;
 	import feathers.display.TiledImage;

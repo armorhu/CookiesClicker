@@ -14,6 +14,7 @@ package testflight
 		{
 			try
 			{
+//				SilentSwitch.apply();
 				if (TestFlight.isSupported)
 					_tf=new TestFlight("11874e4e-59fe-4172-8375-ab17f26af1b9", true);
 			}

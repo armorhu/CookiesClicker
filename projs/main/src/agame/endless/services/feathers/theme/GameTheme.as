@@ -1,6 +1,5 @@
 package agame.endless.services.feathers.theme
 {
-	import flash.display.Bitmap;
 	import flash.geom.Rectangle;
 	import flash.text.TextFormatAlign;
 	import flash.text.engine.CFFHinting;
@@ -14,8 +13,6 @@ package agame.endless.services.feathers.theme
 	import agame.endless.services.assets.Assets;
 	
 	import feathers.controls.Button;
-	import feathers.controls.Label;
-	import feathers.controls.List;
 	import feathers.controls.SimpleScrollBar;
 	import feathers.core.DisplayListWatcher;
 	import feathers.display.Scale3Image;
@@ -25,7 +22,6 @@ package agame.endless.services.feathers.theme
 	import feathers.textures.Scale9Textures;
 	
 	import starling.display.DisplayObjectContainer;
-	import starling.text.TextField;
 
 	public class GameTheme extends DisplayListWatcher
 	{
@@ -92,14 +88,13 @@ package agame.endless.services.feathers.theme
 			initTextures();
 			setInitializerForClass(Button, buttonInitializer);
 
-
 			this.setInitializerForClass(SimpleScrollBar, simpleScrollBarInitializer);
 			this.setInitializerForClass(Button, horizontalSimpleScrollBarThumbInitializer, THEME_NAME_HORIZONTAL_SIMPLE_SCROLL_BAR_THUMB);
 			this.setInitializerForClass(Button, verticalSimpleScrollBarThumbInitializer, THEME_NAME_VERTICAL_SIMPLE_SCROLL_BAR_THUMB);
-			
-			
-			this.horizontalScrollBarThumbSkinTextures = new Scale3Textures(this.atlas.getLinkageTexture("horizontal_scroll_bar_thumb_skin"), SCROLL_BAR_THUMB_REGION1, SCROLL_BAR_THUMB_REGION2, Scale3Textures.DIRECTION_HORIZONTAL);
-			this.verticalScrollBarThumbSkinTextures = new Scale3Textures(this.atlas.getLinkageTexture("vertical_scroll_bar_thumb_skin"), SCROLL_BAR_THUMB_REGION1, SCROLL_BAR_THUMB_REGION2, Scale3Textures.DIRECTION_VERTICAL);
+
+
+			this.horizontalScrollBarThumbSkinTextures=new Scale3Textures(this.atlas.getLinkageTexture("horizontal_scroll_bar_thumb_skin"), SCROLL_BAR_THUMB_REGION1, SCROLL_BAR_THUMB_REGION2, Scale3Textures.DIRECTION_HORIZONTAL);
+			this.verticalScrollBarThumbSkinTextures=new Scale3Textures(this.atlas.getLinkageTexture("vertical_scroll_bar_thumb_skin"), SCROLL_BAR_THUMB_REGION1, SCROLL_BAR_THUMB_REGION2, Scale3Textures.DIRECTION_VERTICAL);
 		}
 
 		protected function simpleScrollBarInitializer(scrollBar:SimpleScrollBar):void
@@ -159,11 +154,6 @@ package agame.endless.services.feathers.theme
 
 		}
 
-		private function initLabel(label:Label):void
-		{
-			// TODO Auto Generated method stub
-		}
-
 		protected function buttonInitializer(button:Button):void
 		{
 			const skinSelector:SmartDisplayObjectStateValueSelector=new SmartDisplayObjectStateValueSelector();
@@ -182,18 +172,11 @@ package agame.endless.services.feathers.theme
 			button.defaultLabelProperties.textFormat=new BitmapFontTextFormat(Assets.FontName, 24 * this.scale, DARK_TEXT_COLOR, TextFormatAlign.CENTER);
 //			button.disabledLabelProperties.textFormat=this.darkUIDisabledElementFormat;
 //			button.selectedDisabledLabelProperties.textFormat=this.darkUIDisabledElementFormat;
-
 			button.paddingTop=button.paddingBottom=4 * this.scale;
 			button.paddingLeft=button.paddingRight=8 * this.scale;
 			button.gap=2 * this.scale;
 			button.minWidth=button.minHeight=60 * this.scale;
 			button.minTouchWidth=button.minTouchHeight=88 * this.scale;
 		}
-
-		private function initList(list:List):void
-		{
-			// TODO Auto Generated method stub
-		}
-
 	}
 }

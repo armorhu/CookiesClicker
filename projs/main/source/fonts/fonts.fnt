@@ -1,482 +1,489 @@
-
-<font>
-    <info face="DFPWaWaW5" size="64" bold="0" italic="0" chasrset="" unicode="0" stretchH="100" smooth="1" aa="1" padding="0,0,0,0" spacing="2,2"/>
-    <common lineHeight="64" base="55" scaleW="2048" scaleH="1024" pages="1" packed="0"/>
-    <pages>
-        <page id="0" file="fonts.png"/>
-    </pages>
-    <chars count="472">
-        <char id="22810" x="2" y="3" width="42" height="65" xoffset="12" yoffset="-1" xadvance="64" page="0" chnl="0" letter="多"/>
-        <char id="35686" x="46" y="3" width="58" height="64" xoffset="7" yoffset="0" xadvance="64" page="0" chnl="0" letter="警"/>
-        <char id="39135" x="106" y="3" width="52" height="64" xoffset="7" yoffset="-1" xadvance="64" page="0" chnl="0" letter="食"/>
-        <char id="21191" x="160" y="3" width="43" height="64" xoffset="16" yoffset="0" xadvance="64" page="0" chnl="0" letter="勇"/>
-        <char id="39654" x="205" y="3" width="55" height="63" xoffset="8" yoffset="1" xadvance="64" page="0" chnl="0" letter="髦"/>
-        <char id="31456" x="262" y="3" width="55" height="63" xoffset="8" yoffset="0" xadvance="64" page="0" chnl="0" letter="章"/>
-        <char id="33756" x="319" y="3" width="53" height="63" xoffset="9" yoffset="1" xadvance="64" page="0" chnl="0" letter="菜"/>
-        <char id="21464" x="374" y="3" width="52" height="63" xoffset="10" yoffset="0" xadvance="64" page="0" chnl="0" letter="变"/>
-        <char id="36744" x="428" y="3" width="51" height="63" xoffset="11" yoffset="1" xadvance="64" page="0" chnl="0" letter="辈"/>
-        <char id="37327" x="481" y="3" width="49" height="63" xoffset="10" yoffset="1" xadvance="64" page="0" chnl="0" letter="量"/>
-        <char id="21916" x="532" y="3" width="48" height="63" xoffset="12" yoffset="0" xadvance="64" page="0" chnl="0" letter="喜"/>
-        <char id="21338" x="582" y="3" width="58" height="62" xoffset="5" yoffset="0" xadvance="64" page="0" chnl="0" letter="博"/>
-        <char id="30495" x="642" y="3" width="56" height="62" xoffset="9" yoffset="1" xadvance="64" page="0" chnl="0" letter="真"/>
-        <char id="35273" x="700" y="3" width="56" height="62" xoffset="8" yoffset="2" xadvance="64" page="0" chnl="0" letter="觉"/>
-        <char id="36164" x="758" y="3" width="55" height="62" xoffset="10" yoffset="2" xadvance="64" page="0" chnl="0" letter="资"/>
-        <char id="37329" x="815" y="3" width="54" height="62" xoffset="9" yoffset="-1" xadvance="64" page="0" chnl="0" letter="金"/>
-        <char id="22797" x="871" y="3" width="53" height="62" xoffset="10" yoffset="1" xadvance="64" page="0" chnl="0" letter="复"/>
-        <char id="24076" x="926" y="3" width="53" height="62" xoffset="9" yoffset="1" xadvance="64" page="0" chnl="0" letter="希"/>
-        <char id="22791" x="981" y="3" width="52" height="62" xoffset="13" yoffset="1" xadvance="64" page="0" chnl="0" letter="备"/>
-        <char id="36764" x="1035" y="3" width="50" height="62" xoffset="11" yoffset="1" xadvance="64" page="0" chnl="0" letter="辜"/>
-        <char id="91" x="1087" y="3" width="23" height="62" xoffset="3" yoffset="3" xadvance="21" page="0" chnl="0" letter="["/>
-        <char id="93" x="1112" y="3" width="23" height="62" xoffset="3" yoffset="3" xadvance="21" page="0" chnl="0" letter="]"/>
-        <char id="29190" x="1137" y="3" width="64" height="61" xoffset="4" yoffset="2" xadvance="64" page="0" chnl="0" letter="爆"/>
-        <char id="38236" x="1203" y="3" width="62" height="61" xoffset="4" yoffset="1" xadvance="64" page="0" chnl="0" letter="镜"/>
-        <char id="21547" x="1267" y="3" width="58" height="61" xoffset="7" yoffset="1" xadvance="64" page="0" chnl="0" letter="含"/>
-        <char id="27687" x="1327" y="3" width="57" height="61" xoffset="9" yoffset="1" xadvance="64" page="0" chnl="0" letter="氧"/>
-        <char id="21171" x="1386" y="3" width="56" height="61" xoffset="9" yoffset="2" xadvance="64" page="0" chnl="0" letter="劳"/>
-        <char id="23500" x="1444" y="3" width="55" height="61" xoffset="8" yoffset="1" xadvance="64" page="0" chnl="0" letter="富"/>
-        <char id="23459" x="1501" y="3" width="55" height="61" xoffset="8" yoffset="2" xadvance="64" page="0" chnl="0" letter="宣"/>
-        <char id="20107" x="1558" y="3" width="54" height="61" xoffset="10" yoffset="1" xadvance="64" page="0" chnl="0" letter="事"/>
-        <char id="31661" x="1614" y="3" width="53" height="61" xoffset="9" yoffset="1" xadvance="64" page="0" chnl="0" letter="箭"/>
-        <char id="20146" x="1669" y="3" width="53" height="61" xoffset="9" yoffset="1" xadvance="64" page="0" chnl="0" letter="亲"/>
-        <char id="32032" x="1724" y="3" width="53" height="61" xoffset="10" yoffset="2" xadvance="64" page="0" chnl="0" letter="素"/>
-        <char id="39640" x="1779" y="3" width="53" height="61" xoffset="9" yoffset="1" xadvance="64" page="0" chnl="0" letter="高"/>
-        <char id="24230" x="1834" y="3" width="53" height="61" xoffset="9" yoffset="2" xadvance="64" page="0" chnl="0" letter="度"/>
-        <char id="24120" x="1889" y="3" width="52" height="61" xoffset="11" yoffset="2" xadvance="64" page="0" chnl="0" letter="常"/>
-        <char id="34989" x="1943" y="3" width="48" height="61" xoffset="11" yoffset="0" xadvance="64" page="0" chnl="0" letter="袭"/>
-        <char id="41" x="1993" y="3" width="24" height="61" xoffset="3" yoffset="4" xadvance="21" page="0" chnl="0" letter=")"/>
-        <char id="47" x="2019" y="3" width="24" height="61" xoffset="1" yoffset="4" xadvance="18" page="0" chnl="0" letter="/"/>
-        <char id="40" x="2" y="70" width="23" height="61" xoffset="3" yoffset="4" xadvance="21" page="0" chnl="0" letter="("/>
-        <char id="20957" x="27" y="70" width="60" height="60" xoffset="7" yoffset="2" xadvance="64" page="0" chnl="0" letter="凝"/>
-        <char id="34164" x="89" y="70" width="59" height="60" xoffset="8" yoffset="1" xadvance="64" page="0" chnl="0" letter="蕴"/>
-        <char id="26032" x="150" y="70" width="59" height="60" xoffset="7" yoffset="3" xadvance="64" page="0" chnl="0" letter="新"/>
-        <char id="23558" x="211" y="70" width="59" height="60" xoffset="6" yoffset="0" xadvance="64" page="0" chnl="0" letter="将"/>
-        <char id="20250" x="272" y="70" width="58" height="60" xoffset="6" yoffset="0" xadvance="64" page="0" chnl="0" letter="会"/>
-        <char id="26377" x="332" y="70" width="57" height="60" xoffset="8" yoffset="1" xadvance="64" page="0" chnl="0" letter="有"/>
-        <char id="21367" x="391" y="70" width="57" height="60" xoffset="8" yoffset="3" xadvance="64" page="0" chnl="0" letter="卷"/>
-        <char id="33719" x="450" y="70" width="57" height="60" xoffset="7" yoffset="2" xadvance="64" page="0" chnl="0" letter="获"/>
-        <char id="21407" x="509" y="70" width="56" height="60" xoffset="7" yoffset="2" xadvance="64" page="0" chnl="0" letter="原"/>
-        <char id="24247" x="567" y="70" width="56" height="60" xoffset="7" yoffset="1" xadvance="64" page="0" chnl="0" letter="康"/>
-        <char id="20105" x="625" y="70" width="56" height="60" xoffset="9" yoffset="1" xadvance="64" page="0" chnl="0" letter="争"/>
-        <char id="33487" x="683" y="70" width="56" height="60" xoffset="10" yoffset="2" xadvance="64" page="0" chnl="0" letter="苏"/>
-        <char id="23460" x="741" y="70" width="55" height="60" xoffset="8" yoffset="2" xadvance="64" page="0" chnl="0" letter="室"/>
-        <char id="23475" x="798" y="70" width="55" height="60" xoffset="9" yoffset="2" xadvance="64" page="0" chnl="0" letter="害"/>
-        <char id="30427" x="855" y="70" width="55" height="60" xoffset="10" yoffset="1" xadvance="64" page="0" chnl="0" letter="盛"/>
-        <char id="26367" x="912" y="70" width="55" height="60" xoffset="9" yoffset="2" xadvance="64" page="0" chnl="0" letter="替"/>
-        <char id="24904" x="969" y="70" width="54" height="60" xoffset="8" yoffset="1" xadvance="64" page="0" chnl="0" letter="慈"/>
-        <char id="24223" x="1025" y="70" width="54" height="60" xoffset="8" yoffset="2" xadvance="64" page="0" chnl="0" letter="废"/>
-        <char id="40644" x="1081" y="70" width="53" height="60" xoffset="11" yoffset="2" xadvance="64" page="0" chnl="0" letter="黄"/>
-        <char id="31532" x="1136" y="70" width="53" height="60" xoffset="9" yoffset="2" xadvance="64" page="0" chnl="0" letter="第"/>
-        <char id="30475" x="1191" y="70" width="51" height="60" xoffset="10" yoffset="2" xadvance="64" page="0" chnl="0" letter="看"/>
-        <char id="24847" x="1244" y="70" width="51" height="60" xoffset="9" yoffset="2" xadvance="64" page="0" chnl="0" letter="意"/>
-        <char id="32610" x="1297" y="70" width="50" height="60" xoffset="11" yoffset="2" xadvance="64" page="0" chnl="0" letter="罢"/>
-        <char id="23548" x="1349" y="70" width="49" height="60" xoffset="12" yoffset="2" xadvance="64" page="0" chnl="0" letter="导"/>
-        <char id="30343" x="1400" y="70" width="49" height="60" xoffset="12" yoffset="2" xadvance="64" page="0" chnl="0" letter="皇"/>
-        <char id="20139" x="1451" y="70" width="49" height="60" xoffset="11" yoffset="2" xadvance="64" page="0" chnl="0" letter="享"/>
-        <char id="34507" x="1502" y="70" width="48" height="60" xoffset="14" yoffset="3" xadvance="64" page="0" chnl="0" letter="蛋"/>
-        <char id="20572" x="1552" y="70" width="62" height="59" xoffset="5" yoffset="2" xadvance="64" page="0" chnl="0" letter="停"/>
-        <char id="39302" x="1616" y="70" width="62" height="59" xoffset="5" yoffset="3" xadvance="64" page="0" chnl="0" letter="馆"/>
-        <char id="36935" x="1680" y="70" width="61" height="59" xoffset="4" yoffset="2" xadvance="64" page="0" chnl="0" letter="遇"/>
-        <char id="32493" x="1743" y="70" width="60" height="59" xoffset="6" yoffset="3" xadvance="64" page="0" chnl="0" letter="续"/>
-        <char id="26262" x="1805" y="70" width="59" height="59" xoffset="7" yoffset="4" xadvance="64" page="0" chnl="0" letter="暖"/>
-        <char id="30127" x="1866" y="70" width="59" height="59" xoffset="4" yoffset="2" xadvance="64" page="0" chnl="0" letter="疯"/>
-        <char id="22522" x="1927" y="70" width="58" height="59" xoffset="8" yoffset="3" xadvance="64" page="0" chnl="0" letter="基"/>
-        <char id="25972" x="1987" y="70" width="58" height="59" xoffset="7" yoffset="4" xadvance="64" page="0" chnl="0" letter="整"/>
-        <char id="40736" x="2" y="133" width="57" height="59" xoffset="11" yoffset="2" xadvance="64" page="0" chnl="0" letter="鼠"/>
-        <char id="21629" x="61" y="133" width="57" height="59" xoffset="8" yoffset="1" xadvance="64" page="0" chnl="0" letter="命"/>
-        <char id="36965" x="120" y="133" width="56" height="59" xoffset="6" yoffset="3" xadvance="64" page="0" chnl="0" letter="遥"/>
-        <char id="27668" x="178" y="133" width="56" height="59" xoffset="10" yoffset="1" xadvance="64" page="0" chnl="0" letter="气"/>
-        <char id="24694" x="236" y="133" width="55" height="59" xoffset="9" yoffset="4" xadvance="64" page="0" chnl="0" letter="恶"/>
-        <char id="26041" x="293" y="133" width="55" height="59" xoffset="7" yoffset="2" xadvance="64" page="0" chnl="0" letter="方"/>
-        <char id="26368" x="350" y="133" width="55" height="59" xoffset="9" yoffset="2" xadvance="64" page="0" chnl="0" letter="最"/>
-        <char id="23478" x="407" y="133" width="55" height="59" xoffset="8" yoffset="2" xadvance="64" page="0" chnl="0" letter="家"/>
-        <char id="26395" x="464" y="133" width="55" height="59" xoffset="9" yoffset="2" xadvance="64" page="0" chnl="0" letter="望"/>
-        <char id="32769" x="521" y="133" width="54" height="59" xoffset="10" yoffset="2" xadvance="64" page="0" chnl="0" letter="老"/>
-        <char id="23431" x="577" y="133" width="54" height="59" xoffset="10" yoffset="3" xadvance="64" page="0" chnl="0" letter="宇"/>
-        <char id="32773" x="633" y="133" width="54" height="59" xoffset="8" yoffset="2" xadvance="64" page="0" chnl="0" letter="者"/>
-        <char id="26469" x="689" y="133" width="53" height="59" xoffset="8" yoffset="2" xadvance="64" page="0" chnl="0" letter="来"/>
-        <char id="38599" x="744" y="133" width="53" height="59" xoffset="9" yoffset="3" xadvance="64" page="0" chnl="0" letter="雇"/>
-        <char id="23621" x="799" y="133" width="53" height="59" xoffset="7" yoffset="3" xadvance="64" page="0" chnl="0" letter="居"/>
-        <char id="35201" x="854" y="133" width="52" height="59" xoffset="10" yoffset="5" xadvance="64" page="0" chnl="0" letter="要"/>
-        <char id="21578" x="908" y="133" width="52" height="59" xoffset="10" yoffset="2" xadvance="64" page="0" chnl="0" letter="告"/>
-        <char id="22855" x="962" y="133" width="52" height="59" xoffset="12" yoffset="2" xadvance="64" page="0" chnl="0" letter="奇"/>
-        <char id="24180" x="1016" y="133" width="52" height="59" xoffset="9" yoffset="3" xadvance="64" page="0" chnl="0" letter="年"/>
-        <char id="36136" x="1070" y="133" width="51" height="59" xoffset="9" yoffset="3" xadvance="64" page="0" chnl="0" letter="质"/>
-        <char id="20027" x="1123" y="133" width="51" height="59" xoffset="11" yoffset="2" xadvance="64" page="0" chnl="0" letter="主"/>
-        <char id="19987" x="1176" y="133" width="51" height="59" xoffset="11" yoffset="3" xadvance="64" page="0" chnl="0" letter="专"/>
-        <char id="21495" x="1229" y="133" width="49" height="59" xoffset="12" yoffset="3" xadvance="64" page="0" chnl="0" letter="号"/>
-        <char id="33258" x="1280" y="133" width="46" height="59" xoffset="13" yoffset="2" xadvance="64" page="0" chnl="0" letter="自"/>
-        <char id="26865" x="1328" y="133" width="62" height="58" xoffset="5" yoffset="3" xadvance="64" page="0" chnl="0" letter="棱"/>
-        <char id="37117" x="1392" y="133" width="62" height="58" xoffset="5" yoffset="3" xadvance="64" page="0" chnl="0" letter="都"/>
-        <char id="31232" x="1456" y="133" width="61" height="58" xoffset="6" yoffset="3" xadvance="64" page="0" chnl="0" letter="稀"/>
-        <char id="36716" x="1519" y="133" width="60" height="58" xoffset="7" yoffset="4" xadvance="64" page="0" chnl="0" letter="转"/>
-        <char id="25105" x="1581" y="133" width="58" height="58" xoffset="8" yoffset="3" xadvance="64" page="0" chnl="0" letter="我"/>
-        <char id="25481" x="1641" y="133" width="57" height="58" xoffset="6" yoffset="3" xadvance="64" page="0" chnl="0" letter="掉"/>
-        <char id="36861" x="1700" y="133" width="57" height="58" xoffset="6" yoffset="2" xadvance="64" page="0" chnl="0" letter="追"/>
-        <char id="36947" x="1759" y="133" width="57" height="58" xoffset="6" yoffset="3" xadvance="64" page="0" chnl="0" letter="道"/>
-        <char id="23569" x="1818" y="133" width="57" height="58" xoffset="8" yoffset="4" xadvance="64" page="0" chnl="0" letter="少"/>
-        <char id="26412" x="1877" y="133" width="57" height="58" xoffset="8" yoffset="3" xadvance="64" page="0" chnl="0" letter="本"/>
-        <char id="24231" x="1936" y="133" width="56" height="58" xoffset="7" yoffset="1" xadvance="64" page="0" chnl="0" letter="座"/>
-        <char id="23450" x="2" y="194" width="56" height="58" xoffset="8" yoffset="3" xadvance="64" page="0" chnl="0" letter="定"/>
-        <char id="21435" x="60" y="194" width="55" height="58" xoffset="9" yoffset="3" xadvance="64" page="0" chnl="0" letter="去"/>
-        <char id="24066" x="117" y="194" width="55" height="58" xoffset="9" yoffset="3" xadvance="64" page="0" chnl="0" letter="市"/>
-        <char id="30028" x="174" y="194" width="55" height="58" xoffset="8" yoffset="3" xadvance="64" page="0" chnl="0" letter="界"/>
-        <char id="23449" x="231" y="194" width="54" height="58" xoffset="10" yoffset="4" xadvance="64" page="0" chnl="0" letter="宙"/>
-        <char id="23618" x="287" y="194" width="54" height="58" xoffset="7" yoffset="4" xadvance="64" page="0" chnl="0" letter="层"/>
-        <char id="23581" x="343" y="194" width="53" height="58" xoffset="11" yoffset="3" xadvance="64" page="0" chnl="0" letter="尝"/>
-        <char id="20809" x="398" y="194" width="52" height="58" xoffset="10" yoffset="3" xadvance="64" page="0" chnl="0" letter="光"/>
-        <char id="21490" x="452" y="194" width="52" height="58" xoffset="11" yoffset="3" xadvance="64" page="0" chnl="0" letter="史"/>
-        <char id="20811" x="506" y="194" width="50" height="58" xoffset="12" yoffset="3" xadvance="64" page="0" chnl="0" letter="克"/>
-        <char id="30005" x="558" y="194" width="49" height="58" xoffset="11" yoffset="3" xadvance="64" page="0" chnl="0" letter="电"/>
-        <char id="21517" x="609" y="194" width="49" height="58" xoffset="10" yoffset="1" xadvance="64" page="0" chnl="0" letter="名"/>
-        <char id="37325" x="660" y="194" width="48" height="58" xoffset="11" yoffset="3" xadvance="64" page="0" chnl="0" letter="重"/>
-        <char id="26143" x="710" y="194" width="47" height="58" xoffset="11" yoffset="4" xadvance="64" page="0" chnl="0" letter="星"/>
-        <char id="39029" x="759" y="194" width="47" height="58" xoffset="13" yoffset="4" xadvance="64" page="0" chnl="0" letter="页"/>
-        <char id="25163" x="808" y="194" width="46" height="58" xoffset="12" yoffset="4" xadvance="64" page="0" chnl="0" letter="手"/>
-        <char id="33394" x="856" y="194" width="44" height="58" xoffset="14" yoffset="2" xadvance="64" page="0" chnl="0" letter="色"/>
-        <char id="36" x="902" y="194" width="43" height="58" xoffset="4" yoffset="5" xadvance="44" page="0" chnl="0" letter="$"/>
-        <char id="40836" x="947" y="194" width="64" height="57" xoffset="4" yoffset="4" xadvance="64" page="0" chnl="0" letter="龄"/>
-        <char id="34987" x="1013" y="194" width="62" height="57" xoffset="4" yoffset="4" xadvance="64" page="0" chnl="0" letter="被"/>
-        <char id="29305" x="1077" y="194" width="62" height="57" xoffset="6" yoffset="3" xadvance="64" page="0" chnl="0" letter="特"/>
-        <char id="20840" x="1141" y="194" width="61" height="57" xoffset="6" yoffset="3" xadvance="64" page="0" chnl="0" letter="全"/>
-        <char id="28145" x="1204" y="194" width="61" height="57" xoffset="5" yoffset="4" xadvance="64" page="0" chnl="0" letter="深"/>
-        <char id="39063" x="1267" y="194" width="61" height="57" xoffset="5" yoffset="5" xadvance="64" page="0" chnl="0" letter="颗"/>
-        <char id="38498" x="1330" y="194" width="61" height="57" xoffset="6" yoffset="3" xadvance="64" page="0" chnl="0" letter="院"/>
-        <char id="30097" x="1393" y="194" width="60" height="57" xoffset="7" yoffset="4" xadvance="64" page="0" chnl="0" letter="疑"/>
-        <char id="20445" x="1455" y="194" width="60" height="57" xoffset="5" yoffset="5" xadvance="64" page="0" chnl="0" letter="保"/>
-        <char id="36857" x="1517" y="194" width="60" height="57" xoffset="7" yoffset="2" xadvance="64" page="0" chnl="0" letter="迹"/>
-        <char id="40092" x="1579" y="194" width="59" height="57" xoffset="7" yoffset="3" xadvance="64" page="0" chnl="0" letter="鲜"/>
-        <char id="35848" x="1640" y="194" width="59" height="57" xoffset="7" yoffset="4" xadvance="64" page="0" chnl="0" letter="谈"/>
-        <char id="23453" x="1701" y="194" width="58" height="57" xoffset="8" yoffset="3" xadvance="64" page="0" chnl="0" letter="宝"/>
-        <char id="20247" x="1761" y="194" width="58" height="57" xoffset="7" yoffset="3" xadvance="64" page="0" chnl="0" letter="众"/>
-        <char id="24471" x="1821" y="194" width="57" height="57" xoffset="9" yoffset="3" xadvance="64" page="0" chnl="0" letter="得"/>
-        <char id="36896" x="1880" y="194" width="57" height="57" xoffset="7" yoffset="4" xadvance="64" page="0" chnl="0" letter="造"/>
-        <char id="36733" x="1939" y="194" width="57" height="57" xoffset="9" yoffset="5" xadvance="64" page="0" chnl="0" letter="载"/>
-        <char id="24220" x="2" y="254" width="57" height="57" xoffset="8" yoffset="2" xadvance="64" page="0" chnl="0" letter="府"/>
-        <char id="22278" x="61" y="254" width="56" height="57" xoffset="10" yoffset="3" xadvance="64" page="0" chnl="0" letter="圆"/>
-        <char id="20808" x="119" y="254" width="55" height="57" xoffset="9" yoffset="4" xadvance="64" page="0" chnl="0" letter="先"/>
-        <char id="24067" x="176" y="254" width="55" height="57" xoffset="7" yoffset="3" xadvance="64" page="0" chnl="0" letter="布"/>
-        <char id="31354" x="233" y="254" width="54" height="57" xoffset="10" yoffset="3" xadvance="64" page="0" chnl="0" letter="空"/>
-        <char id="38376" x="289" y="254" width="52" height="57" xoffset="11" yoffset="4" xadvance="64" page="0" chnl="0" letter="门"/>
-        <char id="38395" x="343" y="254" width="52" height="57" xoffset="11" yoffset="4" xadvance="64" page="0" chnl="0" letter="闻"/>
-        <char id="34920" x="397" y="254" width="51" height="57" xoffset="11" yoffset="4" xadvance="64" page="0" chnl="0" letter="表"/>
-        <char id="26159" x="450" y="254" width="49" height="57" xoffset="12" yoffset="3" xadvance="64" page="0" chnl="0" letter="是"/>
-        <char id="40657" x="501" y="254" width="49" height="57" xoffset="12" yoffset="4" xadvance="64" page="0" chnl="0" letter="黑"/>
-        <char id="20070" x="552" y="254" width="48" height="57" xoffset="13" yoffset="5" xadvance="64" page="0" chnl="0" letter="书"/>
-        <char id="26463" x="602" y="254" width="47" height="57" xoffset="12" yoffset="3" xadvance="64" page="0" chnl="0" letter="束"/>
-        <char id="20043" x="651" y="254" width="43" height="57" xoffset="13" yoffset="4" xadvance="64" page="0" chnl="0" letter="之"/>
-        <char id="20648" x="696" y="254" width="65" height="56" xoffset="4" yoffset="3" xadvance="64" page="0" chnl="0" letter="储"/>
-        <char id="28953" x="763" y="254" width="62" height="56" xoffset="4" yoffset="4" xadvance="64" page="0" chnl="0" letter="焙"/>
-        <char id="37051" x="827" y="254" width="62" height="56" xoffset="3" yoffset="5" xadvance="64" page="0" chnl="0" letter="邻"/>
-        <char id="21560" x="891" y="254" width="61" height="56" xoffset="6" yoffset="5" xadvance="64" page="0" chnl="0" letter="吸"/>
-        <char id="20351" x="954" y="254" width="60" height="56" xoffset="5" yoffset="4" xadvance="64" page="0" chnl="0" letter="使"/>
-        <char id="36394" x="1016" y="254" width="60" height="56" xoffset="7" yoffset="3" xadvance="64" page="0" chnl="0" letter="踪"/>
-        <char id="22256" x="1078" y="254" width="59" height="56" xoffset="7" yoffset="3" xadvance="64" page="0" chnl="0" letter="困"/>
-        <char id="38134" x="1139" y="254" width="59" height="56" xoffset="5" yoffset="4" xadvance="64" page="0" chnl="0" letter="银"/>
-        <char id="25954" x="1200" y="254" width="59" height="56" xoffset="7" yoffset="5" xadvance="64" page="0" chnl="0" letter="敢"/>
-        <char id="23401" x="1261" y="254" width="59" height="56" xoffset="7" yoffset="3" xadvance="64" page="0" chnl="0" letter="孩"/>
-        <char id="25552" x="1322" y="254" width="59" height="56" xoffset="6" yoffset="5" xadvance="64" page="0" chnl="0" letter="提"/>
-        <char id="22269" x="1383" y="254" width="58" height="56" xoffset="8" yoffset="3" xadvance="64" page="0" chnl="0" letter="国"/>
-        <char id="36820" x="1443" y="254" width="58" height="56" xoffset="6" yoffset="4" xadvance="64" page="0" chnl="0" letter="返"/>
-        <char id="24819" x="1503" y="254" width="58" height="56" xoffset="7" yoffset="4" xadvance="64" page="0" chnl="0" letter="想"/>
-        <char id="35813" x="1563" y="254" width="57" height="56" xoffset="7" yoffset="4" xadvance="64" page="0" chnl="0" letter="该"/>
-        <char id="24320" x="1622" y="254" width="57" height="56" xoffset="7" yoffset="6" xadvance="64" page="0" chnl="0" letter="开"/>
-        <char id="22312" x="1681" y="254" width="57" height="56" xoffset="7" yoffset="3" xadvance="64" page="0" chnl="0" letter="在"/>
-        <char id="21512" x="1740" y="254" width="57" height="56" xoffset="7" yoffset="4" xadvance="64" page="0" chnl="0" letter="合"/>
-        <char id="35268" x="1799" y="254" width="57" height="56" xoffset="7" yoffset="5" xadvance="64" page="0" chnl="0" letter="规"/>
-        <char id="27599" x="1858" y="254" width="56" height="56" xoffset="9" yoffset="5" xadvance="64" page="0" chnl="0" letter="每"/>
-        <char id="21069" x="1916" y="254" width="55" height="56" xoffset="8" yoffset="3" xadvance="64" page="0" chnl="0" letter="前"/>
-        <char id="23427" x="1973" y="254" width="54" height="56" xoffset="9" yoffset="3" xadvance="64" page="0" chnl="0" letter="它"/>
-        <char id="21453" x="2" y="313" width="53" height="56" xoffset="9" yoffset="4" xadvance="64" page="0" chnl="0" letter="反"/>
-        <char id="22120" x="57" y="313" width="53" height="56" xoffset="8" yoffset="4" xadvance="64" page="0" chnl="0" letter="器"/>
-        <char id="27665" x="112" y="313" width="53" height="56" xoffset="9" yoffset="4" xadvance="64" page="0" chnl="0" letter="民"/>
-        <char id="32705" x="167" y="313" width="52" height="56" xoffset="11" yoffset="4" xadvance="64" page="0" chnl="0" letter="翁"/>
-        <char id="20010" x="221" y="313" width="63" height="55" xoffset="5" yoffset="4" xadvance="64" page="0" chnl="0" letter="个"/>
-        <char id="31181" x="286" y="313" width="62" height="55" xoffset="6" yoffset="5" xadvance="64" page="0" chnl="0" letter="种"/>
-        <char id="32676" x="350" y="313" width="62" height="55" xoffset="5" yoffset="4" xadvance="64" page="0" chnl="0" letter="群"/>
-        <char id="20505" x="414" y="313" width="62" height="55" xoffset="4" yoffset="7" xadvance="64" page="0" chnl="0" letter="候"/>
-        <char id="28431" x="478" y="313" width="62" height="55" xoffset="5" yoffset="6" xadvance="64" page="0" chnl="0" letter="漏"/>
-        <char id="26053" x="542" y="313" width="62" height="55" xoffset="5" yoffset="4" xadvance="64" page="0" chnl="0" letter="旅"/>
-        <char id="29664" x="606" y="313" width="62" height="55" xoffset="6" yoffset="4" xadvance="64" page="0" chnl="0" letter="珠"/>
-        <char id="38065" x="670" y="313" width="62" height="55" xoffset="5" yoffset="5" xadvance="64" page="0" chnl="0" letter="钱"/>
-        <char id="23601" x="734" y="313" width="61" height="55" xoffset="7" yoffset="4" xadvance="64" page="0" chnl="0" letter="就"/>
-        <char id="22987" x="797" y="313" width="61" height="55" xoffset="6" yoffset="4" xadvance="64" page="0" chnl="0" letter="始"/>
-        <char id="36234" x="860" y="313" width="61" height="55" xoffset="5" yoffset="4" xadvance="64" page="0" chnl="0" letter="越"/>
-        <char id="36827" x="923" y="313" width="61" height="55" xoffset="6" yoffset="5" xadvance="64" page="0" chnl="0" letter="进"/>
-        <char id="29699" x="986" y="313" width="60" height="55" xoffset="7" yoffset="4" xadvance="64" page="0" chnl="0" letter="球"/>
-        <char id="22604" x="1048" y="313" width="60" height="55" xoffset="6" yoffset="5" xadvance="64" page="0" chnl="0" letter="塌"/>
-        <char id="20914" x="1110" y="313" width="60" height="55" xoffset="7" yoffset="4" xadvance="64" page="0" chnl="0" letter="冲"/>
-        <char id="20540" x="1172" y="313" width="60" height="55" xoffset="6" yoffset="4" xadvance="64" page="0" chnl="0" letter="值"/>
-        <char id="35828" x="1234" y="313" width="59" height="55" xoffset="7" yoffset="5" xadvance="64" page="0" chnl="0" letter="说"/>
-        <char id="32467" x="1295" y="313" width="59" height="55" xoffset="7" yoffset="5" xadvance="64" page="0" chnl="0" letter="结"/>
-        <char id="32431" x="1356" y="313" width="59" height="55" xoffset="6" yoffset="5" xadvance="64" page="0" chnl="0" letter="纯"/>
-        <char id="29616" x="1417" y="313" width="58" height="55" xoffset="7" yoffset="6" xadvance="64" page="0" chnl="0" letter="现"/>
-        <char id="36890" x="1477" y="313" width="58" height="55" xoffset="6" yoffset="4" xadvance="64" page="0" chnl="0" letter="通"/>
-        <char id="27963" x="1537" y="313" width="58" height="55" xoffset="6" yoffset="5" xadvance="64" page="0" chnl="0" letter="活"/>
-        <char id="36215" x="1597" y="313" width="58" height="55" xoffset="7" yoffset="4" xadvance="64" page="0" chnl="0" letter="起"/>
-        <char id="25216" x="1657" y="313" width="58" height="55" xoffset="7" yoffset="5" xadvance="64" page="0" chnl="0" letter="技"/>
-        <char id="24456" x="1717" y="313" width="57" height="55" xoffset="7" yoffset="5" xadvance="64" page="0" chnl="0" letter="很"/>
-        <char id="23617" x="1776" y="313" width="57" height="55" xoffset="8" yoffset="4" xadvance="64" page="0" chnl="0" letter="屁"/>
-        <char id="21697" x="1835" y="313" width="57" height="55" xoffset="9" yoffset="4" xadvance="64" page="0" chnl="0" letter="品"/>
-        <char id="21035" x="1894" y="313" width="57" height="55" xoffset="8" yoffset="5" xadvance="64" page="0" chnl="0" letter="别"/>
-        <char id="27809" x="1953" y="313" width="56" height="55" xoffset="7" yoffset="8" xadvance="64" page="0" chnl="0" letter="没"/>
-        <char id="20013" x="2" y="371" width="55" height="55" xoffset="8" yoffset="4" xadvance="64" page="0" chnl="0" letter="中"/>
-        <char id="25104" x="59" y="371" width="55" height="55" xoffset="9" yoffset="4" xadvance="64" page="0" chnl="0" letter="成"/>
-        <char id="20026" x="116" y="371" width="53" height="55" xoffset="9" yoffset="4" xadvance="64" page="0" chnl="0" letter="为"/>
-        <char id="27424" x="171" y="371" width="51" height="55" xoffset="11" yoffset="5" xadvance="64" page="0" chnl="0" letter="欠"/>
-        <char id="24341" x="224" y="371" width="51" height="55" xoffset="10" yoffset="6" xadvance="64" page="0" chnl="0" letter="引"/>
-        <char id="27714" x="277" y="371" width="51" height="55" xoffset="10" yoffset="4" xadvance="64" page="0" chnl="0" letter="求"/>
-        <char id="21457" x="330" y="371" width="50" height="55" xoffset="11" yoffset="7" xadvance="64" page="0" chnl="0" letter="发"/>
-        <char id="28857" x="382" y="371" width="48" height="55" xoffset="15" yoffset="4" xadvance="64" page="0" chnl="0" letter="点"/>
-        <char id="37324" x="432" y="371" width="46" height="55" xoffset="14" yoffset="5" xadvance="64" page="0" chnl="0" letter="里"/>
-        <char id="65281" x="480" y="371" width="19" height="55" xoffset="27" yoffset="4" xadvance="64" page="0" chnl="0" letter="！"/>
-        <char id="20581" x="501" y="371" width="64" height="54" xoffset="4" yoffset="6" xadvance="64" page="0" chnl="0" letter="健"/>
-        <char id="30896" x="567" y="371" width="64" height="54" xoffset="4" yoffset="5" xadvance="64" page="0" chnl="0" letter="碰"/>
-        <char id="28860" x="633" y="371" width="63" height="54" xoffset="4" yoffset="5" xadvance="64" page="0" chnl="0" letter="炼"/>
-        <char id="33337" x="698" y="371" width="63" height="54" xoffset="5" yoffset="5" xadvance="64" page="0" chnl="0" letter="船"/>
-        <char id="31070" x="763" y="371" width="62" height="54" xoffset="5" yoffset="5" xadvance="64" page="0" chnl="0" letter="神"/>
-        <char id="22806" x="827" y="371" width="62" height="54" xoffset="5" yoffset="5" xadvance="64" page="0" chnl="0" letter="外"/>
-        <char id="21046" x="891" y="371" width="62" height="54" xoffset="5" yoffset="5" xadvance="64" page="0" chnl="0" letter="制"/>
-        <char id="28888" x="955" y="371" width="62" height="54" xoffset="5" yoffset="5" xadvance="64" page="0" chnl="0" letter="烘"/>
-        <char id="32852" x="1019" y="371" width="62" height="54" xoffset="4" yoffset="5" xadvance="64" page="0" chnl="0" letter="联"/>
-        <char id="20323" x="1083" y="371" width="61" height="54" xoffset="5" yoffset="6" xadvance="64" page="0" chnl="0" letter="佣"/>
-        <char id="25253" x="1146" y="371" width="61" height="54" xoffset="5" yoffset="6" xadvance="64" page="0" chnl="0" letter="报"/>
-        <char id="24314" x="1209" y="371" width="61" height="54" xoffset="6" yoffset="5" xadvance="64" page="0" chnl="0" letter="建"/>
-        <char id="24448" x="1272" y="371" width="60" height="54" xoffset="5" yoffset="5" xadvance="64" page="0" chnl="0" letter="往"/>
-        <char id="32982" x="1334" y="371" width="60" height="54" xoffset="6" yoffset="5" xadvance="64" page="0" chnl="0" letter="胖"/>
-        <char id="35797" x="1396" y="371" width="60" height="54" xoffset="6" yoffset="4" xadvance="64" page="0" chnl="0" letter="试"/>
-        <char id="32456" x="1458" y="371" width="59" height="54" xoffset="6" yoffset="4" xadvance="64" page="0" chnl="0" letter="终"/>
-        <char id="27700" x="1519" y="371" width="59" height="54" xoffset="6" yoffset="4" xadvance="64" page="0" chnl="0" letter="水"/>
-        <char id="19981" x="1580" y="371" width="58" height="54" xoffset="7" yoffset="6" xadvance="64" page="0" chnl="0" letter="不"/>
-        <char id="27515" x="1640" y="371" width="58" height="54" xoffset="6" yoffset="7" xadvance="64" page="0" chnl="0" letter="死"/>
-        <char id="30707" x="1700" y="371" width="58" height="54" xoffset="7" yoffset="7" xadvance="64" page="0" chnl="0" letter="石"/>
-        <char id="20844" x="1760" y="371" width="58" height="54" xoffset="7" yoffset="5" xadvance="64" page="0" chnl="0" letter="公"/>
-        <char id="21507" x="1820" y="371" width="57" height="54" xoffset="7" yoffset="6" xadvance="64" page="0" chnl="0" letter="吃"/>
-        <char id="36825" x="1879" y="371" width="57" height="54" xoffset="6" yoffset="6" xadvance="64" page="0" chnl="0" letter="这"/>
-        <char id="24335" x="1938" y="371" width="56" height="54" xoffset="8" yoffset="6" xadvance="64" page="0" chnl="0" letter="式"/>
-        <char id="33021" x="2" y="428" width="55" height="54" xoffset="10" yoffset="5" xadvance="64" page="0" chnl="0" letter="能"/>
-        <char id="22826" x="59" y="428" width="54" height="54" xoffset="8" yoffset="5" xadvance="64" page="0" chnl="0" letter="太"/>
-        <char id="21518" x="115" y="428" width="54" height="54" xoffset="9" yoffset="6" xadvance="64" page="0" chnl="0" letter="后"/>
-        <char id="20803" x="171" y="428" width="53" height="54" xoffset="10" yoffset="7" xadvance="64" page="0" chnl="0" letter="元"/>
-        <char id="21382" x="226" y="428" width="53" height="54" xoffset="7" yoffset="5" xadvance="64" page="0" chnl="0" letter="历"/>
-        <char id="23376" x="281" y="428" width="51" height="54" xoffset="10" yoffset="7" xadvance="64" page="0" chnl="0" letter="子"/>
-        <char id="20102" x="334" y="428" width="45" height="54" xoffset="12" yoffset="7" xadvance="64" page="0" chnl="0" letter="了"/>
-        <char id="25239" x="381" y="428" width="61" height="53" xoffset="5" yoffset="6" xadvance="64" page="0" chnl="0" letter="抗"/>
-        <char id="25214" x="444" y="428" width="61" height="53" xoffset="6" yoffset="4" xadvance="64" page="0" chnl="0" letter="找"/>
-        <char id="29399" x="507" y="428" width="61" height="53" xoffset="4" yoffset="5" xadvance="64" page="0" chnl="0" letter="狗"/>
-        <char id="25317" x="570" y="428" width="61" height="53" xoffset="5" yoffset="7" xadvance="64" page="0" chnl="0" letter="拥"/>
-        <char id="27969" x="633" y="428" width="60" height="53" xoffset="6" yoffset="4" xadvance="64" page="0" chnl="0" letter="流"/>
-        <char id="27597" x="695" y="428" width="60" height="53" xoffset="7" yoffset="6" xadvance="64" page="0" chnl="0" letter="母"/>
-        <char id="21170" x="757" y="428" width="60" height="53" xoffset="7" yoffset="6" xadvance="64" page="0" chnl="0" letter="劲"/>
-        <char id="38075" x="819" y="428" width="60" height="53" xoffset="6" yoffset="5" xadvance="64" page="0" chnl="0" letter="钻"/>
-        <char id="39292" x="881" y="428" width="59" height="53" xoffset="7" yoffset="7" xadvance="64" page="0" chnl="0" letter="饼"/>
-        <char id="28779" x="942" y="428" width="59" height="53" xoffset="7" yoffset="5" xadvance="64" page="0" chnl="0" letter="火"/>
-        <char id="20160" x="1003" y="428" width="59" height="53" xoffset="6" yoffset="7" xadvance="64" page="0" chnl="0" letter="什"/>
-        <char id="35805" x="1064" y="428" width="59" height="53" xoffset="7" yoffset="6" xadvance="64" page="0" chnl="0" letter="话"/>
-        <char id="21487" x="1125" y="428" width="59" height="53" xoffset="7" yoffset="6" xadvance="64" page="0" chnl="0" letter="可"/>
-        <char id="20943" x="1186" y="428" width="59" height="53" xoffset="8" yoffset="5" xadvance="64" page="0" chnl="0" letter="减"/>
-        <char id="32463" x="1247" y="428" width="58" height="53" xoffset="8" yoffset="6" xadvance="64" page="0" chnl="0" letter="经"/>
-        <char id="27425" x="1307" y="428" width="57" height="53" xoffset="9" yoffset="5" xadvance="64" page="0" chnl="0" letter="次"/>
-        <char id="29983" x="1366" y="428" width="57" height="53" xoffset="6" yoffset="6" xadvance="64" page="0" chnl="0" letter="生"/>
-        <char id="24656" x="1425" y="428" width="57" height="53" xoffset="8" yoffset="7" xadvance="64" page="0" chnl="0" letter="恐"/>
-        <char id="31034" x="1484" y="428" width="57" height="53" xoffset="7" yoffset="7" xadvance="64" page="0" chnl="0" letter="示"/>
-        <char id="22240" x="1543" y="428" width="56" height="53" xoffset="8" yoffset="6" xadvance="64" page="0" chnl="0" letter="因"/>
-        <char id="20987" x="1601" y="428" width="55" height="53" xoffset="8" yoffset="5" xadvance="64" page="0" chnl="0" letter="击"/>
-        <char id="38754" x="1658" y="428" width="54" height="53" xoffset="9" yoffset="6" xadvance="64" page="0" chnl="0" letter="面"/>
-        <char id="20877" x="1714" y="428" width="53" height="53" xoffset="11" yoffset="6" xadvance="64" page="0" chnl="0" letter="再"/>
-        <char id="20998" x="1769" y="428" width="53" height="53" xoffset="10" yoffset="6" xadvance="64" page="0" chnl="0" letter="分"/>
-        <char id="24178" x="1824" y="428" width="52" height="53" xoffset="10" yoffset="7" xadvance="64" page="0" chnl="0" letter="干"/>
-        <char id="38750" x="1878" y="428" width="52" height="53" xoffset="10" yoffset="5" xadvance="64" page="0" chnl="0" letter="非"/>
-        <char id="30334" x="1932" y="428" width="51" height="53" xoffset="11" yoffset="6" xadvance="64" page="0" chnl="0" letter="百"/>
-        <char id="20986" x="1985" y="428" width="50" height="53" xoffset="11" yoffset="5" xadvance="64" page="0" chnl="0" letter="出"/>
-        <char id="20016" x="2" y="484" width="49" height="53" xoffset="12" yoffset="6" xadvance="64" page="0" chnl="0" letter="丰"/>
-        <char id="26080" x="53" y="484" width="49" height="53" xoffset="11" yoffset="7" xadvance="64" page="0" chnl="0" letter="无"/>
-        <char id="29579" x="104" y="484" width="49" height="53" xoffset="14" yoffset="6" xadvance="64" page="0" chnl="0" letter="王"/>
-        <char id="20892" x="155" y="484" width="48" height="53" xoffset="13" yoffset="6" xadvance="64" page="0" chnl="0" letter="农"/>
-        <char id="20041" x="205" y="484" width="47" height="53" xoffset="13" yoffset="7" xadvance="64" page="0" chnl="0" letter="义"/>
-        <char id="24050" x="254" y="484" width="44" height="53" xoffset="15" yoffset="6" xadvance="64" page="0" chnl="0" letter="已"/>
-        <char id="24049" x="300" y="484" width="44" height="53" xoffset="15" yoffset="6" xadvance="64" page="0" chnl="0" letter="己"/>
-        <char id="26495" x="346" y="484" width="62" height="52" xoffset="4" yoffset="6" xadvance="64" page="0" chnl="0" letter="板"/>
-        <char id="20204" x="410" y="484" width="62" height="52" xoffset="5" yoffset="6" xadvance="64" page="0" chnl="0" letter="们"/>
-        <char id="24618" x="474" y="484" width="62" height="52" xoffset="5" yoffset="7" xadvance="64" page="0" chnl="0" letter="怪"/>
-        <char id="37266" x="538" y="484" width="62" height="52" xoffset="6" yoffset="6" xadvance="64" page="0" chnl="0" letter="醒"/>
-        <char id="26631" x="602" y="484" width="61" height="52" xoffset="6" yoffset="7" xadvance="64" page="0" chnl="0" letter="标"/>
-        <char id="25252" x="665" y="484" width="60" height="52" xoffset="8" yoffset="8" xadvance="64" page="0" chnl="0" letter="护"/>
-        <char id="27882" x="727" y="484" width="59" height="52" xoffset="7" yoffset="7" xadvance="64" page="0" chnl="0" letter="泪"/>
-        <char id="35770" x="788" y="484" width="59" height="52" xoffset="8" yoffset="6" xadvance="64" page="0" chnl="0" letter="论"/>
-        <char id="25919" x="849" y="484" width="59" height="52" xoffset="7" yoffset="6" xadvance="64" page="0" chnl="0" letter="政"/>
-        <char id="29609" x="910" y="484" width="59" height="52" xoffset="7" yoffset="7" xadvance="64" page="0" chnl="0" letter="玩"/>
-        <char id="33268" x="971" y="484" width="58" height="52" xoffset="6" yoffset="8" xadvance="64" page="0" chnl="0" letter="致"/>
-        <char id="35758" x="1031" y="484" width="57" height="52" xoffset="7" yoffset="6" xadvance="64" page="0" chnl="0" letter="议"/>
-        <char id="20040" x="1090" y="484" width="50" height="52" xoffset="11" yoffset="5" xadvance="64" page="0" chnl="0" letter="么"/>
-        <char id="21448" x="1142" y="484" width="48" height="52" xoffset="13" yoffset="7" xadvance="64" page="0" chnl="0" letter="又"/>
-        <char id="21482" x="1192" y="484" width="44" height="52" xoffset="14" yoffset="6" xadvance="64" page="0" chnl="0" letter="只"/>
-        <char id="28216" x="1238" y="484" width="63" height="51" xoffset="4" yoffset="7" xadvance="64" page="0" chnl="0" letter="游"/>
-        <char id="29289" x="1303" y="484" width="61" height="51" xoffset="5" yoffset="5" xadvance="64" page="0" chnl="0" letter="物"/>
-        <char id="34892" x="1366" y="484" width="61" height="51" xoffset="6" yoffset="7" xadvance="64" page="0" chnl="0" letter="行"/>
-        <char id="39536" x="1429" y="484" width="61" height="51" xoffset="5" yoffset="8" xadvance="64" page="0" chnl="0" letter="驰"/>
-        <char id="20184" x="1492" y="484" width="60" height="51" xoffset="6" yoffset="6" xadvance="64" page="0" chnl="0" letter="付"/>
-        <char id="38590" x="1554" y="484" width="60" height="51" xoffset="7" yoffset="8" xadvance="64" page="0" chnl="0" letter="难"/>
-        <char id="22534" x="1616" y="484" width="59" height="51" xoffset="7" yoffset="6" xadvance="64" page="0" chnl="0" letter="堆"/>
-        <char id="25925" x="1677" y="484" width="59" height="51" xoffset="7" yoffset="8" xadvance="64" page="0" chnl="0" letter="故"/>
-        <char id="35775" x="1738" y="484" width="59" height="51" xoffset="8" yoffset="6" xadvance="64" page="0" chnl="0" letter="访"/>
-        <char id="22330" x="1799" y="484" width="58" height="51" xoffset="8" yoffset="7" xadvance="64" page="0" chnl="0" letter="场"/>
-        <char id="25918" x="1859" y="484" width="58" height="51" xoffset="6" yoffset="8" xadvance="64" page="0" chnl="0" letter="放"/>
-        <char id="24039" x="1919" y="484" width="58" height="51" xoffset="6" yoffset="8" xadvance="64" page="0" chnl="0" letter="巧"/>
-        <char id="21350" x="1979" y="484" width="58" height="51" xoffset="8" yoffset="7" xadvance="64" page="0" chnl="0" letter="卦"/>
-        <char id="27490" x="2" y="539" width="57" height="51" xoffset="8" yoffset="5" xadvance="64" page="0" chnl="0" letter="止"/>
-        <char id="21040" x="61" y="539" width="56" height="51" xoffset="9" yoffset="8" xadvance="64" page="0" chnl="0" letter="到"/>
-        <char id="22238" x="119" y="539" width="54" height="51" xoffset="10" yoffset="7" xadvance="64" page="0" chnl="0" letter="回"/>
-        <char id="22823" x="175" y="539" width="54" height="51" xoffset="8" yoffset="6" xadvance="64" page="0" chnl="0" letter="大"/>
-        <char id="21521" x="231" y="539" width="53" height="51" xoffset="10" yoffset="8" xadvance="64" page="0" chnl="0" letter="向"/>
-        <char id="30333" x="286" y="539" width="47" height="51" xoffset="13" yoffset="7" xadvance="64" page="0" chnl="0" letter="白"/>
-        <char id="106" x="335" y="539" width="23" height="51" xoffset="0" yoffset="15" xadvance="18" page="0" chnl="0" letter="j"/>
-        <char id="24494" x="360" y="539" width="64" height="50" xoffset="5" yoffset="7" xadvance="64" page="0" chnl="0" letter="微"/>
-        <char id="31185" x="426" y="539" width="63" height="50" xoffset="5" yoffset="8" xadvance="64" page="0" chnl="0" letter="科"/>
-        <char id="20570" x="491" y="539" width="62" height="50" xoffset="5" yoffset="7" xadvance="64" page="0" chnl="0" letter="做"/>
-        <char id="26449" x="555" y="539" width="61" height="50" xoffset="5" yoffset="7" xadvance="64" page="0" chnl="0" letter="村"/>
-        <char id="31186" x="618" y="539" width="60" height="50" xoffset="7" yoffset="8" xadvance="64" page="0" chnl="0" letter="秒"/>
-        <char id="24576" x="680" y="539" width="60" height="50" xoffset="5" yoffset="8" xadvance="64" page="0" chnl="0" letter="怀"/>
-        <char id="21160" x="742" y="539" width="60" height="50" xoffset="6" yoffset="7" xadvance="64" page="0" chnl="0" letter="动"/>
-        <char id="25490" x="804" y="539" width="60" height="50" xoffset="6" yoffset="8" xadvance="64" page="0" chnl="0" letter="排"/>
-        <char id="22920" x="866" y="539" width="60" height="50" xoffset="6" yoffset="9" xadvance="64" page="0" chnl="0" letter="妈"/>
-        <char id="36828" x="928" y="539" width="59" height="50" xoffset="6" yoffset="9" xadvance="64" page="0" chnl="0" letter="远"/>
-        <char id="29615" x="989" y="539" width="59" height="50" xoffset="7" yoffset="8" xadvance="64" page="0" chnl="0" letter="环"/>
-        <char id="26102" x="1050" y="539" width="58" height="50" xoffset="7" yoffset="6" xadvance="64" page="0" chnl="0" letter="时"/>
-        <char id="87" x="1110" y="539" width="58" height="50" xoffset="1" yoffset="9" xadvance="51" page="0" chnl="0" letter="W"/>
-        <char id="20320" x="1170" y="539" width="58" height="50" xoffset="7" yoffset="7" xadvance="64" page="0" chnl="0" letter="你"/>
-        <char id="21644" x="1230" y="539" width="58" height="50" xoffset="7" yoffset="7" xadvance="64" page="0" chnl="0" letter="和"/>
-        <char id="35752" x="1290" y="539" width="58" height="50" xoffset="7" yoffset="7" xadvance="64" page="0" chnl="0" letter="讨"/>
-        <char id="36816" x="1350" y="539" width="56" height="50" xoffset="6" yoffset="9" xadvance="64" page="0" chnl="0" letter="运"/>
-        <char id="19979" x="1408" y="539" width="55" height="50" xoffset="8" yoffset="8" xadvance="64" page="0" chnl="0" letter="下"/>
-        <char id="86" x="1465" y="539" width="53" height="50" xoffset="1" yoffset="9" xadvance="46" page="0" chnl="0" letter="V"/>
-        <char id="19978" x="1520" y="539" width="53" height="50" xoffset="11" yoffset="7" xadvance="64" page="0" chnl="0" letter="上"/>
-        <char id="21516" x="1575" y="539" width="52" height="50" xoffset="11" yoffset="8" xadvance="64" page="0" chnl="0" letter="同"/>
-        <char id="79" x="1629" y="539" width="51" height="50" xoffset="3" yoffset="9" xadvance="48" page="0" chnl="0" letter="O"/>
-        <char id="65" x="1682" y="539" width="51" height="50" xoffset="1" yoffset="9" xadvance="45" page="0" chnl="0" letter="A"/>
-        <char id="77" x="1735" y="539" width="51" height="50" xoffset="4" yoffset="9" xadvance="50" page="0" chnl="0" letter="M"/>
-        <char id="81" x="1788" y="539" width="51" height="50" xoffset="3" yoffset="9" xadvance="48" page="0" chnl="0" letter="Q"/>
-        <char id="48" x="1841" y="539" width="50" height="50" xoffset="1" yoffset="9" xadvance="44" page="0" chnl="0" letter="0"/>
-        <char id="21378" x="1893" y="539" width="50" height="50" xoffset="11" yoffset="8" xadvance="64" page="0" chnl="0" letter="厂"/>
-        <char id="37" x="1945" y="539" width="50" height="50" xoffset="3" yoffset="9" xadvance="47" page="0" chnl="0" letter="%"/>
-        <char id="29992" x="2" y="592" width="50" height="50" xoffset="12" yoffset="9" xadvance="64" page="0" chnl="0" letter="用"/>
-        <char id="71" x="54" y="592" width="49" height="50" xoffset="3" yoffset="9" xadvance="45" page="0" chnl="0" letter="G"/>
-        <char id="35" x="105" y="592" width="47" height="50" xoffset="3" yoffset="9" xadvance="44" page="0" chnl="0" letter="#"/>
-        <char id="68" x="154" y="592" width="46" height="50" xoffset="4" yoffset="9" xadvance="44" page="0" chnl="0" letter="D"/>
-        <char id="78" x="202" y="592" width="46" height="50" xoffset="4" yoffset="9" xadvance="45" page="0" chnl="0" letter="N"/>
-        <char id="82" x="250" y="592" width="46" height="50" xoffset="4" yoffset="9" xadvance="43" page="0" chnl="0" letter="R"/>
-        <char id="26085" x="298" y="592" width="46" height="50" xoffset="13" yoffset="7" xadvance="64" page="0" chnl="0" letter="日"/>
-        <char id="67" x="346" y="592" width="45" height="50" xoffset="3" yoffset="9" xadvance="41" page="0" chnl="0" letter="C"/>
-        <char id="80" x="393" y="592" width="45" height="50" xoffset="4" yoffset="9" xadvance="43" page="0" chnl="0" letter="P"/>
-        <char id="66" x="440" y="592" width="45" height="50" xoffset="4" yoffset="9" xadvance="43" page="0" chnl="0" letter="B"/>
-        <char id="72" x="487" y="592" width="44" height="50" xoffset="4" yoffset="9" xadvance="44" page="0" chnl="0" letter="H"/>
-        <char id="75" x="533" y="592" width="44" height="50" xoffset="4" yoffset="9" xadvance="41" page="0" chnl="0" letter="K"/>
-        <char id="52" x="579" y="592" width="44" height="50" xoffset="4" yoffset="9" xadvance="44" page="0" chnl="0" letter="4"/>
-        <char id="55" x="625" y="592" width="44" height="50" xoffset="4" yoffset="9" xadvance="44" page="0" chnl="0" letter="7"/>
-        <char id="38" x="671" y="592" width="44" height="50" xoffset="3" yoffset="9" xadvance="41" page="0" chnl="0" letter="&amp;"/>
-        <char id="83" x="717" y="592" width="43" height="50" xoffset="3" yoffset="9" xadvance="40" page="0" chnl="0" letter="S"/>
-        <char id="57" x="762" y="592" width="42" height="50" xoffset="5" yoffset="9" xadvance="44" page="0" chnl="0" letter="9"/>
-        <char id="51" x="806" y="592" width="41" height="50" xoffset="6" yoffset="9" xadvance="44" page="0" chnl="0" letter="3"/>
-        <char id="54" x="849" y="592" width="40" height="50" xoffset="6" yoffset="9" xadvance="44" page="0" chnl="0" letter="6"/>
-        <char id="53" x="891" y="592" width="39" height="50" xoffset="6" yoffset="9" xadvance="44" page="0" chnl="0" letter="5"/>
-        <char id="50" x="932" y="592" width="39" height="50" xoffset="6" yoffset="9" xadvance="44" page="0" chnl="0" letter="2"/>
-        <char id="76" x="973" y="592" width="37" height="50" xoffset="4" yoffset="9" xadvance="35" page="0" chnl="0" letter="L"/>
-        <char id="56" x="1012" y="592" width="37" height="50" xoffset="8" yoffset="9" xadvance="44" page="0" chnl="0" letter="8"/>
-        <char id="63" x="1051" y="592" width="36" height="50" xoffset="4" yoffset="9" xadvance="35" page="0" chnl="0" letter="?"/>
-        <char id="49" x="1089" y="592" width="23" height="50" xoffset="13" yoffset="9" xadvance="44" page="0" chnl="0" letter="1"/>
-        <char id="33" x="1114" y="592" width="17" height="50" xoffset="6" yoffset="9" xadvance="21" page="0" chnl="0" letter="!"/>
-        <char id="31216" x="1133" y="592" width="62" height="49" xoffset="6" yoffset="8" xadvance="64" page="0" chnl="0" letter="称"/>
-        <char id="22478" x="1197" y="592" width="62" height="49" xoffset="5" yoffset="6" xadvance="64" page="0" chnl="0" letter="城"/>
-        <char id="27827" x="1261" y="592" width="60" height="49" xoffset="6" yoffset="10" xadvance="64" page="0" chnl="0" letter="河"/>
-        <char id="37027" x="1323" y="592" width="60" height="49" xoffset="6" yoffset="9" xadvance="64" page="0" chnl="0" letter="那"/>
-        <char id="20294" x="1385" y="592" width="60" height="49" xoffset="5" yoffset="9" xadvance="64" page="0" chnl="0" letter="但"/>
-        <char id="32418" x="1447" y="592" width="59" height="49" xoffset="7" yoffset="8" xadvance="64" page="0" chnl="0" letter="红"/>
-        <char id="23567" x="1508" y="592" width="59" height="49" xoffset="7" yoffset="7" xadvance="64" page="0" chnl="0" letter="小"/>
-        <char id="21147" x="1569" y="592" width="53" height="49" xoffset="8" yoffset="6" xadvance="64" page="0" chnl="0" letter="力"/>
-        <char id="85" x="1624" y="592" width="51" height="49" xoffset="4" yoffset="10" xadvance="50" page="0" chnl="0" letter="U"/>
-        <char id="84" x="1677" y="592" width="49" height="49" xoffset="1" yoffset="10" xadvance="43" page="0" chnl="0" letter="T"/>
-        <char id="88" x="1728" y="592" width="48" height="49" xoffset="1" yoffset="10" xadvance="41" page="0" chnl="0" letter="X"/>
-        <char id="19975" x="1778" y="592" width="48" height="49" xoffset="11" yoffset="10" xadvance="64" page="0" chnl="0" letter="万"/>
-        <char id="26376" x="1828" y="592" width="48" height="49" xoffset="13" yoffset="9" xadvance="64" page="0" chnl="0" letter="月"/>
-        <char id="89" x="1878" y="592" width="47" height="49" xoffset="1" yoffset="10" xadvance="41" page="0" chnl="0" letter="Y"/>
-        <char id="74" x="1927" y="592" width="46" height="49" xoffset="2" yoffset="10" xadvance="42" page="0" chnl="0" letter="J"/>
-        <char id="70" x="1975" y="592" width="44" height="49" xoffset="4" yoffset="10" xadvance="42" page="0" chnl="0" letter="F"/>
-        <char id="69" x="2" y="644" width="43" height="49" xoffset="4" yoffset="10" xadvance="41" page="0" chnl="0" letter="E"/>
-        <char id="90" x="47" y="644" width="42" height="49" xoffset="1" yoffset="10" xadvance="36" page="0" chnl="0" letter="Z"/>
-        <char id="73" x="91" y="644" width="29" height="49" xoffset="2" yoffset="10" xadvance="24" page="0" chnl="0" letter="I"/>
-        <char id="30719" x="122" y="644" width="64" height="48" xoffset="3" yoffset="8" xadvance="64" page="0" chnl="0" letter="矿"/>
-        <char id="20182" x="188" y="644" width="62" height="48" xoffset="5" yoffset="8" xadvance="64" page="0" chnl="0" letter="他"/>
-        <char id="20174" x="252" y="644" width="59" height="48" xoffset="7" yoffset="10" xadvance="64" page="0" chnl="0" letter="从"/>
-        <char id="19990" x="313" y="644" width="57" height="48" xoffset="7" yoffset="9" xadvance="64" page="0" chnl="0" letter="世"/>
-        <char id="27426" x="372" y="644" width="56" height="48" xoffset="9" yoffset="9" xadvance="64" page="0" chnl="0" letter="欢"/>
-        <char id="20960" x="430" y="644" width="46" height="48" xoffset="13" yoffset="10" xadvance="64" page="0" chnl="0" letter="几"/>
-        <char id="26009" x="478" y="644" width="61" height="47" xoffset="6" yoffset="10" xadvance="64" page="0" chnl="0" letter="料"/>
-        <char id="20999" x="541" y="644" width="61" height="47" xoffset="5" yoffset="8" xadvance="64" page="0" chnl="0" letter="切"/>
-        <char id="22902" x="604" y="644" width="60" height="47" xoffset="6" yoffset="9" xadvance="64" page="0" chnl="0" letter="奶"/>
-        <char id="20195" x="666" y="644" width="60" height="47" xoffset="6" yoffset="9" xadvance="64" page="0" chnl="0" letter="代"/>
-        <char id="21270" x="728" y="644" width="59" height="47" xoffset="5" yoffset="7" xadvance="64" page="0" chnl="0" letter="化"/>
-        <char id="35753" x="789" y="644" width="58" height="47" xoffset="7" yoffset="9" xadvance="64" page="0" chnl="0" letter="让"/>
-        <char id="25226" x="849" y="644" width="57" height="47" xoffset="6" yoffset="9" xadvance="64" page="0" chnl="0" letter="把"/>
-        <char id="35760" x="908" y="644" width="56" height="47" xoffset="8" yoffset="9" xadvance="64" page="0" chnl="0" letter="记"/>
-        <char id="21017" x="966" y="644" width="54" height="47" xoffset="9" yoffset="11" xadvance="64" page="0" chnl="0" letter="则"/>
-        <char id="104" x="1022" y="644" width="37" height="47" xoffset="3" yoffset="12" xadvance="34" page="0" chnl="0" letter="h"/>
-        <char id="30802" x="1061" y="644" width="63" height="46" xoffset="4" yoffset="8" xadvance="64" page="0" chnl="0" letter="硒"/>
-        <char id="25209" x="1126" y="644" width="62" height="46" xoffset="6" yoffset="10" xadvance="64" page="0" chnl="0" letter="批"/>
-        <char id="21152" x="1190" y="644" width="60" height="46" xoffset="6" yoffset="8" xadvance="64" page="0" chnl="0" letter="加"/>
-        <char id="23545" x="1252" y="644" width="57" height="46" xoffset="9" yoffset="9" xadvance="64" page="0" chnl="0" letter="对"/>
-        <char id="35759" x="1311" y="644" width="56" height="46" xoffset="9" yoffset="10" xadvance="64" page="0" chnl="0" letter="讯"/>
-        <char id="20154" x="1369" y="644" width="51" height="46" xoffset="11" yoffset="11" xadvance="64" page="0" chnl="0" letter="人"/>
-        <char id="32933" x="1422" y="644" width="59" height="45" xoffset="6" yoffset="12" xadvance="64" page="0" chnl="0" letter="肥"/>
-        <char id="30340" x="1483" y="644" width="58" height="45" xoffset="7" yoffset="10" xadvance="64" page="0" chnl="0" letter="的"/>
-        <char id="21543" x="1543" y="644" width="58" height="45" xoffset="7" yoffset="10" xadvance="64" page="0" chnl="0" letter="吧"/>
-        <char id="107" x="1603" y="644" width="34" height="45" xoffset="3" yoffset="14" xadvance="29" page="0" chnl="0" letter="k"/>
-        <char id="108" x="1639" y="644" width="13" height="45" xoffset="9" yoffset="14" xadvance="23" page="0" chnl="0" letter="l"/>
-        <char id="26426" x="1654" y="644" width="59" height="44" xoffset="6" yoffset="10" xadvance="64" page="0" chnl="0" letter="机"/>
-        <char id="20843" x="1715" y="644" width="57" height="44" xoffset="9" yoffset="9" xadvance="64" page="0" chnl="0" letter="八"/>
-        <char id="20837" x="1774" y="644" width="51" height="44" xoffset="12" yoffset="11" xadvance="64" page="0" chnl="0" letter="入"/>
-        <char id="98" x="1827" y="644" width="37" height="44" xoffset="3" yoffset="15" xadvance="33" page="0" chnl="0" letter="b"/>
-        <char id="102" x="1866" y="644" width="29" height="44" xoffset="2" yoffset="15" xadvance="24" page="0" chnl="0" letter="f"/>
-        <char id="105" x="1897" y="644" width="15" height="44" xoffset="8" yoffset="15" xadvance="23" page="0" chnl="0" letter="i"/>
-        <char id="20108" x="1914" y="644" width="48" height="43" xoffset="12" yoffset="11" xadvance="64" page="0" chnl="0" letter="二"/>
-        <char id="100" x="1964" y="644" width="37" height="43" xoffset="2" yoffset="16" xadvance="33" page="0" chnl="0" letter="d"/>
-        <char id="21475" x="2" y="695" width="48" height="42" xoffset="12" yoffset="12" xadvance="64" page="0" chnl="0" letter="口"/>
-        <char id="24515" x="52" y="695" width="62" height="41" xoffset="5" yoffset="12" xadvance="64" page="0" chnl="0" letter="心"/>
-        <char id="39134" x="116" y="695" width="55" height="41" xoffset="9" yoffset="12" xadvance="64" page="0" chnl="0" letter="飞"/>
-        <char id="24037" x="173" y="695" width="47" height="41" xoffset="13" yoffset="14" xadvance="64" page="0" chnl="0" letter="工"/>
-        <char id="116" x="222" y="695" width="38" height="41" xoffset="1" yoffset="18" xadvance="32" page="0" chnl="0" letter="t"/>
-        <char id="113" x="262" y="695" width="35" height="40" xoffset="2" yoffset="26" xadvance="29" page="0" chnl="0" letter="q"/>
-        <char id="103" x="299" y="695" width="37" height="39" xoffset="2" yoffset="27" xadvance="33" page="0" chnl="0" letter="g"/>
-        <char id="121" x="338" y="695" width="37" height="39" xoffset="1" yoffset="27" xadvance="30" page="0" chnl="0" letter="y"/>
-        <char id="112" x="377" y="695" width="35" height="39" xoffset="3" yoffset="27" xadvance="31" page="0" chnl="0" letter="p"/>
-        <char id="59" x="414" y="695" width="17" height="38" xoffset="4" yoffset="26" xadvance="16" page="0" chnl="0" letter=";"/>
-        <char id="109" x="433" y="695" width="49" height="33" xoffset="3" yoffset="26" xadvance="45" page="0" chnl="0" letter="m"/>
-        <char id="119" x="484" y="695" width="41" height="33" xoffset="1" yoffset="26" xadvance="34" page="0" chnl="0" letter="w"/>
-        <char id="110" x="527" y="695" width="37" height="33" xoffset="3" yoffset="26" xadvance="33" page="0" chnl="0" letter="n"/>
-        <char id="117" x="566" y="695" width="36" height="33" xoffset="3" yoffset="26" xadvance="33" page="0" chnl="0" letter="u"/>
-        <char id="111" x="604" y="695" width="36" height="33" xoffset="2" yoffset="26" xadvance="31" page="0" chnl="0" letter="o"/>
-        <char id="97" x="642" y="695" width="36" height="33" xoffset="2" yoffset="26" xadvance="32" page="0" chnl="0" letter="a"/>
-        <char id="101" x="680" y="695" width="35" height="33" xoffset="2" yoffset="26" xadvance="31" page="0" chnl="0" letter="e"/>
-        <char id="43" x="717" y="695" width="33" height="33" xoffset="3" yoffset="26" xadvance="29" page="0" chnl="0" letter="+"/>
-        <char id="99" x="752" y="695" width="32" height="33" xoffset="2" yoffset="26" xadvance="28" page="0" chnl="0" letter="c"/>
-        <char id="115" x="786" y="695" width="30" height="33" xoffset="3" yoffset="26" xadvance="27" page="0" chnl="0" letter="s"/>
-        <char id="42" x="818" y="695" width="30" height="33" xoffset="2" yoffset="9" xadvance="26" page="0" chnl="0" letter="*"/>
-        <char id="114" x="850" y="695" width="28" height="33" xoffset="3" yoffset="26" xadvance="24" page="0" chnl="0" letter="r"/>
-        <char id="58" x="880" y="695" width="17" height="33" xoffset="4" yoffset="26" xadvance="16" page="0" chnl="0" letter=":"/>
-        <char id="118" x="899" y="695" width="37" height="32" xoffset="1" yoffset="27" xadvance="30" page="0" chnl="0" letter="v"/>
-        <char id="120" x="938" y="695" width="33" height="32" xoffset="1" yoffset="27" xadvance="27" page="0" chnl="0" letter="x"/>
-        <char id="122" x="973" y="695" width="30" height="32" xoffset="2" yoffset="27" xadvance="25" page="0" chnl="0" letter="z"/>
-        <char id="94" x="1005" y="695" width="29" height="25" xoffset="2" yoffset="10" xadvance="25" page="0" chnl="0" letter="^"/>
-        <char id="34" x="1036" y="695" width="23" height="25" xoffset="4" yoffset="10" xadvance="22" page="0" chnl="0" letter="&quot;"/>
-        <char id="39" x="1061" y="695" width="14" height="25" xoffset="4" yoffset="10" xadvance="13" page="0" chnl="0" letter="'"/>
-        <char id="61" x="1077" y="695" width="33" height="24" xoffset="3" yoffset="31" xadvance="29" page="0" chnl="0" letter="="/>
-        <char id="12290" x="1112" y="695" width="24" height="24" xoffset="8" yoffset="35" xadvance="64" page="0" chnl="0" letter="。"/>
-        <char id="65292" x="1138" y="695" width="18" height="24" xoffset="11" yoffset="41" xadvance="64" page="0" chnl="0" letter="，"/>
-        <char id="44" x="1158" y="695" width="17" height="22" xoffset="4" yoffset="42" xadvance="16" page="0" chnl="0" letter=","/>
-        <char id="8230" x="1177" y="695" width="61" height="18" xoffset="6" yoffset="23" xadvance="64" page="0" chnl="0" letter="…"/>
-        <char id="46" x="1240" y="695" width="17" height="17" xoffset="4" yoffset="42" xadvance="16" page="0" chnl="0" letter="."/>
-        <char id="126" x="1259" y="695" width="28" height="16" xoffset="1" yoffset="9" xadvance="21" page="0" chnl="0" letter="~"/>
-        <char id="19968" x="1289" y="695" width="48" height="14" xoffset="11" yoffset="24" xadvance="64" page="0" chnl="0" letter="一"/>
-        <char id="95" x="1339" y="695" width="40" height="13" xoffset="0" yoffset="55" xadvance="32" page="0" chnl="0" letter="_"/>
-        <char id="45" x="1381" y="695" width="24" height="13" xoffset="3" yoffset="36" xadvance="21" page="0" chnl="0" letter="-"/>
-        <char id="32" x="1407" y="695" width="0" height="0" xoffset="21" yoffset="75" xadvance="21" page="0" chnl="0" letter=" "/>
-    </chars>
-</font>
+<?xml version='1.0'?>
+   <font>
+       <info aa='1' size='50' smooth='1' stretchH='100' bold='0' padding='0,0,0,0' spacing='0,0' charset='' italic='0' unicode='0' face='Wawati SC'/>
+       <common scaleW='1024' packed='0' pages='1' lineHeight='75' scaleH='960' base='58'/>
+       <pages>
+            <page id='0' file='fonts.png'/>
+       </pages>
+        <chars count='479'>
+            <char xadvance='17' x='10' chnl='0' yoffset='54' y='950' xoffset='0' id='32' page='0' height='0' width='0'/>
+            <char xadvance='34' x='676' chnl='0' yoffset='20' y='732' xoffset='2' id='84' page='0' height='40' width='38'/>
+            <char xadvance='22' x='870' chnl='0' yoffset='19' y='764' xoffset='2' id='73' page='0' height='40' width='26'/>
+            <char xadvance='34' x='982' chnl='0' yoffset='20' y='648' xoffset='3' id='68' page='0' height='40' width='36'/>
+            <char xadvance='10' x='408' chnl='0' yoffset='46' y='936' xoffset='2' id='44' page='0' height='20' width='14'/>
+            <char xadvance='32' x='716' chnl='0' yoffset='19' y='898' xoffset='3' id='69' page='0' height='40' width='34'/>
+            <char xadvance='36' x='676' chnl='0' yoffset='20' y='690' xoffset='3' id='78' page='0' height='40' width='38'/>
+            <char xadvance='29' x='716' chnl='0' yoffset='19' y='856' xoffset='2' id='90' page='0' height='40' width='34'/>
+            <char xadvance='33' x='716' chnl='0' yoffset='20' y='814' xoffset='3' id='72' page='0' height='40' width='34'/>
+            <char xadvance='31' x='716' chnl='0' yoffset='20' y='772' xoffset='2' id='83' page='0' height='40' width='34'/>
+            <char xadvance='19' x='898' chnl='0' yoffset='20' y='764' xoffset='1' id='116' page='0' height='40' width='24'/>
+            <char xadvance='21' x='924' chnl='0' yoffset='32' y='764' xoffset='2' id='114' page='0' height='28' width='24'/>
+            <char xadvance='12' x='1008' chnl='0' yoffset='20' y='228' xoffset='3' id='105' page='0' height='40' width='12'/>
+            <char xadvance='27' x='902' chnl='0' yoffset='32' y='724' xoffset='3' id='110' page='0' height='28' width='28'/>
+            <char xadvance='26' x='788' chnl='0' yoffset='31' y='724' xoffset='2' id='103' page='0' height='38' width='30'/>
+            <char xadvance='25' x='472' chnl='0' yoffset='59' y='942' xoffset='0' id='95' page='0' height='10' width='32'/>
+            <char xadvance='33' x='944' chnl='0' yoffset='20' y='648' xoffset='2' id='67' page='0' height='40' width='36'/>
+            <char xadvance='38' x='926' chnl='0' yoffset='20' y='568' xoffset='2' id='79' page='0' height='40' width='40'/>
+            <char xadvance='32' x='716' chnl='0' yoffset='20' y='730' xoffset='3' id='75' page='0' height='40' width='34'/>
+            <char xadvance='36' x='884' chnl='0' yoffset='20' y='568' xoffset='2' id='35' page='0' height='40' width='40'/>
+            <char xadvance='25' x='872' chnl='0' yoffset='32' y='724' xoffset='2' id='117' page='0' height='28' width='28'/>
+            <char xadvance='36' x='826' chnl='0' yoffset='32' y='690' xoffset='3' id='109' page='0' height='28' width='38'/>
+            <char xadvance='26' x='788' chnl='0' yoffset='20' y='806' xoffset='3' id='98' page='0' height='40' width='28'/>
+            <char xadvance='25' x='988' chnl='0' yoffset='32' y='690' xoffset='2' id='101' page='0' height='28' width='28'/>
+            <char xadvance='25' x='958' chnl='0' yoffset='32' y='690' xoffset='2' id='111' page='0' height='28' width='28'/>
+            <char xadvance='25' x='788' chnl='0' yoffset='20' y='764' xoffset='3' id='107' page='0' height='40' width='28'/>
+            <char xadvance='21' x='986' chnl='0' yoffset='32' y='724' xoffset='2' id='115' page='0' height='28' width='24'/>
+            <char xadvance='50' x='720' chnl='0' yoffset='21' y='272' xoffset='6' id='39292' page='0' height='42' width='46'/>
+            <char xadvance='50' x='472' chnl='0' yoffset='21' y='574' xoffset='8' id='24178' page='0' height='42' width='42'/>
+            <char xadvance='33' x='906' chnl='0' yoffset='20' y='648' xoffset='3' id='80' page='0' height='40' width='36'/>
+            <char xadvance='22' x='240' chnl='0' yoffset='32' y='930' xoffset='2' id='43' page='0' height='26' width='26'/>
+            <char xadvance='25' x='842' chnl='0' yoffset='31' y='724' xoffset='2' id='112' page='0' height='38' width='28'/>
+            <char xadvance='23' x='932' chnl='0' yoffset='32' y='724' xoffset='2' id='99' page='0' height='28' width='26'/>
+            <char xadvance='27' x='754' chnl='0' yoffset='20' y='858' xoffset='2' id='100' page='0' height='40' width='30'/>
+            <char xadvance='17' x='950' chnl='0' yoffset='20' y='764' xoffset='5' id='33' page='0' height='40' width='14'/>
+            <char xadvance='50' x='290' chnl='0' yoffset='19' y='366' xoffset='7' id='27599' page='0' height='44' width='44'/>
+            <char xadvance='50' x='768' chnl='0' yoffset='21' y='272' xoffset='6' id='31186' page='0' height='40' width='48'/>
+            <char xadvance='38' x='842' chnl='0' yoffset='20' y='568' xoffset='2' id='85' page='0' height='40' width='40'/>
+            <char xadvance='33' x='868' chnl='0' yoffset='20' y='648' xoffset='3' id='82' page='0' height='40' width='36'/>
+            <char xadvance='27' x='754' chnl='0' yoffset='19' y='816' xoffset='3' id='76' page='0' height='40' width='30'/>
+            <char xadvance='36' x='800' chnl='0' yoffset='20' y='568' xoffset='2' id='65' page='0' height='40' width='40'/>
+            <char xadvance='33' x='676' chnl='0' yoffset='20' y='648' xoffset='2' id='89' page='0' height='40' width='38'/>
+            <char xadvance='38' x='758' chnl='0' yoffset='20' y='568' xoffset='3' id='77' page='0' height='40' width='40'/>
+            <char xadvance='50' x='194' chnl='0' yoffset='17' y='332' xoffset='9' id='40736' page='0' height='46' width='44'/>
+            <char xadvance='50' x='950' chnl='0' yoffset='22' y='186' xoffset='5' id='26631' page='0' height='40' width='48'/>
+            <char xadvance='10' x='1010' chnl='0' yoffset='20' y='94' xoffset='3' id='108' page='0' height='40' width='10'/>
+            <char xadvance='25' x='866' chnl='0' yoffset='32' y='690' xoffset='1' id='118' page='0' height='28' width='30'/>
+            <char xadvance='25' x='754' chnl='0' yoffset='31' y='900' xoffset='1' id='121' page='0' height='38' width='30'/>
+            <char xadvance='35' x='1000' chnl='0' yoffset='20' y='186' xoffset='11' id='49' page='0' height='40' width='18'/>
+            <char xadvance='35' x='632' chnl='0' yoffset='20' y='904' xoffset='2' id='48' page='0' height='40' width='38'/>
+            <char xadvance='11' x='676' chnl='0' yoffset='46' y='940' xoffset='2' id='46' page='0' height='14' width='14'/>
+            <char xadvance='50' x='592' chnl='0' yoffset='20' y='892' xoffset='12' id='28857' page='0' height='42' width='38'/>
+            <char xadvance='50' x='290' chnl='0' yoffset='35' y='940' xoffset='9' id='19968' page='0' height='10' width='38'/>
+            <char xadvance='50' x='610' chnl='0' yoffset='19' y='316' xoffset='7' id='27425' page='0' height='42' width='44'/>
+            <char xadvance='35' x='830' chnl='0' yoffset='20' y='648' xoffset='2' id='71' page='0' height='40' width='36'/>
+            <char xadvance='26' x='928' chnl='0' yoffset='32' y='690' xoffset='2' id='97' page='0' height='28' width='28'/>
+            <char xadvance='50' x='704' chnl='0' yoffset='22' y='442' xoffset='5' id='22902' page='0' height='38' width='46'/>
+            <char xadvance='50' x='2' chnl='0' yoffset='15' y='884' xoffset='5' id='20250' page='0' height='48' width='46'/>
+            <char xadvance='50' x='822' chnl='0' yoffset='22' y='402' xoffset='4' id='20570' page='0' height='38' width='48'/>
+            <char xadvance='50' x='870' chnl='0' yoffset='23' y='528' xoffset='6' id='30340' page='0' height='36' width='46'/>
+            <char xadvance='50' x='336' chnl='0' yoffset='18' y='316' xoffset='8' id='32769' page='0' height='46' width='42'/>
+            <char xadvance='17' x='556' chnl='0' yoffset='35' y='940' xoffset='2' id='126' page='0' height='12' width='22'/>
+            <char xadvance='32' x='556' chnl='0' yoffset='20' y='898' xoffset='2' id='70' page='0' height='40' width='34'/>
+            <char xadvance='50' x='592' chnl='0' yoffset='20' y='848' xoffset='10' id='20892' page='0' height='42' width='38'/>
+            <char xadvance='50' x='424' chnl='0' yoffset='21' y='444' xoffset='7' id='22330' page='0' height='40' width='46'/>
+            <char xadvance='28' x='986' chnl='0' yoffset='32' y='610' xoffset='2' id='119' page='0' height='28' width='32'/>
+            <char xadvance='21' x='842' chnl='0' yoffset='20' y='764' xoffset='1' id='102' page='0' height='40' width='26'/>
+            <char xadvance='50' x='240' chnl='0' yoffset='21' y='650' xoffset='5' id='31181' page='0' height='42' width='48'/>
+            <char xadvance='50' x='194' chnl='0' yoffset='17' y='284' xoffset='7' id='24471' page='0' height='46' width='44'/>
+            <char xadvance='50' x='788' chnl='0' yoffset='27' y='690' xoffset='10' id='24037' page='0' height='32' width='36'/>
+            <char xadvance='50' x='632' chnl='0' yoffset='22' y='864' xoffset='8' id='21378' page='0' height='38' width='40'/>
+            <char xadvance='24' x='788' chnl='0' yoffset='31' y='904' xoffset='2' id='113' page='0' height='38' width='28'/>
+            <char xadvance='50' x='240' chnl='0' yoffset='20' y='140' xoffset='6' id='29616' page='0' height='44' width='46'/>
+            <char xadvance='50' x='772' chnl='0' yoffset='22' y='402' xoffset='5' id='20195' page='0' height='38' width='48'/>
+            <char xadvance='50' x='822' chnl='0' yoffset='22' y='528' xoffset='4' id='21270' page='0' height='36' width='46'/>
+            <char xadvance='50' x='870' chnl='0' yoffset='22' y='272' xoffset='3' id='30719' page='0' height='38' width='50'/>
+            <char xadvance='26' x='992' chnl='0' yoffset='20' y='316' xoffset='3' id='104' page='0' height='40' width='28'/>
+            <char xadvance='50' x='2' chnl='0' yoffset='15' y='834' xoffset='6' id='34164' page='0' height='48' width='46'/>
+            <char xadvance='50' x='2' chnl='0' yoffset='17' y='784' xoffset='6' id='21547' page='0' height='48' width='46'/>
+            <char xadvance='50' x='592' chnl='0' yoffset='20' y='804' xoffset='10' id='20016' page='0' height='42' width='38'/>
+            <char xadvance='50' x='54' chnl='0' yoffset='16' y='758' xoffset='7' id='23500' page='0' height='48' width='44'/>
+            <char xadvance='50' x='54' chnl='0' yoffset='16' y='708' xoffset='6' id='21407' page='0' height='48' width='44'/>
+            <char xadvance='50' x='852' chnl='0' yoffset='24' y='442' xoffset='5' id='26009' page='0' height='36' width='48'/>
+            <char xadvance='50' x='672' chnl='0' yoffset='19' y='272' xoffset='6' id='28779' page='0' height='42' width='46'/>
+            <char xadvance='50' x='240' chnl='0' yoffset='17' y='600' xoffset='8' id='31661' page='0' height='48' width='42'/>
+            <char xadvance='33' x='792' chnl='0' yoffset='20' y='648' xoffset='3' id='66' page='0' height='40' width='36'/>
+            <char xadvance='50' x='656' chnl='0' yoffset='23' y='442' xoffset='6' id='20174' page='0' height='38' width='46'/>
+            <char xadvance='50' x='194' chnl='0' yoffset='19' y='236' xoffset='6' id='36965' page='0' height='46' width='44'/>
+            <char xadvance='50' x='624' chnl='0' yoffset='21' y='272' xoffset='5' id='36828' page='0' height='42' width='46'/>
+            <char xadvance='50' x='516' chnl='0' yoffset='18' y='820' xoffset='9' id='26143' page='0' height='46' width='38'/>
+            <char xadvance='50' x='240' chnl='0' yoffset='20' y='556' xoffset='6' id='29699' page='0' height='42' width='48'/>
+            <char xadvance='50' x='562' chnl='0' yoffset='23' y='442' xoffset='5' id='36816' page='0' height='40' width='44'/>
+            <char xadvance='50' x='290' chnl='0' yoffset='18' y='892' xoffset='7' id='26469' page='0' height='46' width='42'/>
+            <char xadvance='50' x='100' chnl='0' yoffset='18' y='768' xoffset='6' id='26032' page='0' height='46' width='46'/>
+            <char xadvance='50' x='100' chnl='0' yoffset='17' y='720' xoffset='6' id='40092' page='0' height='46' width='46'/>
+            <char xadvance='50' x='360' chnl='0' yoffset='18' y='2' xoffset='4' id='28860' page='0' height='44' width='50'/>
+            <char xadvance='50' x='240' chnl='0' yoffset='16' y='506' xoffset='7' id='37329' page='0' height='48' width='42'/>
+            <char xadvance='50' x='54' chnl='0' yoffset='17' y='658' xoffset='7' id='23460' page='0' height='48' width='44'/>
+            <char xadvance='35' x='754' chnl='0' yoffset='20' y='774' xoffset='5' id='51' page='0' height='40' width='32'/>
+            <char xadvance='50' x='380' chnl='0' yoffset='18' y='788' xoffset='10' id='20811' page='0' height='46' width='40'/>
+            <char xadvance='50' x='872' chnl='0' yoffset='22' y='402' xoffset='4' id='30802' page='0' height='36' width='50'/>
+            <char xadvance='22' x='380' chnl='0' yoffset='35' y='936' xoffset='2' id='61' page='0' height='18' width='26'/>
+            <char xadvance='50' x='194' chnl='0' yoffset='18' y='188' xoffset='8' id='23431' page='0' height='46' width='44'/>
+            <char xadvance='50' x='290' chnl='0' yoffset='18' y='844' xoffset='8' id='23449' page='0' height='46' width='42'/>
+            <char xadvance='50' x='556' chnl='0' yoffset='17' y='636' xoffset='11' id='20043' page='0' height='46' width='34'/>
+            <char xadvance='50' x='380' chnl='0' yoffset='17' y='740' xoffset='9' id='38376' page='0' height='46' width='40'/>
+            <char xadvance='50' x='962' chnl='0' yoffset='19' y='94' xoffset='5' id='36890' page='0' height='44' width='46'/>
+            <char xadvance='50' x='576' chnl='0' yoffset='20' y='272' xoffset='5' id='24448' page='0' height='42' width='46'/>
+            <char xadvance='50' x='2' chnl='0' yoffset='34' y='934' xoffset='5' id='8230' page='0' height='14' width='48'/>
+            <char xadvance='50' x='424' chnl='0' yoffset='20' y='402' xoffset='6' id='26102' page='0' height='40' width='46'/>
+            <char xadvance='50' x='380' chnl='0' yoffset='18' y='692' xoffset='8' id='20809' page='0' height='46' width='40'/>
+            <char xadvance='50' x='768' chnl='0' yoffset='24' y='610' xoffset='5' id='26426' page='0' height='34' width='46'/>
+            <char xadvance='17' x='592' chnl='0' yoffset='20' y='936' xoffset='2' id='34' page='0' height='20' width='20'/>
+            <char xadvance='50' x='632' chnl='0' yoffset='22' y='528' xoffset='5' id='25226' page='0' height='38' width='44'/>
+            <char xadvance='50' x='556' chnl='0' yoffset='20' y='728' xoffset='12' id='24050' page='0' height='42' width='34'/>
+            <char xadvance='50' x='528' chnl='0' yoffset='20' y='272' xoffset='7' id='32463' page='0' height='42' width='46'/>
+            <char xadvance='50' x='480' chnl='0' yoffset='21' y='272' xoffset='6' id='21507' page='0' height='42' width='46'/>
+            <char xadvance='50' x='100' chnl='0' yoffset='18' y='672' xoffset='5' id='25481' page='0' height='46' width='46'/>
+            <char xadvance='50' x='100' chnl='0' yoffset='15' y='816' xoffset='9' id='21464' page='0' height='50' width='42'/>
+            <char xadvance='50' x='806' chnl='0' yoffset='21' y='484' xoffset='8' id='22238' page='0' height='40' width='42'/>
+            <char xadvance='50' x='380' chnl='0' yoffset='19' y='406' xoffset='7' id='21453' page='0' height='44' width='42'/>
+            <char xadvance='50' x='900' chnl='0' yoffset='20' y='186' xoffset='4' id='29289' page='0' height='40' width='48'/>
+            <char xadvance='50' x='380' chnl='0' yoffset='19' y='644' xoffset='7' id='36136' page='0' height='46' width='40'/>
+            <char xadvance='50' x='952' chnl='0' yoffset='21' y='360' xoffset='6' id='22534' page='0' height='40' width='46'/>
+            <char xadvance='50' x='2' chnl='0' yoffset='17' y='736' xoffset='5' id='23558' page='0' height='46' width='48'/>
+            <char xadvance='50' x='290' chnl='0' yoffset='18' y='320' xoffset='7' id='20013' page='0' height='44' width='44'/>
+            <char xadvance='50' x='100' chnl='0' yoffset='18' y='624' xoffset='6' id='20957' page='0' height='46' width='46'/>
+            <char xadvance='50' x='290' chnl='0' yoffset='18' y='274' xoffset='8' id='25104' page='0' height='44' width='44'/>
+            <char xadvance='50' x='2' chnl='0' yoffset='18' y='688' xoffset='5' id='26865' page='0' height='46' width='48'/>
+            <char xadvance='50' x='2' chnl='0' yoffset='16' y='52' xoffset='4' id='38236' page='0' height='48' width='48'/>
+            <char xadvance='50' x='240' chnl='0' yoffset='20' y='462' xoffset='4' id='31070' page='0' height='42' width='48'/>
+            <char xadvance='50' x='914' chnl='0' yoffset='19' y='94' xoffset='6' id='35828' page='0' height='44' width='46'/>
+            <char xadvance='11' x='842' chnl='0' yoffset='32' y='858' xoffset='2' id='58' page='0' height='28' width='14'/>
+            <char xadvance='50' x='100' chnl='0' yoffset='17' y='576' xoffset='7' id='26377' page='0' height='46' width='46'/>
+            <char xadvance='50' x='298' chnl='0' yoffset='18' y='48' xoffset='6' id='23601' page='0' height='44' width='48'/>
+            <char xadvance='33' x='632' chnl='0' yoffset='20' y='822' xoffset='2' id='88' page='0' height='40' width='38'/>
+            <char xadvance='23' x='898' chnl='0' yoffset='32' y='690' xoffset='1' id='120' page='0' height='28' width='28'/>
+            <char xadvance='38' x='762' chnl='0' yoffset='20' y='484' xoffset='2' id='86' page='0' height='40' width='42'/>
+            <char xadvance='17' x='632' chnl='0' yoffset='40' y='946' xoffset='3' id='45' page='0' height='10' width='20'/>
+            <char xadvance='15' x='842' chnl='0' yoffset='19' y='806' xoffset='1' id='106' page='0' height='50' width='18'/>
+            <char xadvance='35' x='754' chnl='0' yoffset='20' y='732' xoffset='6' id='53' page='0' height='40' width='32'/>
+            <char xadvance='35' x='754' chnl='0' yoffset='20' y='690' xoffset='5' id='50' page='0' height='40' width='32'/>
+            <char xadvance='42' x='904' chnl='0' yoffset='20' y='360' xoffset='2' id='87' page='0' height='40' width='46'/>
+            <char xadvance='9' x='614' chnl='0' yoffset='20' y='936' xoffset='2' id='39' page='0' height='20' width='12'/>
+            <char xadvance='11' x='966' chnl='0' yoffset='33' y='764' xoffset='2' id='59' page='0' height='32' width='14'/>
+            <char xadvance='17' x='820' chnl='0' yoffset='13' y='836' xoffset='2' id='41' page='0' height='54' width='20'/>
+            <char xadvance='33' x='754' chnl='0' yoffset='20' y='648' xoffset='2' id='74' page='0' height='40' width='36'/>
+            <char xadvance='20' x='960' chnl='0' yoffset='31' y='724' xoffset='1' id='122' page='0' height='28' width='24'/>
+            <char xadvance='35' x='716' chnl='0' yoffset='20' y='648' xoffset='4' id='52' page='0' height='40' width='36'/>
+            <char xadvance='25' x='992' chnl='0' yoffset='20' y='48' xoffset='2' id='63' page='0' height='40' width='28'/>
+            <char xadvance='17' x='820' chnl='0' yoffset='13' y='780' xoffset='2' id='40' page='0' height='54' width='20'/>
+            <char xadvance='37' x='472' chnl='0' yoffset='19' y='848' xoffset='2' id='81' page='0' height='44' width='40'/>
+            <char xadvance='35' x='988' chnl='0' yoffset='20' y='484' xoffset='6' id='54' page='0' height='40' width='32'/>
+            <char xadvance='35' x='988' chnl='0' yoffset='20' y='140' xoffset='5' id='57' page='0' height='40' width='32'/>
+            <char xadvance='35' x='990' chnl='0' yoffset='20' y='442' xoffset='6' id='56' page='0' height='40' width='30'/>
+            <char xadvance='35' x='556' chnl='0' yoffset='20' y='856' xoffset='4' id='55' page='0' height='40' width='34'/>
+            <char xadvance='39' x='472' chnl='0' yoffset='18' y='530' xoffset='2' id='37' page='0' height='42' width='42'/>
+            <char xadvance='22' x='194' chnl='0' yoffset='22' y='930' xoffset='2' id='42' page='0' height='26' width='26'/>
+            <char xadvance='14' x='820' chnl='0' yoffset='14' y='892' xoffset='1' id='47' page='0' height='52' width='20'/>
+            <char xadvance='17' x='820' chnl='0' yoffset='13' y='724' xoffset='2' id='91' page='0' height='54' width='20'/>
+            <char xadvance='17' x='788' chnl='0' yoffset='13' y='848' xoffset='2' id='93' page='0' height='54' width='20'/>
+            <char xadvance='31' x='556' chnl='0' yoffset='20' y='814' xoffset='3' id='38' page='0' height='40' width='34'/>
+            <char xadvance='50' x='240' chnl='0' yoffset='18' y='418' xoffset='5' id='27969' page='0' height='42' width='48'/>
+            <char xadvance='50' x='856' chnl='0' yoffset='22' y='360' xoffset='6' id='27882' page='0' height='40' width='46'/>
+            <char xadvance='50' x='240' chnl='0' yoffset='16' y='368' xoffset='7' id='24904' page='0' height='48' width='42'/>
+            <char xadvance='50' x='240' chnl='0' yoffset='20' y='324' xoffset='6' id='27597' page='0' height='42' width='48'/>
+            <char xadvance='50' x='592' chnl='0' yoffset='19' y='668' xoffset='10' id='25163' page='0' height='46' width='36'/>
+            <char xadvance='50' x='498' chnl='0' yoffset='21' y='186' xoffset='4' id='28216' page='0' height='40' width='50'/>
+            <char xadvance='50' x='720' chnl='0' yoffset='21' y='484' xoffset='8' id='23376' page='0' height='42' width='40'/>
+            <char xadvance='50' x='946' chnl='0' yoffset='26' y='610' xoffset='10' id='21475' page='0' height='32' width='38'/>
+            <char xadvance='50' x='866' chnl='0' yoffset='19' y='94' xoffset='6' id='24456' page='0' height='44' width='46'/>
+            <char xadvance='50' x='100' chnl='0' yoffset='18' y='528' xoffset='7' id='25105' page='0' height='46' width='46'/>
+            <char xadvance='50' x='54' chnl='0' yoffset='17' y='608' xoffset='8' id='30495' page='0' height='48' width='44'/>
+            <char xadvance='50' x='592' chnl='0' yoffset='19' y='574' xoffset='10' id='26159' page='0' height='44' width='38'/>
+            <char xadvance='50' x='676' chnl='0' yoffset='20' y='484' xoffset='9' id='19978' page='0' height='40' width='42'/>
+            <char xadvance='50' x='240' chnl='0' yoffset='16' y='694' xoffset='9' id='36744' page='0' height='50' width='40'/>
+            <char xadvance='50' x='472' chnl='0' yoffset='19' y='802' xoffset='9' id='27424' page='0' height='44' width='40'/>
+            <char xadvance='50' x='676' chnl='0' yoffset='21' y='774' xoffset='10' id='20102' page='0' height='42' width='36'/>
+            <char xadvance='50' x='808' chnl='0' yoffset='20' y='360' xoffset='6' id='20320' page='0' height='40' width='46'/>
+            <char xadvance='50' x='240' chnl='0' yoffset='16' y='274' xoffset='8' id='20146' page='0' height='48' width='42'/>
+            <char xadvance='50' x='774' chnl='0' yoffset='23' y='528' xoffset='6' id='21543' page='0' height='36' width='46'/>
+            <char xadvance='50' x='380' chnl='0' yoffset='18' y='360' xoffset='7' id='20026' page='0' height='44' width='42'/>
+            <char xadvance='50' x='432' chnl='0' yoffset='21' y='272' xoffset='5' id='20160' page='0' height='42' width='46'/>
+            <char xadvance='50' x='716' chnl='0' yoffset='20' y='568' xoffset='9' id='20040' page='0' height='40' width='40'/>
+            <char xadvance='50' x='384' chnl='0' yoffset='21' y='272' xoffset='6' id='19981' page='0' height='42' width='46'/>
+            <char xadvance='50' x='556' chnl='0' yoffset='16' y='536' xoffset='10' id='22810' page='0' height='50' width='34'/>
+            <char xadvance='50' x='336' chnl='0' yoffset='16' y='564' xoffset='8' id='30475' page='0' height='48' width='40'/>
+            <char xadvance='50' x='194' chnl='0' yoffset='17' y='880' xoffset='9' id='24120' page='0' height='48' width='42'/>
+            <char xadvance='50' x='516' chnl='0' yoffset='18' y='772' xoffset='9' id='30005' page='0' height='46' width='38'/>
+            <char xadvance='50' x='336' chnl='0' yoffset='20' y='272' xoffset='6' id='35805' page='0' height='42' width='46'/>
+            <char xadvance='50' x='268' chnl='0' yoffset='42' y='930' xoffset='7' id='12290' page='0' height='20' width='20'/>
+            <char xadvance='50' x='472' chnl='0' yoffset='19' y='486' xoffset='9' id='38750' page='0' height='42' width='42'/>
+            <char xadvance='50' x='194' chnl='0' yoffset='19' y='140' xoffset='7' id='24694' page='0' height='46' width='44'/>
+            <char xadvance='50' x='968' chnl='0' yoffset='25' y='528' xoffset='4' id='24515' page='0' height='32' width='50'/>
+            <char xadvance='50' x='726' chnl='0' yoffset='24' y='528' xoffset='6' id='35753' page='0' height='36' width='46'/>
+            <char xadvance='50' x='54' chnl='0' yoffset='18' y='558' xoffset='7' id='35273' page='0' height='48' width='44'/>
+            <char xadvance='50' x='960' chnl='0' yoffset='21' y='228' xoffset='5' id='27515' page='0' height='42' width='46'/>
+            <char xadvance='50' x='818' chnl='0' yoffset='19' y='94' xoffset='6' id='35813' page='0' height='44' width='46'/>
+            <char xadvance='50' x='912' chnl='0' yoffset='21' y='228' xoffset='5' id='27963' page='0' height='42' width='46'/>
+            <char xadvance='50' x='632' chnl='0' yoffset='22' y='780' xoffset='11' id='21448' page='0' height='40' width='38'/>
+            <char xadvance='50' x='770' chnl='0' yoffset='19' y='94' xoffset='5' id='36825' page='0' height='44' width='46'/>
+            <char xadvance='50' x='722' chnl='0' yoffset='21' y='402' xoffset='5' id='20999' page='0' height='38' width='48'/>
+            <char xadvance='50' x='864' chnl='0' yoffset='19' y='228' xoffset='6' id='32456' page='0' height='42' width='46'/>
+            <char xadvance='50' x='722' chnl='0' yoffset='19' y='94' xoffset='6' id='32467' page='0' height='44' width='46'/>
+            <char xadvance='50' x='516' chnl='0' yoffset='17' y='724' xoffset='10' id='26463' page='0' height='46' width='38'/>
+            <char xadvance='50' x='2' chnl='0' yoffset='18' y='640' xoffset='4' id='20572' page='0' height='46' width='48'/>
+            <char xadvance='50' x='632' chnl='0' yoffset='23' y='610' xoffset='7' id='19979' page='0' height='38' width='42'/>
+            <char xadvance='50' x='424' chnl='0' yoffset='17' y='636' xoffset='10' id='21495' page='0' height='48' width='38'/>
+            <char xadvance='50' x='240' chnl='0' yoffset='20' y='230' xoffset='4' id='22806' page='0' height='42' width='48'/>
+            <char xadvance='50' x='2' chnl='0' yoffset='17' y='592' xoffset='4' id='34987' page='0' height='46' width='48'/>
+            <char xadvance='50' x='850' chnl='0' yoffset='21' y='186' xoffset='5' id='24576' page='0' height='40' width='48'/>
+            <char xadvance='50' x='2' chnl='0' yoffset='18' y='544' xoffset='6' id='30097' page='0' height='46' width='48'/>
+            <char xadvance='50' x='290' chnl='0' yoffset='19' y='796' xoffset='8' id='38599' page='0' height='46' width='42'/>
+            <char xadvance='50' x='240' chnl='0' yoffset='21' y='186' xoffset='4' id='20323' page='0' height='42' width='48'/>
+            <char xadvance='50' x='308' chnl='0' yoffset='20' y='2' xoffset='4' id='40836' page='0' height='44' width='50'/>
+            <char xadvance='50' x='54' chnl='0' yoffset='18' y='508' xoffset='7' id='21171' page='0' height='48' width='44'/>
+            <char xadvance='50' x='672' chnl='0' yoffset='22' y='402' xoffset='5' id='21160' page='0' height='38' width='48'/>
+            <char xadvance='50' x='968' chnl='0' yoffset='21' y='568' xoffset='7' id='21147' page='0' height='38' width='42'/>
+            <char xadvance='50' x='816' chnl='0' yoffset='20' y='228' xoffset='6' id='21170' page='0' height='42' width='46'/>
+            <char xadvance='50' x='2' chnl='0' yoffset='17' y='2' xoffset='4' id='29190' page='0' height='48' width='50'/>
+            <char xadvance='50' x='946' chnl='0' yoffset='22' y='442' xoffset='8' id='21521' page='0' height='40' width='42'/>
+            <char xadvance='50' x='622' chnl='0' yoffset='23' y='402' xoffset='5' id='27827' page='0' height='38' width='48'/>
+            <char xadvance='50' x='632' chnl='0' yoffset='19' y='650' xoffset='11' id='37324' page='0' height='44' width='36'/>
+            <char xadvance='50' x='800' chnl='0' yoffset='21' y='186' xoffset='6' id='25490' page='0' height='40' width='48'/>
+            <char xadvance='50' x='760' chnl='0' yoffset='22' y='360' xoffset='5' id='25918' page='0' height='40' width='46'/>
+            <char xadvance='50' x='54' chnl='0' yoffset='17' y='458' xoffset='7' id='23475' page='0' height='48' width='44'/>
+            <char xadvance='50' x='712' chnl='0' yoffset='22' y='360' xoffset='6' id='24039' page='0' height='40' width='46'/>
+            <char xadvance='50' x='816' chnl='0' yoffset='24' y='610' xoffset='9' id='20154' page='0' height='36' width='40'/>
+            <char xadvance='50' x='336' chnl='0' yoffset='17' y='514' xoffset='9' id='32610' page='0' height='48' width='40'/>
+            <char xadvance='50' x='556' chnl='0' yoffset='21' y='772' xoffset='11' id='21482' page='0' height='40' width='34'/>
+            <char xadvance='50' x='564' chnl='0' yoffset='20' y='316' xoffset='7' id='22240' page='0' height='42' width='44'/>
+            <char xadvance='50' x='938' chnl='0' yoffset='20' y='140' xoffset='4' id='25239' page='0' height='42' width='48'/>
+            <char xadvance='50' x='768' chnl='0' yoffset='19' y='228' xoffset='6' id='35758' page='0' height='42' width='46'/>
+            <char xadvance='50' x='100' chnl='0' yoffset='19' y='480' xoffset='6' id='36716' page='0' height='46' width='46'/>
+            <char xadvance='50' x='100' chnl='0' yoffset='18' y='432' xoffset='7' id='22522' page='0' height='46' width='46'/>
+            <char xadvance='50' x='380' chnl='0' yoffset='17' y='596' xoffset='9' id='38395' page='0' height='46' width='40'/>
+            <char xadvance='50' x='290' chnl='0' yoffset='21' y='228' xoffset='6' id='24320' page='0' height='44' width='44'/>
+            <char xadvance='50' x='240' chnl='0' yoffset='19' y='884' xoffset='7' id='24335' page='0' height='44' width='44'/>
+            <char xadvance='50' x='240' chnl='0' yoffset='18' y='838' xoffset='6' id='22312' page='0' height='44' width='44'/>
+            <char xadvance='50' x='918' chnl='0' yoffset='26' y='528' xoffset='5' id='32933' page='0' height='34' width='48'/>
+            <char xadvance='50' x='888' chnl='0' yoffset='20' y='140' xoffset='5' id='32982' page='0' height='42' width='48'/>
+            <char xadvance='50' x='556' chnl='0' yoffset='20' y='48' xoffset='4' id='32676' page='0' height='42' width='50'/>
+            <char xadvance='50' x='54' chnl='0' yoffset='16' y='408' xoffset='9' id='30427' page='0' height='48' width='44'/>
+            <char xadvance='50' x='750' chnl='0' yoffset='21' y='186' xoffset='5' id='34892' page='0' height='40' width='48'/>
+            <char xadvance='50' x='504' chnl='0' yoffset='21' y='48' xoffset='4' id='20581' page='0' height='42' width='50'/>
+            <char xadvance='50' x='148' chnl='0' yoffset='18' y='910' xoffset='6' id='24247' page='0' height='46' width='44'/>
+            <char xadvance='50' x='838' chnl='0' yoffset='21' y='140' xoffset='5' id='25253' page='0' height='42' width='48'/>
+            <char xadvance='50' x='720' chnl='0' yoffset='20' y='228' xoffset='6' id='21487' page='0' height='42' width='46'/>
+            <char xadvance='50' x='194' chnl='0' yoffset='17' y='830' xoffset='9' id='32032' page='0' height='48' width='42'/>
+            <char xadvance='50' x='54' chnl='0' yoffset='15' y='860' xoffset='6' id='39135' page='0' height='50' width='42'/>
+            <char xadvance='50' x='380' chnl='0' yoffset='18' y='548' xoffset='9' id='20027' page='0' height='46' width='40'/>
+            <char xadvance='50' x='592' chnl='0' yoffset='20' y='760' xoffset='11' id='20041' page='0' height='42' width='38'/>
+            <char xadvance='50' x='290' chnl='0' yoffset='18' y='748' xoffset='7' id='32773' page='0' height='46' width='42'/>
+            <char xadvance='50' x='194' chnl='0' yoffset='17' y='780' xoffset='8' id='33756' page='0' height='48' width='42'/>
+            <char xadvance='50' x='664' chnl='0' yoffset='21' y='360' xoffset='6' id='29615' page='0' height='40' width='46'/>
+            <char xadvance='50' x='788' chnl='0' yoffset='20' y='140' xoffset='5' id='20445' page='0' height='42' width='48'/>
+            <char xadvance='50' x='472' chnl='0' yoffset='20' y='442' xoffset='8' id='33021' page='0' height='42' width='42'/>
+            <char xadvance='50' x='472' chnl='0' yoffset='20' y='756' xoffset='8' id='24341' page='0' height='44' width='40'/>
+            <char xadvance='50' x='472' chnl='0' yoffset='20' y='710' xoffset='9' id='21457' page='0' height='44' width='40'/>
+            <char xadvance='50' x='248' chnl='0' yoffset='19' y='48' xoffset='5' id='20840' page='0' height='44' width='48'/>
+            <char xadvance='50' x='100' chnl='0' yoffset='19' y='384' xoffset='6' id='26262' page='0' height='46' width='46'/>
+            <char xadvance='50' x='2' chnl='0' yoffset='17' y='494' xoffset='7' id='21367' page='0' height='48' width='46'/>
+            <char xadvance='50' x='904' chnl='0' yoffset='25' y='610' xoffset='10' id='20837' page='0' height='34' width='40'/>
+            <char xadvance='50' x='516' chnl='0' yoffset='24' y='920' xoffset='10' id='20108' page='0' height='34' width='38'/>
+            <char xadvance='50' x='54' chnl='0' yoffset='17' y='358' xoffset='8' id='27687' page='0' height='48' width='44'/>
+            <char xadvance='50' x='148' chnl='0' yoffset='17' y='862' xoffset='8' id='27668' page='0' height='46' width='44'/>
+            <char xadvance='50' x='256' chnl='0' yoffset='21' y='2' xoffset='4' id='20505' page='0' height='44' width='50'/>
+            <char xadvance='50' x='54' chnl='0' yoffset='16' y='308' xoffset='8' id='20105' page='0' height='48' width='44'/>
+            <char xadvance='50' x='700' chnl='0' yoffset='22' y='186' xoffset='4' id='26495' page='0' height='40' width='48'/>
+            <char xadvance='50' x='674' chnl='0' yoffset='19' y='94' xoffset='4' id='20351' page='0' height='44' width='46'/>
+            <char xadvance='50' x='674' chnl='0' yoffset='21' y='568' xoffset='10' id='29992' page='0' height='40' width='40'/>
+            <char xadvance='50' x='902' chnl='0' yoffset='21' y='442' xoffset='7' id='22823' page='0' height='40' width='42'/>
+            <char xadvance='50' x='336' chnl='0' yoffset='16' y='666' xoffset='8' id='37327' page='0' height='50' width='38'/>
+            <char xadvance='50' x='336' chnl='0' yoffset='19' y='902' xoffset='7' id='22120' page='0' height='44' width='42'/>
+            <char xadvance='50' x='148' chnl='0' yoffset='18' y='814' xoffset='7' id='26367' page='0' height='46' width='44'/>
+            <char xadvance='50' x='290' chnl='0' yoffset='20' y='700' xoffset='8' id='35201' page='0' height='46' width='42'/>
+            <char xadvance='50' x='472' chnl='0' yoffset='18' y='664' xoffset='9' id='27714' page='0' height='44' width='40'/>
+            <char xadvance='50' x='616' chnl='0' yoffset='19' y='360' xoffset='7' id='27490' page='0' height='40' width='46'/>
+            <char xadvance='50' x='568' chnl='0' yoffset='20' y='360' xoffset='5' id='20184' page='0' height='40' width='46'/>
+            <char xadvance='50' x='54' chnl='0' yoffset='16' y='106' xoffset='8' id='36164' page='0' height='50' width='44'/>
+            <char xadvance='50' x='1000' chnl='0' yoffset='20' y='360' xoffset='22' id='65281' page='0' height='40' width='14'/>
+            <char xadvance='50' x='518' chnl='0' yoffset='20' y='316' xoffset='7' id='22826' page='0' height='42' width='44'/>
+            <char xadvance='50' x='198' chnl='0' yoffset='19' y='48' xoffset='5' id='29305' page='0' height='44' width='48'/>
+            <char xadvance='50' x='516' chnl='0' yoffset='16' y='676' xoffset='9' id='21517' page='0' height='46' width='38'/>
+            <char xadvance='50' x='520' chnl='0' yoffset='22' y='360' xoffset='6' id='38590' page='0' height='40' width='46'/>
+            <char xadvance='50' x='2' chnl='0' yoffset='17' y='444' xoffset='6' id='36935' page='0' height='48' width='46'/>
+            <char xadvance='50' x='148' chnl='0' yoffset='17' y='766' xoffset='5' id='36861' page='0' height='46' width='44'/>
+            <char xadvance='50' x='148' chnl='0' yoffset='18' y='48' xoffset='6' id='36394' page='0' height='44' width='48'/>
+            <char xadvance='50' x='148' chnl='0' yoffset='19' y='718' xoffset='6' id='36947' page='0' height='46' width='44'/>
+            <char xadvance='50' x='626' chnl='0' yoffset='18' y='94' xoffset='5' id='22604' page='0' height='44' width='46'/>
+            <char xadvance='50' x='148' chnl='0' yoffset='18' y='670' xoffset='6' id='26041' page='0' height='46' width='44'/>
+            <char xadvance='50' x='194' chnl='0' yoffset='16' y='730' xoffset='8' id='20107' page='0' height='48' width='42'/>
+            <char xadvance='50' x='472' chnl='0' yoffset='22' y='360' xoffset='6' id='25925' page='0' height='40' width='46'/>
+            <char xadvance='50' x='578' chnl='0' yoffset='18' y='94' xoffset='6' id='22256' page='0' height='44' width='46'/>
+            <char xadvance='50' x='424' chnl='0' yoffset='21' y='906' xoffset='7' id='21518' page='0' height='42' width='42'/>
+            <char xadvance='50' x='100' chnl='0' yoffset='19' y='336' xoffset='5' id='32493' page='0' height='46' width='46'/>
+            <char xadvance='50' x='738' chnl='0' yoffset='18' y='140' xoffset='5' id='25214' page='0' height='42' width='48'/>
+            <char xadvance='50' x='516' chnl='0' yoffset='22' y='442' xoffset='7' id='21040' page='0' height='40' width='44'/>
+            <char xadvance='50' x='424' chnl='0' yoffset='17' y='586' xoffset='10' id='23548' page='0' height='48' width='38'/>
+            <char xadvance='50' x='424' chnl='0' yoffset='23' y='360' xoffset='5' id='33268' page='0' height='40' width='46'/>
+            <char xadvance='50' x='944' chnl='0' yoffset='21' y='316' xoffset='6' id='21644' page='0' height='40' width='46'/>
+            <char xadvance='50' x='962' chnl='0' yoffset='20' y='2' xoffset='5' id='28431' page='0' height='44' width='48'/>
+            <char xadvance='50' x='672' chnl='0' yoffset='19' y='228' xoffset='5' id='27700' page='0' height='42' width='46'/>
+            <char xadvance='50' x='608' chnl='0' yoffset='23' y='442' xoffset='6' id='32418' page='0' height='38' width='46'/>
+            <char xadvance='50' x='556' chnl='0' yoffset='17' y='588' xoffset='11' id='33394' page='0' height='46' width='34'/>
+            <char xadvance='50' x='2' chnl='0' yoffset='16' y='102' xoffset='6' id='35686' page='0' height='50' width='46'/>
+            <char xadvance='50' x='290' chnl='0' yoffset='18' y='652' xoffset='8' id='21578' page='0' height='46' width='42'/>
+            <char xadvance='50' x='2' chnl='0' yoffset='18' y='396' xoffset='4' id='37117' page='0' height='46' width='48'/>
+            <char xadvance='50' x='100' chnl='0' yoffset='17' y='288' xoffset='4' id='30127' page='0' height='46' width='46'/>
+            <char xadvance='50' x='222' chnl='0' yoffset='45' y='930' xoffset='4' id='65292' page='0' height='20' width='14'/>
+            <char xadvance='50' x='572' chnl='0' yoffset='21' y='402' xoffset='4' id='20182' page='0' height='38' width='48'/>
+            <char xadvance='50' x='688' chnl='0' yoffset='19' y='140' xoffset='4' id='20204' page='0' height='42' width='48'/>
+            <char xadvance='50' x='424' chnl='0' yoffset='16' y='536' xoffset='9' id='34989' page='0' height='48' width='38'/>
+            <char xadvance='50' x='472' chnl='0' yoffset='19' y='316' xoffset='6' id='20987' page='0' height='42' width='44'/>
+            <char xadvance='50' x='592' chnl='0' yoffset='21' y='716' xoffset='9' id='26080' page='0' height='42' width='38'/>
+            <char xadvance='50' x='336' chnl='0' yoffset='17' y='464' xoffset='9' id='36764' page='0' height='48' width='40'/>
+            <char xadvance='50' x='650' chnl='0' yoffset='20' y='186' xoffset='5' id='26449' page='0' height='40' width='48'/>
+            <char xadvance='50' x='336' chnl='0' yoffset='19' y='856' xoffset='8' id='27665' page='0' height='44' width='42'/>
+            <char xadvance='50' x='678' chnl='0' yoffset='22' y='528' xoffset='6' id='20843' page='0' height='36' width='46'/>
+            <char xadvance='50' x='896' chnl='0' yoffset='21' y='316' xoffset='7' id='21350' page='0' height='40' width='46'/>
+            <char xadvance='50' x='2' chnl='0' yoffset='18' y='348' xoffset='5' id='28145' page='0' height='46' width='48'/>
+            <char xadvance='50' x='848' chnl='0' yoffset='21' y='316' xoffset='7' id='35775' page='0' height='40' width='46'/>
+            <char xadvance='50' x='530' chnl='0' yoffset='20' y='94' xoffset='6' id='35848' page='0' height='44' width='46'/>
+            <char xadvance='50' x='624' chnl='0' yoffset='20' y='228' xoffset='5' id='29983' page='0' height='42' width='46'/>
+            <char xadvance='50' x='100' chnl='0' yoffset='17' y='240' xoffset='7' id='21629' page='0' height='46' width='46'/>
+            <char xadvance='50' x='638' chnl='0' yoffset='20' y='140' xoffset='4' id='21046' page='0' height='42' width='48'/>
+            <char xadvance='50' x='482' chnl='0' yoffset='19' y='94' xoffset='5' id='36896' page='0' height='44' width='46'/>
+            <char xadvance='50' x='912' chnl='0' yoffset='20' y='2' xoffset='4' id='39063' page='0' height='44' width='48'/>
+            <char xadvance='50' x='858' chnl='0' yoffset='26' y='610' xoffset='8' id='39134' page='0' height='32' width='44'/>
+            <char xadvance='50' x='452' chnl='0' yoffset='20' y='48' xoffset='4' id='33337' page='0' height='42' width='50'/>
+            <char xadvance='50' x='336' chnl='0' yoffset='19' y='810' xoffset='7' id='20808' page='0' height='44' width='42'/>
+            <char xadvance='50' x='576' chnl='0' yoffset='21' y='228' xoffset='7' id='24656' page='0' height='42' width='46'/>
+            <char xadvance='50' x='148' chnl='0' yoffset='17' y='622' xoffset='7' id='21435' page='0' height='46' width='44'/>
+            <char xadvance='50' x='522' chnl='0' yoffset='23' y='402' xoffset='5' id='37027' page='0' height='38' width='48'/>
+            <char xadvance='50' x='336' chnl='0' yoffset='16' y='414' xoffset='8' id='24847' page='0' height='48' width='40'/>
+            <char xadvance='50' x='336' chnl='0' yoffset='15' y='614' xoffset='10' id='21916' page='0' height='50' width='38'/>
+            <char xadvance='50' x='722' chnl='0' yoffset='23' y='610' xoffset='7' id='35759' page='0' height='36' width='44'/>
+            <char xadvance='50' x='194' chnl='0' yoffset='16' y='680' xoffset='8' id='39640' page='0' height='48' width='42'/>
+            <char xadvance='50' x='434' chnl='0' yoffset='19' y='94' xoffset='5' id='32431' page='0' height='44' width='46'/>
+            <char xadvance='50' x='194' chnl='0' yoffset='17' y='630' xoffset='7' id='24230' page='0' height='48' width='42'/>
+            <char xadvance='50' x='592' chnl='0' yoffset='20' y='528' xoffset='10' id='40657' page='0' height='44' width='38'/>
+            <char xadvance='50' x='862' chnl='0' yoffset='19' y='2' xoffset='5' id='21560' page='0' height='44' width='48'/>
+            <char xadvance='50' x='634' chnl='0' yoffset='20' y='484' xoffset='9' id='30334' page='0' height='42' width='40'/>
+            <char xadvance='50' x='676' chnl='0' yoffset='24' y='858' xoffset='9' id='19975' page='0' height='38' width='38'/>
+            <char xadvance='50' x='336' chnl='0' yoffset='19' y='764' xoffset='9' id='32705' page='0' height='44' width='42'/>
+            <char xadvance='50' x='240' chnl='0' yoffset='18' y='792' xoffset='7' id='21069' page='0' height='44' width='44'/>
+            <char xadvance='50' x='290' chnl='0' yoffset='17' y='604' xoffset='8' id='31354' page='0' height='46' width='42'/>
+            <char xadvance='50' x='588' chnl='0' yoffset='20' y='140' xoffset='5' id='26053' page='0' height='42' width='48'/>
+            <char xadvance='50' x='148' chnl='0' yoffset='17' y='574' xoffset='7' id='26368' page='0' height='46' width='44'/>
+            <char xadvance='50' x='812' chnl='0' yoffset='18' y='2' xoffset='5' id='22987' page='0' height='44' width='48'/>
+            <char xadvance='50' x='446' chnl='0' yoffset='21' y='186' xoffset='4' id='24494' page='0' height='40' width='50'/>
+            <char xadvance='50' x='380' chnl='0' yoffset='18' y='500' xoffset='9' id='21490' page='0' height='46' width='40'/>
+            <char xadvance='50' x='400' chnl='0' yoffset='20' y='48' xoffset='4' id='28888' page='0' height='42' width='50'/>
+            <char xadvance='50' x='762' chnl='0' yoffset='19' y='2' xoffset='4' id='28953' page='0' height='44' width='48'/>
+            <char xadvance='50' x='380' chnl='0' yoffset='19' y='452' xoffset='9' id='19987' page='0' height='46' width='40'/>
+            <char xadvance='50' x='148' chnl='0' yoffset='18' y='526' xoffset='7' id='23478' page='0' height='46' width='44'/>
+            <char xadvance='50' x='600' chnl='0' yoffset='20' y='186' xoffset='5' id='31216' page='0' height='40' width='48'/>
+            <char xadvance='50' x='290' chnl='0' yoffset='18' y='556' xoffset='10' id='22855' page='0' height='46' width='42'/>
+            <char xadvance='50' x='386' chnl='0' yoffset='18' y='94' xoffset='6' id='22269' page='0' height='44' width='46'/>
+            <char xadvance='50' x='194' chnl='0' yoffset='17' y='580' xoffset='9' id='40644' page='0' height='48' width='42'/>
+            <char xadvance='50' x='204' chnl='0' yoffset='18' y='2' xoffset='3' id='20648' page='0' height='44' width='50'/>
+            <char xadvance='50' x='336' chnl='0' yoffset='17' y='364' xoffset='11' id='22791' page='0' height='48' width='40'/>
+            <char xadvance='50' x='528' chnl='0' yoffset='19' y='228' xoffset='7' id='20943' page='0' height='42' width='46'/>
+            <char xadvance='50' x='100' chnl='0' yoffset='18' y='192' xoffset='6' id='23569' page='0' height='46' width='46'/>
+            <char xadvance='50' x='712' chnl='0' yoffset='18' y='2' xoffset='5' id='36234' page='0' height='44' width='48'/>
+            <char xadvance='50' x='2' chnl='0' yoffset='18' y='300' xoffset='5' id='31232' page='0' height='46' width='48'/>
+            <char xadvance='50' x='662' chnl='0' yoffset='18' y='2' xoffset='5' id='29664' page='0' height='44' width='48'/>
+            <char xadvance='50' x='100' chnl='0' yoffset='17' y='144' xoffset='7' id='23453' page='0' height='46' width='46'/>
+            <char xadvance='50' x='54' chnl='0' yoffset='16' y='54' xoffset='6' id='39654' page='0' height='50' width='44'/>
+            <char xadvance='50' x='338' chnl='0' yoffset='18' y='94' xoffset='6' id='36215' page='0' height='44' width='46'/>
+            <char xadvance='50' x='480' chnl='0' yoffset='19' y='228' xoffset='5' id='38075' page='0' height='42' width='46'/>
+            <char xadvance='50' x='426' chnl='0' yoffset='22' y='316' xoffset='6' id='30707' page='0' height='42' width='44'/>
+            <char xadvance='50' x='194' chnl='0' yoffset='17' y='530' xoffset='8' id='22797' page='0' height='48' width='42'/>
+            <char xadvance='50' x='290' chnl='0' yoffset='19' y='94' xoffset='5' id='36820' page='0' height='44' width='46'/>
+            <char xadvance='50' x='394' chnl='0' yoffset='21' y='186' xoffset='4' id='31185' page='0' height='40' width='50'/>
+            <char xadvance='50' x='242' chnl='0' yoffset='19' y='94' xoffset='6' id='25216' page='0' height='44' width='46'/>
+            <char xadvance='50' x='194' chnl='0' yoffset='19' y='94' xoffset='5' id='38134' page='0' height='44' width='46'/>
+            <char xadvance='50' x='424' chnl='0' yoffset='22' y='862' xoffset='8' id='20803' page='0' height='42' width='42'/>
+            <char xadvance='50' x='802' chnl='0' yoffset='22' y='442' xoffset='6' id='21152' page='0' height='36' width='48'/>
+            <char xadvance='50' x='632' chnl='0' yoffset='21' y='738' xoffset='11' id='30333' page='0' height='40' width='38'/>
+            <char xadvance='50' x='944' chnl='0' yoffset='19' y='48' xoffset='6' id='24819' page='0' height='44' width='46'/>
+            <char xadvance='50' x='472' chnl='0' yoffset='23' y='402' xoffset='5' id='20294' page='0' height='38' width='48'/>
+            <char xadvance='50' x='896' chnl='0' yoffset='21' y='48' xoffset='6' id='27809' page='0' height='44' width='46'/>
+            <char xadvance='50' x='194' chnl='0' yoffset='16' y='480' xoffset='8' id='31532' page='0' height='48' width='42'/>
+            <char xadvance='50' x='752' chnl='0' yoffset='23' y='442' xoffset='5' id='25209' page='0' height='36' width='48'/>
+            <char xadvance='50' x='194' chnl='0' yoffset='17' y='430' xoffset='7' id='24223' page='0' height='48' width='42'/>
+            <char xadvance='50' x='152' chnl='0' yoffset='20' y='2' xoffset='3' id='37051' page='0' height='44' width='50'/>
+            <char xadvance='50' x='290' chnl='0' yoffset='18' y='508' xoffset='6' id='23621' page='0' height='46' width='42'/>
+            <char xadvance='50' x='538' chnl='0' yoffset='19' y='140' xoffset='4' id='29399' page='0' height='42' width='48'/>
+            <char xadvance='50' x='348' chnl='0' yoffset='20' y='48' xoffset='4' id='30896' page='0' height='42' width='50'/>
+            <char xadvance='50' x='336' chnl='0' yoffset='18' y='718' xoffset='7' id='23427' page='0' height='44' width='42'/>
+            <char xadvance='50' x='556' chnl='0' yoffset='16' y='484' xoffset='13' id='21191' page='0' height='50' width='34'/>
+            <char xadvance='50' x='848' chnl='0' yoffset='19' y='48' xoffset='7' id='25954' page='0' height='44' width='46'/>
+            <char xadvance='50' x='632' chnl='0' yoffset='21' y='568' xoffset='9' id='21516' page='0' height='40' width='40'/>
+            <char xadvance='50' x='488' chnl='0' yoffset='19' y='140' xoffset='5' id='35797' page='0' height='42' width='48'/>
+            <char xadvance='50' x='592' chnl='0' yoffset='19' y='484' xoffset='9' id='20986' page='0' height='42' width='40'/>
+            <char xadvance='50' x='800' chnl='0' yoffset='20' y='316' xoffset='6' id='35752' page='0' height='40' width='46'/>
+            <char xadvance='50' x='432' chnl='0' yoffset='19' y='228' xoffset='7' id='35770' page='0' height='42' width='46'/>
+            <char xadvance='50' x='240' chnl='0' yoffset='19' y='746' xoffset='8' id='22278' page='0' height='44' width='44'/>
+            <char xadvance='50' x='716' chnl='0' yoffset='23' y='690' xoffset='11' id='20960' page='0' height='38' width='36'/>
+            <char xadvance='50' x='384' chnl='0' yoffset='20' y='228' xoffset='6' id='20844' page='0' height='42' width='46'/>
+            <char xadvance='50' x='424' chnl='0' yoffset='20' y='818' xoffset='9' id='20877' page='0' height='42' width='42'/>
+            <char xadvance='50' x='100' chnl='0' yoffset='19' y='96' xoffset='6' id='25972' page='0' height='46' width='46'/>
+            <char xadvance='50' x='100' chnl='0' yoffset='18' y='2' xoffset='4' id='20010' page='0' height='44' width='50'/>
+            <char xadvance='50' x='818' chnl='0' yoffset='21' y='272' xoffset='5' id='22478' page='0' height='38' width='50'/>
+            <char xadvance='50' x='148' chnl='0' yoffset='17' y='478' xoffset='8' id='24066' page='0' height='46' width='44'/>
+            <char xadvance='50' x='972' chnl='0' yoffset='22' y='402' xoffset='6' id='23567' page='0' height='38' width='46'/>
+            <char xadvance='50' x='380' chnl='0' yoffset='20' y='316' xoffset='7' id='23617' page='0' height='42' width='44'/>
+            <char xadvance='50' x='612' chnl='0' yoffset='18' y='2' xoffset='6' id='23401' page='0' height='44' width='48'/>
+            <char xadvance='50' x='800' chnl='0' yoffset='18' y='48' xoffset='6' id='20914' page='0' height='44' width='46'/>
+            <char xadvance='50' x='562' chnl='0' yoffset='19' y='2' xoffset='5' id='36827' page='0' height='44' width='48'/>
+            <char xadvance='50' x='512' chnl='0' yoffset='19' y='2' xoffset='5' id='38498' page='0' height='44' width='48'/>
+            <char xadvance='50' x='438' chnl='0' yoffset='21' y='140' xoffset='5' id='25317' page='0' height='42' width='48'/>
+            <char xadvance='50' x='516' chnl='0' yoffset='18' y='628' xoffset='10' id='33258' page='0' height='46' width='38'/>
+            <char xadvance='50' x='556' chnl='0' yoffset='20' y='684' xoffset='12' id='24049' page='0' height='42' width='34'/>
+            <char xadvance='50' x='592' chnl='0' yoffset='18' y='620' xoffset='11' id='39029' page='0' height='46' width='36'/>
+            <char xadvance='50' x='462' chnl='0' yoffset='18' y='2' xoffset='5' id='20540' page='0' height='44' width='48'/>
+            <char xadvance='50' x='412' chnl='0' yoffset='19' y='2' xoffset='5' id='38065' page='0' height='44' width='48'/>
+            <char xadvance='50' x='550' chnl='0' yoffset='22' y='186' xoffset='4' id='39536' page='0' height='40' width='48'/>
+            <char xadvance='50' x='290' chnl='0' yoffset='18' y='460' xoffset='9' id='23581' page='0' height='46' width='42'/>
+            <char xadvance='50' x='924' chnl='0' yoffset='22' y='402' xoffset='6' id='19990' page='0' height='38' width='46'/>
+            <char xadvance='50' x='148' chnl='0' yoffset='18' y='430' xoffset='7' id='30028' page='0' height='46' width='44'/>
+            <char xadvance='50' x='632' chnl='0' yoffset='22' y='696' xoffset='11' id='29579' page='0' height='40' width='38'/>
+            <char xadvance='50' x='424' chnl='0' yoffset='16' y='486' xoffset='10' id='30343' page='0' height='48' width='38'/>
+            <char xadvance='50' x='942' chnl='0' yoffset='23' y='484' xoffset='8' id='27426' page='0' height='38' width='44'/>
+            <char xadvance='50' x='148' chnl='0' yoffset='16' y='382' xoffset='7' id='24231' page='0' height='46' width='44'/>
+            <char xadvance='50' x='388' chnl='0' yoffset='20' y='140' xoffset='5' id='24314' page='0' height='42' width='48'/>
+            <char xadvance='50' x='2' chnl='0' yoffset='16' y='250' xoffset='5' id='21338' page='0' height='48' width='46'/>
+            <char xadvance='50' x='2' chnl='0' yoffset='18' y='202' xoffset='5' id='39302' page='0' height='46' width='48'/>
+            <char xadvance='50' x='676' chnl='0' yoffset='23' y='610' xoffset='8' id='23545' page='0' height='36' width='44'/>
+            <char xadvance='50' x='338' chnl='0' yoffset='20' y='140' xoffset='4' id='32852' page='0' height='42' width='48'/>
+            <char xadvance='50' x='752' chnl='0' yoffset='19' y='48' xoffset='6' id='21512' page='0' height='44' width='46'/>
+            <char xadvance='50' x='54' chnl='0' yoffset='17' y='258' xoffset='7' id='23459' page='0' height='48' width='44'/>
+            <char xadvance='50' x='148' chnl='0' yoffset='17' y='334' xoffset='6' id='24067' page='0' height='46' width='44'/>
+            <char xadvance='50' x='290' chnl='0' yoffset='18' y='412' xoffset='8' id='24180' page='0' height='46' width='42'/>
+            <char xadvance='50' x='676' chnl='0' yoffset='23' y='818' xoffset='11' id='26376' page='0' height='38' width='38'/>
+            <char xadvance='50' x='676' chnl='0' yoffset='20' y='898' xoffset='11' id='26085' page='0' height='40' width='36'/>
+            <char xadvance='50' x='704' chnl='0' yoffset='19' y='48' xoffset='5' id='25552' page='0' height='44' width='46'/>
+            <char xadvance='50' x='2' chnl='0' yoffset='17' y='154' xoffset='5' id='36857' page='0' height='46' width='48'/>
+            <char xadvance='50' x='424' chnl='0' yoffset='20' y='774' xoffset='6' id='21382' page='0' height='42' width='42'/>
+            <char xadvance='50' x='516' chnl='0' yoffset='18' y='580' xoffset='11' id='20070' page='0' height='46' width='38'/>
+            <char xadvance='50' x='54' chnl='0' yoffset='15' y='2' xoffset='7' id='31456' page='0' height='50' width='44'/>
+            <char xadvance='50' x='896' chnl='0' yoffset='22' y='484' xoffset='7' id='35760' page='0' height='38' width='44'/>
+            <char xadvance='50' x='656' chnl='0' yoffset='20' y='48' xoffset='8' id='36733' page='0' height='44' width='46'/>
+            <char xadvance='50' x='752' chnl='0' yoffset='21' y='316' xoffset='6' id='25919' page='0' height='40' width='46'/>
+            <char xadvance='50' x='148' chnl='0' yoffset='16' y='286' xoffset='7' id='24220' page='0' height='46' width='44'/>
+            <char xadvance='50' x='288' chnl='0' yoffset='21' y='140' xoffset='7' id='25252' page='0' height='42' width='48'/>
+            <char xadvance='50' x='380' chnl='0' yoffset='16' y='886' xoffset='9' id='20139' page='0' height='48' width='38'/>
+            <char xadvance='50' x='342' chnl='0' yoffset='22' y='186' xoffset='4' id='24618' page='0' height='40' width='50'/>
+            <char xadvance='50' x='472' chnl='0' yoffset='20' y='618' xoffset='9' id='34920' page='0' height='44' width='40'/>
+            <char xadvance='50' x='968' chnl='0' yoffset='21' y='272' xoffset='6' id='31034' page='0' height='42' width='44'/>
+            <char xadvance='50' x='54' chnl='0' yoffset='15' y='808' xoffset='7' id='24076' page='0' height='50' width='42'/>
+            <char xadvance='50' x='148' chnl='0' yoffset='18' y='238' xoffset='7' id='26395' page='0' height='46' width='44'/>
+            <char xadvance='50' x='54' chnl='0' yoffset='18' y='912' xoffset='8' id='21697' page='0' height='44' width='44'/>
+            <char xadvance='50' x='100' chnl='0' yoffset='17' y='48' xoffset='6' id='20247' page='0' height='46' width='46'/>
+            <char xadvance='50' x='54' chnl='0' yoffset='16' y='208' xoffset='8' id='33487' page='0' height='48' width='44'/>
+            <char xadvance='50' x='290' chnl='0' yoffset='21' y='186' xoffset='5' id='37266' page='0' height='40' width='50'/>
+            <char xadvance='50' x='54' chnl='0' yoffset='16' y='158' xoffset='6' id='33719' page='0' height='48' width='44'/>
+            <char xadvance='50' x='424' chnl='0' yoffset='20' y='730' xoffset='8' id='20998' page='0' height='42' width='42'/>
+            <char xadvance='50' x='148' chnl='0' yoffset='18' y='190' xoffset='6' id='23618' page='0' height='46' width='44'/>
+            <char xadvance='50' x='424' chnl='0' yoffset='20' y='686' xoffset='8' id='38754' page='0' height='42' width='42'/>
+            <char xadvance='50' x='516' chnl='0' yoffset='17' y='532' xoffset='9' id='37325' page='0' height='46' width='38'/>
+            <char xadvance='50' x='148' chnl='0' yoffset='17' y='142' xoffset='7' id='23450' page='0' height='46' width='44'/>
+            <char xadvance='50' x='148' chnl='0' yoffset='18' y='94' xoffset='7' id='26412' page='0' height='46' width='44'/>
+            <char xadvance='50' x='608' chnl='0' yoffset='19' y='48' xoffset='6' id='35268' page='0' height='44' width='46'/>
+            <char xadvance='50' x='850' chnl='0' yoffset='24' y='484' xoffset='7' id='21017' page='0' height='38' width='44'/>
+            <char xadvance='18' x='982' chnl='0' yoffset='20' y='764' xoffset='2' id='94' page='0' height='18' width='22'/>
+            <char xadvance='31' x='516' chnl='0' yoffset='15' y='868' xoffset='2' id='36' page='0' height='50' width='34'/>
+            <char xadvance='50' x='704' chnl='0' yoffset='22' y='316' xoffset='5' id='22920' page='0' height='40' width='46'/>
+            <char xadvance='50' x='516' chnl='0' yoffset='20' y='484' xoffset='11' id='34507' page='0' height='46' width='38'/>
+            <char xadvance='50' x='100' chnl='0' yoffset='19' y='868' xoffset='7' id='21035' page='0' height='44' width='46'/>
+            <char xadvance='50' x='656' chnl='0' yoffset='22' y='316' xoffset='6' id='29609' page='0' height='40' width='46'/>
+            <char xadvance='50' x='380' chnl='0' yoffset='16' y='836' xoffset='10' id='21334' page='0' height='48' width='38'/>
+            <char xadvance='0' x='2' chnl='0' yoffset='54' y='950' xoffset='0' id='10' page='0' height='6' width='6'/>
+            <char xadvance='50' x='472' chnl='0' yoffset='17' y='894' xoffset='12' id='20135' page='0' height='46' width='38'/>
+            <char xadvance='50' x='922' chnl='0' yoffset='21' y='272' xoffset='7' id='35774' page='0' height='42' width='44'/>
+            <char xadvance='50' x='194' chnl='0' yoffset='17' y='380' xoffset='9' id='32622' page='0' height='48' width='42'/>
+            <char xadvance='50' x='336' chnl='0' yoffset='20' y='228' xoffset='6' id='32479' page='0' height='42' width='46'/>
+            <char xadvance='50' x='100' chnl='0' yoffset='19' y='914' xoffset='6' id='35745' page='0' height='42' width='46'/>
+       </chars>
+   </font>

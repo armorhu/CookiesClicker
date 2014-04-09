@@ -1,18 +1,22 @@
 package agame.endless.services.assets
 {
+	import flash.display.Bitmap;
 	import flash.filesystem.File;
 	import flash.media.SoundChannel;
 	import flash.media.SoundTransform;
 	import flash.utils.ByteArray;
-	
+
 	import agame.endless.EndlessApplication;
 	import agame.endless.configs.AppConfig;
 	import agame.endless.configs.lang.LangConfigModel;
 	import agame.endless.configs.news.NewsConfigModel;
-	
+
 	import starling.display.DisplayObject;
 	import starling.events.Event;
 	import starling.extension.starlingide.display.loader.StarlingLoader;
+	import starling.extension.starlingide.display.textfield.StarlingTextField;
+	import starling.text.BitmapFont;
+	import starling.text.TextField;
 	import starling.textures.Texture;
 	import starling.utils.AssetManager;
 
@@ -81,16 +85,32 @@ package agame.endless.services.assets
 			main.addEventListener(Event.COMPLETE, loadComplete);
 		}
 
+		private function registeBitmapFont():void
+		{
+			//注册位图字体
+			var xml:XML=XML(new EmbedFont.BritannicXML());
+
+//			var bitmapFont:BitmapFont=new BitmapFont(getLinkageTexture('fonts'), xml);
+
+			var bitmap:Bitmap=new EmbedFont.BitmapChars();
+			var bitmapFont:BitmapFont=new BitmapFont(Texture.fromBitmap(bitmap), xml);
+
+			Assets.FontName='fontsss';
+			StarlingTextField.registerBitmapFont(bitmapFont, Assets.FontName);
+			TextField.registerBitmapFont(bitmapFont, Assets.FontName);
+		}
+
 		public function loadComplete(evt:Event):void
 		{
 			removeByteArray('iphone_pack');
+			registeBitmapFont();
 			dispatchEventWith(Event.COMPLETE);
 		}
 
 
 		override public function playSound(name:String, startTime:Number=0, loops:int=0, transform:SoundTransform=null):SoundChannel
 		{
-			return null;
+//			return null;
 			return super.playSound(name, startTime, loops, transform);
 		}
 	}

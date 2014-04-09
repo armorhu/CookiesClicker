@@ -17,6 +17,7 @@ package agame.endless.modules.main.view
 	import feathers.layout.TiledRowsLayout;
 
 	import starling.core.Starling;
+	import starling.display.BlendMode;
 	import starling.display.DisplayObject;
 	import starling.display.Image;
 	import starling.display.QuadBatch;
@@ -58,8 +59,11 @@ package agame.endless.modules.main.view
 
 		private function initiliaze():void
 		{
-//			new MetalWorksMobileTheme;
-//			new MinimalMobileTheme;
+			var bg:Image=new Image(Assets.current.getLinkageTexture('bgBlue'));
+			bg.width=Starling.current.stage.stageWidth;
+			bg.height=Starling.current.stage.stageHeight;
+			addChild(bg);
+			bg.blendMode=BlendMode.NONE;
 
 			content=Assets.current.getLinkageInstance('endless.ui.MainUIView') as StarlingMovieClip;
 			addChild(content);
@@ -89,15 +93,14 @@ package agame.endless.modules.main.view
 			cps=content.cookieCenter.cpsLabel;
 			cps.fontName=Assets.FontName;
 			cps.autoScale=true;
+			(content.newsTickerLabel as StarlingTextField).fontName=Assets.FontName;
+			(content.newsTickerLabel as StarlingTextField).autoScale=true;
+
 			_shine=content.cookieCenter.shine;
 			_shine2=content.cookieCenter.shine2;
-			_shine.alpha=0.2;
-			_shine2.alpha=0.2;
 			_shine.flatten();
 			_shine2.flatten();
 
-			(content.newsTickerLabel as StarlingTextField).fontName=Assets.FontName;
-			(content.newsTickerLabel as StarlingTextField).autoScale=true;
 
 			initMainStyle();
 
@@ -144,10 +147,8 @@ package agame.endless.modules.main.view
 			_buttomCanvas.reset();
 			_upCanvas.reset();
 			_textCanvas.reset();
-
 			_cookieParticleSystem.particlesDraw(_buttomCanvas, _upCanvas, _textCanvas);
 			drawCurser();
-
 			_shine.rotation+=0.02;
 			_shine2.rotation-=0.02;
 		}

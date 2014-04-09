@@ -1,9 +1,9 @@
 package agame.endless.modules.main.model.objects
 {
 	import com.agame.services.csv.CSVFile;
-	
-	import agame.endless.configs.objects.ObjectsConfig;
+
 	import agame.endless.configs.lang.Lang;
+	import agame.endless.configs.objects.ObjectsConfig;
 	import agame.endless.modules.main.model.Game;
 	import agame.endless.modules.main.model.MainModel;
 
@@ -27,8 +27,9 @@ package agame.endless.modules.main.model.objects
 		public var amount:int=0;
 		public var bought:int=0;
 
+		public var dirty:Boolean=true;
 		public var lock:Boolean;
-		public var disable:Boolean;
+		public var canBuy:Boolean;
 		public var toggledOff:Boolean;
 
 		public static var ObjectDatasN:int=0;
@@ -58,6 +59,30 @@ package agame.endless.modules.main.model.objects
 			ObjectDatasN++;
 		}
 
+		public function setLock(value:Boolean):void
+		{
+			if (lock == value)
+				return;
+			lock=value;
+			dirty=true;
+		}
+
+		public function setCanbuy(value:Boolean):void
+		{
+			if (canBuy == value)
+				return;
+			canBuy=value;
+			dirty=true;
+		}
+
+		public function setToggleOff(value:Boolean):void
+		{
+			if (toggledOff == value)
+				return;
+			toggledOff=value;
+			dirty=true;
+		}
+
 		public function getPrice():Number
 		{
 			var price:Number=this.basePrice * Math.pow(Game.priceIncrease, this.amount);
@@ -83,6 +108,7 @@ package agame.endless.modules.main.model.objects
 				Game.storeToRebuild=1;
 				Game.recalculateGains=1;
 				Game.BuildingsOwned++;
+				dirty=true;
 			}
 		}
 
@@ -109,6 +135,7 @@ package agame.endless.modules.main.model.objects
 				Game.storeToRebuild=1;
 				Game.recalculateGains=1;
 				Game.BuildingsOwned--;
+				dirty=true;
 			}
 		}
 

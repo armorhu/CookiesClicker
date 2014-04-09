@@ -10,6 +10,7 @@ package agame.endless.modules.main.view.objects
 	import agame.endless.services.assets.Assets;
 	import agame.endless.services.feathers.itemRender.CustomItemRender;
 
+	import starling.display.DisplayObject;
 	import starling.display.Image;
 	import starling.extension.starlingide.display.movieclip.StarlingMovieClip;
 	import starling.extension.starlingide.display.textfield.StarlingTextField;
@@ -23,6 +24,7 @@ package agame.endless.modules.main.view.objects
 
 		private var _icon:Image;
 		private var view:StarlingMovieClip;
+		private var touchMask:DisplayObject;
 
 		override protected function initialize():void
 		{
@@ -39,13 +41,20 @@ package agame.endless.modules.main.view.objects
 				view.num.autoScale=true;
 				addChild(view);
 				setSize(view.width, view.height);
+				touchMask=view.touchMask;
+				addChild(view.touchMask);
+//				view.flatten();
 			}
 		}
 
+		private var price:Number=0;
+
 		override protected function commitData():void
 		{
+			var data:ObjectData=this._data as ObjectData;
 			if (data)
 			{
+				view.unflatten();
 				if (_icon == null)
 				{
 					_icon=Assets.current.getLinkageInstance(data.icon) as Image;
@@ -56,42 +65,40 @@ package agame.endless.modules.main.view.objects
 					view.objName.text=data.displayName;
 				else
 					view.objName.text='???';
-				view.price.text=Beautify(data.price);
+
+				if (price != data.price)
+				{
+					price=data.price;
+					view.price.text=Beautify(data.price);
+					if (data.canBuy)
+					{
+						view.disableMask.visible=false;
+						(view.price as StarlingTextField).color=0x66FF66;
+						isDisabled=true;
+					}
+					else
+					{
+						view.disableMask.visible=true;
+						(view.price as StarlingTextField).color=0xff0000;
+						isDisabled=false;
+					}
+				}
+
 				if (data.amount > 0)
 					view.num.text='' + data.amount;
 				else
 					view.num.text='';
-				disable=data.disable;
-				_icon.texture=Assets.current.getLinkageTexture(data.icon);
-				_icon.color=(data.amount == 0 && data.disable) ? 0x0 : 0xffffff;
-			}
-		}
 
-		protected function get data():ObjectData
-		{
-			return _data as ObjectData;
+				_icon.texture=Assets.current.getLinkageTexture(data.icon);
+				_icon.color=(data.amount == 0 && data.lock) ? 0x0 : 0xffffff;
+				view.flatten();
+			}
 		}
 
 		override protected function set touchPointID(value:int):void
 		{
 			super.touchPointID=value;
-			view.touchMask.visible=value >= 0;
-		}
-
-		override protected function set disable(value:Boolean):void
-		{
-			super.disable=value;
-			view.disableMask.visible=value;
-			if (value)
-			{
-				view.alpha=0.5;
-				(view.price as StarlingTextField).color=0xff0000;
-			}
-			else
-			{
-				view.alpha=1;
-				(view.price as StarlingTextField).color=0x66FF66;
-			}
+			touchMask.visible=value >= 0;
 		}
 
 		private var sc:SoundChannel;

@@ -103,8 +103,15 @@ package agame.endless.modules.main
 			Game.Earn(Game.computedMouseCps);
 			Game.handmadeCookies+=Game.computedMouseCps;
 			_view.particleAdd();
-			_view.particleAdd(appStage.mouseX, appStage.mouseY, Math.random() * 4 - 2, Math.random() * -2 - 2, Math.random() * 0.5 + 0.2, 1, 2);
-			_view.particleAdd(appStage.mouseX + Math.random() * 8 - 4, appStage.mouseY - 8 + Math.random() * 8 - 4, 0, -2, 1, 4, 2, '', Game.computedMouseCpsText);
+			_view.particleAdd( //
+				appStage.mouseX, //
+				appStage.mouseY, // 
+				Math.random() * 4 - 2, //
+				Math.random() * -2 - 2, //
+				Math.random() * 0.5 + 0.2, 1, 2);
+			_view.particleAdd( //
+				appStage.mouseX + Math.random() * 8 - 4, //
+				appStage.mouseY - 8 + Math.random() * 8 - 4, 0, -2, 1, 4, 2, '', Game.computedMouseCpsText);
 			Game.cookieClicks++;
 			Game.lastClick=time;
 		}
@@ -114,7 +121,7 @@ package agame.endless.modules.main
 			if (evt.type == MainModel.NEWTICKER_CHANGED)
 				_view.content.newsTickerLabel.text=Game.Ticker;
 			else if (evt.type == MainModel.REBUILD_STORED)
-				rebuildStored();
+				rebuildStored(evt.data as Array);
 			else if (evt.type == MainModel.REBUILD_UPGRADES)
 				rebuildUpgrades();
 			else if (evt.type == MainModel.DRAW_OBJECT)
@@ -125,16 +132,15 @@ package agame.endless.modules.main
 			}
 		}
 
-		private function rebuildStored():void
+		private function rebuildStored(changedStroedItem:Array):void
 		{
-			for (var i:int=0; i < ObjectData.ObjectDatasN; i++)
-				if (!(Game.ObjectsById[i] as ObjectData).toggledOff)
-					_view.setStoreItem(Game.ObjectsById[i]);
+			var len:int=changedStroedItem.length;
+			for (var i:int=0; i < len; i++)
+				_view.setStoreItem(changedStroedItem[i]);
 		}
 
 		private function rebuildUpgrades():void
 		{
-			trace('rebuildUpgrades', Game.UpgradesInStore.length);
 			_view.resetUpgradesItem(Game.UpgradesInStore);
 		}
 
@@ -230,7 +236,7 @@ package agame.endless.modules.main
 						buildingData.points.push({x: x, y: y});
 					}
 					buildingData.bgW+=offX;
-					_view.setBuildingItem(buildingData, Game.CurrentBuildingIDs.indexOf(buildingData.id));
+					_view.setBuildingItem(buildingData, Game.BuildingSequences[buildingData.id]);
 				}
 			}
 		}

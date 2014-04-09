@@ -4,7 +4,7 @@ package agame.endless.work.init
 	import agame.endless.services.assets.Assets;
 	import agame.endless.services.feathers.theme.GameTheme;
 	import agame.endless.work.EndlessWork;
-
+	
 	import starling.core.Starling;
 	import starling.events.Event;
 

@@ -25,7 +25,7 @@ package agame.endless.modules.main.model
 		//cookies 经济
 		public var cookiesEarned:Number=100000; //all cookies earned during gameplay
 		public var cookies:Number=100000; //cookies
-		public var cookiesd:Number=0; //cookies display
+		public var cookiesd:Number=100000; //cookies display
 		public var cookiesPs:Number=1; //cookies per second (to recalculate with every new purchase)
 		public var cookiesReset:Number=0; //cookies lost to resetting
 		public var frenzy:Number=0; //as long as >0, cookie production is multiplied by frenzyPower
@@ -58,9 +58,9 @@ package agame.endless.modules.main.model
 		//objects
 		public var Objects:Object={};
 		public var ObjectsById:Vector.<ObjectData>;
-		public var storeToRebuild:int;
+		public var storeToRebuild:Boolean;
 		public var BuildingsOwned:int;
-		public var CurrentBuildingIDs:Vector.<int>;
+		public var BuildingSequences:Vector.<int>;
 
 
 		//upgrades
@@ -115,7 +115,6 @@ package agame.endless.modules.main.model
 
 			ObjectsById=new Vector.<ObjectData>;
 			ObjectDataModel.setup();
-			CurrentBuildingIDs=new Vector.<int>;
 
 			UpgradesById=new Vector.<UpgradeData>;
 			UpgradesInStore=new Vector.<UpgradeData>;
@@ -125,6 +124,9 @@ package agame.endless.modules.main.model
 
 			NewsTicker.setup();
 
+			BuildingSequences=new Vector.<int>;
+			BuildingSequences.length=ObjectData.ObjectDatasN;
+			BuildingSequences.fixed=true;
 			UpgradesById.fixed=true;
 			ObjectsById.fixed=true;
 
@@ -132,9 +134,6 @@ package agame.endless.modules.main.model
 			santaDrops=['Increased merriness', 'Improved jolliness', 'A lump of coal', 'An itchy sweater', 'Reindeer baking grounds', 'Weighted sleighs', 'Ho ho ho-flavored frosting', 'Season savings', 'Toy workshop', 'Naughty list', 'Santa\'s bottomless bag', 'Santa\'s helpers', 'Santa\'s legacy', 'Santa\'s milk and cookies'];
 
 			recalculateGains=1;
-			storeToRebuild=1;
-			upgradesToRebuild=1;
-
 			startTime=getTimer();
 		}
 
@@ -158,6 +157,12 @@ package agame.endless.modules.main.model
 			cookies+=howmuch;
 			cookiesEarned+=howmuch;
 			RefreshBuildings();
+		}
+
+		public function RefreshBuildings():void
+		{
+			// TODO Auto Generated method stub
+			storeToRebuild=true;
 		}
 
 		public function Spend(howmuch:Number):void
@@ -409,38 +414,37 @@ package agame.endless.modules.main.model
 			return {pic: pic, xVariance: xVariance, yVariance: yVariance, w: w, shift: shift, heightOffset: heightOffset};
 		}
 
-		public function RefreshBuildings():void
-		{
-			storeToRebuild=1;
-		}
 
 		public function RebuildStore():void //redraw the store from scratch
 		{
-			RefreshBuildings();
-			var str:String='';
 			var lastLocked:int=0;
-			CurrentBuildingIDs.splice(0, CurrentBuildingIDs.length);
+			var seq:int=-1;
+			var result:Array=[];
 			for (var i:int=0; i < ObjectData.ObjectDatasN; i++)
 			{
 				var me:ObjectData=ObjectsById[i];
 				if (i > 0 && me.amount > 0)
-					CurrentBuildingIDs.push(i);
-				var price:Number=me.price;
-				if (cookiesEarned >= price)
+					seq++;
+				BuildingSequences[i]=seq;
+				if (cookiesEarned >= me.price)
 				{
-					me.lock=false;
+					me.setLock(false);
 					lastLocked=0;
 				}
 				else
 				{
-					me.lock=true;
+					me.setLock(true);
 					lastLocked++;
 				}
-				me.disable=cookies < price;
-				me.toggledOff=lastLocked > 2;
+				me.setCanbuy(cookies >= me.price);
+				me.setToggleOff(lastLocked > 2);
+				if (!me.toggledOff && me.dirty)
+					result.push(me);
+
+				me.dirty=false;
 			}
-			storeToRebuild=0;
-			dispatchEventWith(REBUILD_STORED);
+			storeToRebuild=false;
+			dispatchEventWith(REBUILD_STORED, false, result);
 		}
 
 		public var timePlayed:int;
@@ -741,7 +745,7 @@ package agame.endless.modules.main.model
 
 			cookiesd+=(cookies - cookiesd) * 0.3;
 
-			if (storeToRebuild)
+			if (this.storeToRebuild)
 				RebuildStore();
 			if (upgradesToRebuild)
 				RebuildUpgrades();
