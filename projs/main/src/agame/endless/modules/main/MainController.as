@@ -102,16 +102,24 @@ package agame.endless.modules.main
 			}
 			Game.Earn(Game.computedMouseCps);
 			Game.handmadeCookies+=Game.computedMouseCps;
-			_view.particleAdd();
-			_view.particleAdd( //
-				appStage.mouseX, //
-				appStage.mouseY, // 
-				Math.random() * 4 - 2, //
-				Math.random() * -2 - 2, //
-				Math.random() * 0.5 + 0.2, 1, 2);
+
+			_view.cookiesRain.populate(1);
+			_view.cookiesClick.emitterX=appStage.mouseX;
+			_view.cookiesClick.emitterY=appStage.mouseY;
+			_view.cookiesClick.populate(1);
+
+//			_view.particleAdd();
+//			_view.particleAdd( //
+//				appStage.mouseX, //
+//				appStage.mouseY, // 
+//				Math.random() * 4 - 2, //
+//				Math.random() * -2 - 2, //
+//				Math.random() * 0.5 + 0.2, 1, 2);
 			_view.particleAdd( //
 				appStage.mouseX + Math.random() * 8 - 4, //
 				appStage.mouseY - 8 + Math.random() * 8 - 4, 0, -2, 1, 4, 2, '', Game.computedMouseCpsText);
+			_view.cookiesClick.emitterX=appStage.mouseX;
+			_view.cookiesClick.emitterY=appStage.mouseX;
 			Game.cookieClicks++;
 			Game.lastClick=time;
 		}
@@ -148,8 +156,10 @@ package agame.endless.modules.main
 		{
 			// TODO Auto Generated method stub
 			Game.enterframe();
+
 			if (Game.cookies && Game.T % Math.ceil(Game.fps / Math.min(10, Game.cookiesPs)) == 0)
-				_view.particleAdd(); //cookie shower
+				_view.cookiesRain.populate(1);
+
 
 			_view.enterframe();
 

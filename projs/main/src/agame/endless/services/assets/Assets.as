@@ -10,6 +10,7 @@ package agame.endless.services.assets
 	import agame.endless.configs.AppConfig;
 	import agame.endless.configs.lang.LangConfigModel;
 	import agame.endless.configs.news.NewsConfigModel;
+	import agame.endless.modules.main.view.particle.ParticleBitmapFont;
 
 	import starling.display.DisplayObject;
 	import starling.events.Event;
@@ -26,6 +27,7 @@ package agame.endless.services.assets
 		private static var _assets:Assets;
 
 		public static var FontName:String;
+		public var particleBmFont:ParticleBitmapFont;
 
 		public static function get current():Assets
 		{
@@ -88,12 +90,15 @@ package agame.endless.services.assets
 		private function registeBitmapFont():void
 		{
 			//注册位图字体
-			var xml:XML=XML(new EmbedFont.BritannicXML());
 
-//			var bitmapFont:BitmapFont=new BitmapFont(getLinkageTexture('fonts'), xml);
+			var bitmap:Bitmap=new EmbedAssets.BitmapChars();
+			var texture:Texture=Texture.fromBitmap(bitmap);
 
-			var bitmap:Bitmap=new EmbedFont.BitmapChars();
-			var bitmapFont:BitmapFont=new BitmapFont(Texture.fromBitmap(bitmap), xml);
+//			var texture:Texture=getLinkageTexture('fonts');
+
+			var xml:XML=XML(new EmbedAssets.BritannicXML());
+			var bitmapFont:BitmapFont=new BitmapFont(texture, xml);
+			particleBmFont=new ParticleBitmapFont();
 
 			Assets.FontName='fontsss';
 			StarlingTextField.registerBitmapFont(bitmapFont, Assets.FontName);

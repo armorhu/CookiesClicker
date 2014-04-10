@@ -3,26 +3,28 @@ package agame.endless.modules.main.view.particle
 	import agame.endless.modules.main.model.Game;
 	import agame.endless.services.assets.Assets;
 
+	import starling.animation.IAnimatable;
+	import starling.core.Starling;
 	import starling.display.Image;
 	import starling.display.QuadBatch;
 	import starling.utils.HAlign;
 	import starling.utils.VAlign;
 
-	public class CookieParticleSystem
+	public class CookieParticleSystem implements IAnimatable
 	{
 		public var particles:Vector.<AppParticle>; //粒子
 		public var particleWidth:int=0;
 		public var particleStart:int=0;
 
-		private var _particleFont:ParticleBitmapFont;
 		private var _cookies:Image;
 
 		public function CookieParticleSystem(particleStart:Number, particleWidth:Number)
 		{
 			this.particleStart=particleStart;
 			this.particleWidth=particleWidth;
-			_particleFont=new ParticleBitmapFont();
 			initliaze();
+
+			Starling.juggler.add(this);
 		}
 
 		private function initliaze():void
@@ -36,7 +38,7 @@ package agame.endless.modules.main.view.particle
 			_cookies=Assets.current.getLinkageInstance('SmallCookie') as Image;
 		}
 
-		public function particlesUpdate():void
+		public function particlesUpdate(time:Number):void
 		{
 			for (var i:int=0; i < particleLen; i++)
 			{
@@ -44,11 +46,11 @@ package agame.endless.modules.main.view.particle
 				if (me.life != -1)
 				{
 					if (!me.text)
-						me.yd+=0.2 + Math.random() * 0.1;
-					me.x+=me.xd;
-					me.y+=me.yd;
-					me.life++;
-					if (me.life >= Game.fps * me.dur)
+						me.yd+=(0.2 + Math.random() * 0.1) * Game.fps * time;
+					me.x+=me.xd * Game.fps * time;
+					me.y+=me.yd * Game.fps * time;
+					me.life+=time;
+					if (me.life >= me.dur)
 					{
 						me.life=-1;
 					}
@@ -68,7 +70,7 @@ package agame.endless.modules.main.view.particle
 		 * @param pic
 		 * @param text
 		 */
-		private const particleLen:int=50;
+		private const particleLen:int=10;
 		private var highest:int=0;
 		private var highestI:int=0;
 
@@ -115,12 +117,10 @@ package agame.endless.modules.main.view.particle
 
 		public function particlesDraw(_buttomCanvas:QuadBatch, _upCanvas:QuadBatch, _textCanvas:QuadBatch):void
 		{
-			particlesUpdate();
-
 			if (arrangedCharsText != Game.computedMouseCpsText)
 			{
 				arrangedCharsText=Game.computedMouseCpsText;
-				arrangedChars=_particleFont.arrangeChars(64, 32, arrangedCharsText, 24, HAlign.CENTER, //
+				arrangedChars=Assets.current.particleBmFont.arrangeChars(64, 32, arrangedCharsText, 24, HAlign.CENTER, //
 					VAlign.CENTER, //
 					false, //
 					false);
@@ -131,10 +131,10 @@ package agame.endless.modules.main.view.particle
 				var me:AppParticle=particles[i];
 				if (me.life != -1)
 				{
-					var opacity:Number=1 - (me.life / (Game.fps * me.dur));
+					var opacity:Number=1 - (me.life / me.dur);
 					if (me.text && arrangedChars)
 					{
-						_particleFont.fillQuadBatch(me.x, me.y, opacity, 0, _textCanvas, //
+						Assets.current.particleBmFont.fillQuadBatch(me.x, me.y, opacity, 0, _textCanvas, //
 							0xffffff, //
 							arrangedChars);
 
@@ -154,5 +154,12 @@ package agame.endless.modules.main.view.particle
 				}
 			}
 		}
+
+		public function advanceTime(time:Number):void
+		{
+			// TODO Auto Generated method stub
+			particlesUpdate(time);
+		}
+
 	}
 }

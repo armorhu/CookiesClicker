@@ -4,6 +4,10 @@ package agame.endless.modules.main.view
 	import com.greensock.TimelineMax;
 	import com.greensock.TweenLite;
 
+	import flash.display.BitmapData;
+	import flash.display.BitmapDataChannel;
+	import flash.geom.Point;
+
 	import agame.endless.modules.main.model.Game;
 	import agame.endless.modules.main.view.buildings.BuildingItemRender;
 	import agame.endless.modules.main.view.objects.ObjectItemRender;
@@ -22,9 +26,13 @@ package agame.endless.modules.main.view
 	import starling.display.Image;
 	import starling.display.QuadBatch;
 	import starling.display.Sprite;
+	import starling.events.EnterFrameEvent;
 	import starling.events.Event;
 	import starling.extension.starlingide.display.movieclip.StarlingMovieClip;
 	import starling.extension.starlingide.display.textfield.StarlingTextField;
+	import starling.extensions.PDParticleSystem;
+	import starling.filters.DisplacementMapFilter;
+	import starling.textures.Texture;
 
 	public class MainView extends Sprite implements IEnterframe
 	{
@@ -81,6 +89,7 @@ package agame.endless.modules.main.view
 			(content.cookieCenter.particleContainer as DisplayObject).touchable=false;
 			(content.cookieCenter.particleCotnainer2 as DisplayObject).touchable=false;
 			_bigCookie=content.cookieCenter.bigCookie;
+//			addDistortionTo(_bigCookie);
 			//particles
 			_cookieParticleSystem=new CookieParticleSystem(content.cookieCenter.cookiesLabel.x, content.cookieCenter.cookiesLabel.width);
 
@@ -107,7 +116,28 @@ package agame.endless.modules.main.view
 			initStoreList();
 			initBuildingList();
 			initUpgradesStoreList();
+
+
+			var xml:XML=XML(new EmbedAssets.CookiesFall_XML);
+			var cookieTexture:Texture=Assets.current.getLinkageTexture('SmallCookie');
+			xml.sourcePositionVariance.@x=content.cookieCenter.cookiesLabel.width / 2;
+			xml.startParticleSize.@value=cookieTexture.width;
+			xml.finishParticleSize.@value=cookieTexture.width;
+			cookiesRain=new PDParticleSystem(xml, cookieTexture);
+			Starling.juggler.add(cookiesRain);
+			cookiesRain.x=content.cookieCenter.cookiesLabel.x + content.cookieCenter.cookiesLabel.width / 2;
+			content.cookieCenter.particleContainer.addChildAt(cookiesRain, 0);
+
+			xml=XML(new EmbedAssets.CookiesCLICK_XML());
+			xml.startParticleSize.@value=cookieTexture.width;
+			xml.finishParticleSize.@value=cookieTexture.width;
+			cookiesClick=new PDParticleSystem(xml, cookieTexture);
+			Starling.juggler.add(cookiesClick);
+			content.cookieCenter.particleCotnainer2.addChildAt(cookiesClick, 0);
 		}
+
+		public var cookiesRain:PDParticleSystem;
+		public var cookiesClick:PDParticleSystem;
 
 		private function initMainStyle():void
 		{
@@ -337,5 +367,34 @@ package agame.endless.modules.main.view
 			}
 		}
 
+
+		private function addDistortionTo(target:DisplayObject):void
+		{
+			var offset:Number=0;
+			var scale:Number=Starling.contentScaleFactor;
+			var width:int=target.width * 1.2;
+			var height:int=target.height * 1.2;
+
+			var perlinData:BitmapData=new BitmapData(width * scale, height * scale, false);
+			perlinData.perlinNoise(200 * scale, 20 * scale, 2, 5, true, true, 0, true);
+
+			var dispMap:BitmapData=new BitmapData(perlinData.width, perlinData.height * 2, false);
+			dispMap.copyPixels(perlinData, perlinData.rect, new Point(0, 0));
+			dispMap.copyPixels(perlinData, perlinData.rect, new Point(0, perlinData.height));
+
+			var texture:Texture=Texture.fromBitmapData(dispMap, false, false, scale);
+			var filter:DisplacementMapFilter=new DisplacementMapFilter(texture, null, BitmapDataChannel.RED, BitmapDataChannel.RED, 40, 5);
+
+			target.filter=filter;
+			target.addEventListener("enterFrame", function(event:EnterFrameEvent):void
+			{
+				if (offset > height)
+					offset-=height;
+				else
+					offset+=event.passedTime * 20;
+
+				filter.mapPoint.y=offset - height;
+			});
+		}
 	}
 }

@@ -451,6 +451,13 @@ package agame.endless.modules.main.model
 
 		public function enterframe():void
 		{
+			for (var i:int=0; i < ObjectData.ObjectDatasN; i++)
+			{
+				if (ObjectsById[i].hasOwnProperty('EachFrame'))
+					ObjectsById[i].EachFrame();
+				ObjectsById[i].totalCookies+=ObjectsById[i].storedTotalCps / fps;
+			}
+
 			if (autoclickerDetected > 0)
 				autoclickerDetected--;
 
@@ -476,271 +483,9 @@ package agame.endless.modules.main.model
 
 			if (T % (fps * 5) == 0) //check some achievements and upgrades
 			{
-				if (isNaN(cookies))
-				{
-					cookies=0;
-					cookiesEarned=0;
-					recalculateGains=1;
-				}
-				timePlayed=getTimer() - startTime;
-				if (cookiesEarned >= 1000000 && !Has('Heavenly chip secret'))
-				{
-					if (timePlayed <= 1000 * 60 * 35)
-						Win('Speed baking I');
-					if (timePlayed <= 1000 * 60 * 25)
-						Win('Speed baking II');
-					if (timePlayed <= 1000 * 60 * 15)
-						Win('Speed baking III');
-				}
-
-				if (cookiesEarned >= 9999999)
-					Unlock(['Oatmeal raisin cookies', 'Peanut butter cookies', 'Plain cookies', 'Sugar cookies']);
-				if (cookiesEarned >= 99999999)
-					Unlock(['Coconut cookies', 'White chocolate cookies', 'Macadamia nut cookies']);
-				if (cookiesEarned >= 999999999)
-					Unlock(['Double-chip cookies', 'White chocolate macadamia nut cookies', 'All-chocolate cookies']);
-				if (cookiesEarned >= 9999999999)
-					Unlock(['Dark chocolate-coated cookies', 'White chocolate-coated cookies']);
-				if (cookiesEarned >= 99999999999)
-					Unlock(['Eclipse cookies', 'Zebra cookies']);
-				if (cookiesEarned >= 999999999999)
-					Unlock(['Snickerdoodles', 'Stroopwafels', 'Macaroons']);
-				if (cookiesEarned >= 999999999999 && Has('Snickerdoodles') && Has('Stroopwafels') && Has('Macaroons'))
-				{
-					Unlock('Empire biscuits');
-					if (Has('Empire biscuits'))
-						Unlock('British tea biscuits');
-					if (Has('British tea biscuits'))
-						Unlock('Chocolate british tea biscuits');
-					if (Has('Chocolate british tea biscuits'))
-						Unlock('Round british tea biscuits');
-					if (Has('Round british tea biscuits'))
-						Unlock('Round chocolate british tea biscuits');
-					if (Has('Round chocolate british tea biscuits'))
-						Unlock('Round british tea biscuits with heart motif');
-					if (Has('Round british tea biscuits with heart motif'))
-						Unlock('Round chocolate british tea biscuits with heart motif');
-				}
-				if (cookiesEarned >= 9999999999999)
-				{
-					Unlock(['Madeleines', 'Palmiers', 'Palets', 'Sabl&eacute;s']);
-
-					if (prestige['Heavenly chips'] >= 1)
-						Unlock('Caramoas');
-					if (prestige['Heavenly chips'] >= 2)
-						Unlock('Sagalongs');
-					if (prestige['Heavenly chips'] >= 3)
-						Unlock('Shortfoils');
-					if (prestige['Heavenly chips'] >= 4)
-						Unlock('Win mints');
-
-					if (prestige['Heavenly chips'] >= 10)
-						Unlock('Fig gluttons');
-					if (prestige['Heavenly chips'] >= 100)
-						Unlock('Loreols');
-					if (prestige['Heavenly chips'] >= 500)
-						Unlock('Jaffa cakes');
-					if (prestige['Heavenly chips'] >= 2000)
-						Unlock('Grease\'s cups');
-
-					if (prestige['Heavenly chips'] >= 5000)
-						Unlock('Season switcher');
-				}
-				if (cookiesEarned >= 99999999999999)
-				{
-					Unlock(['Gingerbread men', 'Gingerbread trees']);
-					if (season == 'valentines')
-					{
-						Unlock('Pure heart biscuits');
-						if (Has('Pure heart biscuits'))
-							Unlock('Ardent heart biscuits');
-						if (Has('Ardent heart biscuits'))
-							Unlock('Sour heart biscuits');
-						if (Has('Sour heart biscuits'))
-							Unlock('Weeping heart biscuits');
-						if (Has('Weeping heart biscuits'))
-							Unlock('Golden heart biscuits');
-						if (Has('Golden heart biscuits'))
-							Unlock('Eternal heart biscuits');
-					}
-				}
-				if (Has('Eternal heart biscuits'))
-					Win('Lovely cookies');
-
-				if (prestige['Heavenly chips'] > 0)
-				{
-					Unlock('Heavenly chip secret');
-					if (Has('Heavenly chip secret'))
-						Unlock('Heavenly cookie stand');
-					if (Has('Heavenly cookie stand'))
-						Unlock('Heavenly bakery');
-					if (Has('Heavenly bakery'))
-						Unlock('Heavenly confectionery');
-					if (Has('Heavenly confectionery'))
-						Unlock('Heavenly key');
-
-					if (Has('Heavenly key'))
-						Win('Wholesome');
-				}
-
-				var len:int=moneyAchievs.length / 2;
-				for (var index:int=0; index < len; index++)
-				{
-					if (cookiesEarned >= moneyAchievs[index * 2 + 1])
-						Win(moneyAchievs[index * 2]);
-				}
-				var oneOfEach:int=1;
-				var mathematician:int=1;
-				var base10:int=1;
-				var centennial:int=1;
-				var bicentennial:int=1;
-				for (var i:int=0; i < ObjectData.ObjectDatasN; i++)
-				{
-					if (ObjectsById[i].hasOwnProperty('EachFrame'))
-						ObjectsById[i].EachFrame();
-					ObjectsById[i].totalCookies+=ObjectsById[i].storedTotalCps / fps;
-					if (!HasAchiev('One with everything'))
-					{
-						if (ObjectsById[i].amount == 0)
-							oneOfEach=0;
-					}
-					if (!HasAchiev('Mathematician'))
-					{
-						if (ObjectsById[i].amount < Math.min(128, Math.pow(2, (ObjectsById.length - ObjectsById[i].id) - 1)))
-							mathematician=0;
-					}
-					if (!HasAchiev('Base 10'))
-					{
-						if (ObjectsById[i].amount < (ObjectsById.length - ObjectsById[i].id) * 10)
-							base10=0;
-					}
-					if (!HasAchiev('Centennial'))
-					{
-						if (ObjectsById[i].amount < 100)
-							centennial=0;
-					}
-					if (!HasAchiev('Bicentennial'))
-					{
-						if (ObjectsById[i].amount < 200)
-							bicentennial=0;
-					}
-				}
-				if (oneOfEach == 1)
-					Win('One with everything');
-				if (mathematician == 1)
-					Win('Mathematician');
-				if (base10 == 1)
-					Win('Base 10');
-				if (centennial == 1)
-					Win('Centennial');
-				if (bicentennial == 1)
-					Win('Bicentennial');
-				if (cookiesEarned >= 1000000 && cookieClicks <= 15)
-					Win('Neverclick');
-				if (cookiesEarned >= 1000000 && cookieClicks <= 0)
-					Win('True Neverclick');
-				if (handmadeCookies >= 1000)
-				{
-					Win('Clicktastic');
-					Unlock('Plastic mouse');
-				}
-				if (handmadeCookies >= 100000)
-				{
-					Win('Clickathlon');
-					Unlock('Iron mouse');
-				}
-				if (handmadeCookies >= 10000000)
-				{
-					Win('Clickolympics');
-					Unlock('Titanium mouse');
-				}
-				if (handmadeCookies >= 1000000000)
-				{
-					Win('Clickorama');
-					Unlock('Adamantium mouse');
-				}
-				if (handmadeCookies >= 100000000000)
-				{
-					Win('Clickasmic');
-					Unlock('Unobtainium mouse');
-				}
-				if (cookiesEarned < cookies)
-					Win('Cheated cookies taste awful');
-
-				if (Has('Skull cookies') && Has('Ghost cookies') && Has('Bat cookies') && Has('Slime cookies') && Has('Pumpkin cookies') && Has('Eyeball cookies') && Has('Spider cookies'))
-					Win('Spooky cookies');
-				if (wrinklersPopped >= 1)
-					Win('Itchscratcher');
-				if (wrinklersPopped >= 50)
-					Win('Wrinklesquisher');
-				if (wrinklersPopped >= 200)
-					Win('Moistburster');
-
-				if (cookiesEarned >= 25 && season == 'christmas')
-					Unlock('A festive hat');
-				if (Has('Christmas tree biscuits') && Has('Snowflake biscuits') && Has('Snowman biscuits') && Has('Holly biscuits') && Has('Candy cane biscuits') && Has('Bell biscuits') && Has('Present biscuits'))
-					Win('Let it snow');
-
-				if (reindeerClicked >= 1)
-					Win('Oh deer');
-				if (reindeerClicked >= 50)
-					Win('Sleigh of hand');
-				if (reindeerClicked >= 200)
-					Win('Reindeer sleigher');
-
-				if (BuildingsOwned >= 100)
-					Win('Builder');
-				if (BuildingsOwned >= 400)
-					Win('Architect');
-				if (BuildingsOwned >= 800)
-					Win('Engineer');
-				if (BuildingsOwned >= 1500)
-					Win('Lord of Constructs');
-				if (UpgradesOwned >= 20)
-					Win('Enhancer');
-				if (UpgradesOwned >= 50)
-					Win('Augmenter');
-				if (UpgradesOwned >= 100)
-					Win('Upgrader');
-				if (UpgradesOwned >= 150)
-					Win('Lord of Progress');
-
-				if (UpgradesOwned == 0 && cookiesEarned >= 1000000000)
-					Win('Hardcore');
-
-				if (prestige['Heavenly chips'] >= 1 && Has('Bingo center/Research facility'))
-					Unlock('Persistent memory');
-
-				var grandmas:int=0;
-				if (Has('Farmer grandmas'))
-					grandmas++;
-				if (Has('Worker grandmas'))
-					grandmas++;
-				if (Has('Miner grandmas'))
-					grandmas++;
-				if (Has('Cosmic grandmas'))
-					grandmas++;
-				if (Has('Transmuted grandmas'))
-					grandmas++;
-				if (Has('Altered grandmas'))
-					grandmas++;
-				if (Has('Grandmas\' grandmas'))
-					grandmas++;
-				if (Has('Antigrandmas'))
-					grandmas++;
-				if (Has('Rainbow grandmas'))
-					grandmas++;
-				if (!HasAchiev('Elder') && grandmas >= 7)
-					Win('Elder');
-				if (Objects['Grandma'].amount >= 6 && !Has('Bingo center/Research facility') && HasAchiev('Elder'))
-					Unlock('Bingo center/Research facility');
-				if (pledges > 0)
-					Win('Elder nap');
-				if (pledges >= 5)
-					Win('Elder slumber');
-				if (pledges >= 10)
-					Unlock('Sacrificial rolling pins');
+				checkAchievements();
 			}
+
 
 
 			cookiesd+=(cookies - cookiesd) * 0.3;
@@ -754,6 +499,272 @@ package agame.endless.modules.main.model
 			if (TickerAge <= 0 || Ticker == '')
 				NewsTicker.getTicker();
 			T++;
+		}
+
+		private function checkAchievements():void
+		{
+			// TODO Auto Generated method stub
+			if (isNaN(cookies))
+			{
+				cookies=0;
+				cookiesEarned=0;
+				recalculateGains=1;
+			}
+			timePlayed=getTimer() - startTime;
+			if (cookiesEarned >= 1000000 && !Has('Heavenly chip secret'))
+			{
+				if (timePlayed <= 1000 * 60 * 35)
+					Win('Speed baking I');
+				if (timePlayed <= 1000 * 60 * 25)
+					Win('Speed baking II');
+				if (timePlayed <= 1000 * 60 * 15)
+					Win('Speed baking III');
+			}
+
+			if (cookiesEarned >= 9999999)
+				Unlock(['Oatmeal raisin cookies', 'Peanut butter cookies', 'Plain cookies', 'Sugar cookies']);
+			if (cookiesEarned >= 99999999)
+				Unlock(['Coconut cookies', 'White chocolate cookies', 'Macadamia nut cookies']);
+			if (cookiesEarned >= 999999999)
+				Unlock(['Double-chip cookies', 'White chocolate macadamia nut cookies', 'All-chocolate cookies']);
+			if (cookiesEarned >= 9999999999)
+				Unlock(['Dark chocolate-coated cookies', 'White chocolate-coated cookies']);
+			if (cookiesEarned >= 99999999999)
+				Unlock(['Eclipse cookies', 'Zebra cookies']);
+			if (cookiesEarned >= 999999999999)
+				Unlock(['Snickerdoodles', 'Stroopwafels', 'Macaroons']);
+			if (cookiesEarned >= 999999999999 && Has('Snickerdoodles') && Has('Stroopwafels') && Has('Macaroons'))
+			{
+				Unlock('Empire biscuits');
+				if (Has('Empire biscuits'))
+					Unlock('British tea biscuits');
+				if (Has('British tea biscuits'))
+					Unlock('Chocolate british tea biscuits');
+				if (Has('Chocolate british tea biscuits'))
+					Unlock('Round british tea biscuits');
+				if (Has('Round british tea biscuits'))
+					Unlock('Round chocolate british tea biscuits');
+				if (Has('Round chocolate british tea biscuits'))
+					Unlock('Round british tea biscuits with heart motif');
+				if (Has('Round british tea biscuits with heart motif'))
+					Unlock('Round chocolate british tea biscuits with heart motif');
+			}
+			if (cookiesEarned >= 9999999999999)
+			{
+				Unlock(['Madeleines', 'Palmiers', 'Palets', 'Sabl&eacute;s']);
+
+				if (prestige['Heavenly chips'] >= 1)
+					Unlock('Caramoas');
+				if (prestige['Heavenly chips'] >= 2)
+					Unlock('Sagalongs');
+				if (prestige['Heavenly chips'] >= 3)
+					Unlock('Shortfoils');
+				if (prestige['Heavenly chips'] >= 4)
+					Unlock('Win mints');
+
+				if (prestige['Heavenly chips'] >= 10)
+					Unlock('Fig gluttons');
+				if (prestige['Heavenly chips'] >= 100)
+					Unlock('Loreols');
+				if (prestige['Heavenly chips'] >= 500)
+					Unlock('Jaffa cakes');
+				if (prestige['Heavenly chips'] >= 2000)
+					Unlock('Grease\'s cups');
+
+				if (prestige['Heavenly chips'] >= 5000)
+					Unlock('Season switcher');
+			}
+			if (cookiesEarned >= 99999999999999)
+			{
+				Unlock(['Gingerbread men', 'Gingerbread trees']);
+				if (season == 'valentines')
+				{
+					Unlock('Pure heart biscuits');
+					if (Has('Pure heart biscuits'))
+						Unlock('Ardent heart biscuits');
+					if (Has('Ardent heart biscuits'))
+						Unlock('Sour heart biscuits');
+					if (Has('Sour heart biscuits'))
+						Unlock('Weeping heart biscuits');
+					if (Has('Weeping heart biscuits'))
+						Unlock('Golden heart biscuits');
+					if (Has('Golden heart biscuits'))
+						Unlock('Eternal heart biscuits');
+				}
+			}
+			if (Has('Eternal heart biscuits'))
+				Win('Lovely cookies');
+
+			if (prestige['Heavenly chips'] > 0)
+			{
+				Unlock('Heavenly chip secret');
+				if (Has('Heavenly chip secret'))
+					Unlock('Heavenly cookie stand');
+				if (Has('Heavenly cookie stand'))
+					Unlock('Heavenly bakery');
+				if (Has('Heavenly bakery'))
+					Unlock('Heavenly confectionery');
+				if (Has('Heavenly confectionery'))
+					Unlock('Heavenly key');
+
+				if (Has('Heavenly key'))
+					Win('Wholesome');
+			}
+
+			var len:int=moneyAchievs.length / 2;
+			for (var index:int=0; index < len; index++)
+			{
+				if (cookiesEarned >= moneyAchievs[index * 2 + 1])
+					Win(moneyAchievs[index * 2]);
+			}
+			var oneOfEach:int=1;
+			var mathematician:int=1;
+			var base10:int=1;
+			var centennial:int=1;
+			var bicentennial:int=1;
+			for (var i:int=0; i < ObjectData.ObjectDatasN; i++)
+			{
+				if (!HasAchiev('One with everything'))
+				{
+					if (ObjectsById[i].amount == 0)
+						oneOfEach=0;
+				}
+				if (!HasAchiev('Mathematician'))
+				{
+					if (ObjectsById[i].amount < Math.min(128, Math.pow(2, (ObjectsById.length - ObjectsById[i].id) - 1)))
+						mathematician=0;
+				}
+				if (!HasAchiev('Base 10'))
+				{
+					if (ObjectsById[i].amount < (ObjectsById.length - ObjectsById[i].id) * 10)
+						base10=0;
+				}
+				if (!HasAchiev('Centennial'))
+				{
+					if (ObjectsById[i].amount < 100)
+						centennial=0;
+				}
+				if (!HasAchiev('Bicentennial'))
+				{
+					if (ObjectsById[i].amount < 200)
+						bicentennial=0;
+				}
+			}
+			if (oneOfEach == 1)
+				Win('One with everything');
+			if (mathematician == 1)
+				Win('Mathematician');
+			if (base10 == 1)
+				Win('Base 10');
+			if (centennial == 1)
+				Win('Centennial');
+			if (bicentennial == 1)
+				Win('Bicentennial');
+			if (cookiesEarned >= 1000000 && cookieClicks <= 15)
+				Win('Neverclick');
+			if (cookiesEarned >= 1000000 && cookieClicks <= 0)
+				Win('True Neverclick');
+			if (handmadeCookies >= 1000)
+			{
+				Win('Clicktastic');
+				Unlock('Plastic mouse');
+			}
+			if (handmadeCookies >= 100000)
+			{
+				Win('Clickathlon');
+				Unlock('Iron mouse');
+			}
+			if (handmadeCookies >= 10000000)
+			{
+				Win('Clickolympics');
+				Unlock('Titanium mouse');
+			}
+			if (handmadeCookies >= 1000000000)
+			{
+				Win('Clickorama');
+				Unlock('Adamantium mouse');
+			}
+			if (handmadeCookies >= 100000000000)
+			{
+				Win('Clickasmic');
+				Unlock('Unobtainium mouse');
+			}
+			if (cookiesEarned < cookies)
+				Win('Cheated cookies taste awful');
+
+			if (Has('Skull cookies') && Has('Ghost cookies') && Has('Bat cookies') && Has('Slime cookies') && Has('Pumpkin cookies') && Has('Eyeball cookies') && Has('Spider cookies'))
+				Win('Spooky cookies');
+			if (wrinklersPopped >= 1)
+				Win('Itchscratcher');
+			if (wrinklersPopped >= 50)
+				Win('Wrinklesquisher');
+			if (wrinklersPopped >= 200)
+				Win('Moistburster');
+
+			if (cookiesEarned >= 25 && season == 'christmas')
+				Unlock('A festive hat');
+			if (Has('Christmas tree biscuits') && Has('Snowflake biscuits') && Has('Snowman biscuits') && Has('Holly biscuits') && Has('Candy cane biscuits') && Has('Bell biscuits') && Has('Present biscuits'))
+				Win('Let it snow');
+
+			if (reindeerClicked >= 1)
+				Win('Oh deer');
+			if (reindeerClicked >= 50)
+				Win('Sleigh of hand');
+			if (reindeerClicked >= 200)
+				Win('Reindeer sleigher');
+
+			if (BuildingsOwned >= 100)
+				Win('Builder');
+			if (BuildingsOwned >= 400)
+				Win('Architect');
+			if (BuildingsOwned >= 800)
+				Win('Engineer');
+			if (BuildingsOwned >= 1500)
+				Win('Lord of Constructs');
+			if (UpgradesOwned >= 20)
+				Win('Enhancer');
+			if (UpgradesOwned >= 50)
+				Win('Augmenter');
+			if (UpgradesOwned >= 100)
+				Win('Upgrader');
+			if (UpgradesOwned >= 150)
+				Win('Lord of Progress');
+
+			if (UpgradesOwned == 0 && cookiesEarned >= 1000000000)
+				Win('Hardcore');
+
+			if (prestige['Heavenly chips'] >= 1 && Has('Bingo center/Research facility'))
+				Unlock('Persistent memory');
+
+			var grandmas:int=0;
+			if (Has('Farmer grandmas'))
+				grandmas++;
+			if (Has('Worker grandmas'))
+				grandmas++;
+			if (Has('Miner grandmas'))
+				grandmas++;
+			if (Has('Cosmic grandmas'))
+				grandmas++;
+			if (Has('Transmuted grandmas'))
+				grandmas++;
+			if (Has('Altered grandmas'))
+				grandmas++;
+			if (Has('Grandmas\' grandmas'))
+				grandmas++;
+			if (Has('Antigrandmas'))
+				grandmas++;
+			if (Has('Rainbow grandmas'))
+				grandmas++;
+			if (!HasAchiev('Elder') && grandmas >= 7)
+				Win('Elder');
+			if (Objects['Grandma'].amount >= 6 && !Has('Bingo center/Research facility') && HasAchiev('Elder'))
+				Unlock('Bingo center/Research facility');
+			if (pledges > 0)
+				Win('Elder nap');
+			if (pledges >= 5)
+				Win('Elder slumber');
+			if (pledges >= 10)
+				Unlock('Sacrificial rolling pins');
 		}
 
 		public static const NEWTICKER_CHANGED:String='NEWTICKER_CHANGED';
