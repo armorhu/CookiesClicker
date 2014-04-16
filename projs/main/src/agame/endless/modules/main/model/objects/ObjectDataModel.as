@@ -6,6 +6,7 @@ package agame.endless.modules.main.model.objects
 	import flash.utils.ByteArray;
 
 	import agame.endless.modules.main.model.Game;
+	import agame.endless.modules.main.model.achievements.AchievementData;
 	import agame.endless.services.assets.Assets;
 
 	public class ObjectDataModel
@@ -19,7 +20,7 @@ package agame.endless.modules.main.model.objects
 			ObjectData.csvFile=new CSVFile;
 			var ba:ByteArray=Assets.current.getByteArray('objects');
 			ObjectData.csvFile.read(ba.readUTFBytes(ba.bytesAvailable)).parse();
-			
+
 			//define objects
 			new ObjectData(function():Number
 			{
@@ -369,6 +370,9 @@ package agame.endless.modules.main.model.objects
 				if (this.amount >= 150)
 					Game.Win('Unending glow');
 			});
+
+
+			trace('setup object complete,total=' + ObjectData.ObjectDatasN);
 		}
 
 		public static function chooseGradma():String

@@ -8,6 +8,7 @@ package agame.endless.services.assets
 
 	import agame.endless.EndlessApplication;
 	import agame.endless.configs.AppConfig;
+	import agame.endless.configs.achievements.AchievementsConfigModel;
 	import agame.endless.configs.lang.LangConfigModel;
 	import agame.endless.configs.news.NewsConfigModel;
 	import agame.endless.modules.main.view.particle.ParticleBitmapFont;
@@ -70,6 +71,23 @@ package agame.endless.services.assets
 
 		public function progressAssets():void
 		{
+			initConfig();
+			initSWF();
+		}
+
+		private function initSWF():void
+		{
+			// TODO Auto Generated method stub
+			var ba:ByteArray;
+			ba=getByteArray('iphone_pack');
+			main=new StarlingLoader
+			main.loadBytes(ba);
+			main.addEventListener(Event.COMPLETE, loadComplete);
+		}
+
+		private function initConfig():void
+		{
+			registeBitmapFont(); //需要在加载swf之前调用。
 			var ba:ByteArray;
 
 			ba=getByteArray('texts');
@@ -80,27 +98,19 @@ package agame.endless.services.assets
 			AppConfig.newsConfigModel=new NewsConfigModel();
 			AppConfig.newsConfigModel.init(ba.readUTFBytes(ba.bytesAvailable));
 			removeByteArray('news');
-
-			ba=getByteArray('iphone_pack');
-			main=new StarlingLoader
-			main.loadBytes(ba);
-			main.addEventListener(Event.COMPLETE, loadComplete);
 		}
 
 		private function registeBitmapFont():void
 		{
 			//注册位图字体
-
 			var bitmap:Bitmap=new EmbedAssets.BitmapChars();
 			var texture:Texture=Texture.fromBitmap(bitmap);
 
-//			var texture:Texture=getLinkageTexture('fonts');
-
 			var xml:XML=XML(new EmbedAssets.BritannicXML());
 			var bitmapFont:BitmapFont=new BitmapFont(texture, xml);
-			particleBmFont=new ParticleBitmapFont();
+			particleBmFont=new ParticleBitmapFont(texture, xml);
 
-			Assets.FontName='fontsss';
+			Assets.FontName='Wawati SC Regular';
 			StarlingTextField.registerBitmapFont(bitmapFont, Assets.FontName);
 			TextField.registerBitmapFont(bitmapFont, Assets.FontName);
 		}
@@ -108,7 +118,6 @@ package agame.endless.services.assets
 		public function loadComplete(evt:Event):void
 		{
 			removeByteArray('iphone_pack');
-			registeBitmapFont();
 			dispatchEventWith(Event.COMPLETE);
 		}
 

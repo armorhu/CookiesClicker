@@ -1,29 +1,37 @@
 package agame.endless.modules.main.view
 {
 	import com.agame.utils.DisplayUtil;
-	import com.greensock.TimelineMax;
 	import com.greensock.TweenLite;
 
 	import flash.display.BitmapData;
 	import flash.display.BitmapDataChannel;
 	import flash.geom.Point;
+	import flash.geom.Rectangle;
 
-	import agame.endless.modules.main.model.Game;
+	import agame.endless.configs.lang.Lang;
+	import agame.endless.configs.texts.TextsTIDDefs;
 	import agame.endless.modules.main.view.buildings.BuildingItemRender;
+	import agame.endless.modules.main.view.curser.CurserCanvas;
 	import agame.endless.modules.main.view.objects.ObjectItemRender;
+	import agame.endless.modules.main.view.panel.stats.StatsPanel;
 	import agame.endless.modules.main.view.particle.CookieParticleSystem;
 	import agame.endless.modules.main.view.upgrades.UpgradeItemRender;
 	import agame.endless.services.assets.Assets;
 	import agame.endless.services.frame.IEnterframe;
+	import agame.endless.services.utils.useEmbedFont;
 
 	import feathers.controls.List;
+	import feathers.controls.ScrollContainer;
+	import feathers.controls.Scroller;
 	import feathers.data.ListCollection;
+	import feathers.display.TiledImage;
 	import feathers.layout.TiledRowsLayout;
+	import feathers.layout.VerticalLayout;
 
+	import starling.animation.IAnimatable;
 	import starling.core.Starling;
-	import starling.display.BlendMode;
 	import starling.display.DisplayObject;
-	import starling.display.Image;
+	import starling.display.Quad;
 	import starling.display.QuadBatch;
 	import starling.display.Sprite;
 	import starling.events.EnterFrameEvent;
@@ -34,13 +42,13 @@ package agame.endless.modules.main.view
 	import starling.filters.DisplacementMapFilter;
 	import starling.textures.Texture;
 
-	public class MainView extends Sprite implements IEnterframe
+	public class MainView extends Sprite implements IEnterframe, IAnimatable
 	{
 		public static const CLICK_COOKIE:String='click_cookie';
 
 		public var content:StarlingMovieClip;
+		public var cookieCenter:StarlingMovieClip;
 		public var cookies:StarlingTextField; //饼干数量
-		public var cps:StarlingTextField; //cps.
 
 		private var frame:StarlingMovieClip;
 
@@ -48,16 +56,20 @@ package agame.endless.modules.main.view
 		 *粒子系统
 		 */
 		private var _cookieParticleSystem:CookieParticleSystem;
-
 		private var _shine:StarlingMovieClip; //shine；
 		private var _shine2:StarlingMovieClip; //shine2;
-
-
 		private var _buttomCanvas:QuadBatch;
-		private var _upCanvas:QuadBatch;
 		private var _textCanvas:QuadBatch;
-
 		private var _bigCookie:DisplayObject;
+		private var _statsPanel:StatsPanel; //统计面板
+
+		/**
+		 * 鼠标。。
+		 */
+		private var _curser:CurserCanvas;
+
+		private var canvasX:Number;
+		private var canvasWidth:Number;
 
 		public function MainView()
 		{
@@ -67,46 +79,39 @@ package agame.endless.modules.main.view
 
 		private function initiliaze():void
 		{
-			var bg:Image=new Image(Assets.current.getLinkageTexture('bgBlue'));
-			bg.width=Starling.current.stage.stageWidth;
-			bg.height=Starling.current.stage.stageHeight;
-			addChild(bg);
-			bg.blendMode=BlendMode.NONE;
-
 			content=Assets.current.getLinkageInstance('endless.ui.MainUIView') as StarlingMovieClip;
 			addChild(content);
-			content.addEventListener(Event.TRIGGERED, triggeredMeHandler);
+			addEventListener(Event.TRIGGERED, triggeredMeHandler);
+
 
 			frame=content.frame;
+			useEmbedFont(frame.storeLabel);
+			useEmbedFont(frame.buildingLabel);
+			frame.storeLabel.text=Lang(TextsTIDDefs.TID_STORE);
+			frame.buildingLabel.text=Lang(TextsTIDDefs.TID_BUILDING);
 			frame.flatten();
+			canvasX=content.newsTickerLabel.x;
+			canvasWidth=content.newsTickerLabel.width;
 
+
+
+			cookieCenter=content.cookieCenter;
 			_buttomCanvas=new QuadBatch(); //最下面的画布
-			_upCanvas=new QuadBatch(); //最上面的画布
 			_textCanvas=new QuadBatch(); //位图字体的画布
-			content.cookieCenter.particleContainer.addChild(_buttomCanvas);
-			content.cookieCenter.particleCotnainer2.addChild(_upCanvas);
-			content.cookieCenter.particleCotnainer2.addChild(_textCanvas);
-			(content.cookieCenter.particleContainer as DisplayObject).touchable=false;
-			(content.cookieCenter.particleCotnainer2 as DisplayObject).touchable=false;
-			_bigCookie=content.cookieCenter.bigCookie;
-//			addDistortionTo(_bigCookie);
+			cookieCenter.particleContainer.addChild(_buttomCanvas);
+			cookieCenter.particleCotnainer2.addChild(_textCanvas);
+			(cookieCenter.particleContainer as DisplayObject).touchable=false;
+			(cookieCenter.particleCotnainer2 as DisplayObject).touchable=false;
+			_bigCookie=cookieCenter.bigCookie;
 			//particles
-			_cookieParticleSystem=new CookieParticleSystem(content.cookieCenter.cookiesLabel.x, content.cookieCenter.cookiesLabel.width);
+			_cookieParticleSystem=new CookieParticleSystem(canvasX, canvasWidth);
 
-			//cursers
-			curserImg=Assets.current.getLinkageInstance('cursor') as Image;
-
-			cookies=content.cookieCenter.cookiesLabel;
-			cookies.fontName=Assets.FontName;
-			cookies.autoScale=true;
-			cps=content.cookieCenter.cpsLabel;
-			cps.fontName=Assets.FontName;
-			cps.autoScale=true;
+			cookies=cookieCenter.cookiesLabel;
 			(content.newsTickerLabel as StarlingTextField).fontName=Assets.FontName;
 			(content.newsTickerLabel as StarlingTextField).autoScale=true;
 
-			_shine=content.cookieCenter.shine;
-			_shine2=content.cookieCenter.shine2;
+			_shine=cookieCenter.shine;
+			_shine2=cookieCenter.shine2;
 			_shine.flatten();
 			_shine2.flatten();
 
@@ -120,20 +125,34 @@ package agame.endless.modules.main.view
 
 			var xml:XML=XML(new EmbedAssets.CookiesFall_XML);
 			var cookieTexture:Texture=Assets.current.getLinkageTexture('SmallCookie');
-			xml.sourcePositionVariance.@x=content.cookieCenter.cookiesLabel.width / 2;
+			xml.sourcePositionVariance.@x=content.newsTickerLabel.width / 2;
 			xml.startParticleSize.@value=cookieTexture.width;
 			xml.finishParticleSize.@value=cookieTexture.width;
 			cookiesRain=new PDParticleSystem(xml, cookieTexture);
 			Starling.juggler.add(cookiesRain);
-			cookiesRain.x=content.cookieCenter.cookiesLabel.x + content.cookieCenter.cookiesLabel.width / 2;
-			content.cookieCenter.particleContainer.addChildAt(cookiesRain, 0);
+			cookiesRain.x=content.newsTickerLabel.x + content.newsTickerLabel.width / 2;
+			cookieCenter.particleContainer.addChildAt(cookiesRain, 0);
 
 			xml=XML(new EmbedAssets.CookiesCLICK_XML());
 			xml.startParticleSize.@value=cookieTexture.width;
 			xml.finishParticleSize.@value=cookieTexture.width;
 			cookiesClick=new PDParticleSystem(xml, cookieTexture);
 			Starling.juggler.add(cookiesClick);
-			content.cookieCenter.particleCotnainer2.addChildAt(cookiesClick, 0);
+
+			cookieCenter.particleCotnainer2.addChildAt(cookiesClick, 0);
+
+
+			content.btnStatsLabel.text=Lang(TextsTIDDefs.TID_BUTTON_LABEL_STATS);
+			content.btnStatsLabel.touchable=false;
+			content.btnMenuLabel.text=Lang(TextsTIDDefs.TID_BUTTON_LABEL_MENU);
+			content.btnMenuLabel.touchable=false;
+
+			Starling.juggler.add(this);
+
+			_curser=new CurserCanvas(_bigCookie.width);
+			_curser.x=_bigCookie.x;
+			_curser.y=_bigCookie.y;
+			cookieCenter.particleCotnainer2.addChild(_curser);
 		}
 
 		public var cookiesRain:PDParticleSystem;
@@ -142,9 +161,8 @@ package agame.endless.modules.main.view
 		private function initMainStyle():void
 		{
 			// TODO Auto Generated method stub
-			MainStyle.BUILDING_VIEW_WIDTH=frame.leftLines.x;
-			MainStyle.Upgrade_list_height=128 * 2;
-			MainStyle.Upgrade_List_Width=64 * 3;
+			MainStyle.Upgrade_list_height=192;
+			MainStyle.Upgrade_List_Width=192;
 		}
 
 //		private function alignWith(source:DisplayObject, target:DisplayObject):void
@@ -160,7 +178,22 @@ package agame.endless.modules.main.view
 		{
 			var targetName:String=evt.target['name'];
 			if (targetName == 'bigCookie')
+			{
 				dispatchEventWith(CLICK_COOKIE);
+				return;
+			}
+
+			Assets.current.playSound('select_item');
+			if (targetName == 'btnClose')
+				hideWindow();
+			else if (targetName == 'btnStats')
+			{
+				if (_statsPanel == null)
+					_statsPanel=new StatsPanel(stage.stageWidth);
+				popupWindow(Lang(TextsTIDDefs.TID_BUTTON_LABEL_STATS), _statsPanel);
+			}
+			else if (targetName == 'btnMenu')
+				popupWindow(Lang(TextsTIDDefs.TID_BUTTON_LABEL_MENU), null);
 		}
 
 
@@ -175,12 +208,8 @@ package agame.endless.modules.main.view
 		{
 			// TODO Auto Generated method stub
 			_buttomCanvas.reset();
-			_upCanvas.reset();
 			_textCanvas.reset();
-			_cookieParticleSystem.particlesDraw(_buttomCanvas, _upCanvas, _textCanvas);
-			drawCurser();
-			_shine.rotation+=0.02;
-			_shine2.rotation-=0.02;
+			_cookieParticleSystem.particlesDraw(_buttomCanvas, _textCanvas);
 		}
 
 
@@ -197,7 +226,14 @@ package agame.endless.modules.main.view
 			_storeList.dataProvider=new ListCollection;
 			_storeList.height=Starling.current.stage.stageHeight;
 			_storeList.itemRendererType=ObjectItemRender;
+			_storeList.allowMultipleSelection=false;
+			var vLayout:VerticalLayout=new VerticalLayout;
+			vLayout.hasVariableItemDimensions=true;
+			vLayout.manageVisibility=true;
+			_storeList.layout=vLayout;
+			_storeList.verticalScrollPolicy=Scroller.SCROLL_POLICY_ON;
 			DisplayUtil.alignWith(_storeList, content.storeList);
+
 		}
 
 		public function setStoreItem(item:Object):void
@@ -207,6 +243,26 @@ package agame.endless.modules.main.view
 				_storeList.dataProvider.addItem(item);
 			else
 				_storeList.dataProvider.updateItemAt(index);
+		}
+
+		public function tweenStoreListTo(py:Number, adjustList:Boolean):void
+		{
+			if (_storeList.y != py)
+			{
+				TweenLite.killTweensOf(_storeList);
+				if (adjustList)
+					TweenLite.to(_storeList, 0.5, {y: py, onUpdate: update, onComplete: function():void
+					{
+						_storeList.height=Starling.current.stage.stageHeight - _storeList.y;
+					}});
+				else
+					TweenLite.to(_storeList, 0.5, {y: py, onUpdate: update});
+			}
+
+			function update():void
+			{
+				content.storeBorder.y=_storeList.y - 8;
+			}
 		}
 
 		///////----------------------------------------------------------------------------------------------------//////
@@ -219,10 +275,17 @@ package agame.endless.modules.main.view
 		private function initBuildingList():void
 		{
 			_buildingList=new List();
+			var vLayout:VerticalLayout=new VerticalLayout;
+			vLayout.hasVariableItemDimensions=true;
+			_buildingList.layout=vLayout;
+			_buildingList.verticalScrollPolicy=Scroller.SCROLL_POLICY_ON;
+
 			_buildingList.dataProvider=new ListCollection;
 			_buildingList.itemRendererType=BuildingItemRender;
+			_buildingList.allowMultipleSelection=false;
+			vLayout.manageVisibility=true;
 			DisplayUtil.alignWith(_buildingList, content.buildingList);
-			_buildingList.height=Starling.current.stage.stageHeight - _buildingList.y * 2;
+			_buildingList.height=Starling.current.stage.stageHeight - _buildingList.y;
 		}
 
 		/**
@@ -265,115 +328,41 @@ package agame.endless.modules.main.view
 //			listLayout.useSquareTiles=false;
 //			listLayout.tileVerticalAlign=TiledColumnsLayout.TILE_VERTICAL_ALIGN_MIDDLE;
 //			listLayout.verticalAlign=TiledColumnsLayout.V;
-//			listLayout.manageVisibility=true;
 			const listLayout:TiledRowsLayout=new TiledRowsLayout;
 			listLayout.paging=TiledRowsLayout.PAGING_VERTICAL;
 			listLayout.gap=4;
+			listLayout.manageVisibility=true;
 			_upgradeStoreList.layout=listLayout;
 			_upgradeStoreList.itemRendererType=UpgradeItemRender;
 		}
 
-
-		public function resetUpgradesItem(items:Object):void
+		public function setUpgradeData(data:Object):void
 		{
-			_upgradeStoreList.dataProvider.removeAll();
-			var len:int=items.length;
-			for (var i:int=0; i < len; i++)
-				_upgradeStoreList.dataProvider.addItem(items[i]);
-			var offset:Number=int(len / 3) * 64;
+			var item:Object=data.upgradeData;
+			var index:int=data.index;
+			var inStore:Boolean=data.inStore;
+			if (inStore)
+				this._upgradeStoreList.dataProvider.addItemAt(item, index);
+			else
+				this._upgradeStoreList.dataProvider.removeItem(item);
+
+			var offset:Number=Math.ceil(_upgradeStoreList.dataProvider.length / 2) * 91;
 			if (offset > MainStyle.Upgrade_list_height)
 				offset=MainStyle.Upgrade_list_height;
 			offset+=_upgradeStoreList.y;
-			if (_storeList.y != offset)
-			{
-				TweenLite.killTweensOf(_storeList);
-				TweenLite.to(_storeList, 0.5, {y: offset, onComplete: function():void
-				{
-					_storeList.height=Starling.current.stage.stageHeight - _storeList.y;
-				}});
-			}
-		}
-		///////----------------------------------------------------------------------------------------------------//////
-		///////-------------------------------------------Curser Render--------------------------------------------//////
-		///////----------------------------------------------------------------------------------------------------//////
-		///////----------------------------------------------------------------------------------------------------//////
-		private var curserImg:Image;
-		private var nextCurser:int=0;
-		private var curserTimeline:TimelineMax;
-		private var _curserStyles:Array=[];
-
-		private function drawCurser():void
-		{
-			var len:int=_curserStyles.length;
-			for (var i:int=0; i < len; i++)
-			{
-				curserImg.x=_curserStyles[i].x;
-				curserImg.y=_curserStyles[i].y;
-				curserImg.rotation=_curserStyles[i].r;
-				curserImg.scaleX=curserImg.scaleY=_curserStyles[i].s;
-				_upCanvas.addImage(curserImg);
-			}
-
-			if (len && Game.T % Game.fps == 0)
-			{
-				if (nextCurser >= len - 1)
-					nextCurser=0;
-				else
-					nextCurser++;
-
-				var target:Object=_curserStyles[nextCurser];
-				var r:Number=target.r;
-				var radius:Number=-10;
-				var offsetX:Number=Math.floor(Math.sin(-r) * radius);
-				var offsetY:Number=Math.floor(Math.cos(-r) * radius);
-
-				if (curserTimeline)
-				{
-					curserTimeline.kill();
-					curserTimeline.clear();
-					curserTimeline.stop();
-					curserTimeline=null;
-				}
-
-				curserTimeline=new TimelineMax();
-				curserTimeline.autoRemoveChildren=true;
-				curserTimeline.append(TweenLite.to(target, 0.25, {x: offsetX + target.x, y: offsetY + target.y, s: 0.75}));
-				curserTimeline.append(TweenLite.to(target, 0.25, {x: target.x, y: target.y, s: 1}));
-				curserTimeline.play();
-			}
+			tweenStoreListTo(offset, true);
 		}
 
-		public function updateCurserAmount(amount:int):void
+		private function addDistortionTo(target:DisplayObject, targetWidth:Number=0, targetHeight:Number=0):void
 		{
-			var radius:int=int(_bigCookie.width / 2) - 10;
-			while (true)
-			{
-				var len:int=_curserStyles.length;
-				if (len < amount)
-				{
-					var n:Number=Math.floor(len / 50);
-					var a:Number=((len + 0.5 * n) % 50) / 50;
-					var r:Number=-(a) * Math.PI * 2;
-					var x:Number=Math.floor(Math.sin(-r) * radius) + _bigCookie.x;
-					var y:Number=Math.floor(Math.cos(-r) * radius) + _bigCookie.y;
-					_curserStyles.push({x: x, y: y, r: r, s: 1});
-				}
-				else if (len > amount)
-				{
-					_curserStyles.pop();
-				}
-				else
-					break;
-			}
-		}
-
-
-		private function addDistortionTo(target:DisplayObject):void
-		{
+			if (targetWidth == 0)
+				targetWidth=target.width;
+			if (targetHeight == 0)
+				targetHeight=target.height;
 			var offset:Number=0;
 			var scale:Number=Starling.contentScaleFactor;
-			var width:int=target.width * 1.2;
-			var height:int=target.height * 1.2;
+			var width:int=targetWidth * 1.2;
+			var height:int=targetHeight * 1.2;
 
 			var perlinData:BitmapData=new BitmapData(width * scale, height * scale, false);
 			perlinData.perlinNoise(200 * scale, 20 * scale, 2, 5, true, true, 0, true);
@@ -395,6 +384,137 @@ package agame.endless.modules.main.view
 
 				filter.mapPoint.y=offset - height;
 			});
+		}
+
+
+		///////----------------------------------------------------------------------------------------------------//////
+		///////-----------------------------------------------draw Milk--------------------------------------------//////
+		///////----------------------------------------------------------------------------------------------------//////
+		///////----------------------------------------------------------------------------------------------------//////
+		private const MilkPics:Array=['milkWave', 'chocolateMilkWave', 'raspberryWave', 'orangeWave', 'caramelWave'];
+		public var milkContainer:Sprite;
+		public var milkImage:TiledImage; //牛奶视图
+		public var currentPic:int=-1;
+		public var imageHeight:Number=0;
+
+		//set milk's pic & height
+		public function setMilkStyle(pic:int, height:Number):void
+		{
+			if (pic != currentPic)
+			{
+				//need change texture..
+				currentPic=pic;
+				var texture:Texture=Assets.current.getLinkageTexture(MilkPics[currentPic]);
+				if (milkImage == null)
+				{
+					milkImage=new TiledImage(texture);
+					milkImage.y=Starling.current.stage.stageHeight;
+					milkImage.width=canvasWidth * 2;
+					milkImage.alpha=0.8;
+					milkImage.x=canvasX;
+					milkContainer=new Sprite;
+					cookieCenter.addChild(milkContainer);
+					milkContainer.clipRect=new Rectangle(canvasX, Starling.current.stage.stageHeight - milkImage.height, canvasWidth, milkImage.height);
+					milkContainer.addChild(milkImage);
+
+//					addDistortionTo(content.btnStats);
+//					addDistortionTo(milkImage);
+				}
+				else
+				{
+					milkImage.texture=texture;
+				}
+			}
+			height*=milkImage.height;
+			imageHeight=Starling.current.stage.stageHeight - height;
+			trace('set milk stype', MilkPics[pic], imageHeight);
+		}
+
+		///////----------------------------------------------------------------------------------------------------//////
+		///////-----------------------------------------Pop up Windows--------------------------------------------//////
+		///////----------------------------------------------------------------------------------------------------//////
+		///////----------------------------------------------------------------------------------------------------//////
+
+		private var _window:StarlingMovieClip;
+
+		public function popupWindow(title:String, windowContent:DisplayObject):void
+		{
+			//initliaze pop windows.
+			if (_window == null)
+			{
+				_window=Assets.current.getLinkageInstance('endless.ui.PopWindowUI') as StarlingMovieClip;
+				var bg:Quad=new Quad(_window.width, Starling.current.stage.stageHeight, 0x0);
+				_window.bg.addChildAt(bg, 0);
+				(_window.bg as Sprite).flatten();
+
+				var scrollerContainer:ScrollContainer=new ScrollContainer();
+				scrollerContainer.width=_window.width - _window.content.x * 2;
+				scrollerContainer.height=_window.height - _window.content.y;
+				scrollerContainer.horizontalScrollPolicy=Scroller.SCROLL_BAR_DISPLAY_MODE_NONE;
+				DisplayUtil.alignWith(scrollerContainer, _window.content);
+			}
+
+			_window.title.text=title;
+			_window.content.removeChildren();
+			if (windowContent)
+				_window.content.addChild(windowContent);
+
+			if (!isPopupWindow)
+			{
+				addChild(_window);
+				TweenLite.killTweensOf(_window);
+				_window.y=Starling.current.stage.stageHeight;
+				TweenLite.to(_window, 0.5, {y: Starling.current.stage.stageHeight - _window.height, onComplete: function():void
+				{
+					content.removeFromParent();
+				}});
+			}
+		}
+
+		public function hideWindow():void
+		{
+			if (isPopupWindow)
+			{
+				addChildAt(content, 0);
+				TweenLite.killTweensOf(_window);
+				TweenLite.to(_window, 0.5, {y: Starling.current.stage.stageHeight, onComplete: function():void
+				{
+					_window.removeFromParent();
+				}});
+			}
+		}
+
+		public function get isPopupWindow():Boolean
+		{
+			return _window && _window.stage;
+		}
+
+		public function advanceTime(time:Number):void
+		{
+			// TODO Auto Generated method stub
+			_shine.rotation+=Math.PI * time / 2;
+			_shine2.rotation-=Math.PI * time / 2;
+			if (milkImage)
+			{
+				if (milkImage.y != imageHeight)
+				{
+					milkImage.y+=(imageHeight - milkImage.y) * 0.1;
+					if (Math.abs(milkImage.y - imageHeight) < 1)
+						milkImage.y=imageHeight;
+				}
+
+				milkImage.x+=150 * time;
+				milkImage.x=int(milkImage.x);
+				if (milkImage.x >= canvasX)
+					milkImage.x-=canvasWidth;
+			}
+			_curser.advanceTime(time);
+		}
+
+		public function updateCurserAmount(amount:int):void
+		{
+			// TODO Auto Generated method stub
+			_curser.updateCurserAmount(amount);
 		}
 	}
 }

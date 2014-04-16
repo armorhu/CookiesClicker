@@ -751,4 +751,24 @@ TID_NEWS47_CONTEXT,it's time to stop playing,妈蛋，求你别玩了...
 TID_BUTTON_LABEL_SELL,Sell,卖出
 TID_BUTTON_LABEL_MENU,Menu,设置
 TID_BUTTON_LABEL_STATS,Stats,统计
-
+TID_STORE,STORE,商店
+TID_BUILDING,BUILDING,建筑
+TID_SECTION_GENERAL,general,综合
+TID_SECTION_UNLOCK_UPGRADES,Unlock Upgrades,解锁的科技
+TID_UPGRADE,Upgrade,科技
+TID_ACHIEVEMENTS,Achievements,成就
+TID_COOKIES_IN_BANK,Cookies In Bank:,饼干存量:
+TID_COOKIES_BAKED_THIS_GAME,Cookies In Baked(this game):,总饼干(本次游戏):
+TID_COOKIES_BAKED_ALL_TIME,Cookies In Baked(all time):,总饼干(所有时间):
+TID_SESSION_START,Session Start:,游戏开始时间:
+TID_BUILDING_OWNED,Building Owned:,建筑数量:
+TID_COOKIES_PER_SECEND,Cookies Per Secend:,每秒生产饼干:
+TID_MULTIPLIER,multiplier:(#Number#%),multiplier:(#Number#%)
+TID_COOKIES_PER_CLICK,Cookies Per Click:,每次点击生产饼干:
+TID_COOKIE_CLICK,Cookie Click:,点击饼干次数:
+TID_HAND_MAKE_COOKIE,Hand-made cookies:,手工制作的饼干:
+TID_GOLDEN_CLICK,Golden Cookie Clicks:,金饼干:
+TID_RUNNING_VERSION,Running version:,版本:
+TID_UNLOCKED,Unlocked:,解锁:
+TID_MILK,Milk:,牛奶:
+TID_MILK_NOTE,Note:you gain milk through achievements.Milk can unlock unique upgrades over time.,获得成可以增加牛奶。牛奶可以解锁独一无二的科技！

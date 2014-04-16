@@ -4,6 +4,7 @@ package agame.endless.modules.main.model
 
 	import flash.utils.getTimer;
 
+	import agame.endless.modules.main.model.achievements.AchievementData;
 	import agame.endless.modules.main.model.achievements.AchievementsDataModel;
 	import agame.endless.modules.main.model.newsticker.NewsTicker;
 	import agame.endless.modules.main.model.objects.ObjectData;
@@ -23,9 +24,9 @@ package agame.endless.modules.main.model
 
 
 		//cookies 经济
-		public var cookiesEarned:Number=100000; //all cookies earned during gameplay
-		public var cookies:Number=100000; //cookies
-		public var cookiesd:Number=100000; //cookies display
+		public var cookiesEarned:Number=1000000000; //all cookies earned during gameplay
+		public var cookies:Number=1000000000; //cookies
+		public var cookiesd:Number=1000000000; //cookies display
 		public var cookiesPs:Number=1; //cookies per second (to recalculate with every new purchase)
 		public var cookiesReset:Number=0; //cookies lost to resetting
 		public var frenzy:Number=0; //as long as >0, cookie production is multiplied by frenzyPower
@@ -40,8 +41,6 @@ package agame.endless.modules.main.model
 		public var handmadeCookies:Number=0; //all the cookies made from clicking the cookie
 		public var milkProgress:Number=0; //you gain a little bit for each achievement. Each increment of 1 is a different milk displayed.
 		public var milkH:Number=milkProgress / 2; //milk height, between 0 and 1 (although should never go above 0.5)
-		public var milkHd:Number=0; //milk height display
-		public var milkType:Number=-1; //custom milk : 0:Number=plain, 1:Number=chocolate...
 		public var backgroundType:Number=-1; //custom background : 0:Number=blue, 1:Number=red...
 		public var prestige:Object={}; //cool stuff that carries over beyond resets
 		public var resets:Number=0; //reset counter
@@ -67,11 +66,12 @@ package agame.endless.modules.main.model
 		public var Upgrades:Object={};
 		public var UpgradesById:Vector.<UpgradeData>;
 		public var UpgradesOwned:int=0;
-		public var upgradesToRebuild:int;
 		public var UpgradesInStore:Vector.<UpgradeData>;
 
 		//acheivements
 		public var Achievements:Object={};
+		public var AchievementsById:Vector.<AchievementData>;
+		public var AchievementsOwned:int;
 		public var cpsAchievs:Array=[];
 		public var moneyAchievs:Array=[];
 
@@ -83,7 +83,6 @@ package agame.endless.modules.main.model
 		public var Ticker:String='';
 		public var TickerAge:int=0;
 		public var TickerN:int=0;
-
 
 		public var elderWrath:int=0;
 		public var elderWrathD:int=0;
@@ -120,6 +119,9 @@ package agame.endless.modules.main.model
 			UpgradesInStore=new Vector.<UpgradeData>;
 			UpgradeDataModel.setup();
 
+			Achievements={};
+			AchievementsById=new Vector.<AchievementData>;
+			AchievementsOwned=0;
 			AchievementsDataModel.setup();
 
 			NewsTicker.setup();
@@ -143,8 +145,32 @@ package agame.endless.modules.main.model
 			return result;
 		}
 
-		public function Win(achivementName:String):void
+		public function Win(what:String):void
 		{
+			if (what is String)
+			{
+				if (Achievements[what])
+				{
+					if (Achievements[what].won == 0)
+					{
+						Achievements[what].won=1;
+						Popup('Achievement unlocked' + Achievements[what].name);
+						if (Achievements[what].hide != 3)
+						{
+							AchievementsOwned++;
+							handlieMilk();
+						}
+						recalculateGains=1;
+					}
+				}
+			}
+			else
+			{
+				for (var i:String in what)
+				{
+					Win(what[i]);
+				}
+			}
 		}
 
 		public function HasAchiev(what:String):int
@@ -343,7 +369,7 @@ package agame.endless.modules.main.model
 					if (Upgrades[what].unlocked == 0)
 					{
 						Upgrades[what].unlocked=1;
-						upgradesToRebuild=1;
+						upgradeUpgradesDataInStore(Upgrades[what]);
 						recalculateGains=1;
 					}
 				}
@@ -365,7 +391,7 @@ package agame.endless.modules.main.model
 				{
 					Upgrades[what].unlocked=0;
 					Upgrades[what].bought=0;
-					upgradesToRebuild=1;
+					upgradeUpgradesDataInStore(Upgrades[what]);
 					if (Upgrades[what].bought == 1)
 						UpgradesOwned--;
 					recalculateGains=1;
@@ -389,25 +415,6 @@ package agame.endless.modules.main.model
 		{
 			return (Upgrades[what] ? Upgrades[what].unlocked : 0);
 		}
-
-		public function RebuildUpgrades():void //recalculate the upgrades you can buy
-		{
-			return;
-			upgradesToRebuild=0;
-			UpgradesInStore.splice(0, UpgradesInStore.length);
-			var len:int=UpgradesById.length;
-			for (var i:int=0; i < len; i++)
-			{
-				if (!UpgradesById[i].bought && UpgradesById[i].unlocked)
-					UpgradesInStore.push(UpgradesById[i]);
-			}
-			UpgradesInStore.sort(function(a:UpgradeData, b:UpgradeData):Number
-			{
-				return a.basePrice - b.basePrice;
-			});
-			dispatchEventWith(REBUILD_UPGRADES);
-		}
-
 
 		public function NewDrawFunction(pic:Object, xVariance:Number, yVariance:Number, w:Number, shift:Number=0, heightOffset:Number=0):Object
 		{
@@ -492,13 +499,30 @@ package agame.endless.modules.main.model
 
 			if (this.storeToRebuild)
 				RebuildStore();
-			if (upgradesToRebuild)
-				RebuildUpgrades();
 
 			TickerAge--;
 			if (TickerAge <= 0 || Ticker == '')
 				NewsTicker.getTicker();
 			T++;
+		}
+
+		private function handlieMilk():void
+		{
+			//handle milk and milk accessories
+			milkProgress=AchievementsOwned / 25;
+			if (Game.milkProgress >= 0.5)
+				Game.Unlock('Kitten helpers');
+			if (Game.milkProgress >= 1)
+				Game.Unlock('Kitten workers');
+			if (Game.milkProgress >= 2)
+				Game.Unlock('Kitten engineers');
+			if (Game.milkProgress >= 3)
+				Game.Unlock('Kitten overseers');
+			if (Game.milkProgress >= 4)
+				Game.Unlock('Kitten managers');
+			milkH=Math.min(1, Game.milkProgress) //* 0.35;
+			milkH=Math.max(0.7, milkH); //
+			dispatchEventWith(DRAW_MILK);
 		}
 
 		private function checkAchievements():void
@@ -772,8 +796,9 @@ package agame.endless.modules.main.model
 		public static const REBUILD_UPGRADES:String='Rebuild_Upgrades';
 		public static const POP_UP:String='pop_up';
 		public static const DRAW_OBJECT:String='draw_object';
+		public static const DRAW_MILK:String='draw_milk';
 
-		private static const Events:Array=[NEWTICKER_CHANGED, REBUILD_STORED, REBUILD_UPGRADES, DRAW_OBJECT];
+		private static const Events:Array=[NEWTICKER_CHANGED, REBUILD_STORED, REBUILD_UPGRADES, DRAW_OBJECT, DRAW_MILK];
 		public var computedMouseCpsText:String;
 
 		public function addEvents(handler:Function):void
@@ -810,7 +835,13 @@ package agame.endless.modules.main.model
 
 		public function Popup(msg:String):void
 		{
+			trace('popup :', msg);
 			dispatchEventWith(POP_UP, msg);
+		}
+
+		public function Notify(msg:String, icon:String):void
+		{
+
 		}
 
 		public function confirm(msg:String):Boolean
@@ -820,6 +851,46 @@ package agame.endless.modules.main.model
 
 		public function CollectWrinklers():void
 		{
+		}
+
+		public function upgradeUpgradesDataInStore(upgradeData:UpgradeData):void
+		{
+			var index:int=UpgradesInStore.indexOf(upgradeData);
+			var alreadyInStore:Boolean=index != -1;
+			var inStore:Boolean=!upgradeData.bought && upgradeData.unlocked;
+			if (alreadyInStore != inStore)
+			{
+				if (inStore)
+				{
+					var len:int=UpgradesInStore.length;
+					for (var i:int=0; i < len; i++)
+						if (UpgradesInStore[i].price >= upgradeData.price)
+						{
+							break;
+						}
+
+					UpgradesInStore.splice(i, 0, upgradeData);
+					dispatchEventWith(REBUILD_UPGRADES, false, {upgradeData: upgradeData, index: i, inStore: inStore});
+				}
+				else
+				{
+					UpgradesInStore.splice(index, 1);
+					dispatchEventWith(REBUILD_UPGRADES, false, {upgradeData: upgradeData, index: index, inStore: inStore});
+				}
+			}
+
+			trace('upgradeUpgradesDataInStore', UpgradesInStore.length);
+		}
+
+		/**
+		 * 刷新整个Upgrade列表。
+		 */
+		public function rebuildUpgrades():void
+		{
+			// TODO Auto Generated method stub
+			var len:int=UpgradesById.length;
+			for (var i:int=0; i < len; i++)
+				UpgradesById[i].price=UpgradesById[i].getPrice();
 		}
 	}
 }

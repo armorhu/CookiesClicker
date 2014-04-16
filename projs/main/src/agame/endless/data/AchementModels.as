@@ -15,7 +15,7 @@ package agame.endless.data
 			csvContext='';
 			var id=1;
 			var keys:Array=['id', 'name', 'displayName', 'desc', 'iconX', 'iconY', 'hide', 'order', 'category'];
-			var types:Array=['int', 'String', 'String', 'int', 'int', 'String', 'int', 'int', 'String'];
+			var types:Array=['int', 'String', 'String', 'int', 'int', 'int', 'int', 'int', 'String'];
 			csvContext=csvContext + keys.join(',') + '\n';
 			csvContext=csvContext + types.join(',') + '\n';
 			function Achievement(name, desc, icon, hide=0, category='none')

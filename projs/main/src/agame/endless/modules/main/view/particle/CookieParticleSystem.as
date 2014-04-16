@@ -115,12 +115,12 @@ package agame.endless.modules.main.view.particle
 		private var arrangedCharsText:String;
 		private var arrangedChars:Object
 
-		public function particlesDraw(_buttomCanvas:QuadBatch, _upCanvas:QuadBatch, _textCanvas:QuadBatch):void
+		public function particlesDraw(_buttomCanvas:QuadBatch, _textCanvas:QuadBatch):void
 		{
 			if (arrangedCharsText != Game.computedMouseCpsText)
 			{
 				arrangedCharsText=Game.computedMouseCpsText;
-				arrangedChars=Assets.current.particleBmFont.arrangeChars(64, 32, arrangedCharsText, 24, HAlign.CENTER, //
+				arrangedChars=Assets.current.particleBmFont.arrangeChars(64, 64, arrangedCharsText, 32, HAlign.CENTER, //
 					VAlign.CENTER, //
 					false, //
 					false);
@@ -147,9 +147,6 @@ package agame.endless.modules.main.view.particle
 						_cookies.rotation=me.r;
 						if (me.z == 0)
 							_buttomCanvas.addImage(_cookies);
-						else
-							_upCanvas.addImage(_cookies);
-
 					}
 				}
 			}

@@ -547,7 +547,6 @@ package agame.endless.data
 				obj.power=power;
 				obj.icon=icon;
 				obj.hide=0;
-				obj.type='';
 				obj.season='';
 				obj.tierObject=lastObjectName;
 				lastObjectName='';
@@ -557,7 +556,7 @@ package agame.endless.data
 
 
 			var len:int=result.length;
-			var kes:Array=['id', 'name', 'displayName', 'desc', 'type', 'price', 'tierObject', 'power', 'order', 'hide', 'season', 'iconX', 'iconY'];
+			var kes:Array=['id', 'name', 'displayName', 'desc', 'type', 'basePrice', 'tierObject', 'power', 'order', 'hide', 'season', 'iconX', 'iconY'];
 			var types:Array=['int', 'String', 'String', 'String', 'String', 'int', 'String', 'int', 'int', 'int', 'String', 'int', 'int'];
 			csvContext=csvContext + kes.join(',') + '\n';
 			csvContext=csvContext + types.join(',') + '\n';
@@ -569,6 +568,8 @@ package agame.endless.data
 				temp.push(obj.name);
 				temp.push('"' + obj.displayName + '"');
 				temp.push('"' + obj.desc + '"');
+				if (obj.type != '')
+					trace(obj.type);
 				temp.push(obj.type);
 				temp.push(obj.price);
 				temp.push(obj.tierObject);

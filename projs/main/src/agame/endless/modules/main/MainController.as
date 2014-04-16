@@ -19,6 +19,7 @@ package agame.endless.modules.main
 	import agame.endless.services.frame.Enterframe;
 	import agame.endless.services.frame.IEnterframe;
 
+	import starling.core.Starling;
 	import starling.events.Event;
 	import starling.events.EventDispatcher;
 
@@ -131,12 +132,19 @@ package agame.endless.modules.main
 			else if (evt.type == MainModel.REBUILD_STORED)
 				rebuildStored(evt.data as Array);
 			else if (evt.type == MainModel.REBUILD_UPGRADES)
-				rebuildUpgrades();
+				_view.setUpgradeData(evt.data);
 			else if (evt.type == MainModel.DRAW_OBJECT)
 			{
 				if (_drityObjects == null)
 					_drityObjects=new Object;
 				_drityObjects[evt.data]=true;
+			}
+			else if (evt.type == MainModel.DRAW_MILK)
+			{
+				var pic:int=Math.floor(Game.milkProgress);
+				if (pic > 4)
+					pic=4;
+				_view.setMilkStyle(pic, Game.milkH);
 			}
 		}
 
@@ -145,11 +153,6 @@ package agame.endless.modules.main
 			var len:int=changedStroedItem.length;
 			for (var i:int=0; i < len; i++)
 				_view.setStoreItem(changedStroedItem[i]);
-		}
-
-		private function rebuildUpgrades():void
-		{
-			_view.resetUpgradesItem(Game.UpgradesInStore);
 		}
 
 		public function enterframe():void
@@ -170,9 +173,8 @@ package agame.endless.modules.main
 //				var unit=(Math.round(Game.cookiesd)==1?' cookie':' cookies');
 //				if (Math.round(Game.cookiesd).toString().length>11 && !Game.mobile) unit='<br>cookies';
 //				var str=Beautify(Math.round(Game.cookiesd))+unit+'<div style="font-size:50%;"'+(Game.cpsSucked>0?' class="warning"':'')+'>per second : '+Beautify(Game.cookiesPs*(1-Game.cpsSucked),1)+'</div>';//display cookie amount
-
 				_view.cookies.text=Lang(TextsTIDDefs.TID_COOKIES).replace(LangPattern.Number, Beautify(Math.round(Game.cookiesd)));
-				_view.cps.text=Lang(TextsTIDDefs.TID_CPS).replace(LangPattern.Number, Beautify(Game.cookiesPs, 1));
+				_view.cookieCenter.cps.text=Lang(TextsTIDDefs.TID_CPS).replace(LangPattern.Number, Beautify(Game.cookiesPs, 1))
 			}
 		}
 

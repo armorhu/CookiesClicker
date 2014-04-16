@@ -32,13 +32,13 @@ package agame.endless.modules.main.view.upgrades
 			var model:UpgradeData=data as UpgradeData;
 			if (icon == null)
 			{
-				icon=new Image(UpgradeIconUtil.getIconTexture(model.name));
+				icon=new Image(UpgradeIconUtil.getIconTexture(model.iconX, model.iconY));
 				addChild(icon);
-				icon.x=icon.y=6;
+				icon.x=icon.y=int((view.width - icon.width) / 2);
 			}
 			else
 			{
-				icon.texture=UpgradeIconUtil.getIconTexture(model.name)
+				icon.texture=UpgradeIconUtil.getIconTexture(model.iconX, model.iconY);
 			}
 		}
 	}

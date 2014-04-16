@@ -152,16 +152,18 @@ package agame.endless.services.feathers.itemRender
 		 */
 		protected function accessory_touchHandler(event:TouchEvent):void
 		{
-			if (!this.isDisabled)
+			if (this.isDisabled)
 				return;
 
 			if (this.touchPointID >= 0)
 			{
 				var touch:Touch=event.getTouch(this, TouchPhase.ENDED, this.touchPointID);
 				if (!touch)
-				{
 					return;
-				}
+
+				itemClicked();
+				if (!this._isSelected)
+					this.isSelected=true;
 				this.touchPointID=-1;
 			}
 			else //if we get here, we don't have a saved touch ID yet
@@ -169,9 +171,6 @@ package agame.endless.services.feathers.itemRender
 				touch=event.getTouch(this, TouchPhase.BEGAN);
 				if (touch)
 				{
-					itemClicked();
-					if (!this._isSelected)
-						this.isSelected=true;
 					this.touchPointID=touch.id;
 				}
 			}

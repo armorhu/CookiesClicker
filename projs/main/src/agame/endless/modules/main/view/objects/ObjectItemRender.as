@@ -43,7 +43,7 @@ package agame.endless.modules.main.view.objects
 				setSize(view.width, view.height);
 				touchMask=view.touchMask;
 				addChild(view.touchMask);
-//				view.flatten();
+				view.flatten();
 			}
 		}
 
@@ -74,13 +74,13 @@ package agame.endless.modules.main.view.objects
 					{
 						view.disableMask.visible=false;
 						(view.price as StarlingTextField).color=0x66FF66;
-						isDisabled=true;
+						isDisabled=false;
 					}
 					else
 					{
 						view.disableMask.visible=true;
 						(view.price as StarlingTextField).color=0xff0000;
-						isDisabled=false;
+						isDisabled=true;
 					}
 				}
 
@@ -105,6 +105,9 @@ package agame.endless.modules.main.view.objects
 
 		override protected function itemClicked():void
 		{
+			Assets.current.playSound('select_item');
+//			if (isSelected)
+//			{
 			if (sc == null)
 			{
 				if (data.id == 1)
@@ -114,9 +117,23 @@ package agame.endless.modules.main.view.objects
 						sc.addEventListener(flash.events.Event.SOUND_COMPLETE, soundComplete);
 				}
 			}
-			Assets.current.playSound('select_item');
 			data.buy();
+//			}
 		}
+
+//		override public function set isSelected(value:Boolean):void
+//		{
+//			if (value != isSelected)
+//			{
+//				if (value)
+//					showObjectItemDetial(this);
+//				if (value)
+//					setSize(view.width, view.height + _objectItemDetial.height);
+//				else
+//					setSize(view.width, view.height);
+//				super.isSelected=value;
+//			}
+//		}
 
 		private function soundComplete(evt:flash.events.Event):void
 		{
@@ -124,5 +141,16 @@ package agame.endless.modules.main.view.objects
 			sc=null;
 		}
 
+
+		private static var _objectItemDetial:StarlingMovieClip;
+
+		public static function showObjectItemDetial(itemRender:ObjectItemRender):void
+		{
+			if (_objectItemDetial == null)
+				_objectItemDetial=Assets.current.getLinkageInstance('endless.ui.ObjectDetailItem') as StarlingMovieClip;
+
+			_objectItemDetial.y=itemRender.view.height;
+			itemRender.addChild(_objectItemDetial);
+		}
 	}
 }

@@ -3,7 +3,10 @@ package agame.endless.modules.main.view.buildings
 	import com.agame.utils.Beautify;
 	import com.agame.utils.DisplayUtil;
 
+	import flash.geom.Rectangle;
+
 	import agame.endless.configs.lang.Lang;
+	import agame.endless.configs.lang.LangPattern;
 	import agame.endless.configs.texts.TextsTIDDefs;
 	import agame.endless.modules.main.model.Game;
 	import agame.endless.modules.main.model.buildings.BuildingData;
@@ -13,11 +16,11 @@ package agame.endless.modules.main.view.buildings
 	import agame.endless.services.frame.Enterframe;
 	import agame.endless.services.frame.IEnterframe;
 
-	import feathers.controls.Button;
 	import feathers.controls.ScrollContainer;
 	import feathers.controls.Scroller;
 	import feathers.display.TiledImage;
 
+	import starling.core.RenderSupport;
 	import starling.display.Image;
 	import starling.display.QuadBatch;
 	import starling.events.Event;
@@ -32,8 +35,9 @@ package agame.endless.modules.main.view.buildings
 		//ui
 		private var _view:StarlingMovieClip;
 		private var _viewWidth:Number;
+		public var viewHeight:Number;
 
-		private var _btnSell:Button;
+//		private var _btnSell:Button;
 
 		public function BuildingItemRender()
 		{
@@ -49,23 +53,6 @@ package agame.endless.modules.main.view.buildings
 			_view=Assets.current.getLinkageInstance('endless.ui.BuildingItemUI') as StarlingMovieClip;
 			addChild(_view);
 			_viewWidth=_view.width;
-
-			_view.amount.autoScale=true;
-			_view.amount.fontName=Assets.FontName;
-
-			_view.cps.autoScale=true;
-			_view.cps.fontName=Assets.FontName;
-
-			_view.totalCookies.autoScale=true;
-			_view.totalCookies.fontName=Assets.FontName;
-
-			_btnSell=new Button();
-			_btnSell.label=Lang(TextsTIDDefs.TID_BUTTON_LABEL_SELL);
-			_btnSell.nameList.add(Button.ALTERNATE_NAME_QUIET_BUTTON);
-			_btnSell.width=_view.btnSell.width;
-			_btnSell.height=_view.btnSell.height;
-			DisplayUtil.alignWith(_btnSell, _view.btnSell);
-
 		}
 
 		override protected function addedToStageHandler(event:Event):void
@@ -85,6 +72,10 @@ package agame.endless.modules.main.view.buildings
 		private var _picQuad:QuadBatch; //人物
 		private var _picImage:Image;
 
+
+		private var _itemWidth:Number;
+		private var _itemHeight:Number;
+
 		private function initWithData():void
 		{
 			//滚动条。。。。
@@ -98,17 +89,30 @@ package agame.endless.modules.main.view.buildings
 			_scrollContainer.horizontalScrollPolicy=Scroller.SCROLL_POLICY_ON;
 			_scrollContainer.verticalScrollPolicy=Scroller.SCROLL_POLICY_OFF;
 			_scrollContainer.scrollBarDisplayMode=Scroller.SCROLL_BAR_DISPLAY_MODE_FLOAT;
+
 			_picQuad=new QuadBatch;
 			_scrollContainer.addChild(_picQuad);
 			_picImage=new Image(Assets.current.getLinkageTexture(data.pic));
 
-			setSize(_viewWidth, _background.height + _view.title.height);
-
+			viewHeight=_background.height + _view.title.height;
+			setSize(_viewWidth, viewHeight);
 			enterframe();
+		}
+
+		override public function render(support:RenderSupport, parentAlpha:Number):void
+		{
+			if (_buildingDetail && _buildingDetail.parent == this && Game.T % 5 == 0)
+			{
+				var storedTotalCps:Number=Game.ObjectsById[int(data.id)].totalCookies;
+				_buildingDetail.totalCookies.text=Lang(TextsTIDDefs.TID_COOKIES_BAKED).replace(LangPattern.Number, Beautify(storedTotalCps));
+			}
+
+			super.render(support, parentAlpha);
 		}
 
 		override protected function commitData():void
 		{
+			this.unflatten();
 			var data:BuildingData=_data as BuildingData;
 			if (_background == null)
 			{
@@ -120,17 +124,24 @@ package agame.endless.modules.main.view.buildings
 				_background.texture=Assets.current.getLinkageTexture(data.bg);
 			}
 
+			if (data.id == 1)
+			{
+				_picImage.scaleX=_picImage.scaleY=1.5;
+			}
+			else
+			{
+				_picImage.scaleX=_picImage.scaleY=1.0;
+			}
 			var newWidht:Number=data.bgW > _viewWidth ? data.bgW : _viewWidth;
 			if (_background.width != newWidht)
 			{
 				_background.width=newWidht;
 				_scrollContainer.readjustLayout();
 				if (data.bgW > _viewWidth)
-					_scrollContainer.scrollToPosition(data.bgW - _viewWidth, 0);
+					_picQuad.x=_background.x=_viewWidth - data.bgW;
 				else
-					_scrollContainer.scrollToPosition(0, 0, 0);
+					_picQuad.x=_background.x=0;
 			}
-
 			_picQuad.reset();
 			var len:int=data.points.length;
 			for (var i:int=0; i < len; i++)
@@ -139,6 +150,30 @@ package agame.endless.modules.main.view.buildings
 				_picImage.y=data.points[i].y;
 				_picQuad.addImage(_picImage);
 			}
+			helperObjectData=Game.ObjectsById[data.id];
+			_view.amount.text=Lang(TextsTIDDefs.TID_CPS).replace(LangPattern.Number, Beautify(helperObjectData.storedTotalCps, 1));
+			this.flatten();
+		}
+
+		override public function set isSelected(value:Boolean):void
+		{
+			if (value != isSelected)
+			{
+				super.isSelected=value;
+				if (value)
+				{
+					showObjectItemDetial(this);
+					setSize(_viewWidth, viewHeight + _buildingDetail.height);
+					this.unflatten();
+				}
+				else
+				{
+					if (_buildingDetail && _buildingDetail.parent == this)
+						_buildingDetail.removeFromParent();
+					setSize(_viewWidth, viewHeight);
+					this.flatten();
+				}
+			}
 		}
 
 		private static var helperBuildingData:BuildingData;
@@ -146,42 +181,42 @@ package agame.endless.modules.main.view.buildings
 
 		public function enterframe():void
 		{
+			return;
 			// TODO Auto Generated method stub
 			helperBuildingData=data as BuildingData;
 			if (helperBuildingData)
 				helperObjectData=Game.ObjectsById[helperBuildingData.id];
 			if (helperBuildingData && helperObjectData)
 			{
-				if (helperObjectData.amount != mAmount)
+				if (helperObjectData.amount != mAmount || helperObjectData.storedTotalCps != mCps)
 				{
 					mAmount=helperObjectData.amount;
 					//render amount
-					_view.amount.text=helperObjectData.displayName + ' X' + mAmount;
-				}
-
-				if (helperObjectData.storedTotalCps != mCps)
-				{
 					mCps=helperObjectData.storedTotalCps;
 					// render cps
-					_view.cps.text='cps:' + Beautify(mCps, 1);
-				}
-
-				if (helperObjectData.totalCookies != mTotalCookies)
-				{
-					mTotalCookies=helperObjectData.totalCookies;
-					//render total cookies
-					_view.totalCookies.text='total:' + Beautify(mTotalCookies);
+					_view.amount.text=helperObjectData.displayName + ' X' + mAmount + '(cps=' + Beautify(mCps, 1) + ')';
 				}
 			}
 			helperBuildingData=null;
 			helperObjectData=null;
 		}
 
-		override public function set isSelected(value:Boolean):void
+		override public function setSize(width:Number, height:Number):void
 		{
-			super.isSelected=value;
-			_btnSell.visible=value;
+			this.clipRect=new Rectangle(0, 0, width, height);
+			super.setSize(width, height);
 		}
 
+
+		private static var _buildingDetail:StarlingMovieClip;
+
+
+		public static function showObjectItemDetial(itemRender:BuildingItemRender):void
+		{
+			if (_buildingDetail == null)
+				_buildingDetail=Assets.current.getLinkageInstance('endless.ui.BuildingDetailItemUI') as StarlingMovieClip;
+			_buildingDetail.y=itemRender.viewHeight;
+			itemRender.addChild(_buildingDetail);
+		}
 	}
 }

@@ -17,25 +17,25 @@ package agame.endless.modules.main.view.upgrades
 		private static var icons:Texture;
 		private static const iconsDict:Object={};
 
-		private static var sHelperUpgrade:UpgradeData;
 		private static var sHeplerRect:Rectangle=new Rectangle;
 		private static var sHeplerTexture:Texture;
 
-		public static function getIconTexture(upgradeName:String):Texture
+		public static function getIconTexture(iconX:int, iconY:int):Texture
 		{
-			if (iconsDict[upgradeName] != undefined)
-				return iconsDict[upgradeName] as Texture;
+			var key:String=iconX + '_' + iconY
+			if (iconsDict[iconX + '_' + iconY] != undefined)
+				return iconsDict[key] as Texture;
 
 			if (icons == null)
 			{
 				icons=Assets.current.getLinkageTexture('icons');
 				sHeplerRect.width=48, sHeplerRect.height=48;
 			}
-			sHelperUpgrade=Game.Upgrades[upgradeName] as UpgradeData;
-			sHeplerRect.x=sHelperUpgrade.icon[0] * 48;
-			sHeplerRect.y=sHelperUpgrade.icon[1] * 48;
+
+			sHeplerRect.x=iconX * 48;
+			sHeplerRect.y=iconY * 48;
 			sHeplerTexture=Texture.fromTexture(icons, sHeplerRect);
-			iconsDict[upgradeName]=sHeplerTexture;
+			iconsDict[key]=sHeplerTexture;
 			return sHeplerTexture;
 		}
 	}

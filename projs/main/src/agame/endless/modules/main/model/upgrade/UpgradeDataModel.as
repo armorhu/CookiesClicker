@@ -1,8 +1,12 @@
 package agame.endless.modules.main.model.upgrade
 {
+	import com.agame.services.csv.CSVFile;
 	import com.agame.utils.choose;
 
+	import flash.utils.ByteArray;
+
 	import agame.endless.modules.main.model.Game;
+	import agame.endless.services.assets.Assets;
 
 	public class UpgradeDataModel
 	{
@@ -12,6 +16,17 @@ package agame.endless.modules.main.model.upgrade
 
 		public static function setup():void
 		{
+			UpgradeData.csvFile=new CSVFile();
+			var ba:ByteArray=Assets.current.getByteArray('upgrades');
+			UpgradeData.csvFile.read(ba.readUTFBytes(ba.bytesAvailable)).parse();
+
+			var len:int=UpgradeData.csvFile.valueTables.length;
+			for (var i:int=0; i < len; i++)
+				new UpgradeData();
+
+			Assets.current.removeByteArray('upgrades');
+			UpgradeData.csvFile.dispose();
+
 			var tier1:int=10;
 			var tier2:int=100;
 			var tier3:int=1000;
@@ -445,7 +460,7 @@ package agame.endless.modules.main.model.upgrade
 			});
 			createUpgrade('Toy workshop', 'All upgrades are <b>5% cheaper</b>.<q>Watch yours-elf around elvesdroppers who might steal our production secrets.<br>Or elven worse!</q>', 2525, [16, 9], function():void
 			{
-				Game.upgradesToRebuild=1;
+				Game.rebuildUpgrades();
 			});
 			createUpgrade('Naughty list', 'Grandmas are <b>twice</b> as productive.<q>This list contains every unholy deed perpetuated by grandmakind.<br>He won\'t be checking this one twice.<br>Once. Once is enough.</q>', 2525, [15, 9]);
 			createUpgrade('Santa\'s bottomless bag', 'Random drops are <b>10% more common</b>.<q>This is one bottom you can\'t check out.</q>', 2525, [19, 9]);
@@ -462,6 +477,7 @@ package agame.endless.modules.main.model.upgrade
 			createUpgrade('Santa\'s dominion', 'Cookie production multiplier <b>+50%</b>.<br>All buildings are <b>1% cheaper</b>.<br>All upgrades are <b>2% cheaper</b>.<q>My name is Claus, king of kings;<br>Look on my toys, ye Mighty, and despair!</q>', 2525252525252525, [19, 10], function():void
 			{
 				Game.RefreshBuildings();
+				Game.rebuildUpgrades();
 			});
 
 			order=10300;
@@ -490,6 +506,8 @@ package agame.endless.modules.main.model.upgrade
 			});
 
 			order=24000;
+
+			trace('setup upgrades complete,total=' + UpgradeData.UpgradesN);
 		}
 
 		public static var order:int;
@@ -498,32 +516,8 @@ package agame.endless.modules.main.model.upgrade
 
 		public static function createUpgrade(name:String, desc:String, price:Number, icon:Array, buyFunction:Function=null):void
 		{
-			var result:UpgradeData=new UpgradeData;
-			result.id=UpgradeData.UpgradesN;
-			result.name=name;
-			result.desc=desc;
-			result.basePrice=price;
-			result.icon=icon;
-			result.buyFunction=buyFunction;
-			/*result.unlockFunction=unlockFunction;
-			result.unlocked=(result.unlockFunction?0:1);*/
-			result.unlocked=0;
-			result.bought=0;
-			result.hide=0; //0=show, 3=hide (1-2 : I have no idea)
-			result.order=result.id;
-			if (order)
-				result.order=order + result.id * 0.001;
-			result.type='';
-			if (type)
-				result.type=type;
-			result.power=0;
-			if (power)
-				result.power=power;
-
-			Game.Upgrades[result.name]=result;
-			Game.UpgradesById.length=result.id + 1;
-			Game.UpgradesById[result.id]=result;
-			UpgradeData.UpgradesN++;
+			if (buyFunction)
+				Game.Upgrades[name].buyFunction=buyFunction;
 		}
 	}
 }

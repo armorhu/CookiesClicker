@@ -753,6 +753,27 @@ package agame.endless.configs.texts
 		public static const TID_BUTTON_LABEL_SELL:String = "TID_BUTTON_LABEL_SELL";
 		public static const TID_BUTTON_LABEL_MENU:String = "TID_BUTTON_LABEL_MENU";
 		public static const TID_BUTTON_LABEL_STATS:String = "TID_BUTTON_LABEL_STATS";
+		public static const TID_STORE:String = "TID_STORE";
+		public static const TID_BUILDING:String = "TID_BUILDING";
+		public static const TID_SECTION_GENERAL:String = "TID_SECTION_GENERAL";
+		public static const TID_SECTION_UNLOCK_UPGRADES:String = "TID_SECTION_UNLOCK_UPGRADES";
+		public static const TID_UPGRADE:String = "TID_UPGRADE";
+		public static const TID_ACHIEVEMENTS:String = "TID_ACHIEVEMENTS";
+		public static const TID_COOKIES_IN_BANK:String = "TID_COOKIES_IN_BANK";
+		public static const TID_COOKIES_BAKED_THIS_GAME:String = "TID_COOKIES_BAKED_THIS_GAME";
+		public static const TID_COOKIES_BAKED_ALL_TIME:String = "TID_COOKIES_BAKED_ALL_TIME";
+		public static const TID_SESSION_START:String = "TID_SESSION_START";
+		public static const TID_BUILDING_OWNED:String = "TID_BUILDING_OWNED";
+		public static const TID_COOKIES_PER_SECEND:String = "TID_COOKIES_PER_SECEND";
+		public static const TID_MULTIPLIER:String = "TID_MULTIPLIER";
+		public static const TID_COOKIES_PER_CLICK:String = "TID_COOKIES_PER_CLICK";
+		public static const TID_COOKIE_CLICK:String = "TID_COOKIE_CLICK";
+		public static const TID_HAND_MAKE_COOKIE:String = "TID_HAND_MAKE_COOKIE";
+		public static const TID_GOLDEN_CLICK:String = "TID_GOLDEN_CLICK";
+		public static const TID_RUNNING_VERSION:String = "TID_RUNNING_VERSION";
+		public static const TID_UNLOCKED:String = "TID_UNLOCKED";
+		public static const TID_MILK:String = "TID_MILK";
+		public static const TID_MILK_NOTE:String = "TID_MILK_NOTE";
 		public function TextsTIDDefs()
 		{
 		}

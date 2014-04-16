@@ -8,7 +8,7 @@ package agame.endless.configs.upgrades
 		public var displayName:String;
 		public var desc:String;
 		public var type:String;
-		public var price:int;
+		public var basePrice:int;
 		public var tierObject:String;
 		public var power:int;
 		public var order:int;

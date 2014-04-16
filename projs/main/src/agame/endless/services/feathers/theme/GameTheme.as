@@ -169,7 +169,7 @@ package agame.endless.services.feathers.theme
 
 		protected function baseButtonInitializer(button:Button):void
 		{
-			button.defaultLabelProperties.textFormat=new BitmapFontTextFormat(Assets.FontName, 24 * this.scale, DARK_TEXT_COLOR, TextFormatAlign.CENTER);
+			button.defaultLabelProperties.textFormat=new BitmapFontTextFormat(Assets.FontName, 28 * this.scale, DARK_TEXT_COLOR, TextFormatAlign.CENTER);
 //			button.disabledLabelProperties.textFormat=this.darkUIDisabledElementFormat;
 //			button.selectedDisabledLabelProperties.textFormat=this.darkUIDisabledElementFormat;
 			button.paddingTop=button.paddingBottom=4 * this.scale;

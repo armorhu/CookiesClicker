@@ -8,7 +8,7 @@ package agame.endless.configs.achievements
 		public var displayName:String;
 		public var desc:int;
 		public var iconX:int;
-		public var iconY:String;
+		public var iconY:int;
 		public var hide:int;
 		public var order:int;
 		public var category:String;

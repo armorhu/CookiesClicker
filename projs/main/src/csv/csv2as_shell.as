@@ -16,7 +16,7 @@ package csv
 	{
 		public function csv2as_shell()
 		{
-//			genCSV();
+			genCSV();
 //			genCharset();
 			genConfigModel();
 		}
