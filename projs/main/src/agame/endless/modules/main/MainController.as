@@ -2,6 +2,7 @@ package agame.endless.modules.main
 {
 	import com.agame.framework.module.Module;
 	import com.agame.utils.Beautify;
+	import com.greensock.TimelineMax;
 
 	import flash.media.SoundTransform;
 	import flash.utils.getTimer;
@@ -12,16 +13,18 @@ package agame.endless.modules.main
 	import agame.endless.configs.texts.TextsTIDDefs;
 	import agame.endless.modules.main.model.Game;
 	import agame.endless.modules.main.model.MainModel;
+	import agame.endless.modules.main.model.achievements.AchievementData;
 	import agame.endless.modules.main.model.buildings.BuildingData;
 	import agame.endless.modules.main.model.objects.ObjectData;
 	import agame.endless.modules.main.view.MainView;
+	import agame.endless.modules.main.view.upgrades.UpgradeIconUtil;
 	import agame.endless.services.assets.Assets;
 	import agame.endless.services.frame.Enterframe;
 	import agame.endless.services.frame.IEnterframe;
 
-	import starling.core.Starling;
 	import starling.events.Event;
 	import starling.events.EventDispatcher;
+	import starling.extension.starlingide.display.textfield.StarlingTextField;
 
 	public class MainController extends EventDispatcher implements IEnterframe
 	{
@@ -128,7 +131,10 @@ package agame.endless.modules.main
 		private function modelEventHandler(evt:Event):void
 		{
 			if (evt.type == MainModel.NEWTICKER_CHANGED)
-				_view.content.newsTickerLabel.text=Game.Ticker;
+			{
+
+				presentNews();
+			}
 			else if (evt.type == MainModel.REBUILD_STORED)
 				rebuildStored(evt.data as Array);
 			else if (evt.type == MainModel.REBUILD_UPGRADES)
@@ -146,6 +152,35 @@ package agame.endless.modules.main
 					pic=4;
 				_view.setMilkStyle(pic, Game.milkH);
 			}
+			else if (evt.type == MainModel.ACHIEVEMENT_UNLOCK)
+			{
+				var achievementName:String=evt.data as String;
+				var achievementData:AchievementData=Game.Achievements[achievementName];
+				_view.notify(achievementData.displayName, achievementData.desc, UpgradeIconUtil.getIcon(achievementData.iconX, achievementData.iconY));
+			}
+		}
+
+
+		private var _newsTimeline:TimelineMax;
+
+		private function presentNews():void
+		{
+			// TODO Auto Generated method stub
+			var newsLabel:StarlingTextField=_view.content.newsTickerLabel;
+			newsLabel.text=Game.Ticker;
+
+//			if (_newsTimeline == null)
+//			{
+//				_newsTimeline=new TimelineMax;
+//				newsLabel.text='';
+//				_newsTimeline.append(TweenLite.to(newsLabel, 0.5, {y: newsLabel.y - 100, onComplete: function():void
+//				{
+//					newsLabel.text=Game.Ticker;
+//				}}));
+//				_newsTimeline.append(TweenLite.to(newsLabel, 0.5, {y: newsLabel.y}));
+//				_newsTimeline.autoRemoveChildren=false;
+//			}
+//			_newsTimeline.restart();
 		}
 
 		private function rebuildStored(changedStroedItem:Array):void

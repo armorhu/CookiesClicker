@@ -1,13 +1,14 @@
 package agame.endless.modules.main.view
 {
 	import com.agame.utils.DisplayUtil;
+	import com.greensock.TimelineMax;
 	import com.greensock.TweenLite;
-
+	
 	import flash.display.BitmapData;
 	import flash.display.BitmapDataChannel;
 	import flash.geom.Point;
 	import flash.geom.Rectangle;
-
+	
 	import agame.endless.configs.lang.Lang;
 	import agame.endless.configs.texts.TextsTIDDefs;
 	import agame.endless.modules.main.view.buildings.BuildingItemRender;
@@ -19,7 +20,7 @@ package agame.endless.modules.main.view
 	import agame.endless.services.assets.Assets;
 	import agame.endless.services.frame.IEnterframe;
 	import agame.endless.services.utils.useEmbedFont;
-
+	
 	import feathers.controls.List;
 	import feathers.controls.ScrollContainer;
 	import feathers.controls.Scroller;
@@ -27,7 +28,7 @@ package agame.endless.modules.main.view
 	import feathers.display.TiledImage;
 	import feathers.layout.TiledRowsLayout;
 	import feathers.layout.VerticalLayout;
-
+	
 	import starling.animation.IAnimatable;
 	import starling.core.Starling;
 	import starling.display.DisplayObject;
@@ -71,6 +72,9 @@ package agame.endless.modules.main.view
 		private var canvasX:Number;
 		private var canvasWidth:Number;
 
+		public var stageWidth:Number=0;
+		public var stageHeight:Number=0;
+
 		public function MainView()
 		{
 			super();
@@ -79,6 +83,9 @@ package agame.endless.modules.main.view
 
 		private function initiliaze():void
 		{
+			stageWidth=Starling.current.stage.stageWidth;
+			stageHeight=Starling.current.stage.stageHeight;
+
 			content=Assets.current.getLinkageInstance('endless.ui.MainUIView') as StarlingMovieClip;
 			addChild(content);
 			addEventListener(Event.TRIGGERED, triggeredMeHandler);
@@ -92,7 +99,6 @@ package agame.endless.modules.main.view
 			frame.flatten();
 			canvasX=content.newsTickerLabel.x;
 			canvasWidth=content.newsTickerLabel.width;
-
 
 
 			cookieCenter=content.cookieCenter;
@@ -152,7 +158,10 @@ package agame.endless.modules.main.view
 			_curser=new CurserCanvas(_bigCookie.width);
 			_curser.x=_bigCookie.x;
 			_curser.y=_bigCookie.y;
-			cookieCenter.particleCotnainer2.addChild(_curser);
+			cookieCenter.particleCotnainer2.addChildAt(_curser, 0);
+
+
+			//饼干背景
 		}
 
 		public var cookiesRain:PDParticleSystem;
@@ -160,19 +169,10 @@ package agame.endless.modules.main.view
 
 		private function initMainStyle():void
 		{
-			// TODO Auto Generated method stub
 			MainStyle.Upgrade_list_height=192;
 			MainStyle.Upgrade_List_Width=192;
 		}
 
-//		private function alignWith(source:DisplayObject, target:DisplayObject):void
-//		{
-//			source.x=target.x;
-//			source.y=target.y;
-//			var parentIndex:int=target.parent.getChildIndex(target);
-//			target.parent.addChildAt(source, parentIndex);
-//			target.parent.removeChild(target);
-//		}
 
 		private function triggeredMeHandler(evt:Event):void
 		{
@@ -386,6 +386,19 @@ package agame.endless.modules.main.view
 			});
 		}
 
+		///////----------------------------------------------------------------------------------------------------//////
+		///////---------------------------------draw Cookies Background--------------------------------------------//////
+		///////----------------------------------------------------------------------------------------------------//////
+		///////----------------------------------------------------------------------------------------------------//////
+		public var cookiesBackground:Sprite;
+		public var cookiesBackgroundImage:TiledImage;
+
+		public function setCookiesBackgroundTexture():void
+		{
+			if (cookiesBackground == null)
+				cookiesBackground=new Sprite;
+			
+		}
 
 		///////----------------------------------------------------------------------------------------------------//////
 		///////-----------------------------------------------draw Milk--------------------------------------------//////
@@ -466,6 +479,7 @@ package agame.endless.modules.main.view
 				_window.y=Starling.current.stage.stageHeight;
 				TweenLite.to(_window, 0.5, {y: Starling.current.stage.stageHeight - _window.height, onComplete: function():void
 				{
+//					Assets.current.playSound('popupwindow');
 					content.removeFromParent();
 				}});
 			}
@@ -515,6 +529,38 @@ package agame.endless.modules.main.view
 		{
 			// TODO Auto Generated method stub
 			_curser.updateCurserAmount(amount);
+		}
+		private var _notifyViews:Vector.<StarlingMovieClip>=new Vector.<StarlingMovieClip>;
+
+		public function notify(title:String, msg:String, icon:DisplayObject):void
+		{
+			var _notifyView:StarlingMovieClip;
+			if (_notifyViews.length > 0)
+				_notifyView=_notifyViews.pop();
+			else
+				_notifyView=Assets.current.getLinkageInstance('NoteWindow') as StarlingMovieClip;
+
+			_notifyView.alpha=1;
+			_notifyView.scaleY=1;
+			_notifyView.x=stageWidth / 2;
+			_notifyView.y=stageHeight + _notifyView.height;
+			_notifyView.title.text=title;
+			_notifyView.msg.text=msg;
+			(_notifyView.icon as StarlingMovieClip).removeChildren(0, -1, true);
+			_notifyView.icon.addChild(icon);
+			addChild(_notifyView);
+
+			var _notifyTimeLine:TimelineMax=new TimelineMax({onComplete: notifyComplete, onCompleteParams: [_notifyView]});
+			_notifyTimeLine.append(TweenLite.to(_notifyView, 0.5, {alpha: 1, y: stageHeight}));
+			_notifyTimeLine.append(TweenLite.to(_notifyView, 0.75, {alpha: 0, scaleY: 0, y: stageHeight - _notifyView.height}), 4);
+			_notifyTimeLine.play();
+			Assets.current.playSound('notifier_achievement_complete');
+		}
+
+		private function notifyComplete(target:DisplayObject):void
+		{
+			target.removeFromParent();
+			_notifyViews.push(target);
 		}
 	}
 }

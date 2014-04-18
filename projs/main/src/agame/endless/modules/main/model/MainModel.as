@@ -154,10 +154,10 @@ package agame.endless.modules.main.model
 					if (Achievements[what].won == 0)
 					{
 						Achievements[what].won=1;
-						Popup('Achievement unlocked' + Achievements[what].name);
 						if (Achievements[what].hide != 3)
 						{
 							AchievementsOwned++;
+							dispatchEventWith(ACHIEVEMENT_UNLOCK, false, what);
 							handlieMilk();
 						}
 						recalculateGains=1;
@@ -794,11 +794,12 @@ package agame.endless.modules.main.model
 		public static const NEWTICKER_CHANGED:String='NEWTICKER_CHANGED';
 		public static const REBUILD_STORED:String='Rebuild_Stored';
 		public static const REBUILD_UPGRADES:String='Rebuild_Upgrades';
-		public static const POP_UP:String='pop_up';
 		public static const DRAW_OBJECT:String='draw_object';
 		public static const DRAW_MILK:String='draw_milk';
+		public static const ACHIEVEMENT_UNLOCK:String='achievement_unlock'; //成就解锁
+		public static const NOTIFY:String='notify';
 
-		private static const Events:Array=[NEWTICKER_CHANGED, REBUILD_STORED, REBUILD_UPGRADES, DRAW_OBJECT, DRAW_MILK];
+		private static const Events:Array=[NEWTICKER_CHANGED, REBUILD_STORED, REBUILD_UPGRADES, DRAW_OBJECT, DRAW_MILK, ACHIEVEMENT_UNLOCK, NOTIFY];
 		public var computedMouseCpsText:String;
 
 		public function addEvents(handler:Function):void
@@ -829,19 +830,8 @@ package agame.endless.modules.main.model
 				if (Game.Has('Ultrascience'))
 					Game.researchT=Game.fps * 5;
 				Game.nextResearch=Game.Upgrades[what].id;
-				Game.Popup('Research has begun.');
+				Popup('Research has begun.', 'Note!');
 			}
-		}
-
-		public function Popup(msg:String):void
-		{
-			trace('popup :', msg);
-			dispatchEventWith(POP_UP, msg);
-		}
-
-		public function Notify(msg:String, icon:String):void
-		{
-
 		}
 
 		public function confirm(msg:String):Boolean
@@ -891,6 +881,12 @@ package agame.endless.modules.main.model
 			var len:int=UpgradesById.length;
 			for (var i:int=0; i < len; i++)
 				UpgradesById[i].price=UpgradesById[i].getPrice();
+		}
+
+		public function Popup(msg:String, title:String=''):void
+		{
+			// TODO Auto Generated method stub
+			dispatchEventWith(NOTIFY, false, {msg: msg, title: title});
 		}
 	}
 }

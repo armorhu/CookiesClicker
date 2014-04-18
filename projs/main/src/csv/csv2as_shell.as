@@ -1,24 +1,32 @@
 package csv
 {
+	import com.agame.services.csv.CSVFile;
+
 	import flash.display.Sprite;
+	import flash.events.Event;
 	import flash.filesystem.File;
 	import flash.filesystem.FileMode;
 	import flash.filesystem.FileStream;
+	import flash.net.URLLoader;
+	import flash.net.URLRequest;
+	import flash.utils.Dictionary;
 
 	import agame.endless.configs.lang.LangPattern;
-	import agame.endless.data.AchementModels;
-	import agame.endless.data.NewTickerModel;
-	import agame.endless.data.ObjectModels;
-	import agame.endless.data.TextData;
-	import agame.endless.data.UpgradeModels;
+
+	import csv.data.AchementModels;
+	import csv.data.NewTickerModel;
+	import csv.data.ObjectModels;
+	import csv.data.TextData;
+	import csv.data.UpgradeModels;
 
 	public class csv2as_shell extends Sprite
 	{
 		public function csv2as_shell()
 		{
-			genCSV();
+//			genCSV();
 //			genCharset();
-			genConfigModel();
+//			genConfigModel();
+			translate();
 		}
 
 		private function genCSV():void
@@ -118,6 +126,81 @@ package csv
 			csv2as.csvPath='config/modules/' + moduleName + '/';
 			csv2as.configModelPath=ModuleName + 'ConfigModel.as';
 			csv2as.start();
+		}
+
+
+		public function translate():void
+		{
+			const loaderDict:Dictionary=new Dictionary();
+			var texts:String=readFile(File.applicationDirectory.resolvePath('config/texts_en.csv').nativePath);
+			var csvFile:CSVFile=new CSVFile;
+			csvFile.read(texts).parse();
+			var len:int=csvFile.valueTables.length;
+			var en:Vector.<String>=new Vector.<String>;
+			var ydZH:Vector.<String>=new Vector.<String>;
+			for (var i:int=0; i < len; i++)
+			{
+				en.push(csvFile.getValue(i, 1, i));
+				ydZH.push('');
+			}
+
+			var count:int=len;
+
+			for (var j:int=0; j < count; j++)
+			{
+				translate(en[j]);
+			}
+
+
+			function translate(text:String):void
+			{
+				trace('translate', text);
+				var ld:URLLoader=new URLLoader();
+				loaderDict[ld]=text;
+				var url:String='http://fanyi.youdao.com/openapi.do?keyfrom=cookiesclicker&key=473751866&type=data&doctype=json&version=1.1&q=' + text;
+				var req:URLRequest=new URLRequest(url);
+				ld.addEventListener(Event.COMPLETE, translateComplete);
+				ld.load(req);
+			}
+
+			function translateComplete(evt:Event):void
+			{
+				evt.target.removeEventListener(Event.COMPLETE, translateComplete);
+				try
+				{
+					var data:Object=JSON.parse(evt.target.data);
+				}
+				catch (error:Error)
+				{
+				}
+				if (data && data.hasOwnProperty('translation'))
+				{
+					//翻译成功
+					var translation:String=data.translation;
+					var query:String=loaderDict[evt.target];
+					var index:int=en.indexOf(query);
+					translation=translation.replace(/,/g, '，');
+					ydZH[index]=translation;
+					trace(query, translation, index);
+				}
+
+				count--;
+				if (count == 0)
+				{
+					var textArray:Array=texts.split('\r\n');
+					textArray[0]=textArray[0] + ',ydZH';
+					textArray[1]=textArray[1] + ',String';
+					var len:int=textArray.length;
+					if (len > ydZH.length + 2)
+						len=ydZH.length + 2;
+					for (var k:int=2; k < len; k++)
+					{
+						textArray[k]=textArray[k] + ',' + ydZH[k - 2];
+					}
+
+					writeAsFile('config/texts_yd.csv', textArray.join('\r\n'), false);
+				}
+			}
 		}
 	}
 }

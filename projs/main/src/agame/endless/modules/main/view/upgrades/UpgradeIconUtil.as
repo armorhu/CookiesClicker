@@ -6,6 +6,7 @@ package agame.endless.modules.main.view.upgrades
 	import agame.endless.modules.main.model.upgrade.UpgradeData;
 	import agame.endless.services.assets.Assets;
 
+	import starling.display.Image;
 	import starling.textures.Texture;
 
 	public class UpgradeIconUtil
@@ -37,6 +38,13 @@ package agame.endless.modules.main.view.upgrades
 			sHeplerTexture=Texture.fromTexture(icons, sHeplerRect);
 			iconsDict[key]=sHeplerTexture;
 			return sHeplerTexture;
+		}
+
+
+		public static function getIcon(iconX:int, iconY:int):Image
+		{
+			var img:Image=new Image(getIconTexture(iconX, iconY));
+			return img;
 		}
 	}
 }
