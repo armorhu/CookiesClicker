@@ -154,9 +154,12 @@ package csv
 
 			function translate(text:String):void
 			{
-				trace('translate', text);
+
 				var ld:URLLoader=new URLLoader();
 				loaderDict[ld]=text;
+				text=text.replace(/,/g, '');
+				text=text.replace(/%/g, '');
+				trace('translate', text);
 				var url:String='http://fanyi.youdao.com/openapi.do?keyfrom=cookiesclicker&key=473751866&type=data&doctype=json&version=1.1&q=' + text;
 				var req:URLRequest=new URLRequest(url);
 				ld.addEventListener(Event.COMPLETE, translateComplete);

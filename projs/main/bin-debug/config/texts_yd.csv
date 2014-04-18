@@ -60,7 +60,7 @@ TID_UPGRADE_DISPLAYNAME_SWEATSHOP,Sweatshop,血汗工厂
 TID_UPGRADE_DESC_SWEATSHOP,Factories are twice as efficient.Slackers will be terminated.,工厂两倍效率。偷懒的人将被终止。
 TID_UPGRADE_DISPLAYNAME_SUGAR_GAS,Sugar gas,糖气
 TID_UPGRADE_DESC_SUGAR_GAS,"Mines gain +10 base CpS.A pink, volatile gas, found in the depths of some chocolate caves.",CpS矿山获得10个基地。一个粉红色的
-TID_UPGRADE_DISPLAYNAME_MEGADRILL,Megadrill,Megadrill
+TID_UPGRADE_DISPLAYNAME_MEGADRILL,Megadrill,MegaDrill
 TID_UPGRADE_DESC_MEGADRILL,Mines are twice as efficient.You're in deep.,矿山是两倍效率。你在深。
 TID_UPGRADE_DISPLAYNAME_ULTRADRILL,Ultradrill,Ultradrill
 TID_UPGRADE_DESC_ULTRADRILL,Mines are twice as efficient.Finally caved in?,矿山是两倍效率。终于屈服了吗?
@@ -93,25 +93,25 @@ TID_UPGRADE_DESC_KITTEN_HELPERS,You gain more CpS the more milk you have.meow ma
 TID_UPGRADE_DISPLAYNAME_KITTEN_WORKERS,Kitten workers,小猫的工人
 TID_UPGRADE_DESC_KITTEN_WORKERS,You gain more CpS the more milk you have.meow meow meow meow,你获得更多的CpS牛奶越多。喵喵喵喵
 TID_UPGRADE_DISPLAYNAME_OATMEAL_RAISIN_COOKIES,Oatmeal raisin cookies,燕麦葡萄干饼干
-TID_UPGRADE_DESC_OATMEAL_RAISIN_COOKIES,Cookie production multiplier +5%.No raisin to hate these.,
+TID_UPGRADE_DESC_OATMEAL_RAISIN_COOKIES,Cookie production multiplier +5%.No raisin to hate these.,饼干生产乘数5。没有讨厌这些的葡萄干。
 TID_UPGRADE_DISPLAYNAME_PEANUT_BUTTER_COOKIES,Peanut butter cookies,花生酱饼干
-TID_UPGRADE_DESC_PEANUT_BUTTER_COOKIES,Cookie production multiplier +5%.Get yourself some jam cookies!,
+TID_UPGRADE_DESC_PEANUT_BUTTER_COOKIES,Cookie production multiplier +5%.Get yourself some jam cookies!,饼干生产乘数5。给自己一些果酱饼!
 TID_UPGRADE_DISPLAYNAME_PLAIN_COOKIES,Plain cookies,普通的饼干
-TID_UPGRADE_DESC_PLAIN_COOKIES,Cookie production multiplier +5%.Meh.,
+TID_UPGRADE_DESC_PLAIN_COOKIES,Cookie production multiplier +5%.Meh.,饼干生产5. meh乘数。
 TID_UPGRADE_DISPLAYNAME_COCONUT_COOKIES,Coconut cookies,椰子饼干
-TID_UPGRADE_DESC_COCONUT_COOKIES,Cookie production multiplier +5%.These are *way* flaky.,
+TID_UPGRADE_DESC_COCONUT_COOKIES,Cookie production multiplier +5%.These are *way* flaky.,饼干生产乘数5。这些都是* *的方式。
 TID_UPGRADE_DISPLAYNAME_WHITE_CHOCOLATE_COOKIES,White chocolate cookies,白巧克力饼干
-TID_UPGRADE_DESC_WHITE_CHOCOLATE_COOKIES,Cookie production multiplier +5%.I know what you'll say. It's just cocoa butter! It's not real chocolate!Oh please.,
+TID_UPGRADE_DESC_WHITE_CHOCOLATE_COOKIES,Cookie production multiplier +5%.I know what you'll say. It's just cocoa butter! It's not real chocolate!Oh please.,饼干生产乘数5。我知道你会说什么。这只是可可油!这不是真正的巧克力!哦，请。
 TID_UPGRADE_DISPLAYNAME_MACADAMIA_NUT_COOKIES,Macadamia nut cookies,澳洲坚果饼干
-TID_UPGRADE_DESC_MACADAMIA_NUT_COOKIES,Cookie production multiplier +5%.They're macadamn delicious!,
+TID_UPGRADE_DESC_MACADAMIA_NUT_COOKIES,Cookie production multiplier +5%.They're macadamn delicious!,饼干生产乘数5。他们macadamn美味!
 TID_UPGRADE_DISPLAYNAME_DOUBLE_CHIP_COOKIES,Double-chip cookies,Double-chip饼干
-TID_UPGRADE_DESC_DOUBLE_CHIP_COOKIES,Cookie production multiplier +10%.DOUBLE THE CHIPSDOUBLE THE TASTY(double the calories),
+TID_UPGRADE_DESC_DOUBLE_CHIP_COOKIES,Cookie production multiplier +10%.DOUBLE THE CHIPSDOUBLE THE TASTY(double the calories),饼干生产乘数10。的两倍CHIPSDOUBLE好吃(卡路里)的两倍
 TID_UPGRADE_DISPLAYNAME_SUGAR_COOKIES,Sugar cookies,糖饼干
-TID_UPGRADE_DESC_SUGAR_COOKIES,"Cookie production multiplier +5%.Tasty, if a little unimaginative.",
+TID_UPGRADE_DESC_SUGAR_COOKIES,"Cookie production multiplier +5%.Tasty, if a little unimaginative.",饼干生产乘数5.好吃
 TID_UPGRADE_DISPLAYNAME_WHITE_CHOCOLATE_MACADAMIA_NUT_COOKIES,White chocolate macadamia nut cookies,白巧克力澳洲坚果饼干
-TID_UPGRADE_DESC_WHITE_CHOCOLATE_MACADAMIA_NUT_COOKIES,Cookie production multiplier +10%.Orteil's favorite.,
+TID_UPGRADE_DESC_WHITE_CHOCOLATE_MACADAMIA_NUT_COOKIES,Cookie production multiplier +10%.Orteil's favorite.,饼干生产乘数10。Orteil最喜欢的。
 TID_UPGRADE_DISPLAYNAME_ALL_CHOCOLATE_COOKIES,All-chocolate cookies,餐饼干
-TID_UPGRADE_DESC_ALL_CHOCOLATE_COOKIES,Cookie production multiplier +10%.CHOCOVERDOSE.,
+TID_UPGRADE_DESC_ALL_CHOCOLATE_COOKIES,Cookie production multiplier +10%.CHOCOVERDOSE.,饼干生产10. chocoverdose乘数。
 TID_UPGRADE_DISPLAYNAME_QUADRILLION_FINGERS,Quadrillion fingers,手指的飞跃
 TID_UPGRADE_DESC_QUADRILLION_FINGERS,The mouse and cursors gain +20 cookies for each non-cursor object owned.clickityclickityclickityclickityclick,鼠标光标获得20为每个non-cursor对象owned.clickityclickityclickityclickityclick饼干
 TID_UPGRADE_DISPLAYNAME_PRUNE__UICE,Prune juice,西梅汁
@@ -137,9 +137,9 @@ TID_UPGRADE_DESC_SERENDIPITY,Golden cookies appear twice as often and stay twice
 TID_UPGRADE_DISPLAYNAME_KITTEN_ENGINEERS,Kitten engineers,小猫工程师
 TID_UPGRADE_DESC_KITTEN_ENGINEERS,"You gain more CpS the more milk you have.meow meow meow meow, sir",
 TID_UPGRADE_DISPLAYNAME_DARK_CHOCOLATE_COATED_COOKIES,Dark chocolate-coated cookies,黑暗涂巧克力饼干
-TID_UPGRADE_DESC_DARK_CHOCOLATE_COATED_COOKIES,Cookie production multiplier +15%.These absorb light so well you almost need to squint to see them.,
+TID_UPGRADE_DESC_DARK_CHOCOLATE_COATED_COOKIES,Cookie production multiplier +15%.These absorb light so well you almost need to squint to see them.,饼干生产乘数15。这些吸收光线，所以你几乎需要斜视看到他们。
 TID_UPGRADE_DISPLAYNAME_WHITE_CHOCOLATE_COATED_COOKIES,White chocolate-coated cookies,白色涂巧克力饼干
-TID_UPGRADE_DESC_WHITE_CHOCOLATE_COATED_COOKIES,Cookie production multiplier +15%.These dazzling cookies absolutely glisten with flavor.,
+TID_UPGRADE_DESC_WHITE_CHOCOLATE_COATED_COOKIES,Cookie production multiplier +15%.These dazzling cookies absolutely glisten with flavor.,饼干生产乘数15。这些令人眼花缭乱的饼干味道绝对闪耀着光芒。
 TID_UPGRADE_DISPLAYNAME_FARMER_GRANDMAS,Farmer grandmas,农民奶奶
 TID_UPGRADE_DESC_FARMER_GRANDMAS,Grandmas are twice as efficient.A nice farmer to grow more cookies.,奶奶是两倍效率。一个农民种植更多的饼干。
 TID_UPGRADE_DISPLAYNAME_WORKER_GRANDMAS,Worker grandmas,工人奶奶
@@ -157,39 +157,39 @@ TID_UPGRADE_DESC_GRANDMAS__GRANDMAS,Grandmas are twice as efficient.A nice grand
 TID_UPGRADE_DISPLAYNAME_BINGO_CENTER_RESEARCH_FACILITY,Bingo center/Research facility,宾戈游戏中心/研究机构
 TID_UPGRADE_DESC_BINGO_CENTER_RESEARCH_FACILITY,Grandma-operated science lab and leisure club.Grandmas are 4 times as efficient.Regularly unlocks new upgrades.What could possibly keep those grandmothers in check?...Bingo.,Grandma-operated科学实验室和休闲俱乐部。奶奶是4倍。定期打开新的升级。可能抑制那些祖母什么?……宾果。
 TID_UPGRADE_DISPLAYNAME_SPECIALIZED_CHOCOLATE_CHIPS,Specialized chocolate chips,专门的巧克力
-TID_UPGRADE_DESC_SPECIALIZED_CHOCOLATE_CHIPS,"[Research]Cookie production multiplier +1%.Computer-designed chocolate chips. Computer chips, if you will.",
+TID_UPGRADE_DESC_SPECIALIZED_CHOCOLATE_CHIPS,"[Research]Cookie production multiplier +1%.Computer-designed chocolate chips. Computer chips, if you will.",[研究]饼干生产乘数1。显现出巧克力。电脑芯片
 TID_UPGRADE_DISPLAYNAME_DESIGNER_COCOA_BEANS,Designer cocoa beans,设计师可可豆
-TID_UPGRADE_DESC_DESIGNER_COCOA_BEANS,[Research]Cookie production multiplier +2%.Now more aerodynamic than ever!,
+TID_UPGRADE_DESC_DESIGNER_COCOA_BEANS,[Research]Cookie production multiplier +2%.Now more aerodynamic than ever!,[研究]饼干生产乘数2。现在比以往任何时候都更符合空气动力学!
 TID_UPGRADE_DISPLAYNAME_RITUAL_ROLLING_PINS,Ritual rolling pins,仪式滚针
 TID_UPGRADE_DESC_RITUAL_ROLLING_PINS,[Research]Grandmas are twice as efficient.The result of years of scientific research!,[研究]奶奶是两倍效率。多年的科学研究的结果!
 TID_UPGRADE_DISPLAYNAME_UNDERWORLD_OVENS,Underworld ovens,黑社会烤箱
-TID_UPGRADE_DESC_UNDERWORLD_OVENS,"[Research]Cookie production multiplier +3%.Powered by science, of course!",
+TID_UPGRADE_DESC_UNDERWORLD_OVENS,"[Research]Cookie production multiplier +3%.Powered by science, of course!",[研究]饼干生产乘数3。由科学
 TID_UPGRADE_DISPLAYNAME_ONE_MIND,One mind,一个头脑
 TID_UPGRADE_DESC_ONE_MIND,[Research]Each grandma gains +1 base CpS for every 50 grandmas.Note : the grandmothers are growing restless. Do not encourage them.We are one. We are many.,[研究]每个奶奶收益1基地CpS每50个奶奶。注意:祖母越来越焦躁不安。不鼓励他们。我们是一体的。我们有很多。
 TID_UPGRADE_DISPLAYNAME_EXOTIC_NUTS,Exotic nuts,异国情调的坚果
-TID_UPGRADE_DESC_EXOTIC_NUTS,[Research]Cookie production multiplier +4%.You'll go crazy over these!,
+TID_UPGRADE_DESC_EXOTIC_NUTS,[Research]Cookie production multiplier +4%.You'll go crazy over these!,[研究]饼干生产乘数4。你会发疯了这些!
 TID_UPGRADE_DISPLAYNAME_COMMUNAL_BRAINSWEEP,Communal brainsweep,公共brainsweep
 TID_UPGRADE_DESC_COMMUNAL_BRAINSWEEP,[Research]Each grandma gains another +1 base CpS for every 50 grandmas.Note : proceeding any further in scientific research may have unexpected results. You have been warned.We fuse. We merge. We grow.,[研究]每一个奶奶收益1基地CpS每50个奶奶。注意:进行任何进一步的科学研究可能意想不到的结果。我已经警告过你了!我们融合。我们合并。我们成长。
 TID_UPGRADE_DISPLAYNAME_ARCANE_SUGAR,Arcane sugar,神秘的糖
-TID_UPGRADE_DESC_ARCANE_SUGAR,"[Research]Cookie production multiplier +5%.Tastes like insects, ligaments, and molasses.",
+TID_UPGRADE_DESC_ARCANE_SUGAR,"[Research]Cookie production multiplier +5%.Tastes like insects, ligaments, and molasses.",[研究]饼干生产乘数5。尝起来像昆虫
 TID_UPGRADE_DISPLAYNAME_ELDER_PACT,Elder Pact,的协议
 TID_UPGRADE_DESC_ELDER_PACT,[Research]Each grandma gains +1 base CpS for every 20 portals.Note : this is a bad idea.squirm crawl slither writhetoday we rise,[研究]每个奶奶收益1基本CpS每20门户。注意:这是一个坏主意。蠕动爬行爬writhetoday我们上升
 TID_UPGRADE_DISPLAYNAME_ELDER_PLEDGE,Elder Pledge,老人的承诺
 TID_UPGRADE_DESC_ELDER_PLEDGE,"[Repeatable]Contains the wrath of the elders, at least for a while.This is a simple ritual involving anti-aging cream, cookie batter mixed in the moonlight, and a live chicken.",(重复的)包含长老的忿怒
 TID_UPGRADE_DISPLAYNAME_PLASTIC_MOUSE,Plastic mouse,塑料鼠标
-TID_UPGRADE_DESC_PLASTIC_MOUSE,Clicking gains +1% of your CpS.Slightly squeaky.,
+TID_UPGRADE_DESC_PLASTIC_MOUSE,Clicking gains +1% of your CpS.Slightly squeaky.,1你的CpS点击收益。吱吱响的。
 TID_UPGRADE_DISPLAYNAME_IRON_MOUSE,Iron mouse,铁的鼠标
-TID_UPGRADE_DESC_IRON_MOUSE,Clicking gains +1% of your CpS.Click like it's 1349!,
+TID_UPGRADE_DESC_IRON_MOUSE,Clicking gains +1% of your CpS.Click like it's 1349!,1你的CpS点击收益。点击喜欢它的1349 !
 TID_UPGRADE_DISPLAYNAME_TITANIUM_MOUSE,Titanium mouse,钛的鼠标
-TID_UPGRADE_DESC_TITANIUM_MOUSE,"Clicking gains +1% of your CpS.Heavy, but powerful.",
+TID_UPGRADE_DESC_TITANIUM_MOUSE,"Clicking gains +1% of your CpS.Heavy, but powerful.",点击CpS.Heavy上涨1
 TID_UPGRADE_DISPLAYNAME_ADAMANTIUM_MOUSE,Adamantium mouse,Adamantium鼠标
-TID_UPGRADE_DESC_ADAMANTIUM_MOUSE,Clicking gains +1% of your CpS.You could cut diamond with these.,
-TID_UPGRADE_DISPLAYNAME_ULTRASCIENCE,Ultrascience,Ultrascience
+TID_UPGRADE_DESC_ADAMANTIUM_MOUSE,Clicking gains +1% of your CpS.You could cut diamond with these.,1你的CpS点击收益。你可以减少与这些钻石。
+TID_UPGRADE_DISPLAYNAME_ULTRASCIENCE,Ultrascience,UltraScience
 TID_UPGRADE_DESC_ULTRASCIENCE,"Research takes only 5 seconds.YEAH, SCIENCE!",研究只需要5 seconds.YEAH
 TID_UPGRADE_DISPLAYNAME_ECLIPSE_COOKIES,Eclipse cookies,Eclipse饼干
-TID_UPGRADE_DESC_ECLIPSE_COOKIES,Cookie production multiplier +15%.Look to the cookie.,
+TID_UPGRADE_DESC_ECLIPSE_COOKIES,Cookie production multiplier +15%.Look to the cookie.,饼干生产乘数15。看那饼干。
 TID_UPGRADE_DISPLAYNAME_ZEBRA_COOKIES,Zebra cookies,斑马饼干
-TID_UPGRADE_DESC_ZEBRA_COOKIES,Cookie production multiplier +15%....,
+TID_UPGRADE_DESC_ZEBRA_COOKIES,Cookie production multiplier +15%....,饼干生产15 ....乘数
 TID_UPGRADE_DISPLAYNAME_QUINTILLION_FINGERS,Quintillion fingers,百万的三次方的手指
 TID_UPGRADE_DESC_QUINTILLION_FINGERS,"The mouse and cursors gain +100 cookies for each non-cursor object owned.man, just go click click click click click, it's real easy, man.",鼠标和游标获得100年为每个non-cursor对象owned.man饼干
 TID_UPGRADE_DISPLAYNAME_GOLD_HOARD,Gold hoard,黄金储备
@@ -197,25 +197,25 @@ TID_UPGRADE_DESC_GOLD_HOARD,Golden cookies appear really often.That's entirely t
 TID_UPGRADE_DISPLAYNAME_ELDER_COVENANT,Elder Covenant,老的约
 TID_UPGRADE_DESC_ELDER_COVENANT,"[Switch]Puts a permanent end to the elders' wrath, at the price of 5% of your CpS.This is a complicated ritual involving silly, inconsequential trivialities such as cursed laxatives, century-old cacao, and an infant.Don't question it.",(开关)将永久结束长老的愤怒
 TID_UPGRADE_DISPLAYNAME_REVOKE_ELDER_COVENANT,Revoke Elder Covenant,撤销的契约
-TID_UPGRADE_DESC_REVOKE_ELDER_COVENANT,"[Switch]You will get 5% of your CpS back, but the grandmatriarchs will return.weriseagain",
+TID_UPGRADE_DESC_REVOKE_ELDER_COVENANT,"[Switch]You will get 5% of your CpS back, but the grandmatriarchs will return.weriseagain",(开关)你将得到5 CpS回来
 TID_UPGRADE_DISPLAYNAME_GET_LUCKY,Get lucky,得到幸运
 TID_UPGRADE_DESC_GET_LUCKY,"Golden cookie effects last twice as long.You've been up all night, haven't you?",金饼影响最后的两倍长。你一整夜
 TID_UPGRADE_DISPLAYNAME_SACRIFICIAL_ROLLING_PINS,Sacrificial rolling pins,牺牲滚针
 TID_UPGRADE_DESC_SACRIFICIAL_ROLLING_PINS,"Elder pledge last twice as long.These are mostly for spreading the anti-aging cream.(and accessorily, shortening the chicken's suffering.)",老人承诺最后的两倍长。这些对于信息的传播主要是抗衰老霜。(和附属地
 TID_UPGRADE_DISPLAYNAME_SNICKERDOODLES,Snickerdoodles,Snickerdoodles
-TID_UPGRADE_DESC_SNICKERDOODLES,Cookie production multiplier +15%.True to their name.,
+TID_UPGRADE_DESC_SNICKERDOODLES,Cookie production multiplier +15%.True to their name.,饼干生产乘数15。他们的名字。
 TID_UPGRADE_DISPLAYNAME_STROOPWAFELS,Stroopwafels,Stroopwafels
-TID_UPGRADE_DESC_STROOPWAFELS,"Cookie production multiplier +15%.If it ain't dutch, it ain't much.",
+TID_UPGRADE_DESC_STROOPWAFELS,"Cookie production multiplier +15%.If it ain't dutch, it ain't much.",饼干生产乘数15。如果它不是荷兰人
 TID_UPGRADE_DISPLAYNAME_MACAROONS,Macaroons,蛋白杏仁饼
-TID_UPGRADE_DESC_MACAROONS,"Cookie production multiplier +15%.Not to be confused with macarons.These have coconut, okay?",
+TID_UPGRADE_DESC_MACAROONS,"Cookie production multiplier +15%.Not to be confused with macarons.These have coconut, okay?",饼干生产乘数15。不与macarons混淆。这些椰子
 TID_UPGRADE_DISPLAYNAME_NEUROMANCY,Neuromancy,Neuromancy
 TID_UPGRADE_DESC_NEUROMANCY,Can toggle upgrades on and off at will in the stats menu.Can also come in handy to unsee things that can't be unseen.,可以切换升级，在统计菜单。也可以派上用场unsee不能看不见的东西。
 TID_UPGRADE_DISPLAYNAME_EMPIRE_BISCUITS,Empire biscuits,帝国饼干
-TID_UPGRADE_DESC_EMPIRE_BISCUITS,"Cookie production multiplier +15%.For your growing cookie empire, of course!",
+TID_UPGRADE_DESC_EMPIRE_BISCUITS,"Cookie production multiplier +15%.For your growing cookie empire, of course!",饼干生产乘数15。对你越来越饼干帝国
 TID_UPGRADE_DISPLAYNAME_BRITISH_TEA_BISCUITS,British tea biscuits,英国茶饼干
-TID_UPGRADE_DESC_BRITISH_TEA_BISCUITS,Cookie production multiplier +15%.Quite.,
+TID_UPGRADE_DESC_BRITISH_TEA_BISCUITS,Cookie production multiplier +15%.Quite.,饼干生产乘数15.十分。
 TID_UPGRADE_DISPLAYNAME_CHOCOLATE_BRITISH_TEA_BISCUITS,Chocolate british tea biscuits,英国茶巧克力饼干
-TID_UPGRADE_DESC_CHOCOLATE_BRITISH_TEA_BISCUITS,"Cookie production multiplier +15%.Yes, quite.",
+TID_UPGRADE_DESC_CHOCOLATE_BRITISH_TEA_BISCUITS,"Cookie production multiplier +15%.Yes, quite.",饼干生产乘数15.是的
 TID_UPGRADE_DISPLAYNAME_ROUND_BRITISH_TEA_BISCUITS,Round british tea biscuits,圆的英国茶饼干
 TID_UPGRADE_DESC_ROUND_BRITISH_TEA_BISCUITS,"Cookie production multiplier +15%.Yes, quite riveting.",
 TID_UPGRADE_DISPLAYNAME_ROUND_CHOCOLATE_BRITISH_TEA_BISCUITS,Round chocolate british tea biscuits,英国茶巧克力饼干
@@ -223,7 +223,7 @@ TID_UPGRADE_DESC_ROUND_CHOCOLATE_BRITISH_TEA_BISCUITS,"Cookie production multipl
 TID_UPGRADE_DISPLAYNAME_ROUND_BRITISH_TEA_BISCUITS_WITH_HEART_MOTIF,Round british tea biscuits with heart motif,英国茶饼干的心图案
 TID_UPGRADE_DESC_ROUND_BRITISH_TEA_BISCUITS_WITH_HEART_MOTIF,"Cookie production multiplier +15%.Yes, quite riveting indeed, old chap.",
 TID_UPGRADE_DISPLAYNAME_ROUND_CHOCOLATE_BRITISH_TEA_BISCUITS_WITH_HEART_MOTIF,Round chocolate british tea biscuits with heart motif,英国茶饼干巧克力心图案
-TID_UPGRADE_DESC_ROUND_CHOCOLATE_BRITISH_TEA_BISCUITS_WITH_HEART_MOTIF,Cookie production multiplier +15%.I like cookies.,
+TID_UPGRADE_DESC_ROUND_CHOCOLATE_BRITISH_TEA_BISCUITS_WITH_HEART_MOTIF,Cookie production multiplier +15%.I like cookies.,饼干生产乘数15。我喜欢饼干。
 TID_UPGRADE_DISPLAYNAME_SUGAR_BOSONS,Sugar bosons,糖玻色子
 TID_UPGRADE_DESC_SUGAR_BOSONS,"Antimatter condensers gain +99,999 base CpS.Sweet firm bosons.",反物质冷凝器获得99
 TID_UPGRADE_DISPLAYNAME_STRING_THEORY,String theory,弦理论
@@ -235,13 +235,13 @@ TID_UPGRADE_DESC_BIG_BANG_BAKE,Antimatter condensers are twice as efficient.And 
 TID_UPGRADE_DISPLAYNAME_ANTIGRANDMAS,Antigrandmas,Antigrandmas
 TID_UPGRADE_DESC_ANTIGRANDMAS,Grandmas are twice as efficient.A mean antigrandma to vomit more cookies.(Do not put in contact with normal grandmas; loss of matter may occur.),奶奶是两倍效率。一个意味着antigrandma吐更多的饼干。(不要把接触正常的奶奶，损失可能发生的事。)
 TID_UPGRADE_DISPLAYNAME_MADELEINES,Madeleines,玛德琳蛋糕
-TID_UPGRADE_DESC_MADELEINES,Cookie production multiplier +20%.Unforgettable!,
+TID_UPGRADE_DESC_MADELEINES,Cookie production multiplier +20%.Unforgettable!,饼干生产乘数20.难忘!
 TID_UPGRADE_DISPLAYNAME_PALMIERS,Palmiers,棕榈树
-TID_UPGRADE_DESC_PALMIERS,"Cookie production multiplier +20%.Palmier than you!Yes, I just said that.",
+TID_UPGRADE_DESC_PALMIERS,"Cookie production multiplier +20%.Palmier than you!Yes, I just said that.",饼干生产20乘法器。葡果棕榈比你!是的
 TID_UPGRADE_DISPLAYNAME_PALETS,Palets,palets
-TID_UPGRADE_DESC_PALETS,"Cookie production multiplier +20%.You could probably play hockey with these.I mean, you're welcome to try.",
+TID_UPGRADE_DESC_PALETS,"Cookie production multiplier +20%.You could probably play hockey with these.I mean, you're welcome to try.",饼干生产20乘法器。你可以用这些打曲棍球。我的意思是
 TID_UPGRADE_DISPLAYNAME_SABL_EACUTE_S,Sabl&eacute;s,Sabl
-TID_UPGRADE_DESC_SABL_EACUTE_S,"Cookie production multiplier +20%.The name implies they're made of sand. But you know better, don't you?",
+TID_UPGRADE_DESC_SABL_EACUTE_S,"Cookie production multiplier +20%.The name implies they're made of sand. But you know better, don't you?",饼干生产20乘法器。这个名字意味着他们的沙子。但你知道更好
 TID_UPGRADE_DISPLAYNAME_KITTEN_OVERSEERS,Kitten overseers,小猫监督者
 TID_UPGRADE_DESC_KITTEN_OVERSEERS,"You gain more CpS the more milk you have.my purrpose is to serve you, sir",你获得更多的CpS牛奶越多。我的purrpose为您服务
 TID_UPGRADE_DISPLAYNAME_SEXTILLION_FINGERS,Sextillion fingers,千的七乘方的手指
@@ -265,81 +265,81 @@ TID_UPGRADE_DESC_YESTERMORROW_COMPARATORS,Time machines are twice as efficient.F
 TID_UPGRADE_DISPLAYNAME_REVERSE_CYCLOTRONS,Reverse cyclotrons,逆回旋加速器
 TID_UPGRADE_DESC_REVERSE_CYCLOTRONS,"Antimatter condensers are twice as efficient.These can uncollision particles and unspin atoms. For... uh... better flavor, and stuff.",反物质冷凝器效率的两倍。这些可以uncollision粒子和unspin原子。为…嗯…更好的味道
 TID_UPGRADE_DISPLAYNAME_UNOBTAINIUM_MOUSE,Unobtainium mouse,Unobtainium鼠标
-TID_UPGRADE_DESC_UNOBTAINIUM_MOUSE,Clicking gains +1% of your CpS.These nice mice should suffice.,
+TID_UPGRADE_DESC_UNOBTAINIUM_MOUSE,Clicking gains +1% of your CpS.These nice mice should suffice.,1你的CpS点击收益。这些漂亮的老鼠应该足够了。
 TID_UPGRADE_DISPLAYNAME_CARAMOAS,Caramoas,Caramoas
-TID_UPGRADE_DESC_CARAMOAS,Cookie production multiplier +25%.Yeah. That's got a nice ring to it.,
+TID_UPGRADE_DESC_CARAMOAS,Cookie production multiplier +25%.Yeah. That's got a nice ring to it.,饼干生产乘数25.啊。这是一个很好的习惯。
 TID_UPGRADE_DISPLAYNAME_SAGALONGS,Sagalongs,Sagalongs
-TID_UPGRADE_DESC_SAGALONGS,Cookie production multiplier +25%.Grandma's favorite?,
+TID_UPGRADE_DESC_SAGALONGS,Cookie production multiplier +25%.Grandma's favorite?,饼干生产乘数25。奶奶最喜欢的吗?
 TID_UPGRADE_DISPLAYNAME_SHORTFOILS,Shortfoils,Shortfoils
-TID_UPGRADE_DESC_SHORTFOILS,Cookie production multiplier +25%.Foiled again!,
+TID_UPGRADE_DESC_SHORTFOILS,Cookie production multiplier +25%.Foiled again!,饼干生产乘数25。挫败了!
 TID_UPGRADE_DISPLAYNAME_WIN_MINTS,Win mints,赢得薄荷糖
-TID_UPGRADE_DESC_WIN_MINTS,Cookie production multiplier +25%.They're the luckiest cookies you've ever tasted!,
+TID_UPGRADE_DESC_WIN_MINTS,Cookie production multiplier +25%.They're the luckiest cookies you've ever tasted!,饼干生产乘数25。他们最幸运饼干你曾经尝过!
 TID_UPGRADE_DISPLAYNAME_PERFECT_IDLING,Perfect idling,完美的空转
 TID_UPGRADE_DESC_PERFECT_IDLING,You keep producing cookies even while the game is closed.It's the most beautiful thing I've ever seen.,你继续生产饼干即使游戏关闭。这是我见过的最漂亮的事。
 TID_UPGRADE_DISPLAYNAME_FIG_GLUTTONS,Fig gluttons,无花果暴饮暴食
-TID_UPGRADE_DESC_FIG_GLUTTONS,Cookie production multiplier +25%.Got it all figured out.,
+TID_UPGRADE_DESC_FIG_GLUTTONS,Cookie production multiplier +25%.Got it all figured out.,饼干生产乘数25。拥有一切。
 TID_UPGRADE_DISPLAYNAME_LOREOLS,Loreols,Loreols
-TID_UPGRADE_DESC_LOREOLS,"Cookie production multiplier +25%.Because, uh... they're worth it?",
+TID_UPGRADE_DESC_LOREOLS,"Cookie production multiplier +25%.Because, uh... they're worth it?",乘数为25.，因为饼干生产
 TID_UPGRADE_DISPLAYNAME__AFFA_CAKES,Jaffa cakes,佳发蛋糕
-TID_UPGRADE_DESC__AFFA_CAKES,"Cookie production multiplier +25%.If you want to bake a cookie from scratch, you must first build a factory.",
+TID_UPGRADE_DESC__AFFA_CAKES,"Cookie production multiplier +25%.If you want to bake a cookie from scratch, you must first build a factory.",饼干生产乘数25。如果你想从头开始烘烤饼干
 TID_UPGRADE_DISPLAYNAME_GREASE_S_CUPS,Grease's cups,润滑脂的杯
-TID_UPGRADE_DESC_GREASE_S_CUPS,Cookie production multiplier +25%.Extra-greasy peanut butter.,
+TID_UPGRADE_DESC_GREASE_S_CUPS,Cookie production multiplier +25%.Extra-greasy peanut butter.,饼干生产乘数25。Extra-greasy花生酱。
 TID_UPGRADE_DISPLAYNAME_HEAVENLY_CHIP_SECRET,Heavenly chip secret,天上的芯片的秘密
-TID_UPGRADE_DESC_HEAVENLY_CHIP_SECRET,"Unlocks 5% of the potential of your heavenly chips.Grants the knowledge of heavenly chips, and how to use them to make baking more efficient.It's a secret to everyone.",
+TID_UPGRADE_DESC_HEAVENLY_CHIP_SECRET,"Unlocks 5% of the potential of your heavenly chips.Grants the knowledge of heavenly chips, and how to use them to make baking more efficient.It's a secret to everyone.",你们的芯片的解锁5的潜力。授予知识的芯片
 TID_UPGRADE_DISPLAYNAME_HEAVENLY_COOKIE_STAND,Heavenly cookie stand,天上的饼干站
-TID_UPGRADE_DESC_HEAVENLY_COOKIE_STAND,Unlocks 25% of the potential of your heavenly chips.Don't forget to visit the heavenly lemonade stand afterwards.,
+TID_UPGRADE_DESC_HEAVENLY_COOKIE_STAND,Unlocks 25% of the potential of your heavenly chips.Don't forget to visit the heavenly lemonade stand afterwards.,打开25的潜在的你们的芯片。不要忘记去天堂的柠檬水站之后。
 TID_UPGRADE_DISPLAYNAME_HEAVENLY_BAKERY,Heavenly bakery,天上的面包店
-TID_UPGRADE_DESC_HEAVENLY_BAKERY,Unlocks 50% of the potential of your heavenly chips.Also sells godly cakes and divine pastries.,
+TID_UPGRADE_DESC_HEAVENLY_BAKERY,Unlocks 50% of the potential of your heavenly chips.Also sells godly cakes and divine pastries.,打开50的潜在的你们的芯片。同时也销售的蛋糕和神圣的糕点。
 TID_UPGRADE_DISPLAYNAME_HEAVENLY_CONFECTIONERY,Heavenly confectionery,天上的糖果
-TID_UPGRADE_DESC_HEAVENLY_CONFECTIONERY,Unlocks 75% of the potential of your heavenly chips.They say angel bakers work there. They take angel lunch breaks and sometimes go on angel strikes.,
+TID_UPGRADE_DESC_HEAVENLY_CONFECTIONERY,Unlocks 75% of the potential of your heavenly chips.They say angel bakers work there. They take angel lunch breaks and sometimes go on angel strikes.,打开75的潜在的你们的芯片。他们说天使面包师那里工作。他们把天使午休时间，有时天使罢工。
 TID_UPGRADE_DISPLAYNAME_HEAVENLY_KEY,Heavenly key,天上的关键
-TID_UPGRADE_DESC_HEAVENLY_KEY,"Unlocks 100% of the potential of your heavenly chips.This is the key to the pearly (and tasty) gates of pastry heaven, granting you access to your entire stockpile of heavenly chips.May you use them wisely.",
+TID_UPGRADE_DESC_HEAVENLY_KEY,"Unlocks 100% of the potential of your heavenly chips.This is the key to the pearly (and tasty) gates of pastry heaven, granting you access to your entire stockpile of heavenly chips.May you use them wisely.",打开100的潜在的你们的芯片。这是珍珠的关键和美味的糕点天堂的大门
 TID_UPGRADE_DISPLAYNAME_SKULL_COOKIES,Skull cookies,头骨饼干
-TID_UPGRADE_DESC_SKULL_COOKIES,Cookie production multiplier +20%.Wanna know something spooky? You've got one of these inside your head RIGHT NOW.,
+TID_UPGRADE_DESC_SKULL_COOKIES,Cookie production multiplier +20%.Wanna know something spooky? You've got one of these inside your head RIGHT NOW.,饼干生产20乘法器。想知道一些幽灵吗?你有其中一个现在在你的头。
 TID_UPGRADE_DISPLAYNAME_GHOST_COOKIES,Ghost cookies,鬼饼干
-TID_UPGRADE_DESC_GHOST_COOKIES,"Cookie production multiplier +20%.They're something strange, but they look pretty good!",
+TID_UPGRADE_DESC_GHOST_COOKIES,"Cookie production multiplier +20%.They're something strange, but they look pretty good!",饼干生产20乘法器。他们是奇怪的
 TID_UPGRADE_DISPLAYNAME_BAT_COOKIES,Bat cookies,蝙蝠饼干
-TID_UPGRADE_DESC_BAT_COOKIES,Cookie production multiplier +20%.The cookies this town deserves.,
+TID_UPGRADE_DESC_BAT_COOKIES,Cookie production multiplier +20%.The cookies this town deserves.,饼干生产20乘法器。这个城市值得饼干。
 TID_UPGRADE_DISPLAYNAME_SLIME_COOKIES,Slime cookies,泥饼
-TID_UPGRADE_DESC_SLIME_COOKIES,Cookie production multiplier +20%.The incredible melting cookies!,
+TID_UPGRADE_DESC_SLIME_COOKIES,Cookie production multiplier +20%.The incredible melting cookies!,饼干生产20乘法器。令人难以置信的融化饼干!
 TID_UPGRADE_DISPLAYNAME_PUMPKIN_COOKIES,Pumpkin cookies,南瓜饼
-TID_UPGRADE_DESC_PUMPKIN_COOKIES,Cookie production multiplier +20%.Not even pumpkin-flavored. Tastes like glazing. Yeugh.,
+TID_UPGRADE_DESC_PUMPKIN_COOKIES,Cookie production multiplier +20%.Not even pumpkin-flavored. Tastes like glazing. Yeugh.,饼干生产20乘法器。甚至没有pumpkin-flavored。味道像玻璃。Yeugh。
 TID_UPGRADE_DISPLAYNAME_EYEBALL_COOKIES,Eyeball cookies,眼球饼干
-TID_UPGRADE_DESC_EYEBALL_COOKIES,"Cookie production multiplier +20%.When you stare into the cookie, the cookie stares back at you.",
+TID_UPGRADE_DESC_EYEBALL_COOKIES,"Cookie production multiplier +20%.When you stare into the cookie, the cookie stares back at you.",饼干生产20乘法器。当你注视着饼干
 TID_UPGRADE_DISPLAYNAME_SPIDER_COOKIES,Spider cookies,蜘蛛饼干
-TID_UPGRADE_DESC_SPIDER_COOKIES,Cookie production multiplier +20%.You found the recipe on the web. They do whatever a cookie can.,
+TID_UPGRADE_DESC_SPIDER_COOKIES,Cookie production multiplier +20%.You found the recipe on the web. They do whatever a cookie can.,饼干生产20乘法器。在网上你发现配方。他们做任何一个cookie。
 TID_UPGRADE_DISPLAYNAME_PERSISTENT_MEMORY,Persistent memory,持久的记忆
 TID_UPGRADE_DESC_PERSISTENT_MEMORY,Subsequent research will be 10 times as fast.It's all making sense!Again!,后续研究将10倍。又是所有意义! !
 TID_UPGRADE_DISPLAYNAME_WRINKLER_DOORMAT,Wrinkler doormat,Wrinkler受气包
 TID_UPGRADE_DESC_WRINKLER_DOORMAT,Wrinklers spawn much more frequently.You're such a pushover.,Wrinklers产生更频繁。你这样一个软弱的人。
 TID_UPGRADE_DISPLAYNAME_CHRISTMAS_TREE_BISCUITS,Christmas tree biscuits,圣诞树饼干
-TID_UPGRADE_DESC_CHRISTMAS_TREE_BISCUITS,Cookie production multiplier +20%.Whose pine is it anyway?,
+TID_UPGRADE_DESC_CHRISTMAS_TREE_BISCUITS,Cookie production multiplier +20%.Whose pine is it anyway?,饼干生产20乘法器。它是谁的松呢?
 TID_UPGRADE_DISPLAYNAME_SNOWFLAKE_BISCUITS,Snowflake biscuits,雪花饼干
-TID_UPGRADE_DESC_SNOWFLAKE_BISCUITS,Cookie production multiplier +20%.Mass-produced to be unique in every way.,
+TID_UPGRADE_DESC_SNOWFLAKE_BISCUITS,Cookie production multiplier +20%.Mass-produced to be unique in every way.,饼干生产20乘法器。批量生产是独特的。
 TID_UPGRADE_DISPLAYNAME_SNOWMAN_BISCUITS,Snowman biscuits,雪人饼干
-TID_UPGRADE_DESC_SNOWMAN_BISCUITS,Cookie production multiplier +20%.It's frosted. Doubly so.,
+TID_UPGRADE_DESC_SNOWMAN_BISCUITS,Cookie production multiplier +20%.It's frosted. Doubly so.,饼干生产20乘法器。这是磨砂。加倍。
 TID_UPGRADE_DISPLAYNAME_HOLLY_BISCUITS,Holly biscuits,冬青饼干
-TID_UPGRADE_DESC_HOLLY_BISCUITS,"Cookie production multiplier +20%.You don't smooch under these ones. That would be the mistletoe (which, botanically, is a smellier variant of the mistlefinger).",
+TID_UPGRADE_DESC_HOLLY_BISCUITS,"Cookie production multiplier +20%.You don't smooch under these ones. That would be the mistletoe (which, botanically, is a smellier variant of the mistlefinger).",饼干生产20乘法器。在这些的你不接吻。这将是槲寄生(
 TID_UPGRADE_DISPLAYNAME_CANDY_CANE_BISCUITS,Candy cane biscuits,柺杖糖饼干
-TID_UPGRADE_DESC_CANDY_CANE_BISCUITS,"Cookie production multiplier +20%.It's two treats in one!(Further inspection reveals the frosting does not actually taste like peppermint, but like mundane sugary frosting.)",
+TID_UPGRADE_DESC_CANDY_CANE_BISCUITS,"Cookie production multiplier +20%.It's two treats in one!(Further inspection reveals the frosting does not actually taste like peppermint, but like mundane sugary frosting.)",饼干生产20乘法器。这是两个将在一个!(进一步检查揭示了糖霜并不实际薄荷的味道
 TID_UPGRADE_DISPLAYNAME_BELL_BISCUITS,Bell biscuits,贝尔饼干
-TID_UPGRADE_DESC_BELL_BISCUITS,"Cookie production multiplier +20%.What do these even have to do with christmas? Who cares, ring them in!",
+TID_UPGRADE_DESC_BELL_BISCUITS,"Cookie production multiplier +20%.What do these even have to do with christmas? Who cares, ring them in!",饼干生产20乘法器。这些甚至与圣诞节吗?谁在乎
 TID_UPGRADE_DISPLAYNAME_PRESENT_BISCUITS,Present biscuits,现在的饼干
-TID_UPGRADE_DESC_PRESENT_BISCUITS,Cookie production multiplier +20%.The prequel to future biscuits. Watch out!,
+TID_UPGRADE_DESC_PRESENT_BISCUITS,Cookie production multiplier +20%.The prequel to future biscuits. Watch out!,饼干生产20乘法器。前传的将来饼干。小心!
 TID_UPGRADE_DISPLAYNAME_GINGERBREAD_MEN,Gingerbread men,姜饼人
-TID_UPGRADE_DESC_GINGERBREAD_MEN,"Cookie production multiplier +25%.You like to bite the legs off first, right? How about tearing off the arms? You sick monster.",
+TID_UPGRADE_DESC_GINGERBREAD_MEN,"Cookie production multiplier +25%.You like to bite the legs off first, right? How about tearing off the arms? You sick monster.",饼干生产乘数25。你喜欢先咬下腿
 TID_UPGRADE_DISPLAYNAME_GINGERBREAD_TREES,Gingerbread trees,姜饼的树木
-TID_UPGRADE_DESC_GINGERBREAD_TREES,Cookie production multiplier +25%.Evergreens in pastry form. Yule be surprised what you can come up with.,
+TID_UPGRADE_DESC_GINGERBREAD_TREES,Cookie production multiplier +25%.Evergreens in pastry form. Yule be surprised what you can come up with.,饼干生产乘数25。糕点形式的常青树。圣诞感到惊讶你能想出什么。
 TID_UPGRADE_DISPLAYNAME_A_FESTIVE_HAT,A festive hat,节日的帽子
 TID_UPGRADE_DESC_A_FESTIVE_HAT,"Unlocks... something.Not a creature was stirring, not even a mouse.",打开……一些东西。不是一个生物是激动人心的
 TID_UPGRADE_DISPLAYNAME_INCREASED_MERRINESS,Increased merriness,增加愉快
-TID_UPGRADE_DESC_INCREASED_MERRINESS,"Cookie production multiplier +15%.It turns out that the key to increased merriness, strangely enough, happens to be a good campfire and some s'mores.You know what they say, after all; the s'more, the merrier.",
+TID_UPGRADE_DESC_INCREASED_MERRINESS,"Cookie production multiplier +15%.It turns out that the key to increased merriness, strangely enough, happens to be a good campfire and some s'mores.You know what they say, after all; the s'more, the merrier.",饼干生产乘数15。事实证明，增加愉快的关键
 TID_UPGRADE_DISPLAYNAME_IMPROVED__OLLINESS,Improved jolliness,改进的愉快
-TID_UPGRADE_DESC_IMPROVED__OLLINESS,Cookie production multiplier +15%.A nice wobbly belly goes a long way.You jolly?,
+TID_UPGRADE_DESC_IMPROVED__OLLINESS,Cookie production multiplier +15%.A nice wobbly belly goes a long way.You jolly?,饼干生产乘数15。一个摇摆不定的肚子走了很长的路。你快乐吗?
 TID_UPGRADE_DISPLAYNAME_A_LUMP_OF_COAL,A lump of coal,一块煤炭
-TID_UPGRADE_DESC_A_LUMP_OF_COAL,"Cookie production multiplier +1%.Some of the world's worst stocking stuffing.I guess you could try starting your own little industrial revolution, or something?...",
+TID_UPGRADE_DESC_A_LUMP_OF_COAL,"Cookie production multiplier +1%.Some of the world's worst stocking stuffing.I guess you could try starting your own little industrial revolution, or something?...",饼干生产乘数1。一些世界上最严重的袜填料。我想你可以试着开始自己的小工业革命
 TID_UPGRADE_DISPLAYNAME_AN_ITCHY_SWEATER,An itchy sweater,发痒的毛衣
-TID_UPGRADE_DESC_AN_ITCHY_SWEATER,"Cookie production multiplier +1%.You don't know what's worse : the embarrassingly quaint 'elf on reindeer' motif, or the fact that wearing it makes you feel like you're wrapped in a dead sasquatch.",
+TID_UPGRADE_DESC_AN_ITCHY_SWEATER,"Cookie production multiplier +1%.You don't know what's worse : the embarrassingly quaint 'elf on reindeer' motif, or the fact that wearing it makes you feel like you're wrapped in a dead sasquatch.",饼干生产乘数1。你不知道的更糟糕:令人尴尬的“精灵在驯鹿”主题
 TID_UPGRADE_DISPLAYNAME_REINDEER_BAKING_GROUNDS,Reindeer baking grounds,驯鹿烘焙的理由
 TID_UPGRADE_DESC_REINDEER_BAKING_GROUNDS,Reindeer appear twice as frequently.Male reindeer are from Mars; female reindeer are from venison.,驯鹿经常出现的两倍。男性驯鹿来自火星;女性驯鹿来自鹿肉。
 TID_UPGRADE_DISPLAYNAME_WEIGHTED_SLEIGHS,Weighted sleighs,加权的雪橇
@@ -347,35 +347,35 @@ TID_UPGRADE_DESC_WEIGHTED_SLEIGHS,Reindeer are twice as slow.Hope it was worth t
 TID_UPGRADE_DISPLAYNAME_HO_HO_HO_FLAVORED_FROSTING,Ho ho ho-flavored frosting,Ho Ho ho-flavored结霜
 TID_UPGRADE_DESC_HO_HO_HO_FLAVORED_FROSTING,Reindeer give twice as much.It's time to up the antler.,驯鹿的两倍。是时候鹿角。
 TID_UPGRADE_DISPLAYNAME_SEASON_SAVINGS,Season savings,赛季储蓄
-TID_UPGRADE_DESC_SEASON_SAVINGS,"All buildings are 1% cheaper.By Santa's beard, what savings!But who will save us?",
+TID_UPGRADE_DESC_SEASON_SAVINGS,"All buildings are 1% cheaper.By Santa's beard, what savings!But who will save us?",所有的建筑都是1便宜。圣诞老人的胡子
 TID_UPGRADE_DISPLAYNAME_TOY_WORKSHOP,Toy workshop,玩具工厂
-TID_UPGRADE_DESC_TOY_WORKSHOP,All upgrades are 5% cheaper.Watch yours-elf around elvesdroppers who might steal our production secrets.Or elven worse!,
+TID_UPGRADE_DESC_TOY_WORKSHOP,All upgrades are 5% cheaper.Watch yours-elf around elvesdroppers who might steal our production secrets.Or elven worse!,所有的升级都5便宜。看周围yours-elf elvesdroppers谁会偷我们的生产的秘密。精灵或者更糟!
 TID_UPGRADE_DISPLAYNAME_NAUGHTY_LIST,Naughty list,淘气的列表
 TID_UPGRADE_DESC_NAUGHTY_LIST,Grandmas are twice as productive.This list contains every unholy deed perpetuated by grandmakind.He won't be checking this one twice.Once. Once is enough.,奶奶正在生产的两倍。这个列表包含每个邪恶行为由grandmakind延续。他不会检查这个twice.Once。一次就足够了。
 TID_UPGRADE_DISPLAYNAME_SANTA_S_BOTTOMLESS_BAG,Santa's bottomless bag,圣诞老人的无底袋
-TID_UPGRADE_DESC_SANTA_S_BOTTOMLESS_BAG,Random drops are 10% more common.This is one bottom you can't check out.,
+TID_UPGRADE_DESC_SANTA_S_BOTTOMLESS_BAG,Random drops are 10% more common.This is one bottom you can't check out.,随机下降10更常见。这是一个底部你不能检出。
 TID_UPGRADE_DISPLAYNAME_SANTA_S_HELPERS,Santa's helpers,圣诞老人的助手
-TID_UPGRADE_DESC_SANTA_S_HELPERS,"Clicking is 10% more powerful.Some choose to help hamburger; some choose to help you.To each their own, I guess.",
+TID_UPGRADE_DESC_SANTA_S_HELPERS,"Clicking is 10% more powerful.Some choose to help hamburger; some choose to help you.To each their own, I guess.",点击10更强大。有些人选择帮助汉堡;有些人选择帮助你。每一个自己
 TID_UPGRADE_DISPLAYNAME_SANTA_S_LEGACY,Santa's legacy,圣诞老人的遗产
-TID_UPGRADE_DESC_SANTA_S_LEGACY,"Cookie production multiplier +10% per Santa's levels.In the north pole, you gotta get the elves first. Then when you get the elves, you start making the toys. Then when you get the toys... then you get the cookies.",
+TID_UPGRADE_DESC_SANTA_S_LEGACY,"Cookie production multiplier +10% per Santa's levels.In the north pole, you gotta get the elves first. Then when you get the elves, you start making the toys. Then when you get the toys... then you get the cookies.",饼干生产10乘数圣诞老人的水平。在北极
 TID_UPGRADE_DISPLAYNAME_SANTA_S_MILK_AND_COOKIES,Santa's milk and cookies,圣诞老人的牛奶和饼干
-TID_UPGRADE_DESC_SANTA_S_MILK_AND_COOKIES,Milk is 5% more powerful.Part of Santa's dreadfully unbalanced diet.,
+TID_UPGRADE_DESC_SANTA_S_MILK_AND_COOKIES,Milk is 5% more powerful.Part of Santa's dreadfully unbalanced diet.,牛奶是5更强大。圣诞老人的极其不平衡的饮食的一部分。
 TID_UPGRADE_DISPLAYNAME_REINDEER_SEASON,Reindeer season,驯鹿的季节
 TID_UPGRADE_DESC_REINDEER_SEASON,"Reindeer spawn much more frequently.Go, Cheater! Go, Hacker and Faker!",驯鹿产卵frequently.Go得多
 TID_UPGRADE_DISPLAYNAME_SANTA_S_DOMINION,Santa's dominion,圣诞老人的统治
-TID_UPGRADE_DESC_SANTA_S_DOMINION,"Cookie production multiplier +50%.All buildings are 1% cheaper.All upgrades are 2% cheaper.My name is Claus, king of kings;Look on my toys, ye Mighty, and despair!",
+TID_UPGRADE_DESC_SANTA_S_DOMINION,"Cookie production multiplier +50%.All buildings are 1% cheaper.All upgrades are 2% cheaper.My name is Claus, king of kings;Look on my toys, ye Mighty, and despair!",饼干生产50乘数。所有的建筑都是1便宜。2所有的升级都便宜。我的名字是老人
 TID_UPGRADE_DISPLAYNAME_PURE_HEART_BISCUITS,Pure heart biscuits,纯净的心灵饼干
-TID_UPGRADE_DESC_PURE_HEART_BISCUITS,Cookie production multiplier +25%.Melty white chocolatethat says 'I *like* like you'.,
+TID_UPGRADE_DESC_PURE_HEART_BISCUITS,Cookie production multiplier +25%.Melty white chocolatethat says 'I *like* like you'.,饼干生产乘数25。发出了一种白色chocolatethat说“我* *像你”。
 TID_UPGRADE_DISPLAYNAME_ARDENT_HEART_BISCUITS,Ardent heart biscuits,狂热的心饼干
-TID_UPGRADE_DESC_ARDENT_HEART_BISCUITS,Cookie production multiplier +25%.A red hot cherry biscuit that will nudge the target of your affection in interesting directions.,
+TID_UPGRADE_DESC_ARDENT_HEART_BISCUITS,Cookie production multiplier +25%.A red hot cherry biscuit that will nudge the target of your affection in interesting directions.,饼干生产乘数25。红樱桃饼，将推动你的感情在有趣的目标方向。
 TID_UPGRADE_DISPLAYNAME_SOUR_HEART_BISCUITS,Sour heart biscuits,酸的心饼干
-TID_UPGRADE_DESC_SOUR_HEART_BISCUITS,Cookie production multiplier +25%.A bitter lime biscuit for the lonely and the heart-broken.,
+TID_UPGRADE_DESC_SOUR_HEART_BISCUITS,Cookie production multiplier +25%.A bitter lime biscuit for the lonely and the heart-broken.,饼干生产乘数25。苦涩的柠檬饼干的孤独和伤心。
 TID_UPGRADE_DISPLAYNAME_WEEPING_HEART_BISCUITS,Weeping heart biscuits,哭泣的心饼干
-TID_UPGRADE_DESC_WEEPING_HEART_BISCUITS,"Cookie production multiplier +25%.An ice-cold blueberry biscuit, symbol of a mending heart.",
+TID_UPGRADE_DESC_WEEPING_HEART_BISCUITS,"Cookie production multiplier +25%.An ice-cold blueberry biscuit, symbol of a mending heart.",饼干生产乘数25。一个冰冷的蓝莓饼干
 TID_UPGRADE_DISPLAYNAME_GOLDEN_HEART_BISCUITS,Golden heart biscuits,金色的心饼干
-TID_UPGRADE_DESC_GOLDEN_HEART_BISCUITS,"Cookie production multiplier +25%.A beautiful biscuit to symbolize kindness, true love, and sincerity.",
+TID_UPGRADE_DESC_GOLDEN_HEART_BISCUITS,"Cookie production multiplier +25%.A beautiful biscuit to symbolize kindness, true love, and sincerity.",饼干生产乘数25。一个美丽的饼干象征善良
 TID_UPGRADE_DISPLAYNAME_ETERNAL_HEART_BISCUITS,Eternal heart biscuits,永恒的心饼干
-TID_UPGRADE_DESC_ETERNAL_HEART_BISCUITS,"Cookie production multiplier +25%.Silver icing for a very special someone you've liked for a long, long time.",
+TID_UPGRADE_DESC_ETERNAL_HEART_BISCUITS,"Cookie production multiplier +25%.Silver icing for a very special someone you've liked for a long, long time.",饼干生产乘数25。银糖衣为一个非常特别的人你喜欢很长
 TID_UPGRADE_DISPLAYNAME_GEM_POLISH,Gem polish,宝石波兰
 TID_UPGRADE_DESC_GEM_POLISH,"Prisms gain +1,000,000 base CpS.Get rid of the grime and let more light in.Truly, truly outrageous.",棱镜获得1
 TID_UPGRADE_DISPLAYNAME_9TH_COLOR,9th color,9号颜色
@@ -595,7 +595,7 @@ TID_ACH_DESC_FRIEND_OF_THE_ANCIENTS,Have 150 grandmas.,有150个奶奶。
 TID_ACH_DISPLAYNAME_RULER_OF_THE_ANCIENTS,Ruler of the ancients,古人的统治者
 TID_ACH_DESC_RULER_OF_THE_ANCIENTS,Have 200 grandmas.,有200个奶奶。
 TID_ACH_DISPLAYNAME_WHOLESOME,Wholesome,有益健康的
-TID_ACH_DESC_WHOLESOME,Unlock 100% of your heavenly chips power.,
+TID_ACH_DESC_WHOLESOME,Unlock 100% of your heavenly chips power.,打开你们的芯片100的力量。
 TID_ACH_DISPLAYNAME__UST_PLAIN_LUCKY,Just plain lucky,仅仅是幸运的
 TID_ACH_DESC__UST_PLAIN_LUCKY,"You have 1 chance in 500,000 every second of earning this achievement.",你有1 500年的机会
 TID_ACH_DISPLAYNAME_ITCHSCRATCHER,Itchscratcher,Itchscratcher
@@ -679,7 +679,7 @@ TID_NEWS5_CONTEXT_2,News : chocolate mines found to cause earthquakes and sink h
 TID_NEWS5_CONTEXT_3,"News : chocolate mine goes awry, floods village in chocolate!",新闻:巧克力我出错
 TID_NEWS5_CONTEXT_4,"News : depths of chocolate mines found to house 'peculiar, chocolaty beings'!",新闻:巧克力矿山深处发现奇特的房子”
 TID_NEWS6_CONTEXT_0,"News : new chocolate planet found, becomes target of cookie-trading spaceships!",新闻:新的巧克力行星发现
-TID_NEWS6_CONTEXT_1,News : massive chocolate planet found with 99.8% certified pure dark chocolate core!,
+TID_NEWS6_CONTEXT_1,News : massive chocolate planet found with 99.8% certified pure dark chocolate core!,新闻:巨大的巧克力行星发现99.8认证纯黑巧克力的核心!
 TID_NEWS6_CONTEXT_2,News : space tourism booming as distant planets attract more bored millionaires!,新闻:太空旅游蓬勃发展，遥远行星吸引更多无聊的百万富翁!
 TID_NEWS6_CONTEXT_3,News : chocolate-based organisms found on distant planet!,新闻:以生物发现遥远星球上!
 TID_NEWS6_CONTEXT_4,"News : ancient baking artifacts found on distant planet; 'terrifying implications', experts say.",新闻:古代烘焙工件发现遥远的星球上，“可怕的影响”
@@ -690,7 +690,7 @@ TID_NEWS7_CONTEXT_3,"News : defective alchemy lab shut down, found to convert co
 TID_NEWS7_CONTEXT_4,News : alchemy-made cookies shunned by purists!,新闻:alchemy-made饼干都纯粹主义者!
 TID_NEWS8_CONTEXT_0,News : nation worried as more and more unsettling creatures emerge from dimensional portals!,新闻:国家担心随着越来越多的令人不安的生物走出维门户!
 TID_NEWS8_CONTEXT_1,News : dimensional portals involved in city-engulfing disaster!,新闻:维门户参与city-engulfing灾难!
-TID_NEWS8_CONTEXT_2,News : tourism to cookieverse popular with bored teenagers! Casualty rate as high as 73%!,
+TID_NEWS8_CONTEXT_2,News : tourism to cookieverse popular with bored teenagers! Casualty rate as high as 73%!,新闻:旅游与无聊cookieverse流行青少年!伤亡率高达73 !
 TID_NEWS8_CONTEXT_3,"News : cookieverse portals suspected to cause fast aging and obsession with baking, says study.",新闻:cookieverse门户怀疑导致快速老化和对烘焙
 TID_NEWS8_CONTEXT_4,"News : 'do not settle near portals,' says specialist; 'your children will become strange and corrupted inside.'",新闻:“不解决附近的门户
 TID_NEWS9_CONTEXT_0,News : time machines involved in history-rewriting scandal! Or are they?,新闻:时间机器参与history-rewriting丑闻!还是他们?

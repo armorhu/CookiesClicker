@@ -1,5 +1,7 @@
 package
 {
+	import com.gamua.flox.Flox;
+
 	import flash.desktop.NativeApplication;
 	import flash.desktop.SystemIdleMode;
 	import flash.display.Sprite;
@@ -13,12 +15,14 @@ package
 	import flash.ui.Keyboard;
 
 	import agame.endless.EndlessApplication;
+	import agame.endless.Version;
 
 	public class shell extends Sprite
 	{
 		public function shell()
 		{
 			super();
+			Flox.init("Hv0X8ifOth3lKT7I", "1HtonojNasIz51PO", Version);
 			stage.frameRate=60;
 			stage.quality=StageQuality.LOW;
 			NativeApplication.nativeApplication.systemIdleMode=SystemIdleMode.KEEP_AWAKE; //保持屏幕唤醒
@@ -60,7 +64,6 @@ package
 		{
 			// TODO Auto-generated method stub
 //			NativeApplication.nativeApplication.removeEventListener(Event.ACTIVATE, activeHandler);
-
 		}
 	}
 }

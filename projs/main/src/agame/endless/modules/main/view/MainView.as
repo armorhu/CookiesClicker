@@ -3,14 +3,15 @@ package agame.endless.modules.main.view
 	import com.agame.utils.DisplayUtil;
 	import com.greensock.TimelineMax;
 	import com.greensock.TweenLite;
-	
+
 	import flash.display.BitmapData;
 	import flash.display.BitmapDataChannel;
 	import flash.geom.Point;
 	import flash.geom.Rectangle;
-	
+
 	import agame.endless.configs.lang.Lang;
 	import agame.endless.configs.texts.TextsTIDDefs;
+	import agame.endless.modules.main.model.objects.ObjectData;
 	import agame.endless.modules.main.view.buildings.BuildingItemRender;
 	import agame.endless.modules.main.view.curser.CurserCanvas;
 	import agame.endless.modules.main.view.objects.ObjectItemRender;
@@ -20,7 +21,7 @@ package agame.endless.modules.main.view
 	import agame.endless.services.assets.Assets;
 	import agame.endless.services.frame.IEnterframe;
 	import agame.endless.services.utils.useEmbedFont;
-	
+
 	import feathers.controls.List;
 	import feathers.controls.ScrollContainer;
 	import feathers.controls.Scroller;
@@ -28,7 +29,7 @@ package agame.endless.modules.main.view
 	import feathers.display.TiledImage;
 	import feathers.layout.TiledRowsLayout;
 	import feathers.layout.VerticalLayout;
-	
+
 	import starling.animation.IAnimatable;
 	import starling.core.Starling;
 	import starling.display.DisplayObject;
@@ -233,8 +234,8 @@ package agame.endless.modules.main.view
 			_storeList.layout=vLayout;
 			_storeList.verticalScrollPolicy=Scroller.SCROLL_POLICY_ON;
 			DisplayUtil.alignWith(_storeList, content.storeList);
-
 		}
+
 
 		public function setStoreItem(item:Object):void
 		{
@@ -397,7 +398,7 @@ package agame.endless.modules.main.view
 		{
 			if (cookiesBackground == null)
 				cookiesBackground=new Sprite;
-			
+
 		}
 
 		///////----------------------------------------------------------------------------------------------------//////

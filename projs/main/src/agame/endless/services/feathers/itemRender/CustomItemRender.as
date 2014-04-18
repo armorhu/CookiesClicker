@@ -162,8 +162,7 @@ package agame.endless.services.feathers.itemRender
 					return;
 
 				itemClicked();
-				if (!this._isSelected)
-					this.isSelected=true;
+				this.isSelected=!_isSelected;
 				this.touchPointID=-1;
 			}
 			else //if we get here, we don't have a saved touch ID yet

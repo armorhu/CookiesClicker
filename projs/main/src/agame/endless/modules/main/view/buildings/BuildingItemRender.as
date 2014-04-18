@@ -37,8 +37,6 @@ package agame.endless.modules.main.view.buildings
 		private var _viewWidth:Number;
 		public var viewHeight:Number;
 
-//		private var _btnSell:Button;
-
 		public function BuildingItemRender()
 		{
 			super();

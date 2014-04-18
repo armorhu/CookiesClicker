@@ -2,7 +2,6 @@
 <actionScriptProperties analytics="false" mainApplicationPath="shell.as" projectUUID="bfd34d5a-6710-413f-a55b-36f8b84fe29f" version="11">
   <compiler additionalCompilerArguments="-locale zh_CN&#10;-swf-version 23" advancedTelemetry="false" autoRSLOrdering="true" copyDependentFiles="false" fteInMXComponents="false" generateAccessible="false" htmlExpressInstall="true" htmlGenerate="false" htmlHistoryManagement="false" htmlPlayerVersionCheck="true" includeNetmonSwc="false" outputFolderPath="bin-debug" removeUnusedRSL="true" sourceFolderPath="src" strict="true" targetPlayerVersion="0.0.0" useApolloConfig="true" useDebugRSLSwfs="true" useFlashSDK="true" verifyDigests="true" warn="true">
     <compilerSourcePath>
-      <compilerSourcePathEntry kind="1" linkType="1" path="/Users/hufan/Documents/workspace/开源库/feathers-1.3.0/source"/>
       <compilerSourcePathEntry kind="1" linkType="1" path="${DOCUMENTS}/Starling-Extension-Particle-System/src"/>
     </compilerSourcePath>
     <libraryPath defaultLinkType="0">
@@ -58,7 +57,6 @@
   <flashCatalyst validateFlashCatalystCompatibility="false"/>
   <buildTargets>
     <buildTarget buildTargetName="device" iosSettingsVersion="2" isCurrent="true" platformId="com.adobe.flexide.multiplatform.ios.platform" provisioningFile="/Users/hufan/Documents/workspace/armorhu_git/CookiesClicker/projs/main/source/profile/cookies_dev.mobileprovision" releasePackageType="ipa-app-store">
-      <multiPlatformSettings enabled="true" hideAneLibSymbols="0" includePlatformLibs="false" platformID="com.adobe.flexide.multiplatform.ios.platform" reducedSizePackaging="false" version="1"/>
       <airSettings airCertificatePath="/Users/hufan/Documents/workspace/armorhu_git/CookiesClicker/projs/main/cert.p12" airTimestamp="true" anePathSet="true" version="1">
         <airExcludes/>
         <anePaths/>
@@ -69,6 +67,7 @@
         </newPackagingParams>
         <modifiedPackagingParams/>
       </airSettings>
+      <multiPlatformSettings enabled="true" hideAneLibSymbols="0" includePlatformLibs="false" platformID="com.adobe.flexide.multiplatform.ios.platform" reducedSizePackaging="false" version="1"/>
       <actionScriptSettings version="1"/>
     </buildTarget>
     <buildTarget airDownloadURL="https://market.android.com/details?id=com.adobe.air" androidSettingsVersion="2" buildTargetName="device" isCurrent="true" platformId="com.adobe.flexide.multiplatform.android.platform">
