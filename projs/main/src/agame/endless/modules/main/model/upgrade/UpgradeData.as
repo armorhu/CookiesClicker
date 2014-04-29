@@ -2,6 +2,7 @@ package agame.endless.modules.main.model.upgrade
 {
 	import com.agame.services.csv.CSVFile;
 
+	import agame.endless.configs.lang.Lang;
 	import agame.endless.configs.upgrades.UpgradesConfig;
 	import agame.endless.modules.main.model.Game;
 
@@ -12,6 +13,9 @@ package agame.endless.modules.main.model.upgrade
 
 		public var bought:int;
 		public var unlocked:int;
+
+		public var effect:String;
+		public var tips:String;
 
 		public var clickFunction:Function;
 		public var debug:int;
@@ -31,7 +35,22 @@ package agame.endless.modules.main.model.upgrade
 				this[sHeplerKeys[i]]=csvFile.getValue(UpgradesN, i, UpgradesN);
 			this.id=UpgradesN;
 			this.price=basePrice;
-			
+
+			this.displayName=Lang(this.displayName);
+			this.desc=Lang(this.desc);
+
+			var start:int=this.desc.lastIndexOf('<');
+			var end:int=this.desc.lastIndexOf('>');
+			if (start != -1 && end != -1)
+			{
+				this.effect=this.desc.substr(0, start);
+				this.tips='“' + this.desc.substring(start + 1, end) + '”';
+			}
+			else
+			{
+				this.effect=this.desc;
+				this.tips='';
+			}
 			Game.Upgrades[name]=this;
 			Game.UpgradesById[id]=this;
 

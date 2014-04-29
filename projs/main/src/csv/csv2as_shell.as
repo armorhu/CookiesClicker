@@ -24,9 +24,9 @@ package csv
 		public function csv2as_shell()
 		{
 //			genCSV();
-//			genCharset();
+			genCharset();
 //			genConfigModel();
-			translate();
+//			translate();
 		}
 
 		private function genCSV():void

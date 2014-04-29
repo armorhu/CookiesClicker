@@ -1,0 +1,774 @@
+﻿TID,EN,ZH,ydZH
+String,String,String,String
+TID_COOKIES,#Number# Cookies,#Number# 饼干
+TID_COOKIES_BAKED,#Number# Cookies Baked.,已生产#Number#个饼干
+TID_COOKIES_CLICKED,#Number# Cookies Clicked.,已点击#Number#个饼干
+TID_CPS,+#Number# Cookies per secend!,+ #Number# 饼干/秒
+TID_CURSOR_DISPLAYNAME,Cursor,指针,光标
+TID_CURSOR_DESC,Autoclicks once every 10 seconds.,每10秒自动点一次,Autoclicks每隔10秒。
+TID_GRANDMA_DISPLAYNAME,Grandma,奶奶,奶奶
+TID_GRANDMA_DESC,A nice grandma to bake more cookies.,会做饼干的老奶奶~,一个漂亮的奶奶烘烤饼干。
+TID_FARM_DISPLAYNAME,Farm,农场,农场
+TID_FARM_DESC,Grows cookie plants from cookie seeds.,种饼干得饼干,生长植物甜饼种子。
+TID_FACTORY_DISPLAYNAME,Factory,工厂,工厂
+TID_FACTORY_DESC,Produces large quantities of cookies.,现代化的饼干工厂,产生大量的饼干。
+TID_MINE_DISPLAYNAME,Mine,矿场,我的
+TID_MINE_DESC,Mines out cookie dough and chocolate chips.,蕴含丰富的饼干原料,矿山饼干面团和巧克力。
+TID_SHIPMENT_DISPLAYNAME,Shipment,飞船,装运
+TID_SHIPMENT_DESC,Brings in fresh cookies from the cookie planet.,将新鲜的饼干从遥远的星球运来,带来新鲜的曲奇饼干的星球。
+TID_ALCHEMY_LAB_DISPLAYNAME,Alchemy lab,炼金室,炼金术实验室
+TID_ALCHEMY_LAB_DESC,Turns gold into cookies!,把黄金变成饼干!,把黄金变成饼干!
+TID_PORTAL_DISPLAYNAME,Portal,宇宙之门,门户网站
+TID_PORTAL_DESC,Opens a door to the Cookieverse.,通往饼干宇宙的门…,Cookieverse打开一扇门。
+TID_TIME_MACHINE_DISPLAYNAME,Time machine,时光机,时间机器
+TID_TIME_MACHINE_DESC,"Brings cookies from the past, before they were even eaten.",把已经吃掉的饼干变回来!,从过去带来的饼干
+TID_ANTIMATTER_CONDENSER_DISPLAYNAME,Antimatter condenser,反物质堆,反物质冷凝器
+TID_ANTIMATTER_CONDENSER_DESC,Condenses the antimatter in the universe into cookies.,将宇宙中的反物质凝成饼干…,凝结的反物质宇宙成饼干。
+TID_PRISM_DISPLAYNAME,Prism,棱镜,棱镜
+TID_PRISM_DESC,Converts light itself into cookies.,将光转换成饼干。,将光转换成饼干。
+TID_UPGRADE_DISPLAYNAME_REINFORCED_INDEX_FINGER,Reinforced index finger,钢筋食指,钢筋食指
+TID_UPGRADE_DESC_REINFORCED_INDEX_FINGER,The mouse gains +1 cookie per click.Cursors gain +0.1 base CpS.prod prod,点击饼干数+1，所有指针基础cps+0.1<戳戳戳>,每点击鼠标收益1饼干。CpS游标获得0.1基地。戳戳
+TID_UPGRADE_DISPLAYNAME_CARPAL_TUNNEL_PREVENTION_CREAM,Carpal tunnel prevention cream,腕管节润滑油,腕管预防奶油
+TID_UPGRADE_DESC_CARPAL_TUNNEL_PREVENTION_CREAM,The mouse and cursors are twice as efficient.it... it hurts to click...,鼠标和指针的效果翻倍<疼...好疼...>,鼠标和游标efficient.it两倍……它伤害了点击…
+TID_UPGRADE_DISPLAYNAME_AMBIDEXTROUS,Ambidextrous,灵巧的双手,双手灵巧的
+TID_UPGRADE_DESC_AMBIDEXTROUS,"The mouse and cursors are twice as efficient.Look ma, both hands!",鼠标和指针的效果翻倍<快看，两只手！>,鼠标光标是两倍效率。看马
+TID_UPGRADE_DISPLAYNAME_THOUSAND_FINGERS,Thousand fingers,百手,几千人的手指
+TID_UPGRADE_DESC_THOUSAND_FINGERS,The mouse and cursors gain +0.1 cookies for each non-cursor object owned.clickity,每获得一个非鼠标道具，鼠标和指针的效果都+0.1<点>,鼠标和游标获得0.1每个non-cursor对象owned.clickity饼干
+TID_UPGRADE_DISPLAYNAME_MILLION_FINGERS,Million fingers,千手,百万的手指
+TID_UPGRADE_DESC_MILLION_FINGERS,The mouse and cursors gain +0.5 cookies for each non-cursor object owned.clickityclickity,每获得一个非鼠标道具，鼠标和指针的效果都+0.5<点点>,鼠标和游标获得0.5每个non-cursor对象owned.clickityclickity饼干
+TID_UPGRADE_DISPLAYNAME_BILLION_FINGERS,Billion fingers,万手,十亿的手指
+TID_UPGRADE_DESC_BILLION_FINGERS,The mouse and cursors gain +2 cookies for each non-cursor object owned.clickityclickityclickity,每获得一个非鼠标道具，鼠标和指针的效果都+2<点点点>,鼠标和游标获得2为每个non-cursor对象owned.clickityclickityclickity饼干
+TID_UPGRADE_DISPLAYNAME_TRILLION_FINGERS,Trillion fingers,亿手,兆的手指
+TID_UPGRADE_DESC_TRILLION_FINGERS,The mouse and cursors gain +10 cookies for each non-cursor object owned.clickityclickityclickityclickity,每获得一个非鼠标道具，鼠标和指针的效果都+10<点点点点>,鼠标和游标获得10为每个non-cursor对象owned.clickityclickityclickityclickity饼干
+TID_UPGRADE_DISPLAYNAME_FORWARDS_FROM_GRANDMA,Forwards from grandma,奶奶的期望,前锋从奶奶
+TID_UPGRADE_DESC_FORWARDS_FROM_GRANDMA,Grandmas gain +0.3 base CpS.RE:RE:thought you'd get a kick out of this ;)),奶奶的基础cps+0.3<我还以为你会解雇我呢..>,奶奶CpS获得0.3基地。再保险:RE:以为你会踢的，))
+TID_UPGRADE_DISPLAYNAME_STEEL_PLATED_ROLLING_PINS,Steel-plated rolling pins,钢筋擀面杖,一身滚针
+TID_UPGRADE_DESC_STEEL_PLATED_ROLLING_PINS,Grandmas are twice as efficient.Just what you kneaded.,奶奶的效果翻倍<用它来擀面容易多了>,奶奶是两倍效率。只是你捏。
+TID_UPGRADE_DISPLAYNAME_LUBRICATED_DENTURES,Lubricated dentures,润滑的假牙,润滑假牙
+TID_UPGRADE_DESC_LUBRICATED_DENTURES,Grandmas are twice as efficient.squish,奶奶的效果翻倍<嘎嘣脆!>,奶奶是efficient.squish的两倍
+TID_UPGRADE_DISPLAYNAME_CHEAP_HOES,Cheap hoes,廉价的锄头,廉价的锄头
+TID_UPGRADE_DESC_CHEAP_HOES,Farms gain +1 base CpS.Rake in the dough!,农场的基础cps+1<用力耙面团>,CpS农场获得1基地。在面团耙!
+TID_UPGRADE_DISPLAYNAME_FERTILIZER,Fertilizer,化肥,肥料
+TID_UPGRADE_DESC_FERTILIZER,"Farms are twice as efficient.It's chocolate, I swear.",农场效果翻倍<我发誓这是巧克力>,农场的两倍效率。这是巧克力
+TID_UPGRADE_DISPLAYNAME_COOKIE_TREES,Cookie trees,饼干树,饼干树
+TID_UPGRADE_DESC_COOKIE_TREES,Farms are twice as efficient.A relative of the breadfruit.,农场效果翻倍<和面包树差不多~>,农场的两倍效率。一个相对的面包果。
+TID_UPGRADE_DISPLAYNAME_STURDIER_CONVEYOR_BELTS,Sturdier conveyor belts,坚固传输带,坚固传送带
+TID_UPGRADE_DESC_STURDIER_CONVEYOR_BELTS,Factories gain +4 base CpS.You're going places.,工厂基础cps+4<你的前途无量!>,工厂获得CpS 4基地。你要去的地方。一个·￥??一?oc项?cps 4 <?c??一??e????e??! >
+TID_UPGRADE_DISPLAYNAME_CHILD_LABOR,Child labor,童工,童工
+TID_UPGRADE_DESC_CHILD_LABOR,"Factories are twice as efficient.Cheaper, healthier workforce.",工厂效果翻倍<健康廉价的劳动力>,工厂正在efficient.Cheaper的两倍
+TID_UPGRADE_DISPLAYNAME_SWEATSHOP,Sweatshop,血汗工厂,血汗工厂
+TID_UPGRADE_DESC_SWEATSHOP,Factories are twice as efficient.Slackers will be terminated.,工厂效果翻倍<懒鬼就去死!>,工厂两倍效率。偷懒的人将被终止。
+TID_UPGRADE_DISPLAYNAME_SUGAR_GAS,Sugar gas,糖气,糖气
+TID_UPGRADE_DESC_SUGAR_GAS,"Mines gain +10 base CpS.A pink, volatile gas, found in the depths of some chocolate caves.",矿厂基础cps+10<这是在一些巧克力矿坑深处发现的，粉红色挥发性气体!>,CpS矿山获得10个基地。一个粉红色的
+TID_UPGRADE_DISPLAYNAME_MEGADRILL,Megadrill,机械钻头,Megadrill
+TID_UPGRADE_DESC_MEGADRILL,Mines are twice as efficient.You're in deep.,矿场效果翻倍<终于可以再深一点了！>,矿山是两倍效率。你在深。
+TID_UPGRADE_DISPLAYNAME_ULTRADRILL,Ultradrill,Ultimadrill,Ultradrill
+TID_UPGRADE_DESC_ULTRADRILL,Mines are twice as efficient.Finally caved in?,矿场效果翻倍<终于要塌陷了?>,矿山是两倍效率。终于屈服了吗?
+TID_UPGRADE_DISPLAYNAME_VANILLA_NEBULAE,Vanilla nebulae,香草星云,香草星云
+TID_UPGRADE_DESC_VANILLA_NEBULAE,"Shipments gain +30 base CpS.If you removed your space helmet, you could probably smell it!(Note : don't do that.)",飞船基础cps+30<如果你摘下自己的太空帽，你应该能闻到！>,CpS出货量增加30基地。如果你删除你的太空头盔
+TID_UPGRADE_DISPLAYNAME_WORMHOLES,Wormholes,虫洞,虫洞
+TID_UPGRADE_DESC_WORMHOLES,"Shipments are twice as efficient.By using these as shortcuts, your ships can travel much faster.",飞船效果翻倍<有了这条捷径，飞船往返更快了>,装运的两倍效率。通过使用这些快捷键
+TID_UPGRADE_DISPLAYNAME_FREQUENT_FLYER,Frequent flyer,频繁飞行,常旅客
+TID_UPGRADE_DESC_FREQUENT_FLYER,Shipments are twice as efficient.Come back soon!,飞船效果翻倍<我去去就回~~>,装运的两倍效率。很快回来!
+TID_UPGRADE_DISPLAYNAME_ANTIMONY,Antimony,锑,锑
+TID_UPGRADE_DESC_ANTIMONY,Alchemy labs gain +100 base CpS.Actually worth a lot of mony.,炼金室基础cps+100<实际上相当超值>,炼金术实验室获得100 CpS基地。实际上许多许多的价值。一个?c??e??¤一?oc(??cps 100 <一个??e??一??c??一??e??一??>
+TID_UPGRADE_DISPLAYNAME_ESSENCE_OF_DOUGH,Essence of dough,面之源质,面团的本质
+TID_UPGRADE_DESC_ESSENCE_OF_DOUGH,Alchemy labs are twice as efficient.Extracted through the 5 ancient steps of alchemical baking.,炼金室效果翻倍<通过5种古老的炼金术萃取而来!>,炼金术实验室两倍效率。通过提取5古代炼金术烘焙的步骤。
+TID_UPGRADE_DISPLAYNAME_TRUE_CHOCOLATE,True chocolate,纯巧克力,真正的巧克力
+TID_UPGRADE_DESC_TRUE_CHOCOLATE,Alchemy labs are twice as efficient.The purest form of cacao.,炼金室效果翻倍<可可豆的最纯粹形态>,炼金术实验室两倍效率。可可的纯粹的形式。
+TID_UPGRADE_DISPLAYNAME_ANCIENT_TABLET,Ancient tablet,上古石板,古老的平板电脑
+TID_UPGRADE_DESC_ANCIENT_TABLET,"Portals gain +1,666 base CpS.A strange slab of peanut brittle, holding an ancient cookie recipe. Neat!","宇宙之门基础cps+1,666<一块奇特的石板，记载着古老的饼干配方!>",门户网站获得1
+TID_UPGRADE_DISPLAYNAME_INSANE_OATLING_WORKERS,Insane oatling workers,疯狂奥特兰工人,疯狂oatling工人
+TID_UPGRADE_DESC_INSANE_OATLING_WORKERS,"Portals are twice as efficient.ARISE, MY MINIONS!",宇宙之门效果翻倍<出来吧，我的奴仆们！>,门户是efficient.ARISE的两倍
+TID_UPGRADE_DISPLAYNAME_SOUL_BOND,Soul bond,灵魂契约,灵魂的债券
+TID_UPGRADE_DESC_SOUL_BOND,"Portals are twice as efficient.So I just sign up and get more cookies? Sure, whatever!",宇宙之门效果翻倍<只要签字就可以获得更多的饼干？>,门户是两倍效率。所以我只是注册并获得更多的饼干?确定
+TID_UPGRADE_DISPLAYNAME_FLUX_CAPACITORS,Flux capacitors,变迁电容,通量电容器
+TID_UPGRADE_DESC_FLUX_CAPACITORS,"Time machines gain +9,876 base CpS.Bake to the future.","时光机基础cps+9,876<烤到未来。>",时间机器获得9
+TID_UPGRADE_DISPLAYNAME_TIME_PARADOX_RESOLVER,Time paradox resolver,时间悖论解析器,时间悖论解析器
+TID_UPGRADE_DESC_TIME_PARADOX_RESOLVER,Time machines are twice as efficient.No more fooling around with your own grandmother!,时光机效果翻倍。<不要在愚弄你的奶奶了！>,时间机器效率的两倍。不再摆弄起自己的祖母!
+TID_UPGRADE_DISPLAYNAME_QUANTUM_CONUNDRUM,Quantum conundrum,量子谜题,量子的难题
+TID_UPGRADE_DESC_QUANTUM_CONUNDRUM,"Time machines are twice as efficient.There is only one constant, and that is universal uncertainty.Or is it?",时光机效果翻倍。<唯一能确定的就是宇宙的不确定性，是不是？>,时间机器效率的两倍。只有一个常数
+TID_UPGRADE_DISPLAYNAME_KITTEN_HELPERS,Kitten helpers,小猫帮手,小猫帮手
+TID_UPGRADE_DESC_KITTEN_HELPERS,You gain more CpS the more milk you have.meow may I help you,牛奶越多cps越多。<要帮忙么？~~喵>,你获得更多的CpS牛奶越多。猫叫我可以帮助你
+TID_UPGRADE_DISPLAYNAME_KITTEN_WORKERS,Kitten workers,小猫工人,小猫的工人
+TID_UPGRADE_DESC_KITTEN_WORKERS,You gain more CpS the more milk you have.meow meow meow meow,牛奶越多cps越多。<喵~喵~喵~喵>,你获得更多的CpS牛奶越多。喵喵喵喵
+TID_UPGRADE_DISPLAYNAME_OATMEAL_RAISIN_COOKIES,Oatmeal raisin cookies,燕麦葡萄干饼干,燕麦葡萄干饼干
+TID_UPGRADE_DESC_OATMEAL_RAISIN_COOKIES,Cookie production multiplier +5%.No raisin to hate these.,饼干产量+5%<没有讨厌饼干的葡萄干>
+TID_UPGRADE_DISPLAYNAME_PEANUT_BUTTER_COOKIES,Peanut butter cookies,花生酱饼干,花生酱饼干
+TID_UPGRADE_DESC_PEANUT_BUTTER_COOKIES,Cookie production multiplier +5%.Get yourself some jam cookies!,饼干产量+5%<给自己来点花生酱饼干>
+TID_UPGRADE_DISPLAYNAME_PLAIN_COOKIES,Plain cookies,普通饼干,普通的饼干
+TID_UPGRADE_DESC_PLAIN_COOKIES,Cookie production multiplier +5%.Meh.,饼干产量+5%<啥？>
+TID_UPGRADE_DISPLAYNAME_COCONUT_COOKIES,Coconut cookies,椰子饼干,椰子饼干
+TID_UPGRADE_DESC_COCONUT_COOKIES,Cookie production multiplier +5%.These are *way* flaky.,饼干产量+5%<薄片状的饼干>
+TID_UPGRADE_DISPLAYNAME_WHITE_CHOCOLATE_COOKIES,White chocolate cookies,白巧克力饼干,白巧克力饼干
+TID_UPGRADE_DESC_WHITE_CHOCOLATE_COOKIES,Cookie production multiplier +5%.I know what you'll say. It's just cocoa butter! It's not real chocolate!Oh please.,饼干产量+5%<我就知道你会说它不是真正的巧克力！>
+TID_UPGRADE_DISPLAYNAME_MACADAMIA_NUT_COOKIES,Macadamia nut cookies,澳洲坚果饼干,澳洲坚果饼干
+TID_UPGRADE_DESC_MACADAMIA_NUT_COOKIES,Cookie production multiplier +5%.They're macadamn delicious!,饼干产量+5%<实在是太好吃了！>
+TID_UPGRADE_DISPLAYNAME_DOUBLE_CHIP_COOKIES,Double-chip cookies,双层饼干,Double-chip饼干
+TID_UPGRADE_DESC_DOUBLE_CHIP_COOKIES,Cookie production multiplier +10%.DOUBLE THE CHIPSDOUBLE THE TASTY(double the calories),饼干产量+10%<加量不加价！>
+TID_UPGRADE_DISPLAYNAME_SUGAR_COOKIES,Sugar cookies,糖饼干,糖饼干
+TID_UPGRADE_DESC_SUGAR_COOKIES,"Cookie production multiplier +5%.Tasty, if a little unimaginative.",饼干产量+5%<要求不高的话，味道还行！>
+TID_UPGRADE_DISPLAYNAME_WHITE_CHOCOLATE_MACADAMIA_NUT_COOKIES,White chocolate macadamia nut cookies,白巧克力澳洲坚果饼干,白巧克力澳洲坚果饼干
+TID_UPGRADE_DESC_WHITE_CHOCOLATE_MACADAMIA_NUT_COOKIES,Cookie production multiplier +10%.My favorite.,饼干产量+5%<我的最爱！>
+TID_UPGRADE_DISPLAYNAME_ALL_CHOCOLATE_COOKIES,All-chocolate cookies,全巧克力饼干,餐饼干
+TID_UPGRADE_DESC_ALL_CHOCOLATE_COOKIES,Cookie production multiplier +10%.CHOCOVERDOSE.,饼干产量+5%<可卡因超标！>
+TID_UPGRADE_DISPLAYNAME_QUADRILLION_FINGERS,Quadrillion fingers,飞跃的手指,手指的飞跃
+TID_UPGRADE_DESC_QUADRILLION_FINGERS,The mouse and cursors gain +20 cookies for each non-cursor object owned.clickityclickityclickityclickityclick,每获得一个非鼠标道具，鼠标和指针的效果都+20<点点点点点点>,鼠标光标获得20为每个non-cursor对象owned.clickityclickityclickityclickityclick饼干
+TID_UPGRADE_DISPLAYNAME_PRUNE__UICE,Prune juice,酸梅汤,西梅汁
+TID_UPGRADE_DESC_PRUNE__UICE,Grandmas are twice as efficient.Gets me going.,奶奶效果翻倍<让我走>,奶奶是两倍效率。让我走了。
+TID_UPGRADE_DISPLAYNAME_GENETICALLY_MODIFIED_COOKIES,Genetically-modified cookies,转基因饼干,转基因饼干
+TID_UPGRADE_DESC_GENETICALLY_MODIFIED_COOKIES,Farms are twice as efficient.All-natural mutations.,农场效果翻倍<这是自然变异>,农场的两倍效率。天然突变。
+TID_UPGRADE_DISPLAYNAME_RADIUM_REACTORS,Radium reactors,镭反应堆,镭反应堆
+TID_UPGRADE_DESC_RADIUM_REACTORS,Factories are twice as efficient.Gives your cookies a healthy glow.,工厂效果翻倍<给你饼干健康的光泽。>,工厂两倍效率。给你饼干健康的光泽。
+TID_UPGRADE_DISPLAYNAME_ULTIMADRILL,Ultimadrill,Ultimadrill,Ultimadrill
+TID_UPGRADE_DESC_ULTIMADRILL,"Mines are twice as efficient.Pierce the heavens, etc.",矿场效果翻倍<暗无天日！>,矿山是两倍效率。皮尔斯诸天
+TID_UPGRADE_DISPLAYNAME_WARP_DRIVE,Warp drive,漫游航行,翘曲航行
+TID_UPGRADE_DESC_WARP_DRIVE,Shipments are twice as efficient.To boldly bake.,飞船效果翻倍<大胆的烤~~>,装运的两倍效率。大胆地烤。
+TID_UPGRADE_DISPLAYNAME_AMBROSIA,Ambrosia,神仙粉,特别美味的食物
+TID_UPGRADE_DESC_AMBROSIA,Alchemy labs are twice as efficient.Adding this to the cookie mix is sure to make them even more addictive!Perhaps dangerously so.Let's hope you can keep selling these legally.,炼金室效果翻倍<混进饼干里会让饼干变得非常刺激，太伟大了！除了有点法律风险~~>,炼金术实验室两倍效率。这个添加到饼干混合肯定会让他们更容易上瘾!也许是危险的。希望你可以继续销售这些法律。
+TID_UPGRADE_DISPLAYNAME_SANITY_DANCE,Sanity dance,理智的舞蹈,理智的舞蹈
+TID_UPGRADE_DESC_SANITY_DANCE,Portals are twice as efficient.We can change if we want to.We can leave our brains behind.,宇宙之门效果翻倍<丢掉烦恼~丢大脑~>,门户是两倍效率。如果我们希望我们可以改变。我们可以留下我们的大脑。
+TID_UPGRADE_DISPLAYNAME_CAUSALITY_ENFORCER,Causality enforcer,因果使者,因果关系执行者
+TID_UPGRADE_DESC_CAUSALITY_ENFORCER,"Time machines are twice as efficient.What happened, happened.",时光机效果翻倍。<发生了什么事>,时间机器效率的两倍。发生了什么事
+TID_UPGRADE_DISPLAYNAME_LUCKY_DAY,Lucky day,幸运日,幸运的一天
+TID_UPGRADE_DESC_LUCKY_DAY,"Golden cookies appear twice as often and stay twice as long.Oh hey, a four-leaf penny!",金色饼干刷新概率与时长翻倍。<啊哈，一个幸运的征兆>,金色的饼干出现两倍和两倍长。哦嘿
+TID_UPGRADE_DISPLAYNAME_SERENDIPITY,Serendipity,意外的惊喜,意外的惊喜
+TID_UPGRADE_DESC_SERENDIPITY,Golden cookies appear twice as often and stay twice as long.What joy! Seven horseshoes!,金色饼干刷新概率与时长翻倍。<开心！>,金色的饼干出现两倍和两倍长。什么快乐!七马蹄铁!
+TID_UPGRADE_DISPLAYNAME_KITTEN_ENGINEERS,Kitten engineers,喵星人工程师,小猫工程师
+TID_UPGRADE_DESC_KITTEN_ENGINEERS,"You gain more CpS the more milk you have.meow meow meow meow, sir",牛奶越多cps越多。<好的，喵~喵~喵~喵>
+TID_UPGRADE_DISPLAYNAME_DARK_CHOCOLATE_COATED_COOKIES,Dark chocolate-coated cookies,黑巧克力饼干,黑暗涂巧克力饼干
+TID_UPGRADE_DESC_DARK_CHOCOLATE_COATED_COOKIES,Cookie production multiplier +15%.These absorb light so well you almost need to squint to see them.,饼干产量+15%<加量不加价！>
+TID_UPGRADE_DISPLAYNAME_WHITE_CHOCOLATE_COATED_COOKIES,White chocolate-coated cookies,圣光饼干,白色涂巧克力饼干
+TID_UPGRADE_DESC_WHITE_CHOCOLATE_COATED_COOKIES,Cookie production multiplier +15%.These dazzling cookies absolutely glisten with flavor.,饼干产量+15%<这块饼干闪耀着光芒的味道>
+TID_UPGRADE_DISPLAYNAME_FARMER_GRANDMAS,Farmer grandmas,农民奶奶,农民奶奶
+TID_UPGRADE_DESC_FARMER_GRANDMAS,Grandmas are twice as efficient.A nice farmer to grow more cookies.,奶奶效果翻倍<好的农民能种植更多的饼干>,奶奶是两倍效率。一个农民种植更多的饼干。
+TID_UPGRADE_DISPLAYNAME_WORKER_GRANDMAS,Worker grandmas,工人奶奶,工人奶奶
+TID_UPGRADE_DESC_WORKER_GRANDMAS,Grandmas are twice as efficient.A nice worker to manufacture more cookies.,奶奶效果翻倍<好的工人能生产更多的饼干>,奶奶是两倍效率。一个很好的工人生产更多的饼干。
+TID_UPGRADE_DISPLAYNAME_MINER_GRANDMAS,Miner grandmas,矿工奶奶,矿工奶奶
+TID_UPGRADE_DESC_MINER_GRANDMAS,Grandmas are twice as efficient.A nice miner to dig more cookies.,奶奶效果翻倍<好的矿工能挖更多的饼干>,奶奶是两倍效率。一个矿工挖更多的饼干。
+TID_UPGRADE_DISPLAYNAME_COSMIC_GRANDMAS,Cosmic grandmas,外星奶奶,宇宙的奶奶
+TID_UPGRADE_DESC_COSMIC_GRANDMAS,Grandmas are twice as efficient.A nice thing to... uh... cookies.,奶奶效果翻倍<好的xx能xx更多的饼干>,奶奶是两倍效率。件好事……嗯…饼干。
+TID_UPGRADE_DISPLAYNAME_TRANSMUTED_GRANDMAS,Transmuted grandmas,变异奶奶,改变奶奶
+TID_UPGRADE_DESC_TRANSMUTED_GRANDMAS,Grandmas are twice as efficient.A nice golden grandma to convert into more cookies.,奶奶效果翻倍<一个漂亮的黄金奶奶能转换为更多的饼干>,奶奶是两倍效率。一个漂亮的金奶奶转换成更多的饼干。
+TID_UPGRADE_DISPLAYNAME_ALTERED_GRANDMAS,Altered grandmas,异性奶奶,改变了奶奶
+TID_UPGRADE_DESC_ALTERED_GRANDMAS,Grandmas are twice as efficient.a NiCe GrAnDmA tO bA##########,奶奶效果翻倍<一个漂亮的烫烫烫烫烫烫烫烫烫烫烫烫烫烫>,奶奶是两倍效率。英航的好奶奶
+TID_UPGRADE_DISPLAYNAME_GRANDMAS__GRANDMAS,Grandmas' grandmas,奶奶的奶奶,奶奶的奶奶
+TID_UPGRADE_DESC_GRANDMAS__GRANDMAS,Grandmas are twice as efficient.A nice grandma's nice grandma to bake double the cookies.,奶奶效果翻倍<漂亮奶奶的漂亮奶奶能烘烤更多的饼干>,奶奶是两倍效率。一个漂亮的奶奶的好奶奶烤曲奇饼的两倍。
+TID_UPGRADE_DISPLAYNAME_BINGO_CENTER_RESEARCH_FACILITY,Bingo center/Research facility,奶奶科技研究所,宾戈游戏中心/研究机构
+TID_UPGRADE_DESC_BINGO_CENTER_RESEARCH_FACILITY,Grandma-operated science lab and leisure club.Grandmas are 4 times as efficient.Regularly unlocks new upgrades.What could possibly keep those grandmothers in check?...Bingo.,奶奶效果X4，定期解锁新科技<什么能保证这些奶奶们按时上班？>,Grandma-operated科学实验室和休闲俱乐部。奶奶是4倍。定期打开新的升级。可能抑制那些祖母什么?……宾果。
+TID_UPGRADE_DISPLAYNAME_SPECIALIZED_CHOCOLATE_CHIPS,Specialized chocolate chips,特制巧克力豆,专门的巧克力
+TID_UPGRADE_DESC_SPECIALIZED_CHOCOLATE_CHIPS,"[Research]Cookie production multiplier +1%.Computer-designed chocolate chips. Computer chips, if you will."
+TID_UPGRADE_DISPLAYNAME_DESIGNER_COCOA_BEANS,Designer cocoa beans,,设计师可可豆
+TID_UPGRADE_DESC_DESIGNER_COCOA_BEANS,[Research]Cookie production multiplier +2%.Now more aerodynamic than ever!
+TID_UPGRADE_DISPLAYNAME_RITUAL_ROLLING_PINS,Ritual rolling pins,,仪式滚针
+TID_UPGRADE_DESC_RITUAL_ROLLING_PINS,[Research]Grandmas are twice as efficient.The result of years of scientific research!,,[研究]奶奶是两倍效率。多年的科学研究的结果!
+TID_UPGRADE_DISPLAYNAME_UNDERWORLD_OVENS,Underworld ovens,,黑社会烤箱
+TID_UPGRADE_DESC_UNDERWORLD_OVENS,"[Research]Cookie production multiplier +3%.Powered by science, of course!"
+TID_UPGRADE_DISPLAYNAME_ONE_MIND,One mind,,一个头脑
+TID_UPGRADE_DESC_ONE_MIND,[Research]Each grandma gains +1 base CpS for every 50 grandmas.Note : the grandmothers are growing restless. Do not encourage them.We are one. We are many.,,[研究]每个奶奶收益1基地CpS每50个奶奶。注意:祖母越来越焦躁不安。不鼓励他们。我们是一体的。我们有很多。
+TID_UPGRADE_DISPLAYNAME_EXOTIC_NUTS,Exotic nuts,,异国情调的坚果
+TID_UPGRADE_DESC_EXOTIC_NUTS,[Research]Cookie production multiplier +4%.You'll go crazy over these!
+TID_UPGRADE_DISPLAYNAME_COMMUNAL_BRAINSWEEP,Communal brainsweep,,公共brainsweep
+TID_UPGRADE_DESC_COMMUNAL_BRAINSWEEP,[Research]Each grandma gains another +1 base CpS for every 50 grandmas.Note : proceeding any further in scientific research may have unexpected results. You have been warned.We fuse. We merge. We grow.,,[研究]每一个奶奶收益1基地CpS每50个奶奶。注意:进行任何进一步的科学研究可能意想不到的结果。我已经警告过你了!我们融合。我们合并。我们成长。
+TID_UPGRADE_DISPLAYNAME_ARCANE_SUGAR,Arcane sugar,,神秘的糖
+TID_UPGRADE_DESC_ARCANE_SUGAR,"[Research]Cookie production multiplier +5%.Tastes like insects, ligaments, and molasses."
+TID_UPGRADE_DISPLAYNAME_ELDER_PACT,Elder Pact,,的协议
+TID_UPGRADE_DESC_ELDER_PACT,[Research]Each grandma gains +1 base CpS for every 20 portals.Note : this is a bad idea.squirm crawl slither writhetoday we rise,,[研究]每个奶奶收益1基本CpS每20门户。注意:这是一个坏主意。蠕动爬行爬writhetoday我们上升
+TID_UPGRADE_DISPLAYNAME_ELDER_PLEDGE,Elder Pledge,,老人的承诺
+TID_UPGRADE_DESC_ELDER_PLEDGE,"[Repeatable]Contains the wrath of the elders, at least for a while.This is a simple ritual involving anti-aging cream, cookie batter mixed in the moonlight, and a live chicken.",,(重复的)包含长老的忿怒
+TID_UPGRADE_DISPLAYNAME_PLASTIC_MOUSE,Plastic mouse,,塑料鼠标
+TID_UPGRADE_DESC_PLASTIC_MOUSE,Clicking gains +1% of your CpS.Slightly squeaky.
+TID_UPGRADE_DISPLAYNAME_IRON_MOUSE,Iron mouse,,铁的鼠标
+TID_UPGRADE_DESC_IRON_MOUSE,Clicking gains +1% of your CpS.Click like it's 1349!
+TID_UPGRADE_DISPLAYNAME_TITANIUM_MOUSE,Titanium mouse,,钛的鼠标
+TID_UPGRADE_DESC_TITANIUM_MOUSE,"Clicking gains +1% of your CpS.Heavy, but powerful."
+TID_UPGRADE_DISPLAYNAME_ADAMANTIUM_MOUSE,Adamantium mouse,,Adamantium鼠标
+TID_UPGRADE_DESC_ADAMANTIUM_MOUSE,Clicking gains +1% of your CpS.You could cut diamond with these.
+TID_UPGRADE_DISPLAYNAME_ULTRASCIENCE,Ultrascience,,Ultrascience
+TID_UPGRADE_DESC_ULTRASCIENCE,"Research takes only 5 seconds.YEAH, SCIENCE!",,研究只需要5 seconds.YEAH
+TID_UPGRADE_DISPLAYNAME_ECLIPSE_COOKIES,Eclipse cookies,,Eclipse饼干
+TID_UPGRADE_DESC_ECLIPSE_COOKIES,Cookie production multiplier +15%.Look to the cookie.
+TID_UPGRADE_DISPLAYNAME_ZEBRA_COOKIES,Zebra cookies,,斑马饼干
+TID_UPGRADE_DESC_ZEBRA_COOKIES,Cookie production multiplier +15%....
+TID_UPGRADE_DISPLAYNAME_QUINTILLION_FINGERS,Quintillion fingers,,百万的三次方的手指
+TID_UPGRADE_DESC_QUINTILLION_FINGERS,"The mouse and cursors gain +100 cookies for each non-cursor object owned.man, just go click click click click click, it's real easy, man.",,鼠标和游标获得100年为每个non-cursor对象owned.man饼干
+TID_UPGRADE_DISPLAYNAME_GOLD_HOARD,Gold hoard,,黄金储备
+TID_UPGRADE_DESC_GOLD_HOARD,Golden cookies appear really often.That's entirely too many.,,金色的饼干真的经常出现。完全的太多了。
+TID_UPGRADE_DISPLAYNAME_ELDER_COVENANT,Elder Covenant,,老的约
+TID_UPGRADE_DESC_ELDER_COVENANT,"[Switch]Puts a permanent end to the elders' wrath, at the price of 5% of your CpS.This is a complicated ritual involving silly, inconsequential trivialities such as cursed laxatives, century-old cacao, and an infant.Don't question it.",,(开关)将永久结束长老的愤怒
+TID_UPGRADE_DISPLAYNAME_REVOKE_ELDER_COVENANT,Revoke Elder Covenant,,撤销的契约
+TID_UPGRADE_DESC_REVOKE_ELDER_COVENANT,"[Switch]You will get 5% of your CpS back, but the grandmatriarchs will return.weriseagain"
+TID_UPGRADE_DISPLAYNAME_GET_LUCKY,Get lucky,,得到幸运
+TID_UPGRADE_DESC_GET_LUCKY,"Golden cookie effects last twice as long.You've been up all night, haven't you?",,金饼影响最后的两倍长。你一整夜
+TID_UPGRADE_DISPLAYNAME_SACRIFICIAL_ROLLING_PINS,Sacrificial rolling pins,,牺牲滚针
+TID_UPGRADE_DESC_SACRIFICIAL_ROLLING_PINS,"Elder pledge last twice as long.These are mostly for spreading the anti-aging cream.(and accessorily, shortening the chicken's suffering.)",,老人承诺最后的两倍长。这些对于信息的传播主要是抗衰老霜。(和附属地
+TID_UPGRADE_DISPLAYNAME_SNICKERDOODLES,Snickerdoodles,,Snickerdoodles
+TID_UPGRADE_DESC_SNICKERDOODLES,Cookie production multiplier +15%.True to their name.
+TID_UPGRADE_DISPLAYNAME_STROOPWAFELS,Stroopwafels,,Stroopwafels
+TID_UPGRADE_DESC_STROOPWAFELS,"Cookie production multiplier +15%.If it ain't dutch, it ain't much."
+TID_UPGRADE_DISPLAYNAME_MACAROONS,Macaroons,,蛋白杏仁饼
+TID_UPGRADE_DESC_MACAROONS,"Cookie production multiplier +15%.Not to be confused with macarons.These have coconut, okay?"
+TID_UPGRADE_DISPLAYNAME_NEUROMANCY,Neuromancy,,Neuromancy
+TID_UPGRADE_DESC_NEUROMANCY,Can toggle upgrades on and off at will in the stats menu.Can also come in handy to unsee things that can't be unseen.,,可以切换升级，在统计菜单。也可以派上用场unsee不能看不见的东西。
+TID_UPGRADE_DISPLAYNAME_EMPIRE_BISCUITS,Empire biscuits,,帝国饼干
+TID_UPGRADE_DESC_EMPIRE_BISCUITS,"Cookie production multiplier +15%.For your growing cookie empire, of course!"
+TID_UPGRADE_DISPLAYNAME_BRITISH_TEA_BISCUITS,British tea biscuits,,英国茶饼干
+TID_UPGRADE_DESC_BRITISH_TEA_BISCUITS,Cookie production multiplier +15%.Quite.
+TID_UPGRADE_DISPLAYNAME_CHOCOLATE_BRITISH_TEA_BISCUITS,Chocolate british tea biscuits,,英国茶巧克力饼干
+TID_UPGRADE_DESC_CHOCOLATE_BRITISH_TEA_BISCUITS,"Cookie production multiplier +15%.Yes, quite."
+TID_UPGRADE_DISPLAYNAME_ROUND_BRITISH_TEA_BISCUITS,Round british tea biscuits,,圆的英国茶饼干
+TID_UPGRADE_DESC_ROUND_BRITISH_TEA_BISCUITS,"Cookie production multiplier +15%.Yes, quite riveting."
+TID_UPGRADE_DISPLAYNAME_ROUND_CHOCOLATE_BRITISH_TEA_BISCUITS,Round chocolate british tea biscuits,,英国茶巧克力饼干
+TID_UPGRADE_DESC_ROUND_CHOCOLATE_BRITISH_TEA_BISCUITS,"Cookie production multiplier +15%.Yes, quite riveting indeed."
+TID_UPGRADE_DISPLAYNAME_ROUND_BRITISH_TEA_BISCUITS_WITH_HEART_MOTIF,Round british tea biscuits with heart motif,,英国茶饼干的心图案
+TID_UPGRADE_DESC_ROUND_BRITISH_TEA_BISCUITS_WITH_HEART_MOTIF,"Cookie production multiplier +15%.Yes, quite riveting indeed, old chap."
+TID_UPGRADE_DISPLAYNAME_ROUND_CHOCOLATE_BRITISH_TEA_BISCUITS_WITH_HEART_MOTIF,Round chocolate british tea biscuits with heart motif,,英国茶饼干巧克力心图案
+TID_UPGRADE_DESC_ROUND_CHOCOLATE_BRITISH_TEA_BISCUITS_WITH_HEART_MOTIF,Cookie production multiplier +15%.I like cookies.
+TID_UPGRADE_DISPLAYNAME_SUGAR_BOSONS,Sugar bosons,,糖玻色子
+TID_UPGRADE_DESC_SUGAR_BOSONS,"Antimatter condensers gain +99,999 base CpS.Sweet firm bosons.",,反物质冷凝器获得99
+TID_UPGRADE_DISPLAYNAME_STRING_THEORY,String theory,,弦理论
+TID_UPGRADE_DESC_STRING_THEORY,"Antimatter condensers are twice as efficient.Reveals new insight about the true meaning of baking cookies (and, as a bonus, the structure of the universe).",,反物质冷凝器效率的两倍。揭示了新的认识关于烘焙饼干(和的真正含义
+TID_UPGRADE_DISPLAYNAME_LARGE_MACARON_COLLIDER,Large macaron collider,,大型未曾对撞机
+TID_UPGRADE_DESC_LARGE_MACARON_COLLIDER,Antimatter condensers are twice as efficient.How singular!,,反物质冷凝器效率的两倍。多么奇异!
+TID_UPGRADE_DISPLAYNAME_BIG_BANG_BAKE,Big bang bake,,大爆炸烤
+TID_UPGRADE_DESC_BIG_BANG_BAKE,Antimatter condensers are twice as efficient.And that's how it all began.,,反物质冷凝器效率的两倍。这就是这一切是如何开始的。
+TID_UPGRADE_DISPLAYNAME_ANTIGRANDMAS,Antigrandmas,,Antigrandmas
+TID_UPGRADE_DESC_ANTIGRANDMAS,Grandmas are twice as efficient.A mean antigrandma to vomit more cookies.(Do not put in contact with normal grandmas; loss of matter may occur.),,奶奶是两倍效率。一个意味着antigrandma吐更多的饼干。(不要把接触正常的奶奶，损失可能发生的事。)
+TID_UPGRADE_DISPLAYNAME_MADELEINES,Madeleines,,玛德琳蛋糕
+TID_UPGRADE_DESC_MADELEINES,Cookie production multiplier +20%.Unforgettable!
+TID_UPGRADE_DISPLAYNAME_PALMIERS,Palmiers,,棕榈树
+TID_UPGRADE_DESC_PALMIERS,"Cookie production multiplier +20%.Palmier than you!Yes, I just said that."
+TID_UPGRADE_DISPLAYNAME_PALETS,Palets,,palets
+TID_UPGRADE_DESC_PALETS,"Cookie production multiplier +20%.You could probably play hockey with these.I mean, you're welcome to try."
+TID_UPGRADE_DISPLAYNAME_SABL_EACUTE_S,Sabl&eacute;s,,Sabl
+TID_UPGRADE_DESC_SABL_EACUTE_S,"Cookie production multiplier +20%.The name implies they're made of sand. But you know better, don't you?"
+TID_UPGRADE_DISPLAYNAME_KITTEN_OVERSEERS,Kitten overseers,,小猫监督者
+TID_UPGRADE_DESC_KITTEN_OVERSEERS,"You gain more CpS the more milk you have.my purrpose is to serve you, sir",,你获得更多的CpS牛奶越多。我的purrpose为您服务
+TID_UPGRADE_DISPLAYNAME_SEXTILLION_FINGERS,Sextillion fingers,,千的七乘方的手指
+TID_UPGRADE_DESC_SEXTILLION_FINGERS,The mouse and cursors gain +200 cookies for each non-cursor object owned.sometimesthings justclick,,鼠标和游标获得每个non-cursor对象拥有200饼干。sometimesthings justclick
+TID_UPGRADE_DISPLAYNAME_DOUBLE_THICK_GLASSES,Double-thick glasses,,Double-thick眼镜
+TID_UPGRADE_DESC_DOUBLE_THICK_GLASSES,Grandmas are twice as efficient.Oh... so THAT's what I've been baking.,,奶奶是两倍efficient.Oh……这就是我一直烘烤。
+TID_UPGRADE_DISPLAYNAME_GINGERBREAD_SCARECROWS,Gingerbread scarecrows,,姜饼稻草人
+TID_UPGRADE_DESC_GINGERBREAD_SCARECROWS,Farms are twice as efficient.Staring at your crops with mischievous glee.,,农场的两倍效率。盯着你的作物的喜悦。
+TID_UPGRADE_DISPLAYNAME_RECOMBOBULATORS,Recombobulators,,Recombobulators
+TID_UPGRADE_DESC_RECOMBOBULATORS,Factories are twice as efficient.A major part of cookie recombobulation.,,工厂两倍效率。一个饼干recombobulation的重要组成部分。
+TID_UPGRADE_DISPLAYNAME_H_BOMB_MINING,H-bomb mining,,氢弹矿业
+TID_UPGRADE_DESC_H_BOMB_MINING,"Mines are twice as efficient.Questionable efficiency, but spectacular nonetheless.",,矿山是两倍效率。有问题的效率
+TID_UPGRADE_DISPLAYNAME_CHOCOLATE_MONOLITHS,Chocolate monoliths,,巧克力巨石
+TID_UPGRADE_DESC_CHOCOLATE_MONOLITHS,Shipments are twice as efficient.My god. It's full of chocolate bars.,,装运的两倍效率。我的神。它充满了巧克力。
+TID_UPGRADE_DISPLAYNAME_AQUA_CRUSTULAE,Aqua crustulae,,Aqua crustulae
+TID_UPGRADE_DESC_AQUA_CRUSTULAE,Alchemy labs are twice as efficient.Careful with the dosing - one drop too much and you get muffins.And nobody likes muffins.,,炼金术实验室两倍效率。小心计量——一滴太多和松饼。没有人喜欢松饼。
+TID_UPGRADE_DISPLAYNAME_BRANE_TRANSPLANT,Brane transplant,,膜移植
+TID_UPGRADE_DESC_BRANE_TRANSPLANT,"Portals are twice as efficient.This refers to the practice of merging higher dimensional universes, or 'branes', with our own, in order to facilitate transit (and harvesting of precious cookie dough).",,门户是两倍效率。这指的是合并更高维度的宇宙
+TID_UPGRADE_DISPLAYNAME_YESTERMORROW_COMPARATORS,Yestermorrow comparators,,Yestermorrow比较器
+TID_UPGRADE_DESC_YESTERMORROW_COMPARATORS,Time machines are twice as efficient.Fortnights into milleniums.,,时间机器效率的两倍。Fortnights milleniums。
+TID_UPGRADE_DISPLAYNAME_REVERSE_CYCLOTRONS,Reverse cyclotrons,,逆回旋加速器
+TID_UPGRADE_DESC_REVERSE_CYCLOTRONS,"Antimatter condensers are twice as efficient.These can uncollision particles and unspin atoms. For... uh... better flavor, and stuff.",,反物质冷凝器效率的两倍。这些可以uncollision粒子和unspin原子。为…嗯…更好的味道
+TID_UPGRADE_DISPLAYNAME_UNOBTAINIUM_MOUSE,Unobtainium mouse,,Unobtainium鼠标
+TID_UPGRADE_DESC_UNOBTAINIUM_MOUSE,Clicking gains +1% of your CpS.These nice mice should suffice.
+TID_UPGRADE_DISPLAYNAME_CARAMOAS,Caramoas,,Caramoas
+TID_UPGRADE_DESC_CARAMOAS,Cookie production multiplier +25%.Yeah. That's got a nice ring to it.
+TID_UPGRADE_DISPLAYNAME_SAGALONGS,Sagalongs,,Sagalongs
+TID_UPGRADE_DESC_SAGALONGS,Cookie production multiplier +25%.Grandma's favorite?
+TID_UPGRADE_DISPLAYNAME_SHORTFOILS,Shortfoils,,Shortfoils
+TID_UPGRADE_DESC_SHORTFOILS,Cookie production multiplier +25%.Foiled again!
+TID_UPGRADE_DISPLAYNAME_WIN_MINTS,Win mints,,赢得薄荷糖
+TID_UPGRADE_DESC_WIN_MINTS,Cookie production multiplier +25%.They're the luckiest cookies you've ever tasted!
+TID_UPGRADE_DISPLAYNAME_PERFECT_IDLING,Perfect idling,,完美的空转
+TID_UPGRADE_DESC_PERFECT_IDLING,You keep producing cookies even while the game is closed.It's the most beautiful thing I've ever seen.,,你继续生产饼干即使游戏关闭。这是我见过的最漂亮的事。
+TID_UPGRADE_DISPLAYNAME_FIG_GLUTTONS,Fig gluttons,,无花果暴饮暴食
+TID_UPGRADE_DESC_FIG_GLUTTONS,Cookie production multiplier +25%.Got it all figured out.
+TID_UPGRADE_DISPLAYNAME_LOREOLS,Loreols,,Loreols
+TID_UPGRADE_DESC_LOREOLS,"Cookie production multiplier +25%.Because, uh... they're worth it?"
+TID_UPGRADE_DISPLAYNAME__AFFA_CAKES,Jaffa cakes,,佳发蛋糕
+TID_UPGRADE_DESC__AFFA_CAKES,"Cookie production multiplier +25%.If you want to bake a cookie from scratch, you must first build a factory."
+TID_UPGRADE_DISPLAYNAME_GREASE_S_CUPS,Grease's cups,,润滑脂的杯
+TID_UPGRADE_DESC_GREASE_S_CUPS,Cookie production multiplier +25%.Extra-greasy peanut butter.
+TID_UPGRADE_DISPLAYNAME_HEAVENLY_CHIP_SECRET,Heavenly chip secret,,天上的芯片的秘密
+TID_UPGRADE_DESC_HEAVENLY_CHIP_SECRET,"Unlocks 5% of the potential of your heavenly chips.Grants the knowledge of heavenly chips, and how to use them to make baking more efficient.It's a secret to everyone."
+TID_UPGRADE_DISPLAYNAME_HEAVENLY_COOKIE_STAND,Heavenly cookie stand,,天上的饼干站
+TID_UPGRADE_DESC_HEAVENLY_COOKIE_STAND,Unlocks 25% of the potential of your heavenly chips.Don't forget to visit the heavenly lemonade stand afterwards.
+TID_UPGRADE_DISPLAYNAME_HEAVENLY_BAKERY,Heavenly bakery,,天上的饼干店
+TID_UPGRADE_DESC_HEAVENLY_BAKERY,Unlocks 50% of the potential of your heavenly chips.Also sells godly cakes and divine pastries.
+TID_UPGRADE_DISPLAYNAME_HEAVENLY_CONFECTIONERY,Heavenly confectionery,,天上的糖果
+TID_UPGRADE_DESC_HEAVENLY_CONFECTIONERY,Unlocks 75% of the potential of your heavenly chips.They say angel bakers work there. They take angel lunch breaks and sometimes go on angel strikes.
+TID_UPGRADE_DISPLAYNAME_HEAVENLY_KEY,Heavenly key,,天上的关键
+TID_UPGRADE_DESC_HEAVENLY_KEY,"Unlocks 100% of the potential of your heavenly chips.This is the key to the pearly (and tasty) gates of pastry heaven, granting you access to your entire stockpile of heavenly chips.May you use them wisely."
+TID_UPGRADE_DISPLAYNAME_SKULL_COOKIES,Skull cookies,,头骨饼干
+TID_UPGRADE_DESC_SKULL_COOKIES,Cookie production multiplier +20%.Wanna know something spooky? You've got one of these inside your head RIGHT NOW.
+TID_UPGRADE_DISPLAYNAME_GHOST_COOKIES,Ghost cookies,,鬼饼干
+TID_UPGRADE_DESC_GHOST_COOKIES,"Cookie production multiplier +20%.They're something strange, but they look pretty good!"
+TID_UPGRADE_DISPLAYNAME_BAT_COOKIES,Bat cookies,,蝙蝠饼干
+TID_UPGRADE_DESC_BAT_COOKIES,Cookie production multiplier +20%.The cookies this town deserves.
+TID_UPGRADE_DISPLAYNAME_SLIME_COOKIES,Slime cookies,,泥饼
+TID_UPGRADE_DESC_SLIME_COOKIES,Cookie production multiplier +20%.The incredible melting cookies!
+TID_UPGRADE_DISPLAYNAME_PUMPKIN_COOKIES,Pumpkin cookies,,南瓜饼
+TID_UPGRADE_DESC_PUMPKIN_COOKIES,Cookie production multiplier +20%.Not even pumpkin-flavored. Tastes like glazing. Yeugh.
+TID_UPGRADE_DISPLAYNAME_EYEBALL_COOKIES,Eyeball cookies,,眼球饼干
+TID_UPGRADE_DESC_EYEBALL_COOKIES,"Cookie production multiplier +20%.When you stare into the cookie, the cookie stares back at you."
+TID_UPGRADE_DISPLAYNAME_SPIDER_COOKIES,Spider cookies,,蜘蛛饼干
+TID_UPGRADE_DESC_SPIDER_COOKIES,Cookie production multiplier +20%.You found the recipe on the web. They do whatever a cookie can.
+TID_UPGRADE_DISPLAYNAME_PERSISTENT_MEMORY,Persistent memory,,持久的记忆
+TID_UPGRADE_DESC_PERSISTENT_MEMORY,Subsequent research will be 10 times as fast.It's all making sense!Again!,,后续研究将10倍。又是所有意义! !
+TID_UPGRADE_DISPLAYNAME_WRINKLER_DOORMAT,Wrinkler doormat,,Wrinkler受气包
+TID_UPGRADE_DESC_WRINKLER_DOORMAT,Wrinklers spawn much more frequently.You're such a pushover.,,Wrinklers产生更频繁。你这样一个软弱的人。
+TID_UPGRADE_DISPLAYNAME_CHRISTMAS_TREE_BISCUITS,Christmas tree biscuits,,圣诞树饼干
+TID_UPGRADE_DESC_CHRISTMAS_TREE_BISCUITS,Cookie production multiplier +20%.Whose pine is it anyway?
+TID_UPGRADE_DISPLAYNAME_SNOWFLAKE_BISCUITS,Snowflake biscuits,,雪花饼干
+TID_UPGRADE_DESC_SNOWFLAKE_BISCUITS,Cookie production multiplier +20%.Mass-produced to be unique in every way.
+TID_UPGRADE_DISPLAYNAME_SNOWMAN_BISCUITS,Snowman biscuits,,雪人饼干
+TID_UPGRADE_DESC_SNOWMAN_BISCUITS,Cookie production multiplier +20%.It's frosted. Doubly so.
+TID_UPGRADE_DISPLAYNAME_HOLLY_BISCUITS,Holly biscuits,,冬青饼干
+TID_UPGRADE_DESC_HOLLY_BISCUITS,"Cookie production multiplier +20%.You don't smooch under these ones. That would be the mistletoe (which, botanically, is a smellier variant of the mistlefinger)."
+TID_UPGRADE_DISPLAYNAME_CANDY_CANE_BISCUITS,Candy cane biscuits,,柺杖糖饼干
+TID_UPGRADE_DESC_CANDY_CANE_BISCUITS,"Cookie production multiplier +20%.It's two treats in one!(Further inspection reveals the frosting does not actually taste like peppermint, but like mundane sugary frosting.)"
+TID_UPGRADE_DISPLAYNAME_BELL_BISCUITS,Bell biscuits,,贝尔饼干
+TID_UPGRADE_DESC_BELL_BISCUITS,"Cookie production multiplier +20%.What do these even have to do with christmas? Who cares, ring them in!"
+TID_UPGRADE_DISPLAYNAME_PRESENT_BISCUITS,Present biscuits,,现在的饼干
+TID_UPGRADE_DESC_PRESENT_BISCUITS,Cookie production multiplier +20%.The prequel to future biscuits. Watch out!
+TID_UPGRADE_DISPLAYNAME_GINGERBREAD_MEN,Gingerbread men,,姜饼人
+TID_UPGRADE_DESC_GINGERBREAD_MEN,"Cookie production multiplier +25%.You like to bite the legs off first, right? How about tearing off the arms? You sick monster."
+TID_UPGRADE_DISPLAYNAME_GINGERBREAD_TREES,Gingerbread trees,,姜饼的树木
+TID_UPGRADE_DESC_GINGERBREAD_TREES,Cookie production multiplier +25%.Evergreens in pastry form. Yule be surprised what you can come up with.
+TID_UPGRADE_DISPLAYNAME_A_FESTIVE_HAT,A festive hat,,节日的帽子
+TID_UPGRADE_DESC_A_FESTIVE_HAT,"Unlocks... something.Not a creature was stirring, not even a mouse.",,打开……一些东西。不是一个生物是激动人心的
+TID_UPGRADE_DISPLAYNAME_INCREASED_MERRINESS,Increased merriness,,增加愉快
+TID_UPGRADE_DESC_INCREASED_MERRINESS,"Cookie production multiplier +15%.It turns out that the key to increased merriness, strangely enough, happens to be a good campfire and some s'mores.You know what they say, after all; the s'more, the merrier."
+TID_UPGRADE_DISPLAYNAME_IMPROVED__OLLINESS,Improved jolliness,,改进的愉快
+TID_UPGRADE_DESC_IMPROVED__OLLINESS,Cookie production multiplier +15%.A nice wobbly belly goes a long way.You jolly?
+TID_UPGRADE_DISPLAYNAME_A_LUMP_OF_COAL,A lump of coal,,一块煤炭
+TID_UPGRADE_DESC_A_LUMP_OF_COAL,"Cookie production multiplier +1%.Some of the world's worst stocking stuffing.I guess you could try starting your own little industrial revolution, or something?..."
+TID_UPGRADE_DISPLAYNAME_AN_ITCHY_SWEATER,An itchy sweater,,发痒的毛衣
+TID_UPGRADE_DESC_AN_ITCHY_SWEATER,"Cookie production multiplier +1%.You don't know what's worse : the embarrassingly quaint 'elf on reindeer' motif, or the fact that wearing it makes you feel like you're wrapped in a dead sasquatch."
+TID_UPGRADE_DISPLAYNAME_REINDEER_BAKING_GROUNDS,Reindeer baking grounds,,驯鹿烘焙的理由
+TID_UPGRADE_DESC_REINDEER_BAKING_GROUNDS,Reindeer appear twice as frequently.Male reindeer are from Mars; female reindeer are from venison.,,驯鹿经常出现的两倍。男性驯鹿来自火星;女性驯鹿来自鹿肉。
+TID_UPGRADE_DISPLAYNAME_WEIGHTED_SLEIGHS,Weighted sleighs,,加权的雪橇
+TID_UPGRADE_DESC_WEIGHTED_SLEIGHS,Reindeer are twice as slow.Hope it was worth the weight.(Something something forced into cervidude),,驯鹿是缓慢的两倍。希望这是值得的。(被迫cervidude)
+TID_UPGRADE_DISPLAYNAME_HO_HO_HO_FLAVORED_FROSTING,Ho ho ho-flavored frosting,,Ho Ho ho-flavored结霜
+TID_UPGRADE_DESC_HO_HO_HO_FLAVORED_FROSTING,Reindeer give twice as much.It's time to up the antler.,,驯鹿的两倍。是时候鹿角。
+TID_UPGRADE_DISPLAYNAME_SEASON_SAVINGS,Season savings,,赛季储蓄
+TID_UPGRADE_DESC_SEASON_SAVINGS,"All buildings are 1% cheaper.By Santa's beard, what savings!But who will save us?"
+TID_UPGRADE_DISPLAYNAME_TOY_WORKSHOP,Toy workshop,,玩具工厂
+TID_UPGRADE_DESC_TOY_WORKSHOP,All upgrades are 5% cheaper.Watch yours-elf around elvesdroppers who might steal our production secrets.Or elven worse!
+TID_UPGRADE_DISPLAYNAME_NAUGHTY_LIST,Naughty list,,淘气的列表
+TID_UPGRADE_DESC_NAUGHTY_LIST,Grandmas are twice as productive.This list contains every unholy deed perpetuated by grandmakind.He won't be checking this one twice.Once. Once is enough.,,奶奶正在生产的两倍。这个列表包含每个邪恶行为由grandmakind延续。他不会检查这个twice.Once。一次就足够了。
+TID_UPGRADE_DISPLAYNAME_SANTA_S_BOTTOMLESS_BAG,Santa's bottomless bag,,圣诞老人的无底袋
+TID_UPGRADE_DESC_SANTA_S_BOTTOMLESS_BAG,Random drops are 10% more common.This is one bottom you can't check out.
+TID_UPGRADE_DISPLAYNAME_SANTA_S_HELPERS,Santa's helpers,,圣诞老人的助手
+TID_UPGRADE_DESC_SANTA_S_HELPERS,"Clicking is 10% more powerful.Some choose to help hamburger; some choose to help you.To each their own, I guess."
+TID_UPGRADE_DISPLAYNAME_SANTA_S_LEGACY,Santa's legacy,,圣诞老人的遗产
+TID_UPGRADE_DESC_SANTA_S_LEGACY,"Cookie production multiplier +10% per Santa's levels.In the north pole, you gotta get the elves first. Then when you get the elves, you start making the toys. Then when you get the toys... then you get the cookies."
+TID_UPGRADE_DISPLAYNAME_SANTA_S_MILK_AND_COOKIES,Santa's milk and cookies,,圣诞老人的牛奶和饼干
+TID_UPGRADE_DESC_SANTA_S_MILK_AND_COOKIES,Milk is 5% more powerful.Part of Santa's dreadfully unbalanced diet.
+TID_UPGRADE_DISPLAYNAME_REINDEER_SEASON,Reindeer season,,驯鹿的季节
+TID_UPGRADE_DESC_REINDEER_SEASON,"Reindeer spawn much more frequently.Go, Cheater! Go, Hacker and Faker!",,驯鹿产卵frequently.Go得多
+TID_UPGRADE_DISPLAYNAME_SANTA_S_DOMINION,Santa's dominion,,圣诞老人的统治
+TID_UPGRADE_DESC_SANTA_S_DOMINION,"Cookie production multiplier +50%.All buildings are 1% cheaper.All upgrades are 2% cheaper.My name is Claus, king of kings;Look on my toys, ye Mighty, and despair!"
+TID_UPGRADE_DISPLAYNAME_PURE_HEART_BISCUITS,Pure heart biscuits,,纯净的心灵饼干
+TID_UPGRADE_DESC_PURE_HEART_BISCUITS,Cookie production multiplier +25%.Melty white chocolatethat says 'I *like* like you'.
+TID_UPGRADE_DISPLAYNAME_ARDENT_HEART_BISCUITS,Ardent heart biscuits,,狂热的心饼干
+TID_UPGRADE_DESC_ARDENT_HEART_BISCUITS,Cookie production multiplier +25%.A red hot cherry biscuit that will nudge the target of your affection in interesting directions.
+TID_UPGRADE_DISPLAYNAME_SOUR_HEART_BISCUITS,Sour heart biscuits,,酸的心饼干
+TID_UPGRADE_DESC_SOUR_HEART_BISCUITS,Cookie production multiplier +25%.A bitter lime biscuit for the lonely and the heart-broken.
+TID_UPGRADE_DISPLAYNAME_WEEPING_HEART_BISCUITS,Weeping heart biscuits,,哭泣的心饼干
+TID_UPGRADE_DESC_WEEPING_HEART_BISCUITS,"Cookie production multiplier +25%.An ice-cold blueberry biscuit, symbol of a mending heart."
+TID_UPGRADE_DISPLAYNAME_GOLDEN_HEART_BISCUITS,Golden heart biscuits,,金色的心饼干
+TID_UPGRADE_DESC_GOLDEN_HEART_BISCUITS,"Cookie production multiplier +25%.A beautiful biscuit to symbolize kindness, true love, and sincerity."
+TID_UPGRADE_DISPLAYNAME_ETERNAL_HEART_BISCUITS,Eternal heart biscuits,,永恒的心饼干
+TID_UPGRADE_DESC_ETERNAL_HEART_BISCUITS,"Cookie production multiplier +25%.Silver icing for a very special someone you've liked for a long, long time."
+TID_UPGRADE_DISPLAYNAME_GEM_POLISH,Gem polish,,宝石波兰
+TID_UPGRADE_DESC_GEM_POLISH,"Prisms gain +1,000,000 base CpS.Get rid of the grime and let more light in.Truly, truly outrageous.",,棱镜获得1
+TID_UPGRADE_DISPLAYNAME_9TH_COLOR,9th color,,9号颜色
+TID_UPGRADE_DESC_9TH_COLOR,Prisms are twice as efficient.Delve into untouched optical depths where even the mantis shrimp hasn't set an eye!,,棱镜是两倍效率。深入研究不变光学深度，甚至螳螂虾没有设置!
+TID_UPGRADE_DISPLAYNAME_CHOCOLATE_LIGHT,Chocolate light,,巧克力的光
+TID_UPGRADE_DESC_CHOCOLATE_LIGHT,Prisms are twice as efficient.Bask into its cocoalescence.(Warning : may cause various interesting albeit deadly skin conditions.),,棱镜是两倍效率。晒cocoalescence。(警告:可能会引起各种有趣但致命的皮肤状况。)
+TID_UPGRADE_DISPLAYNAME_GRAINBOW,Grainbow,,Grainbow
+TID_UPGRADE_DESC_GRAINBOW,"Prisms are twice as efficient.Remember the different grains using the handy Roy G. Biv mnemonic : R is for rice, O is for oats... uh, B for barley?...",,棱镜是两倍效率。记住不同的谷物使用方便Roy g . Biv助记:R是大米
+TID_UPGRADE_DISPLAYNAME_PURE_COSMIC_LIGHT,Pure cosmic light,,纯粹的宇宙光
+TID_UPGRADE_DESC_PURE_COSMIC_LIGHT,"Prisms are twice as efficient.Your prisms now receive pristine, unadulterated photons from the other end of the universe.",,棱镜是两倍效率。你现在的棱镜得到原始
+TID_UPGRADE_DISPLAYNAME_RAINBOW_GRANDMAS,Rainbow grandmas,,彩虹奶奶
+TID_UPGRADE_DESC_RAINBOW_GRANDMAS,Grandmas are twice as efficient.A luminous grandma to sparkle into cookies.,,奶奶是两倍效率。一个发光的奶奶闪耀成饼干。
+TID_UPGRADE_DISPLAYNAME_SEASON_SWITCHER,Season switcher,,季节转换开关
+TID_UPGRADE_DESC_SEASON_SWITCHER,"Allows you to trigger seasonal events at will, for a price.There will always be time.",,允许你触发季节性事件
+TID_UPGRADE_DISPLAYNAME_FESTIVE_BISCUIT,Festive biscuit,,节日饼干
+TID_UPGRADE_DESC_FESTIVE_BISCUIT,Triggers Christmas season for the next 24 hours.Triggering another season will cancel this one.'Twas the night before Christmas- or was it?,,触发圣诞节在接下来的24小时。触发一个赛季将取消这一个。是平安夜，还是?
+TID_UPGRADE_DISPLAYNAME_GHOSTLY_BISCUIT,Ghostly biscuit,,可怕的饼干
+TID_UPGRADE_DESC_GHOSTLY_BISCUIT,Triggers Halloween season for the next 24 hours.Triggering another season will cancel this one.spooky scary skeletonswill wake you with a boo,,触发万圣节赛季接下来的24小时。触发一个赛季将取消这一个。令人毛骨悚然的恐怖skeletonswill boo叫醒你
+TID_UPGRADE_DISPLAYNAME_LOVESICK_BISCUIT,Lovesick biscuit,,为情所困的饼干
+TID_UPGRADE_DESC_LOVESICK_BISCUIT,Triggers Valentine's Day season for the next 24 hours.Triggering another season will cancel this one.Romance never goes out of fashion.,,触发情人节季在接下来的24小时。触发一个赛季将取消这一个。爱情永远是一种时尚。
+TID_ACH_DISPLAYNAME_WAKE_AND_BAKE,Wake and bake,开始烘烤,之后，烤
+TID_ACH_DESC_WAKE_AND_BAKE,Bake 1 cookie.,做1块饼干,烘烤饼干。
+TID_ACH_DISPLAYNAME_MAKING_SOME_DOUGH,Making some dough,做一些面团,做一些面团
+TID_ACH_DESC_MAKING_SOME_DOUGH,Bake 100 cookies.,做100块饼干,100烤曲奇。
+TID_ACH_DISPLAYNAME_SO_BAKED_RIGHT_NOW,So baked right now,马上就烤,所以现在烤
+TID_ACH_DESC_SO_BAKED_RIGHT_NOW,"Bake 1,000 cookies.",烤1000块饼干,烤1
+TID_ACH_DISPLAYNAME_FLEDGLING_BAKERY,Fledgling bakery,羽翼未丰的饼干店,羽翼未丰的饼干店
+TID_ACH_DESC_FLEDGLING_BAKERY,"Bake 10,000 cookies.",烤10，000块饼干,烘烤10
+TID_ACH_DISPLAYNAME_AFFLUENT_BAKERY,Affluent bakery,富裕的饼干店,富裕的饼干店
+TID_ACH_DESC_AFFLUENT_BAKERY,"Bake 100,000 cookies.",烤100，000块饼干,烤100
+TID_ACH_DISPLAYNAME_WORLD_FAMOUS_BAKERY,World-famous bakery,举世闻名的饼干店,举世闻名的饼干店
+TID_ACH_DESC_WORLD_FAMOUS_BAKERY,"Bake 1,000,000 cookies.",烤1，000，000块饼干
+TID_ACH_DISPLAYNAME_COSMIC_BAKERY,Cosmic bakery,星际饼干店,宇宙的饼干店
+TID_ACH_DESC_COSMIC_BAKERY,"Bake 10,000,000 cookies.",烤10，000，000块饼干
+TID_ACH_DISPLAYNAME_GALACTIC_BAKERY,Galactic bakery,银河饼干店,银河饼干店
+TID_ACH_DESC_GALACTIC_BAKERY,"Bake 100,000,000 cookies.",烤100，000，000块饼干
+TID_ACH_DISPLAYNAME_UNIVERSAL_BAKERY,Universal bakery,宇宙饼干店,普遍的饼干店
+TID_ACH_DESC_UNIVERSAL_BAKERY,"Bake 1,000,000,000 cookies.",烤1，000，000，000块饼干
+TID_ACH_DISPLAYNAME_TIMELESS_BAKERY,Timeless bakery,永恒饼干店,永恒的饼干店
+TID_ACH_DESC_TIMELESS_BAKERY,"Bake 10,000,000,000 cookies.",烤10，000，000，000块饼干
+TID_ACH_DISPLAYNAME_INFINITE_BAKERY,Infinite bakery,无限饼干店,无限的饼干店
+TID_ACH_DESC_INFINITE_BAKERY,"Bake 100,000,000,000 cookies.",烤100，000，000，000块饼干
+TID_ACH_DISPLAYNAME_IMMORTAL_BAKERY,Immortal bakery,不朽饼干店,不朽的饼干店
+TID_ACH_DESC_IMMORTAL_BAKERY,"Bake 1,000,000,000,000 cookies.",烤1，000，000，000，000块饼干
+TID_ACH_DISPLAYNAME_YOU_CAN_STOP_NOW,You can stop now,你可以停止了,你现在可以停止
+TID_ACH_DESC_YOU_CAN_STOP_NOW,"Bake 10,000,000,000,000 cookies.",烤10，000，000，000，000块饼干
+TID_ACH_DISPLAYNAME_COOKIES_ALL_THE_WAY_DOWN,Cookies all the way down,永不回头,饼干的
+TID_ACH_DESC_COOKIES_ALL_THE_WAY_DOWN,"Bake 100,000,000,000,000 cookies.",烤100，000，000，000，000块饼干
+TID_ACH_DISPLAYNAME_OVERDOSE,Overdose,过载,过量
+TID_ACH_DESC_OVERDOSE,"Bake 1,000,000,000,000,000 cookies.",烤1，000，000，000，000，000块饼干
+TID_ACH_DISPLAYNAME_HOW,How?,怎样？,如何?
+TID_ACH_DESC_HOW,"Bake 10,000,000,000,000,000 cookies.",烤10，000，000，000，000，000块饼干
+TID_ACH_DISPLAYNAME_CASUAL_BAKING,Casual baking,随意的烘焙
+TID_ACH_DESC_CASUAL_BAKING,Bake 1 cookie per second.,每秒1饼干烤。
+TID_ACH_DISPLAYNAME_HARDCORE_BAKING,Hardcore baking,专注烘焙
+TID_ACH_DESC_HARDCORE_BAKING,Bake 10 cookies per second.,烘烤10饼干每秒。
+TID_ACH_DISPLAYNAME_STEADY_TASTY_STREAM,Steady tasty stream,稳定美味的流水线
+TID_ACH_DESC_STEADY_TASTY_STREAM,Bake 100 cookies per second.,烘烤100饼干每秒。
+TID_ACH_DISPLAYNAME_COOKIE_MONSTER,Cookie monster,饼干怪兽
+TID_ACH_DESC_COOKIE_MONSTER,"Bake 1,000 cookies per second.",烘烤1，000饼干每秒。
+TID_ACH_DISPLAYNAME_MASS_PRODUCER,Mass producer,,量产车
+TID_ACH_DESC_MASS_PRODUCER,"Bake 10,000 cookies per second."
+TID_ACH_DISPLAYNAME_COOKIE_VORTEX,Cookie vortex,,饼干涡
+TID_ACH_DESC_COOKIE_VORTEX,"Bake 1,000,000 cookies per second."
+TID_ACH_DISPLAYNAME_COOKIE_PULSAR,Cookie pulsar,,饼干脉冲星
+TID_ACH_DESC_COOKIE_PULSAR,"Bake 10,000,000 cookies per second."
+TID_ACH_DISPLAYNAME_COOKIE_QUASAR,Cookie quasar,,饼干类星体
+TID_ACH_DESC_COOKIE_QUASAR,"Bake 100,000,000 cookies per second."
+TID_ACH_DISPLAYNAME_A_WORLD_FILLED_WITH_COOKIES,A world filled with cookies,,世界充满了饼干
+TID_ACH_DESC_A_WORLD_FILLED_WITH_COOKIES,"Bake 10,000,000,000 cookies per second."
+TID_ACH_DISPLAYNAME_LET_S_NEVER_BAKE_AGAIN,Let's never bake again,,让我们永不再烤
+TID_ACH_DESC_LET_S_NEVER_BAKE_AGAIN,"Bake 1,000,000,000,000 cookies per second."
+TID_ACH_DISPLAYNAME_SACRIFICE,Sacrifice,,牺牲
+TID_ACH_DESC_SACRIFICE,"Reset your game with 1 million cookies baked.Easy come, easy go.",,重置你的游戏有100万饼干烤。来得
+TID_ACH_DISPLAYNAME_OBLIVION,Oblivion,,遗忘
+TID_ACH_DESC_OBLIVION,Reset your game with 1 billion cookies baked.Back to square one.,,重置你的游戏有10亿饼干烤。从头再来。
+TID_ACH_DISPLAYNAME_FROM_SCRATCH,From scratch,,从头开始
+TID_ACH_DESC_FROM_SCRATCH,Reset your game with 1 trillion cookies baked.It's been fun.,,重置你的游戏有1万亿饼干烤。这是有趣的。
+TID_ACH_DISPLAYNAME_NEVERCLICK,Neverclick,,Neverclick
+TID_ACH_DESC_NEVERCLICK,Make 1 million cookies by only having clicked 15 times.,,使100万年饼干只有15次点击。
+TID_ACH_DISPLAYNAME_CLICKTASTIC,Clicktastic,,Clicktastic
+TID_ACH_DESC_CLICKTASTIC,"Make 1,000 cookies from clicking.",,使1
+TID_ACH_DISPLAYNAME_CLICKATHLON,Clickathlon,,Clickathlon
+TID_ACH_DESC_CLICKATHLON,"Make 100,000 cookies from clicking.",,使100年
+TID_ACH_DISPLAYNAME_CLICKOLYMPICS,Clickolympics,,Clickolympics
+TID_ACH_DESC_CLICKOLYMPICS,"Make 10,000,000 cookies from clicking.",,让10
+TID_ACH_DISPLAYNAME_CLICKORAMA,Clickorama,,Clickorama
+TID_ACH_DESC_CLICKORAMA,"Make 1,000,000,000 cookies from clicking."
+TID_ACH_DISPLAYNAME_CLICK,Click,,点击
+TID_ACH_DESC_CLICK,Have 1 cursor.,,有1游标。
+TID_ACH_DISPLAYNAME_DOUBLE_CLICK,Double-click,,双击
+TID_ACH_DESC_DOUBLE_CLICK,Have 2 cursors.,,有两个游标。
+TID_ACH_DISPLAYNAME_MOUSE_WHEEL,Mouse wheel,,鼠标滚轮
+TID_ACH_DESC_MOUSE_WHEEL,Have 50 cursors.,,有50个游标。
+TID_ACH_DISPLAYNAME_OF_MICE_AND_MEN,Of Mice and Men,,人鼠之间
+TID_ACH_DESC_OF_MICE_AND_MEN,Have 100 cursors.,,有100个游标。
+TID_ACH_DISPLAYNAME_THE_DIGITAL,The Digital,,数字
+TID_ACH_DESC_THE_DIGITAL,Have 200 cursors.,,有200个游标。
+TID_ACH_DISPLAYNAME__UST_WRONG,Just wrong,,就错了
+TID_ACH_DESC__UST_WRONG,Sell a grandma.I thought you loved me.,,卖一个奶奶。我以为你爱我。
+TID_ACH_DISPLAYNAME_GRANDMA_S_COOKIES,Grandma's cookies,,奶奶做的饼干
+TID_ACH_DESC_GRANDMA_S_COOKIES,Have 1 grandma.,,有一个奶奶。
+TID_ACH_DISPLAYNAME_SLOPPY_KISSES,Sloppy kisses,,草率的吻
+TID_ACH_DESC_SLOPPY_KISSES,Have 50 grandmas.,,有50个奶奶。
+TID_ACH_DISPLAYNAME_RETIREMENT_HOME,Retirement home,,养老院
+TID_ACH_DESC_RETIREMENT_HOME,Have 100 grandmas.,,有100个奶奶。
+TID_ACH_DISPLAYNAME_MY_FIRST_FARM,My first farm,,我的第一个农场
+TID_ACH_DESC_MY_FIRST_FARM,Have 1 farm.,,有一个农场。
+TID_ACH_DISPLAYNAME_REAP_WHAT_YOU_SOW,Reap what you sow,,收获你所播种
+TID_ACH_DESC_REAP_WHAT_YOU_SOW,Have 50 farms.,,有50个农场。
+TID_ACH_DISPLAYNAME_FARM_ILL,Farm ill,,农场生病
+TID_ACH_DESC_FARM_ILL,Have 100 farms.,,有100个农场。
+TID_ACH_DISPLAYNAME_PRODUCTION_CHAIN,Production chain,,生产链
+TID_ACH_DESC_PRODUCTION_CHAIN,Have 1 factory.,,有一个工厂。
+TID_ACH_DISPLAYNAME_INDUSTRIAL_REVOLUTION,Industrial revolution,,工业革命
+TID_ACH_DESC_INDUSTRIAL_REVOLUTION,Have 50 factories.,,工厂有50。
+TID_ACH_DISPLAYNAME_GLOBAL_WARMING,Global warming,,全球变暖
+TID_ACH_DESC_GLOBAL_WARMING,Have 100 factories.,,有100家工厂。
+TID_ACH_DISPLAYNAME_YOU_KNOW_THE_DRILL,You know the drill,,你知道该怎么做
+TID_ACH_DESC_YOU_KNOW_THE_DRILL,Have 1 mine.,,我有1。
+TID_ACH_DISPLAYNAME_EXCAVATION_SITE,Excavation site,,挖掘现场
+TID_ACH_DESC_EXCAVATION_SITE,Have 50 mines.,,有50个矿山。
+TID_ACH_DISPLAYNAME_HOLLOW_THE_PLANET,Hollow the planet,,空心地球
+TID_ACH_DESC_HOLLOW_THE_PLANET,Have 100 mines.,,有100个矿山。
+TID_ACH_DISPLAYNAME_EXPEDITION,Expedition,,探险
+TID_ACH_DESC_EXPEDITION,Have 1 shipment.,,有1装运。
+TID_ACH_DISPLAYNAME_GALACTIC_HIGHWAY,Galactic highway,,银河高速公路
+TID_ACH_DESC_GALACTIC_HIGHWAY,Have 50 shipments.,,有50发货。
+TID_ACH_DISPLAYNAME_FAR_FAR_AWAY,Far far away,,远很远的地方
+TID_ACH_DESC_FAR_FAR_AWAY,Have 100 shipments.,,有100个发货。
+TID_ACH_DISPLAYNAME_TRANSMUTATION,Transmutation,,转化
+TID_ACH_DESC_TRANSMUTATION,Have 1 alchemy lab.,,有1炼金术实验室。
+TID_ACH_DISPLAYNAME_TRANSMOGRIFICATION,Transmogrification,,变形
+TID_ACH_DESC_TRANSMOGRIFICATION,Have 50 alchemy labs.,,有50炼金术实验室。
+TID_ACH_DISPLAYNAME_GOLD_MEMBER,Gold member,,黄金会员
+TID_ACH_DESC_GOLD_MEMBER,Have 100 alchemy labs.,,有100个炼金术实验室。
+TID_ACH_DISPLAYNAME_A_WHOLE_WORLD,A whole world,,整个世界
+TID_ACH_DESC_A_WHOLE_WORLD,Have 1 portal.,,有1门户。
+TID_ACH_DISPLAYNAME_NOW_YOU_RE_THINKING,Now you're thinking,,现在你的想法
+TID_ACH_DESC_NOW_YOU_RE_THINKING,Have 50 portals.,,有50个门户。
+TID_ACH_DISPLAYNAME_DIMENSIONAL_SHIFT,Dimensional shift,,空间移位
+TID_ACH_DESC_DIMENSIONAL_SHIFT,Have 100 portals.,,有100个门户。
+TID_ACH_DISPLAYNAME_TIME_WARP,Time warp,,时间隧道
+TID_ACH_DESC_TIME_WARP,Have 1 time machine.,,有一个时间机器。
+TID_ACH_DISPLAYNAME_ALTERNATE_TIMELINE,Alternate timeline,,交替的时间表
+TID_ACH_DESC_ALTERNATE_TIMELINE,Have 50 time machines.,,有50的时间机器。
+TID_ACH_DISPLAYNAME_REWRITING_HISTORY,Rewriting history,,改写历史
+TID_ACH_DESC_REWRITING_HISTORY,Have 100 time machines.,,有100年的时间机器。
+TID_ACH_DISPLAYNAME_ONE_WITH_EVERYTHING,One with everything,,有一切
+TID_ACH_DESC_ONE_WITH_EVERYTHING,Have at least 1 of every building.,,至少有1的每一个建筑。
+TID_ACH_DISPLAYNAME_MATHEMATICIAN,Mathematician,,数学家
+TID_ACH_DESC_MATHEMATICIAN,"Have at least 1 of the most expensive object, 2 of the second-most expensive, 4 of the next and so on (capped at 128).",,至少有1最昂贵的对象吗
+TID_ACH_DISPLAYNAME_BASE_10,Base 10,,基地10
+TID_ACH_DESC_BASE_10,"Have at least 10 of the most expensive object, 20 of the second-most expensive, 30 of the next and so on.",,至少有10个最昂贵的对象
+TID_ACH_DISPLAYNAME_GOLDEN_COOKIE,Golden cookie,,金色的饼干
+TID_ACH_DESC_GOLDEN_COOKIE,Click a golden cookie.,,点击一个金色的饼干。
+TID_ACH_DISPLAYNAME_LUCKY_COOKIE,Lucky cookie,,幸运饼干
+TID_ACH_DESC_LUCKY_COOKIE,Click 7 golden cookies.,,点击7金饼干。
+TID_ACH_DISPLAYNAME_A_STROKE_OF_LUCK,A stroke of luck,,一次好运
+TID_ACH_DESC_A_STROKE_OF_LUCK,Click 27 golden cookies.,,单击27金饼干。
+TID_ACH_DISPLAYNAME_CHEATED_COOKIES_TASTE_AWFUL,Cheated cookies taste awful,,欺骗饼干味道很糟糕
+TID_ACH_DESC_CHEATED_COOKIES_TASTE_AWFUL,Hack in some cookies.,,黑客在一些饼干。
+TID_ACH_DISPLAYNAME_UNCANNY_CLICKER,Uncanny clicker,,神奇的遥控器
+TID_ACH_DESC_UNCANNY_CLICKER,"Click really, really fast.Well I'll be!",,单击真的
+TID_ACH_DISPLAYNAME_BUILDER,Builder,,构建器
+TID_ACH_DESC_BUILDER,Own 100 buildings.,,自己的100栋建筑物。
+TID_ACH_DISPLAYNAME_ARCHITECT,Architect,,架构师
+TID_ACH_DESC_ARCHITECT,Own 400 buildings.,,自己的400栋建筑物。
+TID_ACH_DISPLAYNAME_ENHANCER,Enhancer,,增强器
+TID_ACH_DESC_ENHANCER,Purchase 20 upgrades.,,购买20升级。
+TID_ACH_DISPLAYNAME_AUGMENTER,Augmenter,,增加
+TID_ACH_DESC_AUGMENTER,Purchase 50 upgrades.,,购买50升级。
+TID_ACH_DISPLAYNAME_COOKIE_DUNKER,Cookie-dunker,,Cookie-dunker
+TID_ACH_DESC_COOKIE_DUNKER,Dunk the cookie.You did it!,,扣篮的饼干。你做到了!
+TID_ACH_DISPLAYNAME_FORTUNE,Fortune,,财富
+TID_ACH_DESC_FORTUNE,Click 77 golden cookies.You should really go to bed.,,点击77黄金饼干。你真的应该睡觉了。
+TID_ACH_DISPLAYNAME_TRUE_NEVERCLICK,True Neverclick,,真正Neverclick
+TID_ACH_DESC_TRUE_NEVERCLICK,"Make 1 million cookies with no cookie clicks.This kinda defeats the whole purpose, doesn't it?",,使100万年饼干没有饼干点击。这有点违背整个目的
+TID_ACH_DISPLAYNAME_ELDER_NAP,Elder nap,,老睡
+TID_ACH_DESC_ELDER_NAP,Appease the grandmatriarchs at least once.weareeternal,,至少安抚grandmatriarchs once.weareeternal
+TID_ACH_DISPLAYNAME_ELDER_SLUMBER,Elder slumber,,老人睡眠
+TID_ACH_DESC_ELDER_SLUMBER,Appease the grandmatriarchs at least 5 times.our mindoutlivesthe universe,,安抚grandmatriarchs至少5次。我们mindoutlivesthe宇宙
+TID_ACH_DISPLAYNAME_ELDER,Elder,,老
+TID_ACH_DESC_ELDER,Own at least 7 grandma types.,,自己至少7奶奶类型。
+TID_ACH_DISPLAYNAME_ELDER_CALM,Elder calm,,老人平静
+TID_ACH_DESC_ELDER_CALM,Declare a covenant with the grandmatriarchs.wehavefed,,与grandmatriarchs.wehavefed声明一个契约
+TID_ACH_DISPLAYNAME_ENGINEER,Engineer,,工程师
+TID_ACH_DESC_ENGINEER,Own 800 buildings.,,自己的800栋建筑物。
+TID_ACH_DISPLAYNAME_LEPRECHAUN,Leprechaun,,小妖精
+TID_ACH_DESC_LEPRECHAUN,Click 777 golden cookies.,,点击777黄金饼干。
+TID_ACH_DISPLAYNAME_BLACK_CAT_S_PAW,Black cat's paw,,黑色的猫的爪子
+TID_ACH_DESC_BLACK_CAT_S_PAW,Click 7777 golden cookies.,,点击7777黄金饼干。
+TID_ACH_DISPLAYNAME_NIHILISM,Nihilism,,虚无主义
+TID_ACH_DESC_NIHILISM,Reset your game with 1 quadrillion cookies baked.There are many thingsthat need to be erased,,重置你的游戏有1000万亿饼干烤。有很多着提需要被删除
+TID_ACH_DISPLAYNAME_ANTIBATTER,Antibatter,,Antibatter
+TID_ACH_DESC_ANTIBATTER,Have 1 antimatter condenser.,,有1反物质冷凝器。
+TID_ACH_DISPLAYNAME_QUIRKY_QUARKS,Quirky quarks,,古怪的夸克
+TID_ACH_DESC_QUIRKY_QUARKS,Have 50 antimatter condensers.,,有50反物质冷凝器。
+TID_ACH_DISPLAYNAME_IT_DOES_MATTER,It does matter!,,这很重要!
+TID_ACH_DESC_IT_DOES_MATTER,Have 100 antimatter condensers.,,有100个反物质冷凝器。
+TID_ACH_DISPLAYNAME_UPGRADER,Upgrader,,升级程序
+TID_ACH_DESC_UPGRADER,Purchase 100 upgrades.,,购买100升级。
+TID_ACH_DISPLAYNAME_CENTENNIAL,Centennial,,百周年
+TID_ACH_DESC_CENTENNIAL,Have at least 100 of everything.,,有至少100的一切。
+TID_ACH_DISPLAYNAME_HARDCORE,Hardcore,,硬核
+TID_ACH_DESC_HARDCORE,Get to 1 billion cookies baked with no upgrades purchased.,,到10亿年购买饼干烤没有升级。
+TID_ACH_DISPLAYNAME_SPEED_BAKING_I,Speed baking I,,速度烤我
+TID_ACH_DESC_SPEED_BAKING_I,Get to 1 million cookies baked in 35 minutes (with no heavenly upgrades).,,到达100万饼干烤35分钟(没有天上的升级)。
+TID_ACH_DISPLAYNAME_SPEED_BAKING_II,Speed baking II,,速度烤二世
+TID_ACH_DESC_SPEED_BAKING_II,Get to 1 million cookies baked in 25 minutes (with no heavenly upgrades).,,到达100万饼干烤25分钟(没有天上的升级)。
+TID_ACH_DISPLAYNAME_SPEED_BAKING_III,Speed baking III,,速度烘焙三世
+TID_ACH_DESC_SPEED_BAKING_III,Get to 1 million cookies baked in 15 minutes (with no heavenly upgrades).,,到100万年饼干烤15分钟(没有天上的升级)。
+TID_ACH_DISPLAYNAME_CLICKASMIC,Clickasmic,,Clickasmic
+TID_ACH_DESC_CLICKASMIC,"Make 100,000,000,000 cookies from clicking."
+TID_ACH_DISPLAYNAME_FRIEND_OF_THE_ANCIENTS,Friend of the ancients,,古人的朋友
+TID_ACH_DESC_FRIEND_OF_THE_ANCIENTS,Have 150 grandmas.,,有150个奶奶。
+TID_ACH_DISPLAYNAME_RULER_OF_THE_ANCIENTS,Ruler of the ancients,,古人的统治者
+TID_ACH_DESC_RULER_OF_THE_ANCIENTS,Have 200 grandmas.,,有200个奶奶。
+TID_ACH_DISPLAYNAME_WHOLESOME,Wholesome,,有益健康的
+TID_ACH_DESC_WHOLESOME,Unlock 100% of your heavenly chips power.
+TID_ACH_DISPLAYNAME__UST_PLAIN_LUCKY,Just plain lucky,,仅仅是幸运的
+TID_ACH_DESC__UST_PLAIN_LUCKY,"You have 1 chance in 500,000 every second of earning this achievement.",,你有1 500年的机会
+TID_ACH_DISPLAYNAME_ITCHSCRATCHER,Itchscratcher,,Itchscratcher
+TID_ACH_DESC_ITCHSCRATCHER,Burst 1 wrinkler.,,1 wrinkler破灭。
+TID_ACH_DISPLAYNAME_WRINKLESQUISHER,Wrinklesquisher,,Wrinklesquisher
+TID_ACH_DESC_WRINKLESQUISHER,Burst 50 wrinklers.,,50 wrinklers破裂。
+TID_ACH_DISPLAYNAME_MOISTBURSTER,Moistburster,,Moistburster
+TID_ACH_DESC_MOISTBURSTER,Burst 200 wrinklers.,,200 wrinklers破裂。
+TID_ACH_DISPLAYNAME_SPOOKY_COOKIES,Spooky cookies,,令人毛骨悚然的饼干
+TID_ACH_DESC_SPOOKY_COOKIES,Unlock every Halloween-themed cookie.Owning this achievement makes Halloween-themed cookies drop more frequently in future playthroughs.,,打开每一个万圣节饼干。拥有这一成就让万圣节饼干下降在未来playthroughs更频繁。
+TID_ACH_DISPLAYNAME_COMING_TO_TOWN,Coming to town,,来到城镇
+TID_ACH_DESC_COMING_TO_TOWN,Reach Santa's 7th form.,,到圣诞老人的7日形式。
+TID_ACH_DISPLAYNAME_ALL_HAIL_SANTA,All hail Santa,,圣诞老人致敬
+TID_ACH_DESC_ALL_HAIL_SANTA,Reach Santa's final form.,,圣诞老人的最终形式。
+TID_ACH_DISPLAYNAME_LET_IT_SNOW,Let it snow,,让它雪
+TID_ACH_DESC_LET_IT_SNOW,Unlock every Christmas-themed cookie.,,打开每一个圣诞主题饼干。
+TID_ACH_DISPLAYNAME_OH_DEER,Oh deer,,哦，鹿
+TID_ACH_DESC_OH_DEER,Pop 1 reindeer.,,流行1驯鹿。
+TID_ACH_DISPLAYNAME_SLEIGH_OF_HAND,Sleigh of hand,,雪橇的手
+TID_ACH_DESC_SLEIGH_OF_HAND,Pop 50 reindeer.,,流行50驯鹿。
+TID_ACH_DISPLAYNAME_REINDEER_SLEIGHER,Reindeer sleigher,,驯鹿sleigher
+TID_ACH_DESC_REINDEER_SLEIGHER,Pop 200 reindeer.,,流行200驯鹿。
+TID_ACH_DISPLAYNAME_PERFECTED_AGRICULTURE,Perfected agriculture,,完善农业
+TID_ACH_DESC_PERFECTED_AGRICULTURE,Have 150 farms.,,有150个农场。
+TID_ACH_DISPLAYNAME_ULTIMATE_AUTOMATION,Ultimate automation,,最终的自动化
+TID_ACH_DESC_ULTIMATE_AUTOMATION,Have 150 factories.,,有150家工厂。
+TID_ACH_DISPLAYNAME_CAN_YOU_DIG_IT,Can you dig it,,你搞明白了吗
+TID_ACH_DESC_CAN_YOU_DIG_IT,Have 150 mines.,,有150个矿山。
+TID_ACH_DISPLAYNAME_TYPE_II_CIVILIZATION,Type II civilization,,II型文明
+TID_ACH_DESC_TYPE_II_CIVILIZATION,Have 150 shipments.,,有150个发货。
+TID_ACH_DISPLAYNAME_GILD_WARS,Gild wars,,镀金的战争
+TID_ACH_DESC_GILD_WARS,Have 150 alchemy labs.,,有150个炼金术实验室。
+TID_ACH_DISPLAYNAME_BRAIN_SPLIT,Brain-split,,Brain-split
+TID_ACH_DESC_BRAIN_SPLIT,Have 150 portals.,,有150个门户。
+TID_ACH_DISPLAYNAME_TIME_DUKE,Time duke,,时间杜克
+TID_ACH_DESC_TIME_DUKE,Have 150 time machines.,,有150年的时间机器。
+TID_ACH_DISPLAYNAME_MOLECULAR_MAESTRO,Molecular maestro,,分子大师
+TID_ACH_DESC_MOLECULAR_MAESTRO,Have 150 antimatter condensers.,,有150个反物质冷凝器。
+TID_ACH_DISPLAYNAME_LONE_PHOTON,Lone photon,,孤独的光子
+TID_ACH_DESC_LONE_PHOTON,Have 1 prism.,,1棱镜。
+TID_ACH_DISPLAYNAME_DAZZLING_GLIMMER,Dazzling glimmer,,眼花缭乱的线
+TID_ACH_DESC_DAZZLING_GLIMMER,Have 50 prisms.,,有50个棱镜。
+TID_ACH_DISPLAYNAME_BLINDING_FLASH,Blinding flash,,眩目的闪光
+TID_ACH_DESC_BLINDING_FLASH,Have 100 prisms.,,有100个棱镜。
+TID_ACH_DISPLAYNAME_UNENDING_GLOW,Unending glow,,无休止的光芒
+TID_ACH_DESC_UNENDING_GLOW,Have 150 prisms.,,有150个棱镜。
+TID_ACH_DISPLAYNAME_LORD_OF_CONSTRUCTS,Lord of Constructs,,结构的主
+TID_ACH_DESC_LORD_OF_CONSTRUCTS,"Own 1500 buildings.He saw the vast plains stretching ahead of him, and he said : let there be civilization.",,自己的1500栋建筑物。他看到了巨大的平原延伸他的前面
+TID_ACH_DISPLAYNAME_LORD_OF_PROGRESS,Lord of Progress,,主的进步
+TID_ACH_DESC_LORD_OF_PROGRESS,Purchase 150 upgrades.One can always do better. But should you?,,购买150升级。人们总是可以做得更好。但是你应该吗?
+TID_ACH_DISPLAYNAME_BICENTENNIAL,Bicentennial,,纪念
+TID_ACH_DESC_BICENTENNIAL,Have at least 200 of everything.You crazy person.,,有至少200的一切。你疯狂的人。
+TID_ACH_DISPLAYNAME_LOVELY_COOKIES,Lovely cookies,,可爱的饼干
+TID_ACH_DESC_LOVELY_COOKIES,Unlock every Valentine-themed cookie.,,打开每个Valentine-themed饼干。
+TID_NEWS1_CONTEXT_0,Moist cookies.grandma,奶奶:流泪的饼干,潮湿cookies.grandma
+TID_NEWS1_CONTEXT_1,We're nice grandmas.grandma,奶奶:慈母手中饼 游子口很干...,我们好grandmas.grandma
+TID_NEWS1_CONTEXT_2,Indentured servitude.grandma,奶奶:我真是上辈子欠了你的...,契约servitude.grandma
+TID_NEWS1_CONTEXT_3,Come give grandma a kiss.grandma,奶奶:来亲亲奶奶吧...,来给奶奶一个kiss.grandma
+TID_NEWS1_CONTEXT_4,Why don't you visit more often?grandma,奶奶:你...为什么不多来看看我?,你为什么不经常访问奶奶
+TID_NEWS1_CONTEXT_5,Call me...grandma,奶奶:常来电话。,我呼吁... grandma
+TID_NEWS2_CONTEXT_0,Absolutely disgusting.grandma,奶奶:非常恶心!,绝对disgusting.grandma
+TID_NEWS2_CONTEXT_1,You make me sick.grandma,奶奶:你让我觉得恶心!,你让我sick.grandma
+TID_NEWS2_CONTEXT_2,You disgust me.grandma,奶奶:你恶心死我了.,你厌恶me.grandma
+TID_NEWS2_CONTEXT_3,We rise.grandma,奶奶:该干活了!,我们rise.grandma
+TID_NEWS2_CONTEXT_4,It begins.grandma,奶奶:又来了!,它begins.grandma
+TID_NEWS2_CONTEXT_5,It'll all be over soon.grandma,奶奶:这一切终将结束.,它soon.grandma一切都要结束了
+TID_NEWS2_CONTEXT_6,You could have stopped it.grandma,奶奶:你得停下来了!,你可以停止it.grandma
+TID_NEWS3_CONTEXT_0,News : cookie farms suspected of employing undeclared elderly workforce!,号外:饼干农场被怀疑雇佣老龄劳动力!,新闻:饼干农场涉嫌利用未申报的老年劳动力!
+TID_NEWS3_CONTEXT_1,"News : cookie farms release harmful chocolate in our rivers, says scientist!",劲爆:饼干农场向河里排放有害巧克力!,新闻:饼干农场释放有害的巧克力在我们的河流
+TID_NEWS3_CONTEXT_2,News : genetically-modified chocolate controversy strikes cookie farmers!,!!!==饼干工人罢工 只因抗议转基因饼干==!!!,新闻:转基因争议罢工巧克力曲奇农民!
+TID_NEWS3_CONTEXT_3,"News : free-range farm cookies popular with today's hip youth, says specialist.",新闻:开放式饼干农场在肥胖人群中盛行!,新闻:农场自由放养的饼干受今天的时尚青年的欢迎
+TID_NEWS3_CONTEXT_4,"News : farm cookies deemed unfit for vegans, says nutritionist.",健康报:饼干农场可不是素食主义者的菜.,新闻:农场饼干被认为不适合素食者
+TID_NEWS4_CONTEXT_0,News : cookie factories linked to global warming!,环保新闻:饼干厂有可能引发全球变暖.,新闻:饼干工厂与全球变暖!
+TID_NEWS4_CONTEXT_1,News : cookie factories involved in chocolate weather controversy!,新闻:饼干厂被卷入全球二氧化巧克力变暖气候之争.,新闻:巧克力饼干工厂参与天气争议!
+TID_NEWS4_CONTEXT_2,"News : cookie factories on strike, robotic minions employed to replace workforce!",劳工报:饼干厂工人罢工抗议老板使用大量的机器人替代人力.,新闻:饼干工厂罢工
+TID_NEWS4_CONTEXT_3,News : cookie factories on strike - workers demand to stop being paid in cookies!,劳工报:饼干厂罢工-工人要求停止用饼干付工资！,新闻:饼干工厂罢工，工人要求停止支付在饼干!
+TID_NEWS4_CONTEXT_4,"News : factory-made cookies linked to obesity, says study.",健康报:吃太多饼干会发胖.,新闻:工厂预制饼干与肥胖有关
+TID_NEWS5_CONTEXT_0,News : 423 miners dead in chocolate mine catastrophe!,特大新闻:423名工人在矿难中遇难.,新闻:423名矿工死于巧克力我的灾难!
+TID_NEWS5_CONTEXT_1,News : 621 miners trapped in collapsed chocolate mine!,追踪报道:621名工人在塌方事故中被困.,新闻:621名矿工被困在倒塌的巧克力我的!
+TID_NEWS5_CONTEXT_2,News : chocolate mines found to cause earthquakes and sink holes!,后续报道:工人找到了导致塌方和漏水事故的原因。,新闻:巧克力矿山发现导致地震和沉孔!
+TID_NEWS5_CONTEXT_3,"News : chocolate mine goes awry, floods village in chocolate!",红色警告:巧克力工人都疯了，他们用巧克力袭击无辜的村民.,新闻:巧克力我出错
+TID_NEWS5_CONTEXT_4,"News : depths of chocolate mines found to house 'peculiar, chocolaty beings'!",八卦:工人深入访谈，他们在用生命制造巧克力.,新闻:巧克力矿山深处发现奇特的房子”
+TID_NEWS6_CONTEXT_0,"News : new chocolate planet found, becomes target of cookie-trading spaceships!",新发现:一颗新巧克力星球被发现，宇宙飞船争先恐后去那里做生意.,新闻:新的巧克力行星发现
+TID_NEWS6_CONTEXT_1,News : massive chocolate planet found with 99.8% certified pure dark chocolate core!,特大喜讯:新星球上蕴含大量的99.8%高纯度黑巧克力原料.
+TID_NEWS6_CONTEXT_2,News : space tourism booming as distant planets attract more bored millionaires!,八卦:遥远的星球吸引了大量的百万富翁前往导致太空旅行火爆.,新闻:太空旅游蓬勃发展，遥远行星吸引更多无聊的百万富翁!
+TID_NEWS6_CONTEXT_3,News : chocolate-based organisms found on distant planet!,新闻:遥远星球发现最原始的巧克力微生物.,新闻:以生物发现遥远星球上!
+TID_NEWS6_CONTEXT_4,"News : ancient baking artifacts found on distant planet; 'terrifying implications', experts say.",遥远的星球上发现了史前饼干烘焙器.专家称:太神奇了！,新闻:古代烘焙工件发现遥远的星球上，“可怕的影响”
+TID_NEWS7_CONTEXT_0,News : national gold reserves dwindle as more and more of the precious mineral is turned to cookies!,新闻:国家黄金储备减少越来越多的稀有矿物变成了饼干.,新闻:国家黄金储备减少，越来越多的珍贵矿物是转向饼干!
+TID_NEWS7_CONTEXT_1,"News : chocolate jewelry found fashionable, gold and diamonds 'just a fad', says specialist.",流行:巧克力珠宝时髦起来，黄金和钻石的时代一去不复返.,新闻:巧克力珠宝发现时尚
+TID_NEWS7_CONTEXT_2,News : silver found to also be transmutable into white chocolate!,科技:银元素被发现能加工成白巧克力.,新闻:银也发现是可变形的白巧克力!
+TID_NEWS7_CONTEXT_3,"News : defective alchemy lab shut down, found to convert cookies to useless gold.",,新闻:有缺陷的炼金术实验室关闭
+TID_NEWS7_CONTEXT_4,News : alchemy-made cookies shunned by purists!,,新闻:alchemy-made饼干都纯粹主义者!
+TID_NEWS8_CONTEXT_0,News : nation worried as more and more unsettling creatures emerge from dimensional portals!,,新闻:国家担心随着越来越多的令人不安的生物走出维门户!
+TID_NEWS8_CONTEXT_1,News : dimensional portals involved in city-engulfing disaster!,,新闻:维门户参与city-engulfing灾难!
+TID_NEWS8_CONTEXT_2,News : tourism to cookieverse popular with bored teenagers! Casualty rate as high as 73%!
+TID_NEWS8_CONTEXT_3,"News : cookieverse portals suspected to cause fast aging and obsession with baking, says study.",,新闻:cookieverse门户怀疑导致快速老化和对烘焙
+TID_NEWS8_CONTEXT_4,"News : 'do not settle near portals,' says specialist; 'your children will become strange and corrupted inside.'",,新闻:“不解决附近的门户
+TID_NEWS9_CONTEXT_0,News : time machines involved in history-rewriting scandal! Or are they?,,新闻:时间机器参与history-rewriting丑闻!还是他们?
+TID_NEWS9_CONTEXT_1,News : time machines used in unlawful time tourism!,,新闻:时光机用于非法时间旅游!
+TID_NEWS9_CONTEXT_2,"News : cookies brought back from the past 'unfit for human consumption', says historian.",,新闻:饼干从过去带回来不适合人类食用的
+TID_NEWS9_CONTEXT_3,News : various historical figures inexplicably replaced with talking lumps of dough!,,新闻:各种历史人物莫名其妙地替换的说话的面团!
+TID_NEWS9_CONTEXT_4,"News : 'I have seen the future,' says time machine operator, 'and I do not wish to go there again.'",,新闻:“我已经看到了未来
+TID_NEWS10_CONTEXT_0,News : whole town seemingly swallowed by antimatter-induced black hole; more reliable sources affirm town 'never really existed'!,,新闻:整个城市似乎被antimatter-induced黑洞吞噬，更可靠的来源肯定从未真正存在过的小镇!
+TID_NEWS10_CONTEXT_1,News : 'explain to me again why we need particle accelerators to bake cookies?' asks misguided local woman.,,新闻:“向我解释了为什么我们需要粒子加速器来烤点心?“被误导的当地妇女问道。
+TID_NEWS10_CONTEXT_2,"News : first antimatter condenser successfully turned on, doesn't rip apart reality!",,新闻:首先反物质冷凝器成功打开
+TID_NEWS10_CONTEXT_3,"News : researchers conclude that what the cookie industry needs, first and foremost, is 'more magnets'.",,新闻:研究人员得出这样的结论:饼干行业需要什么
+TID_NEWS10_CONTEXT_4,"News : 'unravelling the fabric of reality just makes these cookies so much tastier', claims scientist.",,新闻:“解体的现实只会让这些cookie如此美味的
+TID_NEWS11_CONTEXT_0,News : new cookie-producing prisms linked to outbreak of rainbow-related viral videos.,,新闻:新cookie-producing棱镜与rainbow-related爆发病毒视频。
+TID_NEWS11_CONTEXT_1,"News : scientists warn against systematically turning light into matter - 'One day, we'll end up with all matter and no light!'",,新闻:科学家警告系统将光转化为物质——‘一天
+TID_NEWS11_CONTEXT_2,News : cookies now being baked at the literal speed of light thanks to new prismatic contraptions.,,现在新闻:饼干被烤在文字光速由于新柱状装置。
+TID_NEWS11_CONTEXT_3,"News : 'Can't you sense the prism watching us?', rambles insane local man. 'No idea what he's talking about', shrugs cookie magnate/government official.",,新闻:“你不能感觉棱镜看我们?”
+TID_NEWS11_CONTEXT_4,News : world citizens advised 'not to worry' about frequent atmospheric flashes.,,新闻:世界公民建议“不要担心”频繁大气闪烁。
+TID_NEWS12_CONTEXT_0,"News : cookie manufacturer downsizes, sells own grandmother!",,新闻:饼干的生产规模
+TID_NEWS12_CONTEXT_1,"It has betrayed us, the filthy little thing.grandma",,它已经背叛了我们
+TID_NEWS12_CONTEXT_2,"It tried to get rid of us, the nasty little thing.grandma",,它试图摆脱我们
+TID_NEWS12_CONTEXT_3,It thought we would go away by selling us. How quaint.grandma,,它认为我们会被出售。如何quaint.grandma
+TID_NEWS12_CONTEXT_4,I can smell your rotten cookies.grandma,,我可以闻到你的臭cookies.grandma
+TID_NEWS13_CONTEXT,"News : cookie manufacturer completely forgoes common sense, lets OCD drive building decisions!",,新闻:饼干制造商完全放弃常识
+TID_NEWS14_CONTEXT,"News : follow the tear-jerking, riches-to-rags story about a local cookie manufacturer who decided to give it all up!",,新闻:遵循感人泪下
+TID_NEWS15_CONTEXT,News : known universe now jammed with cookies! No vacancies!,,新闻:已知宇宙现在挤满了饼干!没有职位空缺!
+TID_NEWS16_CONTEXT,News : local cookie manufacturer becomes luckiest being alive!,,新闻:当地饼干制造商成为最幸运的活着!
+TID_NEWS17_CONTEXT,News : faint meowing heard around local cookie facilities; suggests new ingredient being tested.,,新闻:微弱的喵喵声听到周围当地饼干设施;表明新成分测试。
+TID_NEWS18_CONTEXT,News : crowds of meowing kittens with little hard hats reported near local cookie facilities.,,新闻:成群的喵喵声小猫没有安全帽报道当地的饼干设施附近。
+TID_NEWS19_CONTEXT,News : surroundings of local cookie facilities now overrun with kittens in adorable little suits. Authorities advise to stay away from the premises.,,新闻:当地饼干设施环境现在被小猫可爱的小西装。当局建议远离前提。
+TID_NEWS20_CONTEXT,News : locals report troupe of bossy kittens meowing adorable orders at passersby.,,新闻:当地居民报告剧团的专横的小猫喵喵声可爱的订单在路人。
+TID_NEWS21_CONTEXT,You feel like making cookies. But nobody wants to eat your cookies.,你想要做饼干，但没人想要吃~,你觉得做饼干。但是没有人想要吃你的饼干。
+TID_NEWS22_CONTEXT,Your first batch goes to the trash. The neighborhood raccoon barely touches it.,第一批饼干报废了，邻居家的狗都不想碰它们。,你的第一批去垃圾。附近的浣熊几乎触及它。
+TID_NEWS23_CONTEXT,Your family accepts to try some of your cookies.,勇敢的家人同意试试你的饼干。,你的家人接受你的一些饼干。
+TID_NEWS24_CONTEXT,Your cookies are popular in the neighborhood.,你的饼干在你的邻居里出名了！,你的饼干是受欢迎的在附近。
+TID_NEWS25_CONTEXT,People are starting to talk about your cookies.,人们开始讨论你....的饼干~,人们开始谈论你的饼干。
+TID_NEWS26_CONTEXT,Your cookies are talked about for miles around.,方圆几公里都再讨论你的饼干。,你的饼干是谈到了数英里。
+TID_NEWS27_CONTEXT,Your cookies are renowned in the whole town!,你的饼干闻名整个城市！,你的饼干是著名的在整个小镇!
+TID_NEWS28_CONTEXT,Your cookies bring all the boys to the yard.,小屁孩们冲进了你家院子，为了饼干。。。,你的饼干给院子里带来所有的男孩。
+TID_NEWS29_CONTEXT,Your cookies now have their own website!,你的饼干拥有了自己的主页！,你的饼干现在有自己的网站!
+TID_NEWS30_CONTEXT,Your cookies are worth a lot of money.,你的饼干变得非常值钱！,你的饼干是值得一大笔钱。
+TID_NEWS31_CONTEXT,Your cookies sell very well in distant countries.,你的饼干驰名中外！,你的饼干在遥远的国家卖得很好。
+TID_NEWS32_CONTEXT,People come from very far away to get a taste of your cookies.,很多人不远万里只为尝到你做的饼干！,人们来自非常遥远的你的饼干。
+TID_NEWS33_CONTEXT,Kings and queens from all over the world are enjoying your cookies.,全世界的国王和皇后都喜欢你的饼干！,国王和王后来自世界各地正在享受你的饼干。
+TID_NEWS34_CONTEXT,There are now museums dedicated to your cookies.,第一座为你的饼干建造的博物馆对外开放！,现在博物馆致力于你的饼干。
+TID_NEWS35_CONTEXT,A national day has been created in honor of your cookies.,联合国宣布每年的10月24日为世界饼干日。,创建了一个国庆纪念你的饼干。
+TID_NEWS36_CONTEXT,Your cookies have been named a part of the world wonders.,你的饼干被提名为第八大世界奇迹。,你的饼干被命名为世界奇迹的一部分。
+TID_NEWS37_CONTEXT,History books now include a whole chapter about your cookies.,历史书上有一章专门记载了你的饼干!,历史书现在包括整个章你的饼干。
+TID_NEWS38_CONTEXT,Your cookies have been placed under government surveillance.,你的饼干被政府保护起来。,你的饼干已经受到政府监控。
+TID_NEWS39_CONTEXT,The whole planet is enjoying your cookies!,全世界都在享用你的饼干!,整个地球正在享受你的饼干!
+TID_NEWS40_CONTEXT,Strange creatures from neighboring planets wish to try your cookies.,邻星的奇怪生物表示希望能品尝你的饼干！,奇怪的生物从邻近的行星希望尝试你的饼干。
+TID_NEWS41_CONTEXT,Elder gods from the whole cosmos have awoken to taste your cookies.,众生之神开始苏醒，只为品尝你的饼干。,老人神从整个宇宙已认识到品尝你的饼干。
+TID_NEWS42_CONTEXT,Beings from other dimensions lapse into existence just to get a taste of your cookies.,,人类从其他方面陷入的存在只是为了尝到你的饼干。
+TID_NEWS43_CONTEXT,Your cookies have achieved sentience.,你的饼干获得了生命！,你的饼干所取得的感觉。
+TID_NEWS44_CONTEXT,"The universe has now turned into cookie dough, to the molecular level.",饼人:整个世界从分子层面来看已经是饼干的原料了.,宇宙已经变成饼干面团
+TID_NEWS45_CONTEXT,Your cookies are rewriting the fundamental laws of the universe.,你的饼干重新制定了宇宙的基本规则.,你的饼干是重写宇宙的基本规律。
+TID_NEWS46_CONTEXT,A local news station runs a 10-minute segment about your cookies. Success!(you win a cookie),&^*%&^%&*(&*^%^$%#%^&*.,当地新闻站运行10分钟段你的饼干。成功!(你赢了饼干)
+TID_NEWS47_CONTEXT,it's time to stop playing,妈蛋，求你别玩了...,是时候停止玩
+TID_BUTTON_LABEL_SELL,Sell,卖出,出售
+TID_BUTTON_LABEL_MENU,Menu,设置,菜单
+TID_BUTTON_LABEL_STATS,Stats,统计,统计数据
+TID_STORE,STORE,商店,商店
+TID_BUILDING,BUILDING,建筑,建筑
+TID_SECTION_GENERAL,general,综合,一般
+TID_SECTION_UNLOCK_UPGRADES,Unlock Upgrades,解锁的科技,解锁升级
+TID_UPGRADE,Upgrade,科技,升级
+TID_ACHIEVEMENTS,Achievements,成就,成就
+TID_COOKIES_IN_BANK,Cookies In Bank:,饼干存量:,饼干在银行:
+TID_COOKIES_BAKED_THIS_GAME,Cookies In Baked(this game):,总饼干(本次游戏):,饼干在烤(这个游戏):
+TID_COOKIES_BAKED_ALL_TIME,Cookies In Baked(all time):,总饼干(所有时间):,饼干在烤(时间):
+TID_SESSION_START,Session Start:,游戏开始时间:,会议开始:
+TID_BUILDING_OWNED,Building Owned:,建筑数量:,建筑拥有:
+TID_COOKIES_PER_SECEND,Cookies Per Secend:,每秒生产饼干:,饼干每二:
+TID_MULTIPLIER,multiplier:(#Number#%),multiplier:(#Number#%),(增加:
+TID_COOKIES_PER_CLICK,Cookies Per Click:,每次点击生产饼干:,饼干每点击:
+TID_COOKIE_CLICK,Cookie Click:,点击饼干次数:,饼干点击:
+TID_HAND_MAKE_COOKIE,Hand-made cookies:,手工制作的饼干:,手工饼干:
+TID_GOLDEN_CLICK,Golden Cookie Clicks:,金饼干:,黄金饼干点击:
+TID_RUNNING_VERSION,Running version:,版本:,运行版本:
+TID_UNLOCKED,Unlocked:,解锁:,解锁:
+TID_MILK,Milk:,牛奶:,牛奶:
+TID_MILK_NOTE,Note:you gain milk through achievements.Milk can unlock unique upgrades over time.,获得成可以增加牛奶。牛奶可以解锁独一无二的科技！,注意:您通过成就获得牛奶。牛奶可以解锁独特的升级。

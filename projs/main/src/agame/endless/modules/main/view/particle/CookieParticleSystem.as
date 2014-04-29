@@ -120,9 +120,9 @@ package agame.endless.modules.main.view.particle
 			if (arrangedCharsText != Game.computedMouseCpsText)
 			{
 				arrangedCharsText=Game.computedMouseCpsText;
-				arrangedChars=Assets.current.particleBmFont.arrangeChars(64, 64, arrangedCharsText, 32, HAlign.CENTER, //
+				arrangedChars=Assets.current.particleBmFont.arrangeChars(512, 128, arrangedCharsText, 32, HAlign.LEFT, //
 					VAlign.CENTER, //
-					false, //
+					true, //
 					false);
 			}
 
@@ -134,7 +134,7 @@ package agame.endless.modules.main.view.particle
 					var opacity:Number=1 - (me.life / me.dur);
 					if (me.text && arrangedChars)
 					{
-						Assets.current.particleBmFont.fillQuadBatch(me.x, me.y, opacity, 0, _textCanvas, //
+						Assets.current.particleBmFont.fillQuadBatch(me.x, me.y - 64, opacity, 0, _textCanvas, //
 							0xffffff, //
 							arrangedChars);
 

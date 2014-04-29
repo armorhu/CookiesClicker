@@ -1,7 +1,7 @@
 package agame.endless.modules.main.view.achievements
 {
 	import agame.endless.modules.main.model.achievements.AchievementData;
-	import agame.endless.modules.main.view.upgrades.UpgradeIconUtil;
+	import agame.endless.modules.main.view.IconUtil;
 	import agame.endless.services.assets.Assets;
 	import agame.endless.services.feathers.itemRender.CustomItemRender;
 
@@ -49,9 +49,9 @@ package agame.endless.modules.main.view.achievements
 		{
 			var model:AchievementData=data as AchievementData;
 			if (model.won)
-				return UpgradeIconUtil.getIconTexture(model.iconX, model.iconY);
+				return IconUtil.getIconTexture(model.iconX, model.iconY);
 			else
-				return UpgradeIconUtil.getIconTexture(0, 7);
+				return IconUtil.getIconTexture(0, 7);
 		}
 	}
 }

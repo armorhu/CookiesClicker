@@ -1,9 +1,9 @@
 package agame.endless.modules.main.model
 {
 	import com.agame.utils.Beautify;
-
+	
 	import flash.utils.getTimer;
-
+	
 	import agame.endless.modules.main.model.achievements.AchievementData;
 	import agame.endless.modules.main.model.achievements.AchievementsDataModel;
 	import agame.endless.modules.main.model.newsticker.NewsTicker;
@@ -13,7 +13,7 @@ package agame.endless.modules.main.model
 	import agame.endless.modules.main.model.upgrade.UpgradeData;
 	import agame.endless.modules.main.model.upgrade.UpgradeDataModel;
 	import agame.endless.services.frame.IEnterframe;
-
+	
 	import starling.events.EventDispatcher;
 
 
@@ -470,7 +470,11 @@ package agame.endless.modules.main.model
 
 			//handle cookies
 			if (recalculateGains)
+			{
+				var old:int=cookiesPs;
 				CalculateGains();
+//				trace('--------------gain cps ', cookiesPs - old);
+			}
 			Earn(cookiesPs / fps); //add cookies per second
 
 			if (frenzy > 0)

@@ -1,22 +1,17 @@
 package agame.endless.work.init
 {
-	import flash.display.Bitmap;
 	import flash.geom.Rectangle;
 
 	import agame.endless.EndlessApplication;
 	import agame.endless.appStage;
 	import agame.endless.enm.EnmModuleName;
 	import agame.endless.modules.main.ModuleMain;
-	import agame.endless.services.assets.Assets;
+	import agame.endless.services.dialog.DialogManager;
 	import agame.endless.work.EndlessWork;
 
 	import starling.core.Starling;
 	import starling.display.Sprite;
 	import starling.events.Event;
-	import starling.extension.starlingide.display.textfield.StarlingTextField;
-	import starling.text.BitmapFont;
-	import starling.text.TextField;
-	import starling.textures.Texture;
 
 	public class StartupStarlingWork extends EndlessWork
 	{
@@ -63,6 +58,11 @@ package agame.endless.work.init
 			var layer:Sprite=new Sprite;
 			Starling.current.stage.addChild(layer);
 			app.registerModule(EnmModuleName.Main, ModuleMain, layer);
+
+			//弹框层
+			layer=new Sprite;
+			Starling.current.stage.addChild(layer);
+			new DialogManager(layer);
 		}
 	}
 }

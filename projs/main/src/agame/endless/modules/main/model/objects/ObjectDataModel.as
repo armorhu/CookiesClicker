@@ -6,7 +6,6 @@ package agame.endless.modules.main.model.objects
 	import flash.utils.ByteArray;
 
 	import agame.endless.modules.main.model.Game;
-	import agame.endless.modules.main.model.achievements.AchievementData;
 	import agame.endless.services.assets.Assets;
 
 	public class ObjectDataModel
@@ -116,9 +115,8 @@ package agame.endless.modules.main.model.objects
 				if (Game.Has('Elder Pact'))
 					add+=Game.Objects['Portal'].amount * 0.05;
 				return Game.ComputeCps(0.5, Game.Has('Forwards from grandma') * 0.3 + add, Game.Has('Steel-plated rolling pins') + Game.Has('Lubricated dentures') + Game.Has('Prune juice') + Game.Has('Double-thick glasses') + mult);
-			}, Game.NewDrawFunction(chooseGradma(), 8, 8, 32, 3, 16), function():void
+			}, Game.NewDrawFunction(chooseGradma(), 0, 0, 32, 3, 0), function():void
 			{
-
 				if (this.amount >= 1)
 					Game.Unlock(['Forwards from grandma', 'Steel-plated rolling pins']);
 				if (this.amount >= 10)

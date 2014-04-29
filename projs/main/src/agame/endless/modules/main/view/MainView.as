@@ -3,6 +3,7 @@ package agame.endless.modules.main.view
 	import com.agame.utils.DisplayUtil;
 	import com.greensock.TimelineMax;
 	import com.greensock.TweenLite;
+	import com.greensock.easing.Strong;
 
 	import flash.display.BitmapData;
 	import flash.display.BitmapDataChannel;
@@ -11,7 +12,6 @@ package agame.endless.modules.main.view
 
 	import agame.endless.configs.lang.Lang;
 	import agame.endless.configs.texts.TextsTIDDefs;
-	import agame.endless.modules.main.model.objects.ObjectData;
 	import agame.endless.modules.main.view.buildings.BuildingItemRender;
 	import agame.endless.modules.main.view.curser.CurserCanvas;
 	import agame.endless.modules.main.view.objects.ObjectItemRender;
@@ -51,7 +51,6 @@ package agame.endless.modules.main.view
 		public var content:StarlingMovieClip;
 		public var cookieCenter:StarlingMovieClip;
 		public var cookies:StarlingTextField; //饼干数量
-
 		private var frame:StarlingMovieClip;
 
 		/**
@@ -130,7 +129,7 @@ package agame.endless.modules.main.view
 			initUpgradesStoreList();
 
 
-			var xml:XML=XML(new EmbedAssets.CookiesFall_XML);
+			var xml:XML=Assets.current.getXml('cookie_rain');
 			var cookieTexture:Texture=Assets.current.getLinkageTexture('SmallCookie');
 			xml.sourcePositionVariance.@x=content.newsTickerLabel.width / 2;
 			xml.startParticleSize.@value=cookieTexture.width;
@@ -140,7 +139,7 @@ package agame.endless.modules.main.view
 			cookiesRain.x=content.newsTickerLabel.x + content.newsTickerLabel.width / 2;
 			cookieCenter.particleContainer.addChildAt(cookiesRain, 0);
 
-			xml=XML(new EmbedAssets.CookiesCLICK_XML());
+			xml=Assets.current.getXml('cookie_click');
 			xml.startParticleSize.@value=cookieTexture.width;
 			xml.finishParticleSize.@value=cookieTexture.width;
 			cookiesClick=new PDParticleSystem(xml, cookieTexture);
@@ -161,12 +160,20 @@ package agame.endless.modules.main.view
 			_curser.y=_bigCookie.y;
 			cookieCenter.particleCotnainer2.addChildAt(_curser, 0);
 
+			xml=Assets.current.getXml('cheer');
+			xml.sourcePositionVariance.@x=content.newsTickerLabel.width / 2;
+			cheer=new PDParticleSystem(xml, Assets.current.getTexture('particleTexture'));
+			cheer.x=content.newsTickerLabel.x + content.newsTickerLabel.width / 2;
+			cheer.y=stageHeight;
+			Starling.juggler.add(cheer);
+			addChild(cheer);
 
 			//饼干背景
 		}
 
 		public var cookiesRain:PDParticleSystem;
 		public var cookiesClick:PDParticleSystem;
+		public var cheer:PDParticleSystem;
 
 		private function initMainStyle():void
 		{
@@ -233,6 +240,7 @@ package agame.endless.modules.main.view
 			vLayout.manageVisibility=true;
 			_storeList.layout=vLayout;
 			_storeList.verticalScrollPolicy=Scroller.SCROLL_POLICY_ON;
+			_storeList.scrollBarDisplayMode=Scroller.SCROLL_BAR_DISPLAY_MODE_NONE;
 			DisplayUtil.alignWith(_storeList, content.storeList);
 		}
 
@@ -280,6 +288,7 @@ package agame.endless.modules.main.view
 			vLayout.hasVariableItemDimensions=true;
 			_buildingList.layout=vLayout;
 			_buildingList.verticalScrollPolicy=Scroller.SCROLL_POLICY_ON;
+			_buildingList.scrollBarDisplayMode=Scroller.SCROLL_BAR_DISPLAY_MODE_NONE;
 
 			_buildingList.dataProvider=new ListCollection;
 			_buildingList.itemRendererType=BuildingItemRender;
@@ -323,6 +332,8 @@ package agame.endless.modules.main.view
 			DisplayUtil.alignWith(_upgradeStoreList, content.upgradeStoreList);
 			_upgradeStoreList.width=MainStyle.Upgrade_List_Width;
 			_upgradeStoreList.height=MainStyle.Upgrade_list_height;
+			_upgradeStoreList.scrollBarDisplayMode=Scroller.SCROLL_BAR_DISPLAY_MODE_NONE;
+
 //			_upgradeStoreList.verticalScrollPolicy=Scroller.SCROLL_POLICY_OFF;
 //			_upgradeStoreList.horizontalScrollPolicy=Scroller.SCROLL_POLICY_ON;
 //			const listLayout:TiledColumnsLayout=new TiledColumnsLayout;
@@ -552,10 +563,12 @@ package agame.endless.modules.main.view
 			addChild(_notifyView);
 
 			var _notifyTimeLine:TimelineMax=new TimelineMax({onComplete: notifyComplete, onCompleteParams: [_notifyView]});
-			_notifyTimeLine.append(TweenLite.to(_notifyView, 0.5, {alpha: 1, y: stageHeight}));
-			_notifyTimeLine.append(TweenLite.to(_notifyView, 0.75, {alpha: 0, scaleY: 0, y: stageHeight - _notifyView.height}), 4);
+			_notifyTimeLine.append(TweenLite.to(_notifyView, 0.75, {alpha: 1, y: stageHeight, ease: Strong.easeOut}));
+			_notifyTimeLine.append(TweenLite.to(_notifyView, 1.0, {alpha: 0, scaleY: 1, y: stageHeight - _notifyView.height, ease: Strong.easeInOut}), 4);
 			_notifyTimeLine.play();
 			Assets.current.playSound('notifier_achievement_complete');
+//			cheer.start(0.1);
+			cheer.populate(50);
 		}
 
 		private function notifyComplete(target:DisplayObject):void

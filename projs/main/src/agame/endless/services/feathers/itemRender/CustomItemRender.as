@@ -157,13 +157,19 @@ package agame.endless.services.feathers.itemRender
 
 			if (this.touchPointID >= 0)
 			{
-				var touch:Touch=event.getTouch(this, TouchPhase.ENDED, this.touchPointID);
+				var touch:Touch=event.getTouch(this, null, this.touchPointID);
 				if (!touch)
 					return;
-
-				itemClicked();
-				this.isSelected=!_isSelected;
-				this.touchPointID=-1;
+				if (touch.phase == TouchPhase.ENDED)
+				{
+					itemClicked();
+					this.isSelected=!_isSelected;
+					this.touchPointID=-1;
+				}
+				else if (touch.phase == TouchPhase.MOVED)
+				{
+					this.touchPointID=-1;
+				}
 			}
 			else //if we get here, we don't have a saved touch ID yet
 			{

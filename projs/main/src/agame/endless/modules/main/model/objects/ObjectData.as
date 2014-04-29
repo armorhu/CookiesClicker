@@ -112,7 +112,7 @@ package agame.endless.modules.main.model.objects
 			}
 		}
 
-		private function drawFunction():void
+		public function drawFunction():void
 		{
 			// TODO Auto Generated method stub
 			Game.dispatchEventWith(MainModel.DRAW_OBJECT, false, id);

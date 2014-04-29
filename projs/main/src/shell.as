@@ -4,6 +4,7 @@ package
 
 	import flash.desktop.NativeApplication;
 	import flash.desktop.SystemIdleMode;
+	import flash.display.MovieClip;
 	import flash.display.Sprite;
 	import flash.display.StageOrientation;
 	import flash.display.StageQuality;
@@ -19,12 +20,20 @@ package
 
 	public class shell extends Sprite
 	{
+		public static var loading:MovieClip;
+
 		public function shell()
 		{
 			super();
+			stage.color=0x0;
 			Flox.init("Hv0X8ifOth3lKT7I", "1HtonojNasIz51PO", Version);
 			stage.frameRate=60;
 			stage.quality=StageQuality.LOW;
+			loading=new LoadingBar;
+			addChild(loading);
+			loading.x=960 - loading.width;
+			loading.y=640 - loading.height;
+			loading.txt.text='Loading...';
 			NativeApplication.nativeApplication.systemIdleMode=SystemIdleMode.KEEP_AWAKE; //保持屏幕唤醒
 			stage.addEventListener(StageOrientationEvent.ORIENTATION_CHANGING, onOrientationChanging);
 			NativeApplication.nativeApplication.addEventListener(KeyboardEvent.KEY_DOWN, keyHandler);

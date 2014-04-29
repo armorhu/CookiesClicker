@@ -1,6 +1,5 @@
 package agame.endless.services.assets
 {
-	import flash.display.Bitmap;
 	import flash.filesystem.File;
 	import flash.media.SoundChannel;
 	import flash.media.SoundTransform;
@@ -8,7 +7,6 @@ package agame.endless.services.assets
 
 	import agame.endless.EndlessApplication;
 	import agame.endless.configs.AppConfig;
-	import agame.endless.configs.achievements.AchievementsConfigModel;
 	import agame.endless.configs.lang.LangConfigModel;
 	import agame.endless.configs.news.NewsConfigModel;
 	import agame.endless.modules.main.view.particle.ParticleBitmapFont;
@@ -54,7 +52,7 @@ package agame.endless.services.assets
 
 		private function loading(progress:Number):void
 		{
-			trace('loading....' + progress);
+			shell.loading.txt.text='Loading...' + int(progress * 100) + '%';
 			if (progress == 1)
 				progressAssets();
 		}
@@ -103,16 +101,13 @@ package agame.endless.services.assets
 		private function registeBitmapFont():void
 		{
 			//注册位图字体
-			var bitmap:Bitmap=new EmbedAssets.BitmapChars();
-			var texture:Texture=Texture.fromBitmap(bitmap);
-
-			var xml:XML=XML(new EmbedAssets.BritannicXML());
-			var bitmapFont:BitmapFont=new BitmapFont(texture, xml);
-			particleBmFont=new ParticleBitmapFont(texture, xml);
-
 			Assets.FontName='Wawati SC Regular';
-			StarlingTextField.registerBitmapFont(bitmapFont, Assets.FontName);
+			var texture:Texture=Texture.fromBitmap(new EmbedAssets.BitmapChars());
+			var xml:XML=new XML(new EmbedAssets.BritannicXML());
+			var bitmapFont:BitmapFont=new BitmapFont(texture, xml);
 			TextField.registerBitmapFont(bitmapFont, Assets.FontName);
+			particleBmFont=new ParticleBitmapFont(texture, xml);
+			StarlingTextField.registerBitmapFont(bitmapFont, Assets.FontName);
 		}
 
 		public function loadComplete(evt:Event):void

@@ -162,6 +162,7 @@ package agame.endless.modules.main.view.buildings
 				{
 					showObjectItemDetial(this);
 					setSize(_viewWidth, viewHeight + _buildingDetail.height);
+					_scrollContainer.scrollBarDisplayMode=Scroller.SCROLL_BAR_DISPLAY_MODE_FIXED;
 					this.unflatten();
 				}
 				else
@@ -169,6 +170,7 @@ package agame.endless.modules.main.view.buildings
 					if (_buildingDetail && _buildingDetail.parent == this)
 						_buildingDetail.removeFromParent();
 					setSize(_viewWidth, viewHeight);
+					_scrollContainer.scrollBarDisplayMode=Scroller.SCROLL_BAR_DISPLAY_MODE_NONE;
 					this.flatten();
 				}
 			}

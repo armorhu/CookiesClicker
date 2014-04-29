@@ -40,6 +40,7 @@
       <libraryPathEntry kind="3" linkType="1" path="/amGame/bin/amGame.swc" useDefaultLinkType="false"/>
       <libraryPathEntry kind="1" linkType="1" path="libs"/>
       <libraryPathEntry kind="3" linkType="1" path="/starling-ide/bin/starling-ide.swc" useDefaultLinkType="false"/>
+      <libraryPathEntry kind="1" linkType="1" path="source/fla"/>
     </libraryPath>
     <sourceAttachmentPath/>
   </compiler>

@@ -16,8 +16,8 @@ package agame.endless.modules.main
 	import agame.endless.modules.main.model.achievements.AchievementData;
 	import agame.endless.modules.main.model.buildings.BuildingData;
 	import agame.endless.modules.main.model.objects.ObjectData;
+	import agame.endless.modules.main.view.IconUtil;
 	import agame.endless.modules.main.view.MainView;
-	import agame.endless.modules.main.view.upgrades.UpgradeIconUtil;
 	import agame.endless.services.assets.Assets;
 	import agame.endless.services.frame.Enterframe;
 	import agame.endless.services.frame.IEnterframe;
@@ -48,6 +48,7 @@ package agame.endless.modules.main
 
 			_transform.volume=0.25;
 			Assets.current.playSound('ingame_loop', 0, int.MAX_VALUE, _transform);
+			shell.loading.parent.removeChild(shell.loading);
 		}
 
 		protected function initView():void
@@ -156,7 +157,7 @@ package agame.endless.modules.main
 			{
 				var achievementName:String=evt.data as String;
 				var achievementData:AchievementData=Game.Achievements[achievementName];
-				_view.notify(achievementData.displayName, achievementData.desc, UpgradeIconUtil.getIcon(achievementData.iconX, achievementData.iconY));
+				_view.notify(achievementData.displayName, achievementData.desc, IconUtil.getIcon(achievementData.iconX, achievementData.iconY));
 			}
 		}
 
@@ -283,6 +284,7 @@ package agame.endless.modules.main
 						buildingData.points.push({x: x, y: y});
 					}
 					buildingData.bgW+=offX;
+					buildingData.bgW+=32;
 					_view.setBuildingItem(buildingData, Game.BuildingSequences[buildingData.id]);
 				}
 			}
