@@ -7,6 +7,7 @@ package agame.endless.modules.main.view
 
 	import flash.display.BitmapData;
 	import flash.display.BitmapDataChannel;
+	import flash.filesystem.File;
 	import flash.geom.Point;
 	import flash.geom.Rectangle;
 
@@ -21,6 +22,7 @@ package agame.endless.modules.main.view
 	import agame.endless.services.assets.Assets;
 	import agame.endless.services.frame.IEnterframe;
 	import agame.endless.services.utils.useEmbedFont;
+	import agame.endless.services.wechat.WechatProxy;
 
 	import feathers.controls.List;
 	import feathers.controls.ScrollContainer;
@@ -201,7 +203,14 @@ package agame.endless.modules.main.view
 				popupWindow(Lang(TextsTIDDefs.TID_BUTTON_LABEL_STATS), _statsPanel);
 			}
 			else if (targetName == 'btnMenu')
+			{
 				popupWindow(Lang(TextsTIDDefs.TID_BUTTON_LABEL_MENU), null);
+
+				//for test 
+//				WechatProxy.sendMail('test for cookies clicker~~', WechatProxy.SHARE_TO_SINGLE_FRIEND);
+				WechatProxy.sendImage(File.applicationDirectory.nativePath + '/shared.jpg', '别踩黑块儿', '下载地址:https://itunes.apple.com/us/app/bie-cai-hei-kuai-er/id860769730', WechatProxy.SHARE_TO_ALL_FRIENDS);
+//				WechatProxy.sendLink('https://itunes.apple.com/us/app/bie-cai-hei-kuai-er/id860769730', '别踩黑块儿', 'shared!', WechatProxy.SHARE_TO_ALL_FRIENDS);
+			}
 		}
 
 

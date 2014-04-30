@@ -4,8 +4,8 @@ package agame.endless
 
 	import agame.endless.configs.AppConfig;
 	import agame.endless.configs.AppConfigModel;
-	import agame.endless.modules.main.model.MainModel;
 	import agame.endless.services.assets.Assets;
+	import agame.endless.services.wechat.WechatProxy;
 	import agame.endless.work.StartupGameWork;
 
 	public class EndlessApplication extends Application
@@ -20,6 +20,8 @@ package agame.endless
 		private function initliaze():void
 		{
 			appStage=stage;
+			WechatProxy.setup('wx83705d131d3c73ef'); //别踩黑块的appid
+//			WechatProxy.setup('wxe38b42d5a650dc12'); //农场的appid
 			AppConfig=new AppConfigModel(this);
 			new Assets(this);
 		}
